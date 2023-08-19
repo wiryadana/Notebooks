@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "The Wiryadana’s Notebook",
     "section": "",
-    "text": "Preface\nIn the middle of 2023, I was so fortunate that I passed the admission for Internal Medicine residency program.\nThis is a Quarto book. Quarto is amazing inovation from Rstudio.org that makes it possible for a lay person creating online books like this one. To learn more about Quarto books visit https://quarto.org/docs/books.\n\n\nAcknowledgements"
+    "text": "Preface\nIn the middle of 2023, I was so fortunate that I passed the admission for Internal Medicine residency program. I believe my knowledge has been barely enough just to start the program. To compensate my lack in memorizing and attention to detail, I build this books. I published it online but not intended to disseminate widely, at least not yet. It is only to help me doing my work.\nBy the way, this is a Quarto book. Quarto is amazing innovation from Rstudio.org that makes it possible for a lay person creating online books like this one. To learn more about Quarto books visit https://quarto.org/docs/books.\n\n\nAcknowledgements\nThis book made possible by years of clinical education given by all of my teachers."
   },
   {
     "objectID": "intro.html",
@@ -19,5 +19,152 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "critical_care.html#airway-and-ventilation-support",
+    "href": "critical_care.html#airway-and-ventilation-support",
+    "title": "8  Intensive Care Medicine",
+    "section": "8.1 Airway and Ventilation Support",
+    "text": "8.1 Airway and Ventilation Support"
+  },
+  {
+    "objectID": "critical_care.html#respiration-and-hemodynamics-monitoring",
+    "href": "critical_care.html#respiration-and-hemodynamics-monitoring",
+    "title": "8  Intensive Care Medicine",
+    "section": "8.2 Respiration and Hemodynamics Monitoring",
+    "text": "8.2 Respiration and Hemodynamics Monitoring"
+  },
+  {
+    "objectID": "critical_care.html#shock",
+    "href": "critical_care.html#shock",
+    "title": "8  Intensive Care Medicine",
+    "section": "8.3 Shock",
+    "text": "8.3 Shock"
+  },
+  {
+    "objectID": "hematology_oncology.html#oncological-emergency",
+    "href": "hematology_oncology.html#oncological-emergency",
+    "title": "2  Hematology & Medical Oncology",
+    "section": "2.1 Oncological Emergency",
+    "text": "2.1 Oncological Emergency"
+  },
+  {
+    "objectID": "hematology_oncology.html#hematology",
+    "href": "hematology_oncology.html#hematology",
+    "title": "2  Hematology & Medical Oncology",
+    "section": "2.2 Hematology",
+    "text": "2.2 Hematology"
+  },
+  {
+    "objectID": "hematology_oncology.html#medical-oncology",
+    "href": "hematology_oncology.html#medical-oncology",
+    "title": "2  Hematology & Medical Oncology",
+    "section": "2.3 Medical Oncology",
+    "text": "2.3 Medical Oncology"
+  },
+  {
+    "objectID": "nefrology.html#nefrology",
+    "href": "nefrology.html#nefrology",
+    "title": "9  Nefrology & urology",
+    "section": "9.1 Nefrology",
+    "text": "9.1 Nefrology"
+  },
+  {
+    "objectID": "nefrology.html#urology",
+    "href": "nefrology.html#urology",
+    "title": "9  Nefrology & urology",
+    "section": "9.2 Urology",
+    "text": "9.2 Urology"
+  },
+  {
+    "objectID": "endocrine_metabolism.html#emergency",
+    "href": "endocrine_metabolism.html#emergency",
+    "title": "11  Endocrine & Metabolism",
+    "section": "11.1 Emergency",
+    "text": "11.1 Emergency\n\n11.1.1 Diabetes\n\nDiabetic ketoacidosis\n\n\nHyperosmolar-hyperglicemic Syndrome"
+  },
+  {
+    "objectID": "endocrine_metabolism.html#non-emergency",
+    "href": "endocrine_metabolism.html#non-emergency",
+    "title": "11  Endocrine & Metabolism",
+    "section": "11.2 Non-emergency",
+    "text": "11.2 Non-emergency"
+  },
+  {
+    "objectID": "geriatry.html#emergency",
+    "href": "geriatry.html#emergency",
+    "title": "13  Geriatry",
+    "section": "13.1 Emergency",
+    "text": "13.1 Emergency"
+  },
+  {
+    "objectID": "geriatry.html#non-emergency",
+    "href": "geriatry.html#non-emergency",
+    "title": "13  Geriatry",
+    "section": "13.2 Non-emergency",
+    "text": "13.2 Non-emergency"
+  },
+  {
+    "objectID": "neurology.html#coma-decreased-consciousness",
+    "href": "neurology.html#coma-decreased-consciousness",
+    "title": "16  neurology",
+    "section": "16.1 Coma & Decreased Consciousness",
+    "text": "16.1 Coma & Decreased Consciousness"
+  },
+  {
+    "objectID": "neurology.html#pain-management",
+    "href": "neurology.html#pain-management",
+    "title": "16  neurology",
+    "section": "16.2 Pain Management",
+    "text": "16.2 Pain Management"
+  },
+  {
+    "objectID": "radiology.html#konvensional",
+    "href": "radiology.html#konvensional",
+    "title": "23  Radiology",
+    "section": "23.1 Konvensional",
+    "text": "23.1 Konvensional"
+  },
+  {
+    "objectID": "radiology.html#ct-scan",
+    "href": "radiology.html#ct-scan",
+    "title": "23  Radiology",
+    "section": "23.2 CT Scan",
+    "text": "23.2 CT Scan"
+  },
+  {
+    "objectID": "radiology.html#ultrasonography",
+    "href": "radiology.html#ultrasonography",
+    "title": "23  Radiology",
+    "section": "23.3 Ultrasonography",
+    "text": "23.3 Ultrasonography\n\n23.3.1 POCUS in Emergency/Critical Care Setting\n\nBlue Protocol\n\n\nRUSH/ACES Protocol"
+  },
+  {
+    "objectID": "radiology.html#mri",
+    "href": "radiology.html#mri",
+    "title": "23  Radiology",
+    "section": "23.4 MRI",
+    "text": "23.4 MRI"
+  },
+  {
+    "objectID": "radiology.html#nuclear-medicine",
+    "href": "radiology.html#nuclear-medicine",
+    "title": "23  Radiology",
+    "section": "23.5 Nuclear Medicine",
+    "text": "23.5 Nuclear Medicine"
+  },
+  {
+    "objectID": "medical_procedure.html#diagnostics",
+    "href": "medical_procedure.html#diagnostics",
+    "title": "32  Common Medical Procedures for Internist",
+    "section": "32.1 Diagnostics",
+    "text": "32.1 Diagnostics"
+  },
+  {
+    "objectID": "medical_procedure.html#therapeutics",
+    "href": "medical_procedure.html#therapeutics",
+    "title": "32  Common Medical Procedures for Internist",
+    "section": "32.2 Therapeutics",
+    "text": "32.2 Therapeutics\n\n32.2.1 Blood Transfusion"
   }
 ]

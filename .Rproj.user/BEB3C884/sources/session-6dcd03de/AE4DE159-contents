@@ -45,7 +45,9 @@ book:
         - ent.qmd
         - ophtalmology.qmd
         - rehabilitation.qmd
+        - disaster.qmd
     - pharmacology.qmd
+    - medical_procedure.qmd
     - part: bioinformatics.qmd
       chapters: 
         - genomic_medicine.qmd
@@ -56,6 +58,10 @@ book:
         - tidyverse_ggplot.qmd
     - references.qmd
   page-navigation: true
+  sidebar: 
+    style: docked
+    background: dark
+  
 bibliography: references.bib
 
 format:
