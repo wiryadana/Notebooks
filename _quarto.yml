@@ -1,0 +1,76 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "The Wiryadana's Notebook"
+  author: "Kadek Adit Wiryadana"
+  search: true
+  repo-url: https://github.com/wiryadana/the_wiryadana_notebooks
+  downloads: pdf
+  sharing: [twitter, linkedin, facebook]
+  date: today
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: internal_medicine.qmd
+      chapters: 
+        - hematology_oncology.qmd
+        - allergy_imunology.qmd
+        - rheumatology.qmd
+        - infectious_disease.qmd
+        - cardiology.qmd
+        - respirology.qmd
+        - critical_care.qmd
+        - nefrology.qmd
+        - gastroenterology_hepatology.qmd
+        - endocrine_metabolism.qmd
+        - psychosomatic.qmd
+        - geriatry.qmd
+    - part: others.qmd
+      chapters:
+        - clinical_nutrition.qmd
+        - surgery.qmd
+        - neurology.qmd
+        - anesthesiology.qmd
+        - obgyn.qmd
+        - dermatology.qmd
+        - poison_drugs.qmd
+        - enviromental.qmd
+        - travel_medicine.qmd
+        - radiology.qmd
+        - anatomical_pathology.qmd
+        - clinical_pathology.qmd
+        - clinical_microbiology.qmd
+        - ent.qmd
+        - ophtalmology.qmd
+        - rehabilitation.qmd
+    - pharmacology.qmd
+    - part: bioinformatics.qmd
+      chapters: 
+        - genomic_medicine.qmd
+        - linux_programming.qmd
+    - part: statistics.qmd
+      chapters: 
+        - basic_r.qmd
+        - tidyverse_ggplot.qmd
+    - references.qmd
+  page-navigation: true
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    number-depth: 3
+  pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+
+editor: visual
+

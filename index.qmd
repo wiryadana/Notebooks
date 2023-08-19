@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+In the middle of 2023, I was so fortunate that I passed the admission for Internal Medicine residency program.
+
+This is a Quarto book. Quarto is amazing inovation from Rstudio.org that makes it possible for a lay person creating online books like this one. To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+# Acknowledgements
