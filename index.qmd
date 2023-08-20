@@ -7,3 +7,10 @@ By the way, this is a Quarto book. Quarto is amazing innovation from Rstudio.org
 # Acknowledgements
 
 This book made possible by years of clinical education given by all of my teachers.
+
+
+```{r}
+library(gt)
+library(googlesheets4)
+```
+

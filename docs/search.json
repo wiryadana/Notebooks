@@ -18,28 +18,28 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLoscalzo, J, A Fauci, D Kasper, S Hauser, D Longo, and J Jameson. 2022.\nHarrison’s Principles of Internal\nMedicine, 21e. 21st ed. McGraw Hill. https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&sectionid=259856983."
   },
   {
     "objectID": "critical_care.html#airway-and-ventilation-support",
     "href": "critical_care.html#airway-and-ventilation-support",
     "title": "8  Intensive Care Medicine",
-    "section": "8.1 Airway and Ventilation Support",
-    "text": "8.1 Airway and Ventilation Support"
+    "section": "8.2 Airway and Ventilation Support",
+    "text": "8.2 Airway and Ventilation Support"
   },
   {
     "objectID": "critical_care.html#respiration-and-hemodynamics-monitoring",
     "href": "critical_care.html#respiration-and-hemodynamics-monitoring",
     "title": "8  Intensive Care Medicine",
-    "section": "8.2 Respiration and Hemodynamics Monitoring",
-    "text": "8.2 Respiration and Hemodynamics Monitoring"
+    "section": "8.3 Respiration and Hemodynamics Monitoring",
+    "text": "8.3 Respiration and Hemodynamics Monitoring"
   },
   {
     "objectID": "critical_care.html#shock",
     "href": "critical_care.html#shock",
     "title": "8  Intensive Care Medicine",
-    "section": "8.3 Shock",
-    "text": "8.3 Shock"
+    "section": "8.4 Shock",
+    "text": "8.4 Shock\n\n\n\n\nLoscalzo, J, A Fauci, D Kasper, S Hauser, D Longo, and J Jameson. 2022. Harrison’s Principles of Internal Medicine, 21e. 21st ed. McGraw Hill. https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&sectionid=259856983."
   },
   {
     "objectID": "hematology_oncology.html#oncological-emergency",
@@ -166,5 +166,12 @@
     "title": "32  Common Medical Procedures for Internist",
     "section": "32.2 Therapeutics",
     "text": "32.2 Therapeutics\n\n32.2.1 Blood Transfusion"
+  },
+  {
+    "objectID": "critical_care.html#approach-to-critical-ill-patients",
+    "href": "critical_care.html#approach-to-critical-ill-patients",
+    "title": "8  Intensive Care Medicine",
+    "section": "8.1 Approach to Critical Ill Patients",
+    "text": "8.1 Approach to Critical Ill Patients\n\n8.1.1 Assesment of illness severity\nImportant for:\n\nresource allocation\nHospital administrative policies\nasses quality of care\n\nTwo most commonly used scoring systems:\n\nSOFA (Sequential Organ Failure Assessment)\nAPACHE (Acute Physiology and Chronic Health Evaluation)\n\n\nSOFA Score\nIncludes 6 organ systems, with each graded 0 to 4 according to the degree of dysfunction. Increased score correlate with mortality and can be evaluated repeatedly (Loscalzo et al. 2022).\nA derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate \\(\\geq\\) 22/min, altered mental status, or systolic BP \\(\\le\\) 100 mmhg.\n\n\n\n\n\n\n\n\n\n  \n    \n      Calculation of SOFA Score\n    \n    \n    \n      System\n      \n        Score\n      \n    \n    \n      0\n      1\n      2\n      3\n      4\n    \n  \n  \n    Respiration (PaO2 / FiO2)\n>= 400\n<400\n<300\n<200 with respiratory support\n<100 with respiratory support\n    Coagulation (plt)\n>= 150\n<150\n<100\n<50\n<20\n    Liver (bilirubin, mg/dl)\n<1,2\n1,2 - 1,9\n2,0 - 5,9\n6,0 - 11,9\n>12,0\n    Cardiovascular\nMAP >= 70\nMAP < 70\nDopamin <5 or dobutamine any dose\nDopamine 5,1 - 15 or epinefrin <= 0,1 or Norepinefrin <=0,1\nDopamin >15 or epinefrin >0,1 or Norepinefrin >0,1\n    CNS (GCS)\n15\n13-14\n2023-12-10\n2023-09-06\n<6\n    Renal (Creatinin mg/dl or urine output ml/day)\n1.2\n1,2 - 1,9\n2,0 - 3,4\n3,5 - 4,9 (<500 cc)\n>5,0 (< 200 cc)\n  \n  \n  \n\n\n\n\n\n\nAPACAHE Score"
   }
 ]

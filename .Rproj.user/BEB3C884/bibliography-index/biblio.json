@@ -27,6 +27,47 @@
             "title": "Literate programming",
             "type": "article-journal",
             "volume": "27"
+        },
+        {
+            "URL": "https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&sectionid=259856983",
+            "author": [
+                {
+                    "family": "Loscalzo",
+                    "given": "J"
+                },
+                {
+                    "family": "Fauci",
+                    "given": "A"
+                },
+                {
+                    "family": "Kasper",
+                    "given": "D"
+                },
+                {
+                    "family": "Hauser",
+                    "given": "S"
+                },
+                {
+                    "family": "Longo",
+                    "given": "D"
+                },
+                {
+                    "family": "Jameson",
+                    "given": "J"
+                }
+            ],
+            "edition": "21",
+            "id": "harrison_2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "publisher": "McGraw Hill",
+            "title": "Harrison’s Principles of Internal Medicine, 21e",
+            "type": "book"
         }
     ],
     "project_biblios": [

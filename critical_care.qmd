@@ -1,8 +1,57 @@
 # Intensive Care Medicine
 
+## Approach to Critical Ill Patients
+
+### Assesment of illness severity
+
+Important for:
+
+1.  resource allocation
+
+2.  Hospital administrative policies
+
+3.  asses quality of care
+
+Two most commonly used scoring systems:
+
+1.  SOFA (Sequential Organ Failure Assessment)
+
+2.  APACHE (Acute Physiology and Chronic Health Evaluation)
+
+#### SOFA Score
+
+Includes 6 organ systems, with each graded 0 to 4 according to the degree of dysfunction. Increased score correlate with mortality and can be evaluated repeatedly [@harrison_2022].
+
+A derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate $\geq$ 22/min, altered mental status, or systolic BP $\le$ 100 mmhg. 
+
+```{r}
+#| echo: false
+#| output: false
+
+library(googlesheets4)
+library(gt)
+
+sofa <- read_sheet("https://docs.google.com/spreadsheets/d/1X1v0OOdzwSVROfs8C8JMvcjdi0EUFy9cQGwfcwFLuqE/edit#gid=0", sheet = 1)
+
+sofa_tbl <- 
+  gt(sofa) |> 
+  tab_header(
+    title = "Calculation of SOFA Score"
+  ) |>
+  tab_spanner(
+    label = "Score",
+    columns = c("0","1","2","3","4")
+  )
+```
+
+```{r}
+sofa_tbl
+```
+
+
+#### APACAHE Score
+
 ## Airway and Ventilation Support
-
-
 
 ## Respiration and Hemodynamics Monitoring
 

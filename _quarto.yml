@@ -63,6 +63,8 @@ book:
     background: dark
   
 bibliography: references.bib
+execute: 
+  echo: false
 
 format:
   html:
