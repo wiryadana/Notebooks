@@ -52,10 +52,6 @@ sofa_tbl
 
 SLightly more complicated than SOFA Score. (updated later)
 
-## Airway and Ventilation Support
-
-## Respiration and Hemodynamics Monitoring
-
 ## Shock
 
 ### Initial Evaluation
@@ -80,4 +76,65 @@ Contrary, there are sign of increased cardiac output (Warm Shock), that may resu
 -  Warm extremities with bounding pulse,
 -  Rapid capillary refill time
 
+If reduced cardiac output found, then conduct assesment of volume status.
 
+-  History suggesting fluid loss or hemmorhage
+-  Reduced JVP
+-  Straight leg raise or fluid challange
+-  USG Marker: inferior vena cava collapse, left ventricular stroke volume
+
+reduced cardiac function with increased intravascular volume
+-  S3 or S4 gallop
+-  JVP increased
+-  Extremity Edema
+-  Crackles on lung auscultation
+-  Chest Xray show cardiomegaly, widening vascular pedicle, kerley B lines, pulmonary edema.
+-  ECG: ischemic with or withour chest pain.
+
+If sign of increased cardiac output found, conduct search for cause of reduced SVR.
+
+-  Sepsis
+-  Liver Failure
+-  Severe Pancreatitis
+-  Adrenal Insufficiency
+-  Burns
+-  Trauma
+-  Anaphylaxis
+-  Thyrotoxicosis
+-  Peripheral AV shunts
+
+The need for arterial line and CVC
+- if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.
+
+Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed.
+
+### The need for Mechanical Ventilation
+Always asses the ability of a patient to protect his or her airway and to maintain adequate gas exhange. Early intubation or mechanical ventilation often required for two main reasons:
+
+
+1.  Acute hypoxemic respiratory failure.
+
+It may occurs in cardiogenic shock and pulmonary edema, septic shock with pneumonia or acute respiratory distress syndrome (ARDS). 
+
+2.  Ventilatory failure
+
+Often occurs as a consquence of an increased load on the respiratory system in the form of acute metabolic acidosis or decreased lung compliance.
+
+Also in shock, a large percentage of CO need for respiratory muscle (10 folds), lactic acid production from inefficient respiratory muscle activity presents an additional ventilatory load. Ventilatory supports relieve work of breathing and allow redistribution of limited CO to other vital organ.  
+Sign of respiratory distress:
+
+-  inability to speak full sentences,
+-  accessory muscle activity
+-  paradoxical abdominal muscle activity
+-  extreme tachypnea (>40 breath/min)
+
+After intubation and mechanical ventilation, declines in MAP frequently seen. The reasons:
+
+1.  Impended Venous Return from positive pressure ventilation (PPV)
+2.  reduced endogenous catecholamine secretion once stress associated with respiratory failures abates
+3.  Actions of drugs used in endotracheal intubation.
+4.  Right heart failure patients or preexisting pulmonary hypertension, due to increased right ventricula afterload due to PPV.
+
+Many patients may be fluid responsive.Therefore, fluid administration and vasopressor support might needed before intubation.
+
+## Respiratory Failure
