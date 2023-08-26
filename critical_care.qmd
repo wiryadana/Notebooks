@@ -22,7 +22,7 @@ Two most commonly used scoring systems:
 
 Includes 6 organ systems, with each graded 0 to 4 according to the degree of dysfunction. Increased score correlate with mortality and can be evaluated repeatedly [@harrison_2022].
 
-A derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate $\geq$ 22/min, altered mental status, or systolic BP $\le$ 100 mmhg. 
+A derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate $\geq$ 22/min, altered mental status, or systolic BP $\le$ 100 mmhg.
 
 ```{r}
 #| echo: false
@@ -48,11 +48,36 @@ sofa_tbl <-
 sofa_tbl
 ```
 
-
 #### APACAHE Score
+
+SLightly more complicated than SOFA Score. (updated later)
 
 ## Airway and Ventilation Support
 
 ## Respiration and Hemodynamics Monitoring
 
 ## Shock
+
+### Initial Evaluation
+
+shock is a multisystem end-organ hypoperfusion. The resulting hypoperfusion followed by tissue hypoxia with accompanying lactic acidosis. Clinical Indicator:
+
+1.  Reduced MAP
+2.  Tachycardia
+3.  Tachypnea
+4.  Cool Skin and Extremities
+5.  Acute Altered mental Status
+6.  Oliguria
+
+Reduced MAP could be the product of decreased cardiac output and/or systemic vascular resistance (SVR). Thus every shock patients should be evaluated for adequacy of cardiac output. Sign of diminished cardiac output includes (Cold Shock):
+
+-  A narrow pulse preassure (SBP - DBP), marker of stroke volume
+-  Cool extremities and delayed capillary refill time (COLD SHOCK). Palpate proximal extremities (eg Thigh) rather than distal extremities to determine relative "coolness" as peripheral artery disease may always have cool distal extremities.
+
+Contrary, there are sign of increased cardiac output (Warm Shock), that may results from decreased SVR:
+
+-  A widened pulse pressure (particularly reduced DBP)
+-  Warm extremities with bounding pulse,
+-  Rapid capillary refill time
+
+
