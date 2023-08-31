@@ -15,13 +15,13 @@ book:
     - intro.qmd
     - part: internal_medicine.qmd
       chapters: 
+        - critical_care.qmd
         - hematology_oncology.qmd
         - allergy_imunology.qmd
         - rheumatology.qmd
         - infectious_disease.qmd
         - cardiology.qmd
         - respirology.qmd
-        - critical_care.qmd
         - nefrology.qmd
         - gastroenterology_hepatology.qmd
         - endocrine_metabolism.qmd
