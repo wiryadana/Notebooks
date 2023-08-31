@@ -68,66 +68,59 @@ shock is a multisystem end-organ hypoperfusion. The resulting hypoperfusion foll
 
 Reduced MAP could be the product of decreased cardiac output and/or systemic vascular resistance (SVR). Thus every shock patients should be evaluated for adequacy of cardiac output. Sign of diminished cardiac output includes (Cold Shock):
 
--  A narrow pulse preassure (SBP - DBP), marker of stroke volume
--  Cool extremities and delayed capillary refill time (COLD SHOCK). Palpate proximal extremities (eg Thigh) rather than distal extremities to determine relative "coolness" as peripheral artery disease may always have cool distal extremities.
+-   A narrow pulse preassure (SBP - DBP), marker of stroke volume
+-   Cool extremities and delayed capillary refill time (COLD SHOCK). Palpate proximal extremities (eg Thigh) rather than distal extremities to determine relative "coolness" as peripheral artery disease may always have cool distal extremities.
 
 Contrary, there are sign of increased cardiac output (Warm Shock), that may results from decreased SVR:
 
--  A widened pulse pressure (particularly reduced DBP)
--  Warm extremities with bounding pulse,
--  Rapid capillary refill time
+-   A widened pulse pressure (particularly reduced DBP)
+-   Warm extremities with bounding pulse,
+-   Rapid capillary refill time
 
 If reduced cardiac output found, then conduct assesment of volume status.
 
--  History suggesting fluid loss or hemmorhage
--  Reduced JVP
--  Straight leg raise or fluid challange
--  USG Marker: inferior vena cava collapse, left ventricular stroke volume
+-   History suggesting fluid loss or hemmorhage
+-   Reduced JVP
+-   Straight leg raise or fluid challange
+-   USG Marker: inferior vena cava collapse, left ventricular stroke volume
 
-reduced cardiac function with increased intravascular volume
--  S3 or S4 gallop
--  JVP increased
--  Extremity Edema
--  Crackles on lung auscultation
--  Chest Xray show cardiomegaly, widening vascular pedicle, kerley B lines, pulmonary edema.
--  ECG: ischemic with or withour chest pain.
+reduced cardiac function with increased intravascular volume - S3 or S4 gallop - JVP increased - Extremity Edema - Crackles on lung auscultation - Chest Xray show cardiomegaly, widening vascular pedicle, kerley B lines, pulmonary edema. - ECG: ischemic with or withour chest pain.
 
 If sign of increased cardiac output found, conduct search for cause of reduced SVR.
 
--  Sepsis
--  Liver Failure
--  Severe Pancreatitis
--  Adrenal Insufficiency
--  Burns
--  Trauma
--  Anaphylaxis
--  Thyrotoxicosis
--  Peripheral AV shunts
+-   Sepsis
+-   Liver Failure
+-   Severe Pancreatitis
+-   Adrenal Insufficiency
+-   Burns
+-   Trauma
+-   Anaphylaxis
+-   Thyrotoxicosis
+-   Peripheral AV shunts
 
-The need for arterial line and CVC
-- if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.
+The need for arterial line and CVC - if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.
 
-Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed.
+Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed (look @fig-shockalgorithm).
 
 #### The need for Mechanical Ventilation
-Always asses the ability of a patient to protect his or her airway and to maintain adequate gas exhange. Early intubation or mechanical ventilation often required for two main reasons:
 
+Always asses the ability of a patient to protect his or her airway and to maintain adequate gas exhange. Early intubation or mechanical ventilation often required for two main reasons:
 
 1.  Acute hypoxemic respiratory failure.
 
-It may occurs in cardiogenic shock and pulmonary edema, septic shock with pneumonia or acute respiratory distress syndrome (ARDS). 
+It may occurs in cardiogenic shock and pulmonary edema, septic shock with pneumonia or acute respiratory distress syndrome (ARDS).
 
 2.  Ventilatory failure
 
 Often occurs as a consquence of an increased load on the respiratory system in the form of acute metabolic acidosis or decreased lung compliance.
 
-Also in shock, a large percentage of CO need for respiratory muscle (10 folds), lactic acid production from inefficient respiratory muscle activity presents an additional ventilatory load. Ventilatory supports relieve work of breathing and allow redistribution of limited CO to other vital organ.  
+Also in shock, a large percentage of CO need for respiratory muscle (10 folds), lactic acid production from inefficient respiratory muscle activity presents an additional ventilatory load. Ventilatory supports relieve work of breathing and allow redistribution of limited CO to other vital organ.\
 Sign of respiratory distress:
 
--  inability to speak full sentences,
--  accessory muscle activity
--  paradoxical abdominal muscle activity
--  extreme tachypnea (>40 breath/min)
+-   inability to speak full sentences,
+-   accessory muscle activity
+-   paradoxical abdominal muscle activity
+-   extreme tachypnea (\>40 breath/min)
 
 After intubation and mechanical ventilation, declines in MAP frequently seen. The reasons:
 
@@ -136,7 +129,7 @@ After intubation and mechanical ventilation, declines in MAP frequently seen. Th
 3.  Actions of drugs used in endotracheal intubation.
 4.  Right heart failure patients or preexisting pulmonary hypertension, due to increased right ventricula afterload due to PPV.
 
-Many patients may be fluid responsive.Therefore, fluid administration and vasopressor support might needed before intubation.
+Many patients may be fluid responsive. Therefore, fluid administration and vasopressor support might needed before intubation.
 
 ```{r}
 #| fig-cap: "Approach to the patient in shock"
@@ -192,6 +185,7 @@ render_graph(approach_shock)
 ```
 
 ```{r}
+#| label: fig-shockalgorithm
 #| fig-cap: "Approach to Shock"
 #| fig-cap-location: bottom
 #| fig-align: center
@@ -259,56 +253,48 @@ It occurs due to alveolar flooding, subsquent Ventilation-perfusion (VP) mismatc
 
 Alveolar flooding occurs due:
 
-*  pulmonary edema, pulmonary edema further caused by: 
-    + elevated pulmonary microvascular pressures (heart failure or fluid overload) or 
-    + ARDS (low pressure pulmonary edema), defined as: acute onset ($\le$ 1 week) of bilateral opacities on chest imaging that are not fully explained by cardiac failure or fluid overload and ventilation perfusion mismatch, and shunt physiology that require positive end-expiratory pressure (PEEP)
-*  lung injury
-*  pneumonia
-*  alveolar hemorrhage
+-   pulmonary edema, pulmonary edema further caused by:
+    -   elevated pulmonary microvascular pressures (heart failure or fluid overload) or
+    -   ARDS (low pressure pulmonary edema), defined as: acute onset ($\le$ 1 week) of bilateral opacities on chest imaging that are not fully explained by cardiac failure or fluid overload and ventilation perfusion mismatch, and shunt physiology that require positive end-expiratory pressure (PEEP)
+-   lung injury
+-   pneumonia
+-   alveolar hemorrhage
 
 Type 1 RF occurs in sepsis, gastric aspiration, pneumonia, covid-19, near drowning, multiple blood transfusion & pancreatitis.
 
 ###### General Treatment
 
-*  Mechanical ventilation.
-    Mechanical ventilation with high tidal volume (12 ml/kg ideal body weight) traditionally further injured the lung due to repeated alveoli overdistention and stretching. This is called ventilator induced volutrauma and even induce ARDS in patients without ARDS initialy. many studies point toward low tidal volume (6 ml/kg ideal body weight) improve survival. 
-    
+-   Mechanical ventilation. Mechanical ventilation with high tidal volume (12 ml/kg ideal body weight) traditionally further injured the lung due to repeated alveoli overdistention and stretching. This is called ventilator induced volutrauma and even induce ARDS in patients without ARDS initialy. many studies point toward low tidal volume (6 ml/kg ideal body weight) improve survival.
+
     reproduce Figure of Preassure volume relathionsip!!!
 
-*  Prone positioning
+-   Prone positioning
 
-*  Low CVP or low PCWP or fluid conservatice approach
-    fluid conservative management to maintain low CVP or PCWP associated with fewer days with mechanical ventilation than fluid liberal approach in patients that who have been resuscitated from shock.
+-   Low CVP or low PCWP or fluid conservatice approach fluid conservative management to maintain low CVP or PCWP associated with fewer days with mechanical ventilation than fluid liberal approach in patients that who have been resuscitated from shock.
 
 ##### Type 2 Respiratory Failure: Hypercapnic Respiratory Failure
 
 It is a consequence of alveolar hypoventilation and the results from inability to eliminate CO2 effectively. The cause categorized into:
 
-*  impaired CNS drive to breathe ("wont breathe")
-    Cause: drug overdose, brainstem injury, sleep-disordered breathing, severe hypothyroidism
+-   impaired CNS drive to breathe ("wont breathe") Cause: drug overdose, brainstem injury, sleep-disordered breathing, severe hypothyroidism
 
-*  reduced strength or impaired neuromuscular function in respiratory systems ("cant breathe")
-    cause: impaired neuromuscular transmission (eg. myasthenia gravis, Guillain-Barre syndrome, amyotrophic lateral sclerosis) or respiratory muscle weakness (eg. myopathy, electrolye problem, fatigue)
+-   reduced strength or impaired neuromuscular function in respiratory systems ("cant breathe") cause: impaired neuromuscular transmission (eg. myasthenia gravis, Guillain-Barre syndrome, amyotrophic lateral sclerosis) or respiratory muscle weakness (eg. myopathy, electrolye problem, fatigue)
 
-*  increased load on respiratory system ("cant breathe")
-    cause: 
-    + increased resistive load
-       eg. brochospasm
-    
-    + reduced lung compliance
-       eg. alveolar edema, atelectasis, intrinsip PEEP
-    
-    + reduced chest wall compliance
-       eg. pneumothorax, pleural effusion, abdominal distention
-       
-    + increased minute ventilation requirements
-       eg. pulmoanry embolus with increased dead space fraction, sepsis
+-   increased load on respiratory system ("cant breathe") cause:
+
+    -   increased resistive load eg. brochospasm
+
+    -   reduced lung compliance eg. alveolar edema, atelectasis, intrinsip PEEP
+
+    -   reduced chest wall compliance eg. pneumothorax, pleural effusion, abdominal distention
+
+    -   increased minute ventilation requirements eg. pulmoanry embolus with increased dead space fraction, sepsis
 
 ###### general Treatment
 
 Principal: reversing the underlying cause(s). Non-invasive ventilation (NIV) with positive pressure ventilation with tight fitting mask or nasal mask (avoidance of intubation) may stabilize these patients. It tested extensively in exacerbation of COPD. Contraindication for NIV include hemodynamic instability, inability to protect airway, respiratory arrests, significant airway secretions, significant aspiration risk.
 
-##### Type 3 Respiratory Failure: Lung Atelectasis 
+##### Type 3 Respiratory Failure: Lung Atelectasis
 
 The primary cause is lung atelectasis. It is common in perioperaticve period, this form is also called perioperative respiratory failure. Post general anesthesia, there are decrease in functional residual capacity lead to collapse of dependent lung units.
 
@@ -318,9 +304,10 @@ treatment include: frequent positional changes, chest physiotherapy, upright pos
 
 ##### Type 4 Respiratory Failure: Metabolic Demands
 
-Most often due to hypoperfusion of respiratory muscles in patients in shock. Normally, respiratory muscle consume < 5% total cardiac outpur (CO) and oxygen delivery. Patients in shock oftern experience respiratory distress due to pulmonary edema (eg. in cardiogenic shock), lactic acidosis and anemia. In these conditions, up to 40% CO distributed to respiratory muscle. 
+Most often due to hypoperfusion of respiratory muscles in patients in shock. Normally, respiratory muscle consume \< 5% total cardiac outpur (CO) and oxygen delivery. Patients in shock oftern experience respiratory distress due to pulmonary edema (eg. in cardiogenic shock), lactic acidosis and anemia. In these conditions, up to 40% CO distributed to respiratory muscle.
 
 ###### General Treatment
+
 Endotrachea intubation & mechanical ventilation allow blood redistributed to vital organ and reverse the underlying cause.
 
 #### Mechanical Ventilation
@@ -329,7 +316,7 @@ Endotrachea intubation & mechanical ventilation allow blood redistributed to vit
 
 **Respiratory System Mechanics**
 
-Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (> 10 - 15 cmH~2~O) at a constant inspiratory flow rate of 1 L/s(shown in figure @fig-airwayresistance. Normally, respiratory system compliance is ~ 100 ml/cmH~2~O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax & increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD. 
+Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (\> 10 - 15 cmH~2~O) at a constant inspiratory flow rate of 1 L/s(shown in figure @fig-airwayresistance. Normally, respiratory system compliance is \~ 100 ml/cmH~2~O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax & increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.
 
 ![Graph Illustration taken from harrison](Airway_resistance.png){#fig-airwayresistance}
 
@@ -343,7 +330,7 @@ Opieates is the mainstay of mechanicaly ventilated patients
 
 After pain adequately controlled, sedation needed for anxiolysis, treatment of subjective dyspnea, reduction of autonomic hyperactiviy, reduction of total O2 consumption. Nonbenzodiazepin are preffered because benzodiazepin associated with increased delirium and worse patients outcome.
 
-Amnesia could be achieved with propofol or benzodiazepine such lorazepam or midazolam. 
+Amnesia could be achieved with propofol or benzodiazepine such lorazepam or midazolam.
 
 ###### Neuromuscular Blocking Agents
 
@@ -353,7 +340,7 @@ Patients with ventilatory dyssyncrony despite optimal sedation may needed paraly
 
 Recognition of patients readyness to be liberated from mechanical ventilation is important. Screening conducted daily, criteria:
 
-1.  Stable oxygenation (Pao~2~ / Fio~2~ > 200 and PEEP $\le$ 5 cm H~2~O)
+1.  Stable oxygenation (Pao~2~ / Fio~2~ \> 200 and PEEP $\le$ 5 cm H~2~O)
 2.  Cough and Airway Reflexes Intact
 3.  No Vasopressor administered
 4.  No Sedatives adminsitered
@@ -362,44 +349,52 @@ if all requirement passed, patient should undergi a spontaneous breathing trial 
 
 SAT/SBT trial consist of a period of breathing throung endotracheal tube without ventilator support (CPAP 5 cmH~2~O with or without low-level pressure support and open T-piece breahing system) for 30 - 120 minutes. SBT Failure or should be stopped if:
 
-1.  RR >35 min for >5 min
-2.  O~2~ saturation <90%
-3.  HR > 140x/min or a 20% increase or decrease from baseline
-4.  SBP <90 mmHg or >180 mmHg
+1.  RR \>35 min for \>5 min
+2.  O~2~ saturation \<90%
+3.  HR \> 140x/min or a 20% increase or decrease from baseline
+4.  SBP \<90 mmHg or \>180 mmHg
 5.  Increased anxiety or diaphoresis
 
 if none of these events occured, patients should considered for an extubation trial. Despite these carefull criteria, 10% patients develop respiratory distress after extubation and may require resumption of mechanical ventilation and reintubation.
 
-
 ### Multiorgan system failure
 
-Multiorgan system failure, defined by the simultaneous presence of physiologic dysfunction and/or failure of two or more organs. Organ failure, no matter how it is defined must persist beyond 24 hours. 
+Multiorgan system failure, defined by the simultaneous presence of physiologic dysfunction and/or failure of two or more organs. Organ failure, no matter how it is defined must persist beyond 24 hours.
 
 ### Prevention of Complications in critical ill-patients
 
-
 ## Specific Critical illness
 
-
 ### Acute Respiratory Distress Syndrome
+
 ### Approach to Circulatory Shock
+
 ### Sepsis
+
 ### Cardiogenic Shock and Pulmonary edema
+
 ### Cardiac Arrest
+
 ### Neurological Critical illness
 
+## Important Calculation
 
+### Airway & Ventilation
 
+### Circulation
 
+#### Oxygen Delivery
 
+Oxygen delivery (DO~2~ or QO~2~) is a function of cardiac output and the content of O~2~ in the arterial blood (CaO~2~). CaO~2~ is determined by HB concenctration, arterial HB saturation, and dissolved O~2~ disolved in plasma (not bound to HB). Equation provided at @eq-delivery-oxygen. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible. 
 
+Arterial oxygen content (CaO~2~) normally around 21.16 mL/dL, while the mixed venous blood (VO~2~) is 15.76 mL/dL, thus normal tissue extraction is around 25%. Reduced VO~2~ may results from inadequate CO, reduced HB or reduced SaO~2~. Abnormally high VO~2~ may be caused by fever, agitation, shivering and thyrotoxicosis.
 
+$$
+QO~2~ = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB% Saturation} + 0.0031 \times PaO2)
+$$ {#eq-delivery-oxygen}
 
-
-
-
-
-
-
-
-
+$$
+QO~2~ = 50 \text{ dL/min} \times (1.39 \times 15 \text{g/dL} \times 100\% + 0.0031 \times 100)
+$$ $$
+QO~2~ = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \text{ mL O2 per min}
+$$
