@@ -1,0 +1,11 @@
+# Mata Kuliah Dasar Umum
+
+Mata kuliah disampaikan kepada seluruh PPDS pada bulan pertama semester satu.
+
+Materi terdiri dari 5 bidang:
+
+1.  Filsafat Ilmu
+2.  Biologi Molekuler2
+3.  Statistik Dasar
+4.  Metode Penelitian
+5.  Evidence-based Medicine

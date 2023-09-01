@@ -56,6 +56,13 @@ book:
       chapters: 
         - basic_r.qmd
         - tidyverse_ggplot.qmd
+    - part: mkdu.qmd
+      chapters: 
+        - biomol.qmd
+        - metpen.qmd
+        - filsum.qmd
+        - statistik.qmd
+        - ebm.qmd
     - references.qmd
   page-navigation: true
   sidebar: 

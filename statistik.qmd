@@ -1,0 +1,85 @@
+# Statistik Kedokteran Dasar
+
+## Dasar-dasar Penulisan Ilmiah Kedokteran dan Plagiarisma
+## Kiat-kiat Publikasi Majalah Terakreditasi dengan OJS
+
+Kendala Publikasi di Indonesia: 
+-  Indonesia lack of language access. Why we dont make one in Bahasa Indonesia?
+-  Lack of Cultural backgroud dalam menulis.
+
+Kenapa publikasi penting?
+-  Rekognisi atas hasil penelitian anda baik pengakuan regional, nasional dan internasional
+-  H Index
+-  Jaminan kolaborasi di tingkat regional, nasional, dan internasional
+
+Publikasi:
+
+-  Submit ke jurnal dgn OJS
+-  Jika ditolak, edit ulang dan perbaiki.
+
+Perlu diketahui:
+-  Penulisan naskah/manuskrip ilmiah merupakan suatu tangtangan, seni dan kemampuan mengelaborasi hasil penelitian.
+-  Ikuti kaidah IMRAD. Introduction biasanya sudah menggambarkan M,R,D nya.
+
+Author vs Behavior
+
+-  Author
+    + Want to publish more, write in detail
+    
+-  Reader
+    + want to read less. (judul yg baik)
+    + Want integrated system
+    + Browsing is crucial
+    + Quality information is important
+    + Want to read less
+    
+Unsur Utama dalam Publikasi:
+-  Isue Etik
+    + pernyataan tidak ada conflict of interest
+    + Pencantuman sumber dana
+    + Image manipulation guidelines
+    
+-  Gaya Selingkung dan Bahasa
+    + Sesuai author guidelines
+
+-  Struktur naskah/manuskrip ilmiah
+    + Title: judul clear, precise, including keywords. do not use abbreviations and jargon
+    + Authors Listing: only include those who have made an intelectual contribution to the research, or those who will publicly defend the data and conclusion, and who have approved the final version. Gift (atasan, dekan, kepala lab), Guest (pemberi dana), and Ghost author (ini tidak boleh, atas dasar sembarangan mengikutkan namanya).Ghost writer, penulis lain yg menawarkan jasa (secara etika diijinkan).
+    + Abstract: ditulis selesai IMRAD. Tidak boleh sebelum lengkap dan menyeluruh menulis IMRAD. Bisa terjadi inkonsistensi dgn discussion.
+    + Introduction: clearly state the problem being investigated, background that explains the problem, reasons for conducting the research. Summarize relevant research to provide context. State how your work differs from published work. Identify the questions you are answering.
+    + Methods: Jika RCT sebaiknya diregister, agar SOP penelitian bisa dibaca orang lain dan terrekognisi. PRovide the readers enough details so they can understand and replicate your research. Explain how you studied the problemm identify procedures, order the chronologically where possible. Include the frequency of observations, what types of data were recorded.
+    + Results: -- to be continued
+    + Discussion: -- to be continued
+    + Conclusion: -- to be continued
+
+-  Submit artikel/pemilihan jurnal
+-  proses publikasi/peer review
+
+Dulu hierarki tertinggi evidence adalah:
+Validitas Pada Penelitian Randomized, controlled, clinical trial.
+
+Validitas Internal
+
+- Ada kontrol
+- Ada Randomisasi
+
+Validitas External
+
+- loss to follow up < 20%?
+
+Saat ini sudah bergeser pada Systematic Review dan Metanalysis.
+
+## Effect Size, COnfidence Interval
+## Uji Hipotesis
+## Korelasi
+## Regresi Sederhana
+## Regresi Berganda
+## Distribusi normal
+## Uji T berpasangan dan tak berpasangan
+## One Way ANOVA
+## Ancova dan Repeated Measurements ANOVA
+## Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk
+## Prinsip Analisis Data Biner
+## Regresi Logistik Sederhana
+## Regresi Logistik Berganda
+
