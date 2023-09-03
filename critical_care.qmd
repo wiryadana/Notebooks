@@ -361,13 +361,48 @@ if none of these events occured, patients should considered for an extubation tr
 
 Multiorgan system failure, defined by the simultaneous presence of physiologic dysfunction and/or failure of two or more organs. Organ failure, no matter how it is defined must persist beyond 24 hours.
 
-### Prevention of Complications in critical ill-patients
-
-
 
 ## Specific Critical illness
 
-### Acute Respiratory Distress Syndrome
+### Acute Respiratory Distress Syndrome (ARDS)
+
+ARDS is clinical syndrome of **severe dyspnea** of rapid onset, **hypoxemia**, and **diffuse pulmonary infiltrates** leading to respiratory failures.
+
+### Diagnostic Criteria for ARDS
+
+```{r}
+#| echo: false
+#| message: false
+
+ards <- read_sheet("https://docs.google.com/spreadsheets/d/1X1v0OOdzwSVROfs8C8JMvcjdi0EUFy9cQGwfcwFLuqE/edit#gid=0", sheet = 2)
+
+ards_tbl <- 
+  gt(ards)
+
+ards_tbl
+```
+
+
+### Epidemiology
+Estimated incidence: 60/100.000 population. 
+
+#### Etiology
+ARDS can be caused by diffuse lung injury from many medical and surgical disorders. It may be direct (on the lung) or indirect (extrapulmoner including thoracic structure). The most case (>80%) are caused by pneumonia and sepsis. Then, gastric aspiration, trauma, multiple transfusiion, pancreatitis, and drug overdose. Traumatic cause include pulmonary contusion, multiple bone fractures, chest trauma/flail chest. The risk increase with predisposing medical condition.
+
+#### Pathophysiology
+
+Natural history of ARDS divided into 3 phases - exudative, proliferative, and fibrotic.
+
+##### Exudative Phase
+
+##### Proliferative Phase
+
+##### Fibrotic Phase
+
+#### Treatment
+
+#### Prognosis
+
 
 ### Approach to Circulatory Shock
 

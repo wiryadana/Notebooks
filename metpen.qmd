@@ -48,6 +48,8 @@ Association: can be observed between many variable, but causaton only be determi
 **Critical Appraisal about Harm/Etiology/Causation.**
 follow checklist.
 
+PR: 1 jenis penelitian causation atau association yang menjadi ide kalian nanti penelitian.
+
 ## Research Measurement
 ## Variables and Relathionship Between Variables
 ## Hypothesis and Hypothesis Testing

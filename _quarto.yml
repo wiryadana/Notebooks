@@ -63,6 +63,7 @@ book:
         - filsum.qmd
         - statistik.qmd
         - ebm.qmd
+        - tugasmkdu.qmd
     - references.qmd
   page-navigation: true
   sidebar: 
