@@ -1,52 +1,76 @@
 # Evidence-based Medicine
 
+## Introduction to EBM and Critical Appraisal
+
 Adanya gap antara hasil penelitian dengan praktek sehari hari
 
 ODDS Ratio: rasio terjadinya outcome pada kelompok dgn faktor risiko dengan tidak terjadinya outcome pada kelompok tersebut.
 
-How EBM help: membantu informasi baru, memberikan data empiris dan patien bisa berpartisipasi dalam decision, reduce litigation, keep up to date. 
+How EBM help: membantu informasi baru, memberikan data empiris dan patien bisa berpartisipasi dalam decision, reduce litigation, keep up to date.
 
-Interpretasi OR: < 1, misal 0,6 : risiko 60% kali dibandingkan kontrol, mengurangi risiko 40% (berapa dari 1)
-Interpretasi OR: > 1, misal 1,5 : risiko 150% atau 1,5 kali lebih besar pada klpk perlakuan, menambah risiko 50%
+Interpretasi OR: \< 1, misal 0,6 : risiko 60% kali dibandingkan kontrol, mengurangi risiko 40% (berapa dari 1) Interpretasi OR: \> 1, misal 1,5 : risiko 150% atau 1,5 kali lebih besar pada klpk perlakuan, menambah risiko 50%
 
-High sensitivity, if negative, rule out (SnNout)
-High spesifisity, if positive, rule in (SpPin)
+High sensitivity, if negative, rule out (SnNout) High spesifisity, if positive, rule in (SpPin)
 
 STeps in EBM
 
-1. Formulate an answerable question
+1.  Formulate an answerable question
 
-2. Track down the best evidence of outcomes available
+2.  Track down the best evidence of outcomes available
 
-3. Critically appraise the evidence
+3.  Critically appraise the evidence
 
-4. Apply the evidence 
+4.  Apply the evidence
 
-3 prinsip EBM:
-1.  Valid  
-2.  Penting (penting secara klinis dan bermakna secara statistik: hasil, lihat PR, OR, RR,ARR,  NNT, mean difference)
-3.  Aplikabel 
-    - Feasible?
-    - kebutuhan lain yg dubutuhkan untuk memanfaatkan evidence?
-    - Alternatif ada?
-    - kemiripan sampel dan pasien kita?
-    - benefit outweight risk?
-    - Bagaiaman tanggapan pasien?
-    
+3 prinsip EBM: 1. Valid\
+2. Penting (penting secara klinis dan bermakna secara statistik: hasil, lihat PR, OR, RR,ARR, NNT, mean difference) 3. Aplikabel - Feasible? - kebutuhan lain yg dubutuhkan untuk memanfaatkan evidence? - Alternatif ada? - kemiripan sampel dan pasien kita? - benefit outweight risk? - Bagaiaman tanggapan pasien?
+
 f method untuk estimasi risiko pasien. NNT pada trial dibagi NNT pada pasien kita.
 
-5. Evaluate our performance
-  -  evaluasi informal dan formal.
+5.  Evaluate our performance
 
+-   evaluasi informal dan formal.
 
-
-
-
-## Introduction to EBM and Critical Appraisal
 ## Clinical Question berdasarkan PICO
+
+memecahkan masalah klinis dengan pendekatan...
+
+### Step 1
+
+proses EBM dimulai dengan skenario klinis yang memerlukan jawaban terbaik berdasarkan bukti ilmiah yang terbaik. "mengubah suatu masalah klinis menjadi masalah reseaarch"
+
+-   Background question: general knowledge (a question root & disorder and other aspect of health care.), dicari dari litrev
+-   Foreground question: pertanyaan pengetahuan spesifik untuk menentukan pilihan terapi tau tindakan. Penting menggunakan PICO
+
+**P**: patient, population, problem **I** : intervensi, exposure **C**: control, comparator **O**: outcome, eficacy
+
+Clinical problem = belum sistematis, clinical question= sesuai komponen PICO, dan answerable question.
+
+Contoh: kejang pada pasien 15 tahun, dengan demam. pertanyaan klinis yang mungkin muncul: - apa penyebab demam? - penyebab kejang? - obat terbaik?
+
+lalu masing masing pertanyaan diubah menjadi komponen PICO. umpama, pada pasien anak, apakah pemeriksaan lumbal pungsi lebih baik dari pemeriksaan DL dalam diagnosis DL??
+
+COntoh 2: anak, 8 tahun, dirawat di PICO dengan severe GBS dan menggunakan ventilator. Pengathuan dasar ada terapi prednison, plasma exchange and other. apakah IVIG therapy deliver outcome better than other therapy? =\> Clinical Problem.
+
+PICO: P: child with sever GBS I/C: prednisone, IVIG, atau plasma exchange O: cepat kesembuhan
+
+**good, clear and focused**
+
+### Prinsip Dasar Searching
+
+boelean logic: AND, OR, NOT
+
+
+**Tugas mencari permasalahan klinis, ubah menjadi pertanyaan research, lalu search dengan Boolean logic di Pubmed** : https://wiryadana.github.io/picolo/
+
 ## Effect Size, Hypothesis, and Confidence Interval
+
 ## Study About Risk Factor/Case Control Study
-## Study About DIagnosis\
+
+## Study About DIagnosis
+
 ## Study about Therapy
+
 ## Study about Prognosis
+
 ## Summary Capita Selekta

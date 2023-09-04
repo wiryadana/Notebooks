@@ -207,7 +207,7 @@
     "href": "biomol.html#cell-structure-organel",
     "title": "37  Biologi Molekular",
     "section": "37.1 Cell Structure & Organel",
-    "text": "37.1 Cell Structure & Organel"
+    "text": "37.1 Cell Structure & Organel\nTujuan: memahami teknik teknik biologi molekuler untuk kepentingan klinis.\nSel: bagian terkecil fungsional penyusun organisme\nProkaryotic - ukuran diameter 0.2 - 2.0 mikrometer - no nuclear membrane - DNA sirkuler - etc\nEukaryotic - ukuran diameter 10 - 100 mikrometer - ada nuclear membrane - DNA dalam kromosom - etc\n\n37.1.1 Organel Sel\n\nInti Sel\n\nterdapat kromosom, mengandung DNA, protein histone dan non histone.\nCentral Dogma: DNA ditrankripsi menjadi mRNA DNA direplikasi menjadi kopi DNA lain\nmRNA akan di translasi menjadi Protein,\nJenis RNA: mRNA, tRNA, rRNA, miRNA, siRNA\n\nMembran sel\n\nTerdiri dari Fosfolipid bilayer, protein integral & perifer,\n\nSitoplasma\nRibosom subunit kecil dan besar bersatu menjadi kompleks. Ribosom bisa menmpel pada RE kasar.\nretikulum endoplasma\nmitokondria\nBadan Golgi\nLisosom\nPeroksisom"
   },
   {
     "objectID": "biomol.html#genome-organization",
@@ -417,7 +417,7 @@
     "href": "metpen.html#overview-of-clinical-research",
     "title": "38  Metodologi Penelitian",
     "section": "38.1 Overview of Clinical Research",
-    "text": "38.1 Overview of Clinical Research"
+    "text": "38.1 Overview of Clinical Research\nclinical research is medical research taht involves people, to learn more about disease and improve health care for people in the future.\ninclude: epidemiology, behavioral, health services, clinical trials.\nclinical research, not just clinical trial, it is any research design that studies humans or any materials taken from humans. it may even include animal studies that the results apply to humans.\ntype of clinical research:\n\nobservational studies => studies that aim to identify and analylyze patterin medical data.\nclinical trials/interventional studies\n\nResearch Question: FINER - Feasible - interesting - novel - ethical - relevant"
   },
   {
     "objectID": "metpen.html#association-causation",
@@ -634,14 +634,14 @@
     "href": "ebm.html#introduction-to-ebm-and-critical-appraisal",
     "title": "41  Evidence-based Medicine",
     "section": "41.1 Introduction to EBM and Critical Appraisal",
-    "text": "41.1 Introduction to EBM and Critical Appraisal"
+    "text": "41.1 Introduction to EBM and Critical Appraisal\nAdanya gap antara hasil penelitian dengan praktek sehari hari\nODDS Ratio: rasio terjadinya outcome pada kelompok dgn faktor risiko dengan tidak terjadinya outcome pada kelompok tersebut.\nHow EBM help: membantu informasi baru, memberikan data empiris dan patien bisa berpartisipasi dalam decision, reduce litigation, keep up to date.\nInterpretasi OR: < 1, misal 0,6 : risiko 60% kali dibandingkan kontrol, mengurangi risiko 40% (berapa dari 1) Interpretasi OR: > 1, misal 1,5 : risiko 150% atau 1,5 kali lebih besar pada klpk perlakuan, menambah risiko 50%\nHigh sensitivity, if negative, rule out (SnNout) High spesifisity, if positive, rule in (SpPin)\nSTeps in EBM\n\nFormulate an answerable question\nTrack down the best evidence of outcomes available\nCritically appraise the evidence\nApply the evidence\n\n3 prinsip EBM: 1. Valid\n2. Penting (penting secara klinis dan bermakna secara statistik: hasil, lihat PR, OR, RR,ARR, NNT, mean difference) 3. Aplikabel - Feasible? - kebutuhan lain yg dubutuhkan untuk memanfaatkan evidence? - Alternatif ada? - kemiripan sampel dan pasien kita? - benefit outweight risk? - Bagaiaman tanggapan pasien?\nf method untuk estimasi risiko pasien. NNT pada trial dibagi NNT pada pasien kita.\n\nEvaluate our performance\n\n\nevaluasi informal dan formal."
   },
   {
     "objectID": "ebm.html#clinical-question-berdasarkan-pico",
     "href": "ebm.html#clinical-question-berdasarkan-pico",
     "title": "41  Evidence-based Medicine",
     "section": "41.2 Clinical Question berdasarkan PICO",
-    "text": "41.2 Clinical Question berdasarkan PICO"
+    "text": "41.2 Clinical Question berdasarkan PICO\nmemecahkan masalah klinis dengan pendekatan…\n\n41.2.1 Step 1\nproses EBM dimulai dengan skenario klinis yang memerlukan jawaban terbaik berdasarkan bukti ilmiah yang terbaik. “mengubah suatu masalah klinis menjadi masalah reseaarch”\n\nBackground question: general knowledge (a question root & disorder and other aspect of health care.), dicari dari litrev\nForeground question: pertanyaan pengetahuan spesifik untuk menentukan pilihan terapi tau tindakan. Penting menggunakan PICO\n\nP: patient, population, problem I : intervensi, exposure C: control, comparator O: outcome, eficacy\nClinical problem = belum sistematis, clinical question= sesuai komponen PICO, dan answerable question.\nContoh: kejang pada pasien 15 tahun, dengan demam. pertanyaan klinis yang mungkin muncul: - apa penyebab demam? - penyebab kejang? - obat terbaik?\nlalu masing masing pertanyaan diubah menjadi komponen PICO. umpama, pada pasien anak, apakah pemeriksaan lumbal pungsi lebih baik dari pemeriksaan DL dalam diagnosis DL??\nCOntoh 2: anak, 8 tahun, dirawat di PICO dengan severe GBS dan menggunakan ventilator. Pengathuan dasar ada terapi prednison, plasma exchange and other. apakah IVIG therapy deliver outcome better than other therapy? => Clinical Problem.\nPICO: P: child with sever GBS I/C: prednisone, IVIG, atau plasma exchange O: cepat kesembuhan\ngood, clear and focused\n\n\n41.2.2 Prinsip Dasar Searching\nboelean logic: AND, OR, NOT\nTugas mencari permasalahan klinis, ubah menjadi pertanyaan research, lalu search dengan Boolean logic di Pubmed : https://wiryadana.github.io/picolo/"
   },
   {
     "objectID": "ebm.html#effect-size-hypothesis-and-confidence-interval",
@@ -661,7 +661,7 @@
     "objectID": "ebm.html#study-about-diagnosis",
     "href": "ebm.html#study-about-diagnosis",
     "title": "41  Evidence-based Medicine",
-    "section": "41.5 Study About DIagnosis\n",
+    "section": "41.5 Study About DIagnosis",
     "text": "41.5 Study About DIagnosis"
   },
   {
@@ -719,5 +719,12 @@
     "title": "42  Tugas MKDU",
     "section": "42.5 Evidence-based Medicine",
     "text": "42.5 Evidence-based Medicine\n\nTugas EBM-1 - Introduction to EBM & Critical Appraisal\n\nTugas/Pertanyaan/Instruksi\nInstruksi : Membuat pertanyaan klinis berdasarkan prinsip PICO !\nSkenario : Kita menghadapi anak dg defisiensi growth hormone (GH), apakah pemberian terapi GH eksogen dapat memacu pertumbuhan anak tersebut?\n\n\nJawaban/Hasil\n\nPICO\nP (patient/population) : Anak usia 2 - 14 tahun dengan isolated growth hormone deficiency (GH)\nI (intervention) : Terapi GH eksogen dengan dosis awal 25 mcg/kgBB/hari\nC (comparison/control): plasebo\nO (outcome) : laju peningkatan tinggi badan per tahun (\\(\\Delta\\) height velocity) >3 cm dalam 12 bulan terapi.\n\n\nPertanyaan Klinis\nPada pasien anak usia 2 -14 tahun dengan isolated growth hormone deficiency, apakah pemberian growth hormone eksogen sebagai terapi dapat meningkatkan \\(\\Delta\\) height velocity >3 cm/tahun pada 12 bulan terapi dibandingkan anak yang diberikan terapi plasebo.\n\n\nContekan\nhttps://academic.oup.com/jcem/article/93/2/352/2597982 https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2265.2012.04420.x https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6979443/"
+  },
+  {
+    "objectID": "statistik.html#dasar-dasar-penulisan-ilmiah-kedokteran-dan-plagiarisme",
+    "href": "statistik.html#dasar-dasar-penulisan-ilmiah-kedokteran-dan-plagiarisme",
+    "title": "40  Statistik Kedokteran Dasar",
+    "section": "40.1 Dasar-dasar Penulisan Ilmiah Kedokteran dan Plagiarisme",
+    "text": "40.1 Dasar-dasar Penulisan Ilmiah Kedokteran dan Plagiarisme\nMetode sains: bisa diulang dengan hasil yang sama. observasi, measurement, verification and evaluation (self correction)"
   }
 ]

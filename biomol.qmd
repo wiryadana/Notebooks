@@ -1,56 +1,112 @@
 # Biologi Molekular
 
 ## Cell Structure & Organel
+
+Tujuan: memahami teknik teknik biologi molekuler untuk kepentingan klinis.
+
+Sel: bagian terkecil fungsional penyusun organisme
+
+**Prokaryotic**
+- ukuran diameter 0.2 - 2.0 mikrometer
+- no nuclear membrane
+- DNA sirkuler
+- etc
+
+**Eukaryotic**
+- ukuran diameter 10 - 100 mikrometer
+- ada nuclear membrane
+- DNA dalam kromosom
+- etc
+
+### Organel Sel
+
+1. Inti Sel
+
+terdapat kromosom, mengandung DNA, protein histone dan non histone. 
+
+Central Dogma:
+DNA ditrankripsi menjadi mRNA
+DNA direplikasi menjadi kopi DNA lain
+
+mRNA akan di translasi menjadi Protein,
+
+Jenis RNA:
+mRNA, tRNA, rRNA, miRNA, siRNA
+
+2. Membran sel
+
+Terdiri dari Fosfolipid bilayer, protein integral & perifer, 
+
+3. Sitoplasma
+
+4. Ribosom
+subunit kecil dan besar bersatu menjadi kompleks. Ribosom bisa menmpel pada RE kasar.
+
+5. retikulum endoplasma
+
+6. mitokondria
+
+7. Badan Golgi
+
+8. Lisosom
+
+9. Peroksisom
+ 
 ## Genome Organization
+
 ## DNA & RNA Structure
+
 ## Signal Transduction
 
 Komponen membran Sel:
 
--  Phospolipid bilayer bersifat amphiphatic yaitu ada sisi hidrofobik dan sisi hidrofilik. Komponen terdiri dari 
-   + Phospate Head
-   + Glycerol Backbone
-   + Fatty Acid Tails
+-   Phospolipid bilayer bersifat amphiphatic yaitu ada sisi hidrofobik dan sisi hidrofilik. Komponen terdiri dari
+    -   Phospate Head
+    -   Glycerol Backbone
+    -   Fatty Acid Tails
+-   Protein:
+    -   Integral protein, melewati 2 lapir membran
+    -   Peripheral protein, menempel hanya pada 1 lapis membran
 
--  Protein:
-   + Integral protein, melewati 2 lapir membran
-   + Peripheral protein, menempel hanya pada 1 lapis membran
-   
-Sifat fosfolipid semipermeable, yakni permeable terhadap zat selektif. 
--  Small non polar, mudah melewati membran (Co2, O2)
--  Small polar, bisa melewati membran tapi lambat (ethanol)
--  Large Non-polar
--  Large Polar
--  Charged 
+Sifat fosfolipid semipermeable, yakni permeable terhadap zat selektif. - Small non polar, mudah melewati membran (Co2, O2) - Small polar, bisa melewati membran tapi lambat (ethanol) - Large Non-polar - Large Polar - Charged
 
 Komponen sel signalling
 
-1. Signal
-2. Reseptor
-    Sensing the signal. Terjadi perubahan struktur reseptor saat berinteraksi dgn signal
-    
-    -  2 tipe reseptor
-       + Intraseluler/cytosolic receptor
-        eg. steorid hormone
-       + ekstraseluler/transmembrance/cell surface membrane receptor
-         eg. polypetide hormone (insulin, glukagon).
-         
-         Tipe transmemberane reseptor:
-         
-         -  Ion channel linked receptor
-         -  G Protein Linked Receptor, aktivasi protein  meningkatkan konsentrasi second messenger, terjadi proses amplifikasi signal. 
-         -  Enzyme Linked Receptor, signal mengaktivasi aktivitas enzim yang juga menjadi reseptor. contoh : tyrosine kinase, phospolipase C memotong PIP2 menjadi IP3 dan DAG
+1.  Signal
 
-to continued.....        
-        
+2.  Reseptor Sensing the signal. Terjadi perubahan struktur reseptor saat berinteraksi dgn signal
+
+    -   2 tipe reseptor
+        -   Intraseluler/cytosolic receptor eg. steorid hormone
+
+        -   ekstraseluler/transmembrance/cell surface membrane receptor eg. polypetide hormone (insulin, glukagon).
+
+            Tipe transmemberane reseptor:
+
+            -   Ion channel linked receptor
+            -   G Protein Linked Receptor, aktivasi protein meningkatkan konsentrasi second messenger, terjadi proses amplifikasi signal.
+            -   Enzyme Linked Receptor, signal mengaktivasi aktivitas enzim yang juga menjadi reseptor. contoh : tyrosine kinase, phospolipase C memotong PIP2 menjadi IP3 dan DAG
+
+to continued.....
+
 ## Cell Cycle
+
 ## Free Radical & Antioksidan
+
 ## Replication
+
 ## Mutation & DNA Repair
+
 ## Gene Expression
+
 ## Control of Gene Expression
+
 ## Genetic Variation
+
 ## Genotyping
+
 ## Stem Cell
+
 ## Molecular Biology Technique
+
 ## Aplication of Molecular Biology in Medicine

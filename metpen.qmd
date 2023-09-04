@@ -1,66 +1,93 @@
 # Metodologi Penelitian
 
 ## Overview of Clinical Research
+
+clinical research is medical research taht involves people, to learn more about disease and improve health care for people in the future. 
+
+include: epidemiology, behavioral, health services, clinical trials. 
+
+clinical research, not just clinical trial, it is any research design that studies humans or any materials taken from humans. it may even include animal studies that the results apply to humans. 
+
+type of clinical research:
+
+-  observational studies => studies that aim to identify and analylyze patterin medical data.
+-  clinical trials/interventional studies
+
+Research Question: FINER
+- Feasible
+- interesting
+- novel
+- ethical
+- relevant
+
+
 ## Association & Causation
 
 Sebuah hubungan belum tentu menunjukan sebab-akibat. Banyak peneliti menghindari dgmatic statement: "cause" or "produces"
 
 Causation: occurs when a change in one variable produces a change in another variable
 
-- Contributory Cause, no single specific cause of a disease. Most of disease cause by multifactorial etiologies. A risk factor may a contributory cause.
+-   Contributory Cause, no single specific cause of a disease. Most of disease cause by multifactorial etiologies. A risk factor may a contributory cause.
 
-Three criteria:
-1.  Association may be reflected by effect size
-2.  Prior Association, does the cause (independent var) precede the effects (dependent var) (case control or cohort), 
-3.  Altering the cause alters the effects
+Three criteria: 1. Association may be reflected by effect size 2. Prior Association, does the cause (independent var) precede the effects (dependent var) (case control or cohort), 3. Altering the cause alters the effects
 
 Some other features of contributory causation:
 
-1. Consistency: the results of study (effect size) should be consistent regardless the design, the population used.
+1.  Consistency: the results of study (effect size) should be consistent regardless the design, the population used.
 
-2. Dose response relathionsip
+2.  Dose response relathionsip
 
-3. Biologic Plausibility: should make biologic sense.
+3.  Biologic Plausibility: should make biologic sense.
 
-4. Experimental confirmation: phenomenon found in lcinical studies have to be consistent with studies in animal models.
+4.  Experimental confirmation: phenomenon found in lcinical studies have to be consistent with studies in animal models.
 
-
-- Necessary cause, dibuktikan sebagai satu satunya penyebab. Sebagai contoh: fullfiled by Koch's Postulates: the organism is always found with the disease.
+-   Necessary cause, dibuktikan sebagai satu satunya penyebab. Sebagai contoh: fullfiled by Koch's Postulates: the organism is always found with the disease.
 
 Association: can be observed between many variable, but causaton only be determined from data collected from a controlled experiment.
 
-- Spurious association, association no actually present in population
-  3 mekanisme spurious causation  
-    
-    + Chance, due to random error and sampling variation (Individual chance to be a sample not equal), karakteristik sampel terlalu heterogen. Minimize random error: adequate sample size and low type 1 and type 2 error. Effect of random error can be judged from the width of the 95% confidence interval and the consistency of the results with previous evidence.
-    
-    + Design, conduct of the study, and analyze of the results, 
-        * selection bias, pemilihan sampel yg tidak sesuai => randomized and blind intervention
-        * performance bias, pemberian intervensi tidak setara antar sampel => randomized and blind intervention
-        * Detection bias, deteksi efek atau cause tidak sama => randomized and blind intervention
-        * Transfer bias, loss to follow up
-      
-    + Confounding, occurs when factors which related to both independent and dependent variables. Contoh Kopi menyebabkan AMI, tetapi ada faktor merokok dimana orang ngopi juga suka merokok. Ternyata merokok yang berhubungan dgn AMI, tetapi merokok tidak berhubungan dengan AMI.
-      Kontrol dengan by design atau by analysis.
-    
-- Real Association, true biological phenomena. However not due to a cause effect relationship
+-   Spurious association, association no actually present in population 3 mekanisme spurious causation
 
-**Critical Appraisal about Harm/Etiology/Causation.**
-follow checklist.
+    -   Chance, due to random error and sampling variation (Individual chance to be a sample not equal), karakteristik sampel terlalu heterogen. Minimize random error: adequate sample size and low type 1 and type 2 error. Effect of random error can be judged from the width of the 95% confidence interval and the consistency of the results with previous evidence.
+
+    -   Design, conduct of the study, and analyze of the results,
+
+        -   selection bias, pemilihan sampel yg tidak sesuai =\> randomized and blind intervention
+        -   performance bias, pemberian intervensi tidak setara antar sampel =\> randomized and blind intervention
+        -   Detection bias, deteksi efek atau cause tidak sama =\> randomized and blind intervention
+        -   Transfer bias, loss to follow up
+
+    -   Confounding, occurs when factors which related to both independent and dependent variables. Contoh Kopi menyebabkan AMI, tetapi ada faktor merokok dimana orang ngopi juga suka merokok. Ternyata merokok yang berhubungan dgn AMI, tetapi merokok tidak berhubungan dengan AMI. Kontrol dengan by design atau by analysis.
+
+-   Real Association, true biological phenomena. However not due to a cause effect relationship
+
+**Critical Appraisal about Harm/Etiology/Causation.** follow checklist.
 
 PR: 1 jenis penelitian causation atau association yang menjadi ide kalian nanti penelitian.
 
 ## Research Measurement
+
 ## Variables and Relathionship Between Variables
+
 ## Hypothesis and Hypothesis Testing
+
 ## Sample Size and Power
+
 ## Effect Size, Confident Interval, and P Value
+
 ## Research Design
+
 ## Cross Sectional and Case Control
+
 ## Cohort Study
+
 ## Experiments
+
 ## Diagnostic Test
+
 ## Data Management and Analysis
+
 ## Research Proposal
+
 ## Ethical Issue
+
 ## Novelty Aspect
