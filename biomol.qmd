@@ -6,55 +6,123 @@ Tujuan: memahami teknik teknik biologi molekuler untuk kepentingan klinis.
 
 Sel: bagian terkecil fungsional penyusun organisme
 
-**Prokaryotic**
-- ukuran diameter 0.2 - 2.0 mikrometer
-- no nuclear membrane
-- DNA sirkuler
-- etc
+**Prokaryotic** - ukuran diameter 0.2 - 2.0 mikrometer - no nuclear membrane - DNA sirkuler - etc
 
-**Eukaryotic**
-- ukuran diameter 10 - 100 mikrometer
-- ada nuclear membrane
-- DNA dalam kromosom
-- etc
+**Eukaryotic** - ukuran diameter 10 - 100 mikrometer - ada nuclear membrane - DNA dalam kromosom - etc
 
 ### Organel Sel
 
-1. Inti Sel
+1.  Inti Sel
 
-terdapat kromosom, mengandung DNA, protein histone dan non histone. 
+terdapat kromosom, mengandung DNA, protein histone dan non histone.
 
-Central Dogma:
-DNA ditrankripsi menjadi mRNA
-DNA direplikasi menjadi kopi DNA lain
+Central Dogma: DNA ditrankripsi menjadi mRNA DNA direplikasi menjadi kopi DNA lain
 
 mRNA akan di translasi menjadi Protein,
 
-Jenis RNA:
-mRNA, tRNA, rRNA, miRNA, siRNA
+Jenis RNA: mRNA, tRNA, rRNA, miRNA, siRNA
 
-2. Membran sel
+2.  Membran sel
 
-Terdiri dari Fosfolipid bilayer, protein integral & perifer, 
+Terdiri dari Fosfolipid bilayer, protein integral & perifer,
 
-3. Sitoplasma
+3.  Sitoplasma
 
-4. Ribosom
-subunit kecil dan besar bersatu menjadi kompleks. Ribosom bisa menmpel pada RE kasar.
+4.  Ribosom subunit kecil dan besar bersatu menjadi kompleks. Ribosom bisa menmpel pada RE kasar.
 
-5. retikulum endoplasma
+5.  retikulum endoplasma
 
-6. mitokondria
+6.  mitokondria
 
-7. Badan Golgi
+7.  Badan Golgi
 
-8. Lisosom
+8.  Lisosom
 
-9. Peroksisom
- 
+9.  Peroksisom
+
 ## Genome Organization
 
+Genome =\> chromosome =\> Chromatin =\> Gene
+
+**Gen vs DNA**
+
+-   Gen = unit fungsional dan struktural hereditas
+-   DNA = Struktur template RNA
+
+Ukuran panjang DNA nukleus =\> 3200 million base pair ukuran panjang DNA mitokondria =\> 16.6 kilo base pair
+
+```{r}
+#| label: fig-genomes
+#| fig-cap: "Human Genomes"
+#| fig-cap-location: bottom
+#| fig-align: center
+#| fig-width: 4
+
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB, fontsize = 10]
+
+node[shape = rectangle]
+
+a [label = 'Human Genomes']
+b [label = 'Nuclear Genomes']
+c [label = 'Mitochondria Genomes']
+d [label = 'Genes and gene related DNA']
+e [label = 'Extragenic DNA']
+f [label = '2 rRNA']
+g [label = '22 tRNA']
+h [label = '13 Polypeptide encoding genes']
+i [label = 'Coding and Regulatory DNA']
+j [label = 'Non-coding DNA']
+k [label = 'Unique Low copy number DNA']
+l [label = 'Repetitive DNA']
+m [label = 'Pseudogene']
+n [label = 'Gene fragments']
+o [label = 'Introns, untranslated sequences']
+p [label = 'Interspersed repeats']
+q [label = 'tandem repeats']
+
+a -> {b c}
+b -> {d e}
+d -> {i j}
+j -> {m n o}
+c -> {f g h}
+e -> {k l}
+l -> {p q}
+
+
+
+}")
+```
+
+pol 1 mRNA pol 2 lain lain pol 3 rRna
+
+### Protein coding genes
+
+-   Genes memiliki exon dan intron, ukuran bervariasi
+-   ada genes yang tidak memilili intron =\> gene coding histone
+-   gene yang berukuran besar, pengkode dystropin, 99% menganding intron
+-   Gen yang sering di transkripsi biasanya memiliki intron yang pendek
+
+**RNA Coding Sequence** DNA =\>\> Enhancer -- Promoter --------------------------------------------------------------- terminator
+
+transkripsi
+
+pre-RNA =\>\> 5'cap -- leader -- exon-intron-exon-intron-exon-intron-exon-intron---trailer--- poly A tail 3' cap dan poly A tail ditambah post transkripsi
+
+mature mRNA 5'cap -- leader -- exon---trailer--- poly A tail 3'
+
+translasi di sitoplasma
+
+mRNA =\> monosistronik = 1 untai RNA menyandi 1 gen =\> manusia, polisistronik di prokaryotic
+
+### Codon
+
+1 kodon terdiri dari 3 basa. terdapat 64 kodon, termasuk 3 stop kodon Lihat tabel kodon
+
 ## DNA & RNA Structure
+
+Central dogma.........
 
 ## Signal Transduction
 
@@ -90,6 +158,122 @@ Komponen sel signalling
 to continued.....
 
 ## Cell Cycle
+
+Siklus sel terdiri dari 2 tahap besar yaitu replikasi DNA dan segregasi sel. 
+Siklus sell terdiri dari 4 fase: G1, S, G2 dan M. 
+Proses siklus sel bukan hanya pembelahan, tetapi juga terkait dengan pertumbuhan sel dan  proses lainnya.
+
+Proses melibatkan poerubahan chromatin dari closed conformation (heterochromatin) yang sulit mengalami transkripsi (represed) menjadi Euchromatin (open chromatin) atau mudah transkripsi (activation)
+
+Terdapat beberapa checkpoint siklus sel. checkpoints ukuran sel (protein dll, massa ribosomal), DNA damage.
+DNA damage bisa akibat:
+
+- faktor intrinsik
+- faktor extrinsik
+- Kontrol dari protein: p53 chk1
+
+Faktor lain berpengaruh terhadap siklus sel
+- mutasi faktor checkpoint
+- epigenetic 
+- aktivitas histon
+- smallDNA atau smallRNA, panjang 10-25 nucleotida, berfungsi mengenali transkrip untuk memotong mRNA yang sesuai.
+
+```{r}
+DiagrammeR::grViz("
+                  digraph cellcycles{
+                  graph[rankdir=TB, font=10]
+                  
+                  node[shape=rectangle]
+                  
+                  a
+                  b
+                  c
+                  d
+                  e
+                  
+                  f
+                  g
+                  h
+                  
+                  i
+                  j
+                  k
+                  l
+                  
+                  {a b c d e} -> f
+                  
+                  
+                  }
+                  
+                  ")
+```
+
+
+### G1
+
+Fase Gap 1, menentukan apakah pasien akan masuk ke tahap pembelahan. Jika ada kondisi yang tidak optimal, maka sel tidak akan masuk ke pembelahan. Durasi paling panjang ada pada G1 (12-15 hrs)
+
+Ada peran dari fosforilasi protein retinoblastoma (RB) oleh protein CDKs (cyclin dependent kinases.
+
+Cyclin berikatan dengan CDKS, mengaktifkan CDK, CDK lalu melakukan fosforilasi enzim enzim terkait. CDK adalah kelompok serine/theronine protein kinases.
+
+CDK 4/6 dan cyclin D
+dari unphosphorylated pRB menjadi hypofosforilasi pRb, oleh CDK4/6-cyclinD
+CDK 2 - cyclin E (post Repclication point)
+
+Perain penting protein p53 dan Mdm2 pada G1. P53 penting juga pada fase G2 jika ada yang terlewat pada fase G1. p53 berfungsi posttranslational medification, termasuk fosforilasi. 
+
+### S 
+durasi 6-8 jam
+
+CDK 2 dan cyclin A
+dari hypo menjadi hyperforilasi pRb, oleh CDK2-cyclinA
+
+### G2
+
+Durasi 3-5 jam
+
+CDC2 - cyclin A
+hyperforilasi pRb
+
+### M
+Durasi 1 jam
+CDC2 - cyclin B
+hyperforilasi pRb
+
+post M, defosforilasi pRB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Free Radical & Antioksidan
 

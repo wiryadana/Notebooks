@@ -12,33 +12,31 @@
 
 Mencari jurnal yang bisa menjadi acuan penelitian saat PPDS, jelaskan apakah jurnal tersebut association atau causation.
 
-
 ##### Jawaban/Hasil
 
-Nama	: Kadek Adit Wiryadana
-Prodi	: Ilmu Penyakit Dalam
-Nim	: 2371041012
+Nama : Kadek Adit Wiryadana Prodi : Ilmu Penyakit Dalam Nim : 2371041012
 
-###### Judul Jurnal: 
+###### Judul Jurnal:
+
 Importance of Venous Congestion for Worsening of Renal Function in Advanced Decompensated Heart Failure
 
 ###### Tautan/Link:
+
 akses: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2856960/
 
 ###### Screenshot:
 
 ![screenshot Jurnal](ss_jurnal_metpen1.png)
 
-###### Alasan Association/causation: 
+###### Alasan Association/causation:
 
-Penelitian Mullens et al diatas meneliti hubungan antara kongesti vena (CVP/central venous pressure) terhadap perburukan fungsi ginjal pada pasien dewasa dengan ADHF. Pertanyaan penelitian ini adalah apakah kongesti vena (diukur dengan kateter arteri pulmoner) merupakan faktor yang berasosiasi dengan perburukan fungsi ginjal pada pasien ADHF. Tujuan lainnya adalah menjawab apakah asosiasi tersebut lebih bermakna dibandingkan asosiasi penurunan cardiac output (diukur dengan cardiac index) terhadap penurunan fungsi ginjal, dimana secara umum teori yang diterima adalah faktor utama perburukan fungsi ginjal pada ADHF adalah penurunan cardiac output. 
+Penelitian Mullens et al diatas meneliti hubungan antara kongesti vena (CVP/central venous pressure) terhadap perburukan fungsi ginjal pada pasien dewasa dengan ADHF. Pertanyaan penelitian ini adalah apakah kongesti vena (diukur dengan kateter arteri pulmoner) merupakan faktor yang berasosiasi dengan perburukan fungsi ginjal pada pasien ADHF. Tujuan lainnya adalah menjawab apakah asosiasi tersebut lebih bermakna dibandingkan asosiasi penurunan cardiac output (diukur dengan cardiac index) terhadap penurunan fungsi ginjal, dimana secara umum teori yang diterima adalah faktor utama perburukan fungsi ginjal pada ADHF adalah penurunan cardiac output.
 
-Penelitian ini cenderung  mendukung **Causation** antara kongesti vena dengan penurunan fungsi ginjal. Hal ini karena variabel independen berkontribusi terhadap penurunan fungsi ginjal (ditemukan asosiasi melalui perhitungan statistik). CVP ditemukan lebih tinggi baik saat admisi dan setelah mendapatkan terapi ADHF secara intensif pada pasien yang mengalami perburukan fungsi ginjal. Secara prospektif, ketika pasien mendapatkan terapi ADHF dan CVP berhasil diturunkan <8 mmHg, pasien yang kemudian mengalami perburukan fungsi ginjal lebih jarang ditemukan (mendukung prior association). **Causation yang ditemukan merupakan contributory cause**. Terdapat beberapa variabel yang bisa menjadi confounding karena tidak dilakukan pemeriksaan diantaranya regional renal perfusion, kelainan struktural ginjal, serta analisis data secara multivariabel tidak dilakukan
+Penelitian ini cenderung mendukung **Causation** antara kongesti vena dengan penurunan fungsi ginjal. Hal ini karena variabel independen berkontribusi terhadap penurunan fungsi ginjal (ditemukan asosiasi melalui perhitungan statistik). CVP ditemukan lebih tinggi baik saat admisi dan setelah mendapatkan terapi ADHF secara intensif pada pasien yang mengalami perburukan fungsi ginjal. Secara prospektif, ketika pasien mendapatkan terapi ADHF dan CVP berhasil diturunkan \<8 mmHg, pasien yang kemudian mengalami perburukan fungsi ginjal lebih jarang ditemukan (mendukung prior association). **Causation yang ditemukan merupakan contributory cause**. Terdapat beberapa variabel yang bisa menjadi confounding karena tidak dilakukan pemeriksaan diantaranya regional renal perfusion, kelainan struktural ginjal, serta analisis data secara multivariabel tidak dilakukan
 
 ###### Ide Penelitian Selanjutnya:
 
 **Hubungan diameter dan collapsibility index inferior vena cava terhadap perburukan fungsi ginjal pada pasien acute decompensated heart failure.**
-
 
 ## Filsafat Ilmu Kedokteran
 
@@ -50,34 +48,32 @@ Epistemology
 
 ##### Jawaban/Hasil
 
-
 ## Evidence-based Medicine
 
 #### Tugas EBM-1 - Introduction to EBM & Critical Appraisal
 
 ##### Tugas/Pertanyaan/Instruksi
 
-Instruksi	  	: Membuat pertanyaan klinis berdasarkan prinsip PICO !
+Instruksi : Membuat pertanyaan klinis berdasarkan prinsip PICO !
 
-Skenario		: Kita menghadapi anak dg defisiensi growth hormone (GH), apakah pemberian terapi GH eksogen dapat memacu pertumbuhan anak tersebut?
+Skenario : Kita menghadapi anak dg defisiensi growth hormone (GH), apakah pemberian terapi GH eksogen dapat memacu pertumbuhan anak tersebut?
 
 ##### Jawaban/Hasil
 
 ###### PICO
 
-P (patient/population)	: Anak usia 2 - 14 tahun dengan isolated growth hormone deficiency (GH)
+P (patient/population) : Anak usia 2 - 14 tahun dengan isolated growth hormone deficiency (GH)
 
-I (intervention)		: Terapi GH eksogen dengan dosis awal 25 mcg/kgBB/hari
+I (intervention) : Terapi GH eksogen dengan dosis awal 25 mcg/kgBB/hari
 
 C (comparison/control): plasebo
 
-O (outcome)		: laju peningkatan tinggi badan per tahun ($\Delta$ height velocity) >3 cm dalam 12 bulan terapi.
-
+O (outcome) : laju peningkatan tinggi badan per tahun ($\Delta$ height velocity) \>3 cm dalam 12 bulan terapi.
 
 ###### Pertanyaan Klinis
-Pada pasien anak usia 2 -14 tahun dengan isolated growth hormone deficiency, apakah pemberian growth hormone eksogen sebagai terapi dapat meningkatkan $\Delta$ height velocity >3 cm/tahun pada 12 bulan terapi dibandingkan anak yang diberikan terapi plasebo.
+
+Pada pasien anak usia 2 -14 tahun dengan isolated growth hormone deficiency, apakah pemberian growth hormone eksogen sebagai terapi dapat meningkatkan $\Delta$ height velocity \>3 cm/tahun pada 12 bulan terapi dibandingkan anak yang diberikan terapi plasebo.
 
 ###### Contekan
-https://academic.oup.com/jcem/article/93/2/352/2597982
-https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2265.2012.04420.x
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6979443/
+
+https://academic.oup.com/jcem/article/93/2/352/2597982 https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2265.2012.04420.x https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6979443/

@@ -4,7 +4,6 @@
 
 Metode sains: bisa diulang dengan hasil yang sama. observasi, measurement, verification and evaluation (self correction)
 
-
 ## Kiat-kiat Publikasi Majalah Terakreditasi dengan OJS
 
 Kendala Publikasi di Indonesia: - Indonesia lack of language access. Why we dont make one in Bahasa Indonesia? - Lack of Cultural backgroud dalam menulis.
@@ -62,9 +61,84 @@ Saat ini sudah bergeser pada Systematic Review dan Metanalysis.
 
 ## Uji Hipotesis
 
-## Korelasi
+Mengacu pada distribusi populasi:
 
-## Regresi Sederhana
+Asumsi dasar H0; u1 = u2 (hipotesis nol,tidak ada perbedaan) H1: u1 =/ u2 (hipotesis alternatif, ada perbedaan)
+
+H1 diterima bila terjadi kesalahan kecil: kesalahan tipe 1, false positivie : dihitung peluang kesalahan akibat variasi sampel =\> nilai P batas penolakan (alpha) 0,05;0,01
+
+-   beta: kesalahan tipe 2, false negative: ditetapkan
+-   metafor: seperti persidangan
+
+Jenis Hipotesis: - superiority testing: A lebih baik daripada B - non-inferirority: membuktukan perbedaan dalam rentang yang tak berbeda. (contoh penelitian obat biosimilar)
+
+makna p value - chance play a role in sample value if H0 accepted
+
+significant level (alpha) if p\< 0.05 or 0.01 as cut off dicari: power(1-beta) di set di awal 80% atau 90% ditentukan the answer yes or no tetapi tidak bisa melihat seberapa.... sehingga saat ini tidak hanya boleh melihat P value, karena harus melihat effect size dengan confidence interval.
+
+menghitung confifdence interval :
+
+### Clinician and Statistician
+
+Nilai P tidak memberikan informasi besar perbedaan hasil (effect size) beda yang kecil saja memberikan signifikansi statsitik bila N besar
+
+beda yang besar bisa tidak memberikan signifikansi statistik bila N kecil (error type 2)
+
+Maka perlu ukuran sampel yang sesuai, dan perlu memaknai sebuah statistical significance dengan makna klinis (clinical importance)
+
+## Korelasi Linier
+
+Dasar-dasar dan aplikasi biostatistika klinik
+
+- mengestimasi kuatnya hubungan atau besarnya perbedaan (besarnya efek)
+- melakukan uji kemaknaan statistik (inferensial)
+- mengontrol pengaruh variable pengganggu terhadap besar efek dan inferensi
+
+hubungan semu dapat diperoleh dari analissis bivariat, lalu multivariat untuk mengekslusi hubungan semu.
+
+Korelasi = antara independen dan dependennya memiliki hubungan garis lurus.
+Korelasi ada 2, liner dan non linier. Korelasi ada fleksibilitas variabel independen dan dependennya.
+
+Jenis analisis statistik:
+-  Tentukan pertama parametrik atau non-parametrik
+-  Skala variabel: kontinyu (variabel skala dan interval), ordinal, nominal, diskriit
+-  Uji normalitas: normal/non normal (tes kolmogorov smirnov atau shapiro-wilk)
+-  Uji kesamaan varisi: sama/tidak sama (uji levene)
+-  Uji kolinearitas: hubungan antar variabel independen (penting untuk uji partial korelasi, regresi linier berganda)
+
+variabel: 
+- jika bisa dipecah menjadi 5 atau lebih, bisa dikatakan continyu.
+- jika kontinyu dipecah menjadi beberapa kategori : bisa ordinal
+- jika yes no= nominal
+- diskrit = tidak bisa dibedakan antara kategori?
+
+Pemilihan uji statistik:
+1. tentukan variabel dependen (umumnya satu variable dependen)
+2. tentukan jumlah variabel independen
+    - bila tidak ada variabel independen, statistik yang dipakai adalah analisis univariat (deskriptif)
+    - bila ada satu variabel independen, statistik yang dipakai adalah bivariat
+    - bila ada lebih dari satu variable independen, statistik yang dipakai adalah analisis multivariat.
+    
+Sentral limit theorem: jika lebih dari 30 bisa berdistribusi normal.
+
+```{r}
+DiagrammeR::grViz("
+                  digraph {
+                  graph[layout=dot, rankdir=TB, fontsize=10]
+                  
+                  # Node
+                  
+                  
+                  
+                  # Edges
+                  
+                  }
+                  ")
+```
+
+
+
+## Regresi Linier Sederhana
 
 ## Regresi Berganda
 

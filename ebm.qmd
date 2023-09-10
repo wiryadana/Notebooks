@@ -60,7 +60,6 @@ PICO: P: child with sever GBS I/C: prednisone, IVIG, atau plasma exchange O: cep
 
 boelean logic: AND, OR, NOT
 
-
 **Tugas mencari permasalahan klinis, ubah menjadi pertanyaan research, lalu search dengan Boolean logic di Pubmed** : https://wiryadana.github.io/picolo/
 
 ## Effect Size, Hypothesis, and Confidence Interval
@@ -72,5 +71,7 @@ boelean logic: AND, OR, NOT
 ## Study about Therapy
 
 ## Study about Prognosis
+
+
 
 ## Summary Capita Selekta

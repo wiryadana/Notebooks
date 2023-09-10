@@ -60,6 +60,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/grViz-binding-1.0.10/grViz.js"></script>
 
 
 </head>
@@ -401,10 +405,20 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#organel-sel" id="toc-organel-sel" class="nav-link" data-scroll-target="#organel-sel"><span class="toc-section-number">37.1.1</span>  Organel Sel</a></li>
   </ul></li>
-  <li><a href="#genome-organization" id="toc-genome-organization" class="nav-link" data-scroll-target="#genome-organization"><span class="toc-section-number">37.2</span>  Genome Organization</a></li>
+  <li><a href="#genome-organization" id="toc-genome-organization" class="nav-link" data-scroll-target="#genome-organization"><span class="toc-section-number">37.2</span>  Genome Organization</a>
+  <ul class="collapse">
+  <li><a href="#protein-coding-genes" id="toc-protein-coding-genes" class="nav-link" data-scroll-target="#protein-coding-genes"><span class="toc-section-number">37.2.1</span>  Protein coding genes</a></li>
+  <li><a href="#codon" id="toc-codon" class="nav-link" data-scroll-target="#codon"><span class="toc-section-number">37.2.2</span>  Codon</a></li>
+  </ul></li>
   <li><a href="#dna-rna-structure" id="toc-dna-rna-structure" class="nav-link" data-scroll-target="#dna-rna-structure"><span class="toc-section-number">37.3</span>  DNA &amp; RNA Structure</a></li>
   <li><a href="#signal-transduction" id="toc-signal-transduction" class="nav-link" data-scroll-target="#signal-transduction"><span class="toc-section-number">37.4</span>  Signal Transduction</a></li>
-  <li><a href="#cell-cycle" id="toc-cell-cycle" class="nav-link" data-scroll-target="#cell-cycle"><span class="toc-section-number">37.5</span>  Cell Cycle</a></li>
+  <li><a href="#cell-cycle" id="toc-cell-cycle" class="nav-link" data-scroll-target="#cell-cycle"><span class="toc-section-number">37.5</span>  Cell Cycle</a>
+  <ul class="collapse">
+  <li><a href="#g1" id="toc-g1" class="nav-link" data-scroll-target="#g1"><span class="toc-section-number">37.5.1</span>  G1</a></li>
+  <li><a href="#s" id="toc-s" class="nav-link" data-scroll-target="#s"><span class="toc-section-number">37.5.2</span>  S</a></li>
+  <li><a href="#g2" id="toc-g2" class="nav-link" data-scroll-target="#g2"><span class="toc-section-number">37.5.3</span>  G2</a></li>
+  <li><a href="#m" id="toc-m" class="nav-link" data-scroll-target="#m"><span class="toc-section-number">37.5.4</span>  M</a></li>
+  </ul></li>
   <li><a href="#free-radical-antioksidan" id="toc-free-radical-antioksidan" class="nav-link" data-scroll-target="#free-radical-antioksidan"><span class="toc-section-number">37.6</span>  Free Radical &amp; Antioksidan</a></li>
   <li><a href="#replication" id="toc-replication" class="nav-link" data-scroll-target="#replication"><span class="toc-section-number">37.7</span>  Replication</a></li>
   <li><a href="#mutation-dna-repair" id="toc-mutation-dna-repair" class="nav-link" data-scroll-target="#mutation-dna-repair"><span class="toc-section-number">37.8</span>  Mutation &amp; DNA Repair</a></li>
@@ -470,9 +484,46 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="genome-organization" class="level2" data-number="37.2">
 <h2 data-number="37.2" class="anchored" data-anchor-id="genome-organization"><span class="header-section-number">37.2</span> Genome Organization</h2>
+<p>Genome =&gt; chromosome =&gt; Chromatin =&gt; Gene</p>
+<p><strong>Gen vs DNA</strong></p>
+<ul>
+<li>Gen = unit fungsional dan struktural hereditas</li>
+<li>DNA = Struktur template RNA</li>
+</ul>
+<p>Ukuran panjang DNA nukleus =&gt; 3200 million base pair ukuran panjang DNA mitokondria =&gt; 16.6 kilo base pair</p>
+<div class="cell fig-cap-location-bottom" data-layout-align="center">
+<div id="fig-genomes" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8409b95881cd218c490f" style="width:100%;height:812px;"></div>
+<script type="application/json" data-for="htmlwidget-8409b95881cd218c490f">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB, fontsize = 10]\n\nnode[shape = rectangle]\n\na [label = \"Human Genomes\"]\nb [label = \"Nuclear Genomes\"]\nc [label = \"Mitochondria Genomes\"]\nd [label = \"Genes and gene related DNA\"]\ne [label = \"Extragenic DNA\"]\nf [label = \"2 rRNA\"]\ng [label = \"22 tRNA\"]\nh [label = \"13 Polypeptide encoding genes\"]\ni [label = \"Coding and Regulatory DNA\"]\nj [label = \"Non-coding DNA\"]\nk [label = \"Unique Low copy number DNA\"]\nl [label = \"Repetitive DNA\"]\nm [label = \"Pseudogene\"]\nn [label = \"Gene fragments\"]\no [label = \"Introns, untranslated sequences\"]\np [label = \"Interspersed repeats\"]\nq [label = \"tandem repeats\"]\n\na -> {b c}\nb -> {d e}\nd -> {i j}\nj -> {m n o}\nc -> {f g h}\ne -> {k l}\nl -> {p q}\n\n\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p></p><figcaption class="figure-caption">Figure&nbsp;37.1: Human Genomes</figcaption><p></p>
+</figure>
+</div>
+</div>
+<p>pol 1 mRNA pol 2 lain lain pol 3 rRna</p>
+<section id="protein-coding-genes" class="level3" data-number="37.2.1">
+<h3 data-number="37.2.1" class="anchored" data-anchor-id="protein-coding-genes"><span class="header-section-number">37.2.1</span> Protein coding genes</h3>
+<ul>
+<li>Genes memiliki exon dan intron, ukuran bervariasi</li>
+<li>ada genes yang tidak memilili intron =&gt; gene coding histone</li>
+<li>gene yang berukuran besar, pengkode dystropin, 99% menganding intron</li>
+<li>Gen yang sering di transkripsi biasanya memiliki intron yang pendek</li>
+</ul>
+<p><strong>RNA Coding Sequence</strong> DNA =&gt;&gt; Enhancer – Promoter ————————————————————— terminator</p>
+<p>transkripsi</p>
+<p>pre-RNA =&gt;&gt; 5’cap – leader – exon-intron-exon-intron-exon-intron-exon-intron—trailer— poly A tail 3’ cap dan poly A tail ditambah post transkripsi</p>
+<p>mature mRNA 5’cap – leader – exon—trailer— poly A tail 3’</p>
+<p>translasi di sitoplasma</p>
+<p>mRNA =&gt; monosistronik = 1 untai RNA menyandi 1 gen =&gt; manusia, polisistronik di prokaryotic</p>
+</section>
+<section id="codon" class="level3" data-number="37.2.2">
+<h3 data-number="37.2.2" class="anchored" data-anchor-id="codon"><span class="header-section-number">37.2.2</span> Codon</h3>
+<p>1 kodon terdiri dari 3 basa. terdapat 64 kodon, termasuk 3 stop kodon Lihat tabel kodon</p>
+</section>
 </section>
 <section id="dna-rna-structure" class="level2" data-number="37.3">
 <h2 data-number="37.3" class="anchored" data-anchor-id="dna-rna-structure"><span class="header-section-number">37.3</span> DNA &amp; RNA Structure</h2>
+<p>Central dogma………</p>
 </section>
 <section id="signal-transduction" class="level2" data-number="37.4">
 <h2 data-number="37.4" class="anchored" data-anchor-id="signal-transduction"><span class="header-section-number">37.4</span> Signal Transduction</h2>
@@ -513,6 +564,44 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="cell-cycle" class="level2" data-number="37.5">
 <h2 data-number="37.5" class="anchored" data-anchor-id="cell-cycle"><span class="header-section-number">37.5</span> Cell Cycle</h2>
+<p>Siklus sel terdiri dari 2 tahap besar yaitu replikasi DNA dan segregasi sel. Siklus sell terdiri dari 4 fase: G1, S, G2 dan M. Proses siklus sel bukan hanya pembelahan, tetapi juga terkait dengan pertumbuhan sel dan proses lainnya.</p>
+<p>Proses melibatkan poerubahan chromatin dari closed conformation (heterochromatin) yang sulit mengalami transkripsi (represed) menjadi Euchromatin (open chromatin) atau mudah transkripsi (activation)</p>
+<p>Terdapat beberapa checkpoint siklus sel. checkpoints ukuran sel (protein dll, massa ribosomal), DNA damage. DNA damage bisa akibat:</p>
+<ul>
+<li>faktor intrinsik</li>
+<li>faktor extrinsik</li>
+<li>Kontrol dari protein: p53 chk1</li>
+</ul>
+<p>Faktor lain berpengaruh terhadap siklus sel - mutasi faktor checkpoint - epigenetic - aktivitas histon - smallDNA atau smallRNA, panjang 10-25 nucleotida, berfungsi mengenali transkrip untuk memotong mRNA yang sesuai.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b62c1e3c0d0f4dca2ac2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-b62c1e3c0d0f4dca2ac2">{"x":{"diagram":"\n                  digraph cellcycles{\n                  graph[rankdir=TB, font=10]\n                  \n                  node[shape=rectangle]\n                  \n                  a\n                  b\n                  c\n                  d\n                  e\n                  \n                  f\n                  g\n                  h\n                  \n                  i\n                  j\n                  k\n                  l\n                  \n                  {a b c d e} -> f\n                  \n                  \n                  }\n                  \n                  ","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="g1" class="level3" data-number="37.5.1">
+<h3 data-number="37.5.1" class="anchored" data-anchor-id="g1"><span class="header-section-number">37.5.1</span> G1</h3>
+<p>Fase Gap 1, menentukan apakah pasien akan masuk ke tahap pembelahan. Jika ada kondisi yang tidak optimal, maka sel tidak akan masuk ke pembelahan. Durasi paling panjang ada pada G1 (12-15 hrs)</p>
+<p>Ada peran dari fosforilasi protein retinoblastoma (RB) oleh protein CDKs (cyclin dependent kinases.</p>
+<p>Cyclin berikatan dengan CDKS, mengaktifkan CDK, CDK lalu melakukan fosforilasi enzim enzim terkait. CDK adalah kelompok serine/theronine protein kinases.</p>
+<p>CDK 4/6 dan cyclin D dari unphosphorylated pRB menjadi hypofosforilasi pRb, oleh CDK4/6-cyclinD CDK 2 - cyclin E (post Repclication point)</p>
+<p>Perain penting protein p53 dan Mdm2 pada G1. P53 penting juga pada fase G2 jika ada yang terlewat pada fase G1. p53 berfungsi posttranslational medification, termasuk fosforilasi.</p>
+</section>
+<section id="s" class="level3" data-number="37.5.2">
+<h3 data-number="37.5.2" class="anchored" data-anchor-id="s"><span class="header-section-number">37.5.2</span> S</h3>
+<p>durasi 6-8 jam</p>
+<p>CDK 2 dan cyclin A dari hypo menjadi hyperforilasi pRb, oleh CDK2-cyclinA</p>
+</section>
+<section id="g2" class="level3" data-number="37.5.3">
+<h3 data-number="37.5.3" class="anchored" data-anchor-id="g2"><span class="header-section-number">37.5.3</span> G2</h3>
+<p>Durasi 3-5 jam</p>
+<p>CDC2 - cyclin A hyperforilasi pRb</p>
+</section>
+<section id="m" class="level3" data-number="37.5.4">
+<h3 data-number="37.5.4" class="anchored" data-anchor-id="m"><span class="header-section-number">37.5.4</span> M</h3>
+<p>Durasi 1 jam CDC2 - cyclin B hyperforilasi pRb</p>
+<p>post M, defosforilasi pRB</p>
+</section>
 </section>
 <section id="free-radical-antioksidan" class="level2" data-number="37.6">
 <h2 data-number="37.6" class="anchored" data-anchor-id="free-radical-antioksidan"><span class="header-section-number">37.6</span> Free Radical &amp; Antioksidan</h2>

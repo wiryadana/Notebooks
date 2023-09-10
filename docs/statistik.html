@@ -60,6 +60,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/grViz-binding-1.0.10/grViz.js"></script>
 
 
 </head>
@@ -400,9 +404,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#dasar-dasar-penulisan-ilmiah-kedokteran-dan-plagiarisme" id="toc-dasar-dasar-penulisan-ilmiah-kedokteran-dan-plagiarisme" class="nav-link active" data-scroll-target="#dasar-dasar-penulisan-ilmiah-kedokteran-dan-plagiarisme"><span class="toc-section-number">40.1</span>  Dasar-dasar Penulisan Ilmiah Kedokteran dan Plagiarisme</a></li>
   <li><a href="#kiat-kiat-publikasi-majalah-terakreditasi-dengan-ojs" id="toc-kiat-kiat-publikasi-majalah-terakreditasi-dengan-ojs" class="nav-link" data-scroll-target="#kiat-kiat-publikasi-majalah-terakreditasi-dengan-ojs"><span class="toc-section-number">40.2</span>  Kiat-kiat Publikasi Majalah Terakreditasi dengan OJS</a></li>
   <li><a href="#effect-size-confidence-interval" id="toc-effect-size-confidence-interval" class="nav-link" data-scroll-target="#effect-size-confidence-interval"><span class="toc-section-number">40.3</span>  Effect Size, COnfidence Interval</a></li>
-  <li><a href="#uji-hipotesis" id="toc-uji-hipotesis" class="nav-link" data-scroll-target="#uji-hipotesis"><span class="toc-section-number">40.4</span>  Uji Hipotesis</a></li>
-  <li><a href="#korelasi" id="toc-korelasi" class="nav-link" data-scroll-target="#korelasi"><span class="toc-section-number">40.5</span>  Korelasi</a></li>
-  <li><a href="#regresi-sederhana" id="toc-regresi-sederhana" class="nav-link" data-scroll-target="#regresi-sederhana"><span class="toc-section-number">40.6</span>  Regresi Sederhana</a></li>
+  <li><a href="#uji-hipotesis" id="toc-uji-hipotesis" class="nav-link" data-scroll-target="#uji-hipotesis"><span class="toc-section-number">40.4</span>  Uji Hipotesis</a>
+  <ul class="collapse">
+  <li><a href="#clinician-and-statistician" id="toc-clinician-and-statistician" class="nav-link" data-scroll-target="#clinician-and-statistician"><span class="toc-section-number">40.4.1</span>  Clinician and Statistician</a></li>
+  </ul></li>
+  <li><a href="#korelasi-linier" id="toc-korelasi-linier" class="nav-link" data-scroll-target="#korelasi-linier"><span class="toc-section-number">40.5</span>  Korelasi Linier</a></li>
+  <li><a href="#regresi-linier-sederhana" id="toc-regresi-linier-sederhana" class="nav-link" data-scroll-target="#regresi-linier-sederhana"><span class="toc-section-number">40.6</span>  Regresi Linier Sederhana</a></li>
   <li><a href="#regresi-berganda" id="toc-regresi-berganda" class="nav-link" data-scroll-target="#regresi-berganda"><span class="toc-section-number">40.7</span>  Regresi Berganda</a></li>
   <li><a href="#distribusi-normal" id="toc-distribusi-normal" class="nav-link" data-scroll-target="#distribusi-normal"><span class="toc-section-number">40.8</span>  Distribusi normal</a></li>
   <li><a href="#uji-t-berpasangan-dan-tak-berpasangan" id="toc-uji-t-berpasangan-dan-tak-berpasangan" class="nav-link" data-scroll-target="#uji-t-berpasangan-dan-tak-berpasangan"><span class="toc-section-number">40.9</span>  Uji T berpasangan dan tak berpasangan</a></li>
@@ -501,12 +508,47 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="uji-hipotesis" class="level2" data-number="40.4">
 <h2 data-number="40.4" class="anchored" data-anchor-id="uji-hipotesis"><span class="header-section-number">40.4</span> Uji Hipotesis</h2>
+<p>Mengacu pada distribusi populasi:</p>
+<p>Asumsi dasar H0; u1 = u2 (hipotesis nol,tidak ada perbedaan) H1: u1 =/ u2 (hipotesis alternatif, ada perbedaan)</p>
+<p>H1 diterima bila terjadi kesalahan kecil: kesalahan tipe 1, false positivie : dihitung peluang kesalahan akibat variasi sampel =&gt; nilai P batas penolakan (alpha) 0,05;0,01</p>
+<ul>
+<li>beta: kesalahan tipe 2, false negative: ditetapkan</li>
+<li>metafor: seperti persidangan</li>
+</ul>
+<p>Jenis Hipotesis: - superiority testing: A lebih baik daripada B - non-inferirority: membuktukan perbedaan dalam rentang yang tak berbeda. (contoh penelitian obat biosimilar)</p>
+<p>makna p value - chance play a role in sample value if H0 accepted</p>
+<p>significant level (alpha) if p&lt; 0.05 or 0.01 as cut off dicari: power(1-beta) di set di awal 80% atau 90% ditentukan the answer yes or no tetapi tidak bisa melihat seberapa…. sehingga saat ini tidak hanya boleh melihat P value, karena harus melihat effect size dengan confidence interval.</p>
+<p>menghitung confifdence interval :</p>
+<section id="clinician-and-statistician" class="level3" data-number="40.4.1">
+<h3 data-number="40.4.1" class="anchored" data-anchor-id="clinician-and-statistician"><span class="header-section-number">40.4.1</span> Clinician and Statistician</h3>
+<p>Nilai P tidak memberikan informasi besar perbedaan hasil (effect size) beda yang kecil saja memberikan signifikansi statsitik bila N besar</p>
+<p>beda yang besar bisa tidak memberikan signifikansi statistik bila N kecil (error type 2)</p>
+<p>Maka perlu ukuran sampel yang sesuai, dan perlu memaknai sebuah statistical significance dengan makna klinis (clinical importance)</p>
 </section>
-<section id="korelasi" class="level2" data-number="40.5">
-<h2 data-number="40.5" class="anchored" data-anchor-id="korelasi"><span class="header-section-number">40.5</span> Korelasi</h2>
 </section>
-<section id="regresi-sederhana" class="level2" data-number="40.6">
-<h2 data-number="40.6" class="anchored" data-anchor-id="regresi-sederhana"><span class="header-section-number">40.6</span> Regresi Sederhana</h2>
+<section id="korelasi-linier" class="level2" data-number="40.5">
+<h2 data-number="40.5" class="anchored" data-anchor-id="korelasi-linier"><span class="header-section-number">40.5</span> Korelasi Linier</h2>
+<p>Dasar-dasar dan aplikasi biostatistika klinik</p>
+<ul>
+<li>mengestimasi kuatnya hubungan atau besarnya perbedaan (besarnya efek)</li>
+<li>melakukan uji kemaknaan statistik (inferensial)</li>
+<li>mengontrol pengaruh variable pengganggu terhadap besar efek dan inferensi</li>
+</ul>
+<p>hubungan semu dapat diperoleh dari analissis bivariat, lalu multivariat untuk mengekslusi hubungan semu.</p>
+<p>Korelasi = antara independen dan dependennya memiliki hubungan garis lurus. Korelasi ada 2, liner dan non linier. Korelasi ada fleksibilitas variabel independen dan dependennya.</p>
+<p>Jenis analisis statistik: - Tentukan pertama parametrik atau non-parametrik - Skala variabel: kontinyu (variabel skala dan interval), ordinal, nominal, diskriit - Uji normalitas: normal/non normal (tes kolmogorov smirnov atau shapiro-wilk) - Uji kesamaan varisi: sama/tidak sama (uji levene) - Uji kolinearitas: hubungan antar variabel independen (penting untuk uji partial korelasi, regresi linier berganda)</p>
+<p>variabel: - jika bisa dipecah menjadi 5 atau lebih, bisa dikatakan continyu. - jika kontinyu dipecah menjadi beberapa kategori : bisa ordinal - jika yes no= nominal - diskrit = tidak bisa dibedakan antara kategori?</p>
+<p>Pemilihan uji statistik: 1. tentukan variabel dependen (umumnya satu variable dependen) 2. tentukan jumlah variabel independen - bila tidak ada variabel independen, statistik yang dipakai adalah analisis univariat (deskriptif) - bila ada satu variabel independen, statistik yang dipakai adalah bivariat - bila ada lebih dari satu variable independen, statistik yang dipakai adalah analisis multivariat.</p>
+<p>Sentral limit theorem: jika lebih dari 30 bisa berdistribusi normal.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-63fbe8e85c233b61ae4f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-63fbe8e85c233b61ae4f">{"x":{"diagram":"\n                  digraph {\n                  graph[layout=dot, rankdir=TB, fontsize=10]\n                  \n                  # Node\n                  \n                  \n                  \n                  # Edges\n                  \n                  }\n                  ","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="regresi-linier-sederhana" class="level2" data-number="40.6">
+<h2 data-number="40.6" class="anchored" data-anchor-id="regresi-linier-sederhana"><span class="header-section-number">40.6</span> Regresi Linier Sederhana</h2>
 </section>
 <section id="regresi-berganda" class="level2" data-number="40.7">
 <h2 data-number="40.7" class="anchored" data-anchor-id="regresi-berganda"><span class="header-section-number">40.7</span> Regresi Berganda</h2>

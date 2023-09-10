@@ -2,24 +2,18 @@
 
 ## Overview of Clinical Research
 
-clinical research is medical research taht involves people, to learn more about disease and improve health care for people in the future. 
+clinical research is medical research taht involves people, to learn more about disease and improve health care for people in the future.
 
-include: epidemiology, behavioral, health services, clinical trials. 
+include: epidemiology, behavioral, health services, clinical trials.
 
-clinical research, not just clinical trial, it is any research design that studies humans or any materials taken from humans. it may even include animal studies that the results apply to humans. 
+clinical research, not just clinical trial, it is any research design that studies humans or any materials taken from humans. it may even include animal studies that the results apply to humans.
 
 type of clinical research:
 
--  observational studies => studies that aim to identify and analylyze patterin medical data.
--  clinical trials/interventional studies
+-   observational studies =\> studies that aim to identify and analylyze patterin medical data.
+-   clinical trials/interventional studies
 
-Research Question: FINER
-- Feasible
-- interesting
-- novel
-- ethical
-- relevant
-
+Research Question: FINER - Feasible - interesting - novel - ethical - relevant
 
 ## Association & Causation
 
@@ -68,7 +62,31 @@ PR: 1 jenis penelitian causation atau association yang menjadi ide kalian nanti 
 
 ## Variables and Relathionship Between Variables
 
+Variable: independent, dependent, confounding variables
+
+other variable: mediator, moderator, external, random
+
+relathioships among variables
+
+-   chances
+-   bias
+-   confounding
+-   causal
+
 ## Hypothesis and Hypothesis Testing
+
+Hypothesis:
+
+a statement about relathionsip between two or more variables that suggest an answer to the research question, is declarative statement that predicts an expected outcome.
+
+Research hypothesis:
+kalimat deklaratif yang mencoba memberikan jawaban sementara atas pertanyaan penelitian.
+
+Statistical hypotesis: biasanya tidak ditulis di proposal.
+
+Research hypothesis nanti akan di uji apakah hypotesis didukukng oleh data data.
+
+Jika hypotesis yang kita uji tidak sesuai dengan data, maka bukan berarti ilmu itu salah
 
 ## Sample Size and Power
 

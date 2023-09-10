@@ -312,6 +312,135 @@ Endotrachea intubation & mechanical ventilation allow blood redistributed to vit
 
 #### Mechanical Ventilation
 
+mechanical ventialtion is used to assist or replace sponstaneus breathung. Its application of high oxygen content + positive pressure. Primary indication is **acute respiratory** failure which there are two basic types: 1. hypoxemic and 2. hypercarbic. *Hypoexemic* present when arterial O2 saturation <90% despite increased inspired O2 fraction due to ventilation perfusion mismatch or shunting. *Hypercarbic* characterized by elevated arterial CO2 (usually >50 mmHg) resulting from conditions that decrease minute ventilation or increased physiologic dead space. 
+
+##### Types of Mechanical Ventilation
+
+there are two types of MV: noninvasive ventilation (NIV) and invasive (conventional MV)
+
+###### Noninvasive ventilation
+
+NIV: effective in acute and chronic respiratory failure with fewer complication (pneumonia & tracheolaringeal trauma). NIV provided by tight fitting mask, a nasal mask similar to taht used for sleep apnea. It is especially effective in COPD. Modes used are bilevel positive airway pressure (BiPAP) or pressure support ventilation (PSV). Both used positive pressure during inspiration and expiration, althouhg lower in expiration. Trial showed: COPD exacerbation ph 7,25 - 7,35 associated with good outcomes, for ph <7,25 the failure increase with decreasing ph. patient with ph >7,35 NIV is not better than conventional treatment (controlled O2, systemic glucocorticoid, bronchodilator and antibiotics).
+
+THe used of NIV in other respiratory failure is limited, and in some conditions contraindicated (cardiac arrest, respiratory arrest, decreased consciousness, GI bleeding, hemodynamic instability, MI, facial trauma, upper airway obstruction, inability to clear secretion), and may delay life saving measure. Reduced respiratory rate, decreased the use of accesory muscle (scalene, sternomastoid and intercostal) are good clinical indicator of improvement. ABG should be evaluated hours after NIV initiation, if no improvement it may need a conventional MV
+
+###### Invasive Ventilation (Conventional MV)
+Intubation (cuffed tibed inserted to trachea) to allow conditioned (warmed, oxygenated, humidified) gas delivered to the airways. 
+
+Principles of MV: optimize oxygenation while avoiding ventilator-induced lung injury due to overstretch and collapse/re-recruitment (protective ventilatory strategy)
+
+##### Modes of Ventilation
+
+modes are the manner in which breaths are triggered, cycled and limited.
+-  trigger: inspiratory effort or time based signal
+-  cycle : refers to the factors that determine the end of inspiration (volume, pressure and time cycling)
+-  limiting factors are operator-specified values: airway pressure.
+
+Most patient ventilated with assist-control, intermittent mandatory ventilation, PSV.
+
+###### Assist control ventilation
+
+Assist control (ACMV) is the most widely used. Used in initiation of MV.
+trigger: initiated by patient inspiratory effort, if none detected, by specified time signal.
+cycle: pressure or volume cycle.
+limit: specified tidal-volume, RR defined by patients rate or backup rate.
+
+problem: auto-peep might occurs if dynamic hyperinflation due to high RR happens.
+
+###### Intermittent Mandatory Ventilation
+Most commmon modes: SIMV
+trigger: set mandatory breath, between each mandatory breath patient can breath spontaneously. in SIMV, mandatory breath delivered in syncrony with patients breath.if patient fail to initiate a breath, the machine give fixed volume and reset its timer for next breath.
+cycle: defined volume,
+limit: 
+
+difference with ACMV: only the a preset number of breath are ventilator-assisted.
+SIMV allowd patients with intact respiratory drive to exercise inspiratory msucles between assisted breath, useful for supporting and weaning intubation.
+problem: difficult to use in tacypnea, due to expiration attemp during ventilator inspiratory cycle. The pressure increase, and may abort the inspiration and thus lower tidal volume. In contrast, for tachypnea represent of metabocl or respiratory acidosis, change in ACMV will increase minute ventilation and help normalize pH
+
+###### Pressure-support Ventilation
+
+trigger: patient breath
+cycle: flow, isnpiration is terminated when airflow fall below a certain level.
+limit: pressure
+
+provides graded asistence and differs from the other two in that the operator set the pressure level to augment every spontaneous breath. The level of pressure is adjusted by observing the patiens RR.
+
+###### Pressure-Control Ventilation (PCV)
+
+useful to limit peak pressure, in patients with preexisting barotreauma or post htoracic surgery.
+
+trigger: time
+cycle: time,
+limit: pressure
+
+minute ventilation is altered through RR and pressure control.
+
+###### Continous Positive Airway Pressure (CPAP)
+
+All ventilation occurs through the patients spontaneus efforts. The machine provide fresh gas to the circuit and set constant pressure.
+
+##### Protective Ventilatory Strategy
+
+Whatever the modes of MV, the principles:
+
+1. Set target tidal volume close to 6 ml/kg of ideal body weight
+2. Prevent plateu pressure exceed 30 cm H~2~O
+3. Use the lowest possible FIO~2~ to keep SaO~2~ $\ge$ 90%
+4. Adjust the PEEP to maintain alveolar patency while preventing overdistention and closure/reopening.
+
+##### Maintenance for mechanical Ventilated patients
+
+**Respiratory System Mechanics**
+
+Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (\> 10 - 15 cmH~2~O) at a constant inspiratory flow rate of 1 L/s(shown in figure @fig-airwayresistance. Normally, respiratory system compliance is \~ 100 ml/cmH~2~O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax & increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.
+
+![Graph Illustration taken from harrison](Airway_resistance.png){#fig-airwayresistance}
+
+Patients frequently require sedatives & analgetics.
+
+###### Analgesics
+
+Opieates is the mainstay of mechanicaly ventilated patients
+
+###### Sedatives
+
+After pain adequately controlled, sedation needed for anxiolysis, treatment of subjective dyspnea, reduction of autonomic hyperactiviy, reduction of total O2 consumption. Nonbenzodiazepin are preffered because benzodiazepin associated with increased delirium and worse patients outcome.
+
+Amnesia could be achieved with propofol or benzodiazepine such lorazepam or midazolam.
+
+###### Neuromuscular Blocking Agents
+
+Patients with ventilatory dyssyncrony despite optimal sedation may needed paralytics agents. Wathout for prolonged weakness, a myopathy known as the postparalytics syndrome. Thus, neuromuscular blocking is the last agent, only in patients which fail to achieve ventilator syncrony with aggresive sedation. Remember, neuromuscular blocking agent do not results in pharmacological paralysis without altering mental status, thus sedative is almost always required for amnesia.
+
+##### Ventilator Weaning and Extubation
+
+Recognition of patients readyness to be liberated from mechanical ventilation is important. Screening conducted daily, criteria:
+
+1.  Stable oxygenation (Pao~2~ / Fio~2~ \> 200 and PEEP $\le$ 5 cm H~2~O)
+2.  Cough and Airway Reflexes Intact
+3.  No Vasopressor administered
+4.  No Sedatives adminsitered
+
+if all requirement passed, patient should undergi a spontaneous breathing trial (SBT), if sedative still administered, patients could also undergo spontaneous awakening trial (SAT.
+
+SAT/SBT trial consist of a period of breathing through endotracheal tube with little or without ventilator support (CPAP 1-5 cmH~2~O with or without low-level pressure support (PSV) and open T-piece breahing system) for 30 - 120 minutes. SBT Failure or should be stopped if:
+
+1.  RR \>35 min for \>5 min
+2.  O~2~ saturation \<90%
+3.  HR \> 140x/min or a 20% increase or decrease from baseline
+4.  SBP \<90 mmHg or \>180 mmHg
+5.  Increased anxiety or diaphoresis
+
+if none of these events occured, patients should considered for an extubation trial. Despite these carefull criteria, 10% patients develop respiratory distress after extubation and may require resumption of mechanical ventilation and reintubation.
+
+Once patients determined that able to breath spontaneously, then proceeed to remove the artificial airway which should be undertaken only when it is patients showed the ability to protect airway, able to cough and clear secretions, alert enough to follow commands. If reintubation is deemed difficult if required, evaluation with cuff-leak test is supported by evidence. If possibility of post-extubation stridor, administration of systemic steoroid should be given.
+
+#### Prolonged MV and Tracheostomy
+
+5-13 % patients with MV will go on to require prolonged MV (>21 days). It is important to decide whether and when to perform a trachoestomy. Tracheostomy is though to be more comfortable, require less sedation, and provide a more secure airway and reduce weaning time. 
+
+In general, if a need of MV for >10-14 days, a tracheostomy would be indicated.
+
 ##### Maintenance for mechanical Ventilated patients
 
 **Respiratory System Mechanics**
@@ -361,7 +490,6 @@ if none of these events occured, patients should considered for an extubation tr
 
 Multiorgan system failure, defined by the simultaneous presence of physiologic dysfunction and/or failure of two or more organs. Organ failure, no matter how it is defined must persist beyond 24 hours.
 
-
 ## Specific Critical illness
 
 ### Acute Respiratory Distress Syndrome (ARDS)
@@ -382,12 +510,15 @@ ards_tbl <-
 ards_tbl
 ```
 
+ddx: - cardiogenic pulmonary edema - bilateral pneumonia - alveolar hemorrhage
 
 ### Epidemiology
-Estimated incidence: 60/100.000 population. 
+
+Estimated incidence: 60/100.000 population.
 
 #### Etiology
-ARDS can be caused by diffuse lung injury from many medical and surgical disorders. It may be direct (on the lung) or indirect (extrapulmoner including thoracic structure). The most case (>80%) are caused by pneumonia and sepsis. Then, gastric aspiration, trauma, multiple transfusiion, pancreatitis, and drug overdose. Traumatic cause include pulmonary contusion, multiple bone fractures, chest trauma/flail chest. The risk increase with predisposing medical condition.
+
+ARDS can be caused by diffuse lung injury from many medical and surgical disorders. It may be direct (on the lung) or indirect (extrapulmoner including thoracic structure). The most case (\>80%) are caused by pneumonia and sepsis. Then, gastric aspiration, trauma, multiple transfusiion, pancreatitis, and drug overdose. Traumatic cause include pulmonary contusion, multiple bone fractures, chest trauma/flail chest. The risk increase with predisposing medical condition.
 
 #### Pathophysiology
 
@@ -395,16 +526,97 @@ Natural history of ARDS divided into 3 phases - exudative, proliferative, and fi
 
 ##### Exudative Phase
 
+This phase encompases the first 7 days after precipitating ARDS risk factor. The alveolar capillary endhotelial cells and type 1 pneumocytes injured, loss of tight alveolar barrier to fluid and macromolecules. Edema fluid contain protein accumulates in the interstitial and alveolar spaces. Proinflamatory cytokines increase followed by leukocytes recruitment. The leaked plasma condensed and agrreagte in the air spaces + cellular debris + dysfunctional surfactant to form hyaline membran whorls.
 
+Alveolar edema predominantly involves dependent portions of the lung with diminished aeration. Large lung dimineshed aeration cause increase in lung compliance. Alteration in alveolar spaces are exacerbated by microvascular occlusion leading to reduced perfusion and pulmonary hypertension. it also cause intrapulmonary shunting and hypoxemia, leading to dyspnea.
+
+sign: - dyspnea, may leads to respiratory fatigue - chest radiograph reveals opacities resembling pulmonary edema. distinguishing featues from cardiogenic pulmonary edema are no cardiomegaly, no pleural effusin, or no pulmonary vascular redistribution. - laboratory finding indicative of the underlying disoder.
 
 ##### Proliferative Phase
 
+phase day 7 to 21. May showed an improvement, including weaning of mechanical ventilation. It may shows some degree of lung repair, reduced alveolar exudates, and shift to lymphocytes predominant infiltrat, increased surfactant.
+
+sign: - improvement in symtoms, but still dyspnea - tachypnea - hypoxemia
+
 ##### Fibrotic Phase
+
+Phase 3-4 weeks after lung injury. Many patients may recover, but some enter a fibrotic phase. The exudate convert to extensive alveolar duct and interstitial fibrosis. desctruction of acinar architecture leads to emphysema like changes (bullae), and may also develop microvascular occlusion and pulmonary hypertension.
 
 #### Treatment
 
+##### General Principles
+
+Emphasize on treatment of the Critical ill
+
+1.  treatment of underlying cause
+2.  minimization of unnecessary procedures
+3.  standardized bundle care
+4.  promt recognition of nosocomial infections
+5.  adequte nutrition
+
+```{r}
+#| label: fig-ardsalgorithm
+#| fig-cap: "ARDS Algorithm"
+#| fig-cap-location: bottom
+#| fig-align: center
+#| fig-width: 4
+
+DiagrammeR::grViz("
+      digraph ards {
+      
+      graph[layout = dot, rankdir = TB, fontsize = 10]
+      
+      node[shape = rectangle]
+      
+      a [label = 'Initiate volume/pressure limited ventilation, (TV <= 6 ml/kg; Plateu pressure <= 30 cmH20, RR <= 35)']
+      b [label = 'Oxygenate, (FiO2 <= 0.6; SpO2 88-95%)']
+      c [label = 'Minimize acidosis (ph => 7.3; RR < 35)']
+      d [label = 'Diuresis (MAP => 65; avoid hypoperfusion)']
+      
+      a -> b -> c -> d
+      
+      
+      }
+")
+```
+
+##### Mechanical Ventilation
+
+Patient meeting criteria ARDS frequently become respiratory fatigues, so it requires mechanical ventilation.
+
+###### Minimize ventilator induced lung injury
+
+Mechanical ventilatio (MV) can save lifes, but also can aggravate lung injury due to volutrauma and atelectrauma. Volutrauma can occurs due to overdistention of alveoli due to effort to inflate the consolited lungs thus damaging the still functioning alveoli.
+
+-   **Low tidal volume 6ml/kg predicted body weight are better than coenventional 12 ml/kg bodyweight.**
+-   lower airway pressure, plateu pressure $\le$ 30 cm H~2~O.
+-   RR $\le$ 35
+
+###### Minimize atelectrauma
+
+In presence of fluid and loss of surfactant, PEEP is required to prevent atelectasis. PEEP is adjusted to minimize FIO~2~ while able to provide adequate PaO~2~ without causing alveolar overdistention. Follow table of PEEP-FiO~2~ combinations from ARDS Network trial.
+
+other technique includes **recruitment manuever**, that transiently increase PEEP to high levels to recruit ateletatic lung can increase oxygenation, but a mortality benefit has not been established.
+
+###### Prone positioning
+
+It improves survival.
+
+##### Fluid Management
+
+increased pulmonary vascular permeability leading to interstitial and alveolar edema fluid rich in protein is a centra features of ARDS. impaired vascular integrity augments the normal increase in extravascular lung water. Thus keeping low left atrial filling pressure could minimize pulmonary edema. Fluid restriction and diuretics should be an important aspect of ARDS management, limited only by hypotension and hypoperfusion.
+
+##### Neuromuscular blockage
+
+Sedation alone may not adequate for ventilator syncrony. Selective use of neuromuscular blockage for ventilator syncrony could improves survival.
+
+##### Glucocorticoids
+
+Current evidence does not support the routine use of glucocorticoids.
+
 #### Prognosis
 
+extrapulmonary organ failures and sepsis counts \> 80% of deaths. Risk factor for reduced survival are age (\>60 yo), preexistin organ dysfunction. Patients who survives despite prolonged respiratory failures and dependent on MV may recover within 6 months.
 
 ### Approach to Circulatory Shock
 
@@ -424,7 +636,7 @@ Natural history of ARDS divided into 3 phases - exudative, proliferative, and fi
 
 #### Oxygen Delivery
 
-Oxygen delivery (DO~2~ or QO~2~) is a function of cardiac output and the content of O~2~ in the arterial blood (CaO~2~). CaO~2~ is determined by HB concenctration, arterial HB saturation, and dissolved O~2~ disolved in plasma (not bound to HB). Equation provided at @eq-delivery-oxygen. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible. 
+Oxygen delivery (DO~2~ or QO~2~) is a function of cardiac output and the content of O~2~ in the arterial blood (CaO~2~). CaO~2~ is determined by HB concenctration, arterial HB saturation, and dissolved O~2~ disolved in plasma (not bound to HB). Equation provided at @eq-delivery-oxygen. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible.
 
 Arterial oxygen content (CaO~2~) normally around 21.16 mL/dL, while the mixed venous blood (VO~2~) is 15.76 mL/dL, thus normal tissue extraction is around 25%. Reduced VO~2~ may results from inadequate CO, reduced HB or reduced SaO~2~. Abnormally high VO~2~ may be caused by fever, agitation, shivering and thyrotoxicosis.
 

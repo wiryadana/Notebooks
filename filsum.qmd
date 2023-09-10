@@ -4,8 +4,7 @@
 
 Filsafat ilmu: untuk mencari tujuan hidup.
 
-**Ontology** : study of existence, becoming and reality, mengetahui segala sesuatu yang ada sebagaimana adanya. **Mencari tahu tentang hal terkait**.
-**Epistemology** : Study of knowledge, bagaimana kita bisa mendapatkan pengetahuan yang hakiki itu atau sesuatu yang ada sebagai mana adanya. **Mengetahui semua hal untuk mencapai sesuatu/how to achieve it.**
+**Ontology** : study of existence, becoming and reality, mengetahui segala sesuatu yang ada sebagaimana adanya. **Mencari tahu tentang hal terkait**. **Epistemology** : Study of knowledge, bagaimana kita bisa mendapatkan pengetahuan yang hakiki itu atau sesuatu yang ada sebagai mana adanya. **Mengetahui semua hal untuk mencapai sesuatu/how to achieve it.**
 
 Deduktif: Mencari ke arah spesifik
 
@@ -13,8 +12,7 @@ Induktif: Mencari teori (ke arah umum)
 
 **Aksiology** : Study of Value, ilmu pengetahuan yang didapat itu bisa diterapkan untuk kemahaslatan umat atau justru sebaliknya. **bagaimana cara menggunakan ilmunya**
 
-pengetahuan +> 5 panca indra, 
-pengetahuan bisa menjadi ilmu jika melalui ilmiah dan dapat diturunkan/semua bisa mempelajari dengan hasil yang sama.
+pengetahuan +\> 5 panca indra, pengetahuan bisa menjadi ilmu jika melalui ilmiah dan dapat diturunkan/semua bisa mempelajari dengan hasil yang sama.
 
 Filsafat ilmu sebagai kumpulan teori digunakan memahami dan mereaksi dunia pemikiran.
 
@@ -25,6 +23,8 @@ Filsafat ilmu sebagai kumpulan teori digunakan memahami dan mereaksi dunia pemik
 ## Ontologi, Epistemologi, dan Aksiologi Kedokteran
 
 ## Intelektualitas dan Aktivitas Intelektual
+
+
 
 ## Pengetahuan dan Ilmu Pengetahuan
 
