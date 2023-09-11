@@ -277,8 +277,6 @@ transcriptional regulation occurs at two interconnected levels
 - Histon complex - **histon COde**
 - 
 
-
-
 ## Control of Gene Expression
 
 ## Genetic Variation

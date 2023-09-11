@@ -86,39 +86,24 @@ beda yang besar bisa tidak memberikan signifikansi statistik bila N kecil (error
 
 Maka perlu ukuran sampel yang sesuai, dan perlu memaknai sebuah statistical significance dengan makna klinis (clinical importance)
 
-## Korelasi Linier
+## Korelasi Linier dan multipel
 
 Dasar-dasar dan aplikasi biostatistika klinik
 
-- mengestimasi kuatnya hubungan atau besarnya perbedaan (besarnya efek)
-- melakukan uji kemaknaan statistik (inferensial)
-- mengontrol pengaruh variable pengganggu terhadap besar efek dan inferensi
+-   mengestimasi kuatnya hubungan atau besarnya perbedaan (besarnya efek)
+-   melakukan uji kemaknaan statistik (inferensial)
+-   mengontrol pengaruh variable pengganggu terhadap besar efek dan inferensi
 
 hubungan semu dapat diperoleh dari analissis bivariat, lalu multivariat untuk mengekslusi hubungan semu.
 
-Korelasi = antara independen dan dependennya memiliki hubungan garis lurus.
-Korelasi ada 2, liner dan non linier. Korelasi ada fleksibilitas variabel independen dan dependennya.
+Korelasi = antara independen dan dependennya memiliki hubungan garis lurus. Korelasi ada 2, liner dan non linier. Korelasi ada fleksibilitas variabel independen dan dependennya.
 
-Jenis analisis statistik:
--  Tentukan pertama parametrik atau non-parametrik
--  Skala variabel: kontinyu (variabel skala dan interval), ordinal, nominal, diskriit
--  Uji normalitas: normal/non normal (tes kolmogorov smirnov atau shapiro-wilk)
--  Uji kesamaan varisi: sama/tidak sama (uji levene)
--  Uji kolinearitas: hubungan antar variabel independen (penting untuk uji partial korelasi, regresi linier berganda)
+Jenis analisis statistik: - Tentukan pertama parametrik atau non-parametrik - Skala variabel: kontinyu (variabel skala dan interval), ordinal, nominal, diskriit - Uji normalitas: normal/non normal (tes kolmogorov smirnov atau shapiro-wilk) - Uji kesamaan varisi: sama/tidak sama (uji levene) - Uji kolinearitas: hubungan antar variabel independen (penting untuk uji partial korelasi, regresi linier berganda)
 
-variabel: 
-- jika bisa dipecah menjadi 5 atau lebih, bisa dikatakan continyu.
-- jika kontinyu dipecah menjadi beberapa kategori : bisa ordinal
-- jika yes no= nominal
-- diskrit = tidak bisa dibedakan antara kategori?
+variabel: - jika bisa dipecah menjadi 5 atau lebih, bisa dikatakan continyu. - jika kontinyu dipecah menjadi beberapa kategori : bisa ordinal - jika yes no= nominal - diskrit = tidak bisa dibedakan antara kategori?
 
-Pemilihan uji statistik:
-1. tentukan variabel dependen (umumnya satu variable dependen)
-2. tentukan jumlah variabel independen
-    - bila tidak ada variabel independen, statistik yang dipakai adalah analisis univariat (deskriptif)
-    - bila ada satu variabel independen, statistik yang dipakai adalah bivariat
-    - bila ada lebih dari satu variable independen, statistik yang dipakai adalah analisis multivariat.
-    
+Pemilihan uji statistik: 1. tentukan variabel dependen (umumnya satu variable dependen) 2. tentukan jumlah variabel independen - bila tidak ada variabel independen, statistik yang dipakai adalah analisis univariat (deskriptif) - bila ada satu variabel independen, statistik yang dipakai adalah bivariat - bila ada lebih dari satu variable independen, statistik yang dipakai adalah analisis multivariat.
+
 Sentral limit theorem: jika lebih dari 30 bisa berdistribusi normal.
 
 ```{r}
@@ -136,11 +121,75 @@ DiagrammeR::grViz("
                   ")
 ```
 
-
-
 ## Regresi Linier Sederhana
 
-## Regresi Berganda
+.. lanjutan korelasi linier dan regresi linier sederhana dan multipel
+
+#### Memilih analisis bivariat
+
+```{r}
+library(gt)
+var_ind <- c("kontinyu (normal)", "kontinyu(non-normal)")
+var_dep <- c("kontinyu(normal)", "kontinyu (non-normal)")
+ana_biv <- c("korelasi pearson(rho) ; regresi linier sederhana (slope, intercept)", "korelasi speramn (rho)")
+ana_mul <- c("korelasi pearson partial / regresi linier berganda", "korelasi spearman parsial")
+
+stat_biv <- data.frame(var_ind, var_dep, ana_biv, ana_mul)
+gt(stat_biv)
+```
+
+##### Regresi Linier
+
+asumsi regresi linier:
+- distribusi nornal
+- tidak ada kolinearity
+- variansi asusmsi sama
+
+Regresi nilai: intercept (a), slope/tangent (bx) dan error (e)
+Intercept: nilai Y saat X = O
+slope: perubahan rerata variabel dependen untuk setiap unit perubahan variabel independen
+
+Y~i~ = a + bX + ei (a atau b0 dan b1 adalah effect size)
+dan p value
+
+##### Korelasi Linier
+Mengukur seberapa konsisten peribahan variabel indepen diikuti oleh peribahan variabel dependen (hubungan kovariansi)
+koefisien korelasi (r), menunjukan kekuatan hubungan antara variabel dependen dan variable independen. 
+
+ada 2 nilai: (rentang nilai -1 sd +1)
+- koefisien korelasi (rho), Ada kecenderungan hubungan x dengan y, tetapi tidak menunjukan seberapa kuat.
+- koefisien determinasi (r atau R^2^), seberapa persen pengaruh independen mempengaruhi dependen (effect size)
+- tambahan p value
+
+contoh R^2^ adalah R^2^ 45% pada konsumsi garam dan tekanan diastolik adalah variasi tekanan darah dapat dijelaskan sebesar 45% oleh konsuksi garam, sisanya 55% dijelaskan oleh factor lain. Nilai ini yang dimaknai oleh klinisi serta signifikansi korelasi (p) (kemungkinan hasil korelasi akibat by chance).
+
+tambah interpretasi regresi:
+a (intercept) = jika seorang tidak konsumsi garam berapa tekanan darahnya
+b (slope) = kenaikan tekanan darah setiap unit peningkatan konsumsi garam.
+
+Perbedaan korelasi dan regresi adalah korelasi belum bisa menentukan ind dan dependen, sedangkan regresi harus sudah ditentukan mana independen dan dependent.
+
+Visualisasi dengan scatter plot.
+
+##### Regresi dan korelasi Linier Berganda
+Multipel variabel independen melihat pengarihnya terhadap variabel dependen.
+
+Jika menggunakan korelasi maka nilainya rho partial (korelasi partial), jika regresi multipel (regresi berganda) maka slopenya multipel (a + b0 + b1 + bx... + e)
+
+Nisal: peneliti ingin mengetahui antara LFG (ml/menit) dengan estimasi data IMT (kg/m^2^), umur (tahun), dan TDD (mmhg), semua variabel independen berskala kontinyu. 
+
+lfg = 72,74 + 3,11 (IMT) - 1,15 (umur) - 0,23 (tdd).
+
+R^2^ = 0,35, maka 3 variabel independen berperan 35% menjelaskan variabel dependen. 
+
+Uji hipotesis:
+hipotesis nol omnibus = kesalahan tipe 1 ($\alpha$) merupakan hipotesis nol, artinya keseluruhan var indepen tidak dapat mengestimasi var dependen. Menguji B=0.
+
+Koefisien regresi ($\beta$) pada persamaan regresi => hubungan antara variabel masing masing independen dan variabel dependen.
+
+###### Asas Kolinearitas
+perhatikan nilai tolerance dan VIF (variance inflation factor)
+Nilai VIP besar lebih dari 10 atau tolerance < 0,10 maka dianggap terjadi multikolinearitas antara variabel dependen dalam model. 
 
 ## Distribusi normal
 

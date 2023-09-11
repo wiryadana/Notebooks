@@ -72,6 +72,4 @@ boelean logic: AND, OR, NOT
 
 ## Study about Prognosis
 
-
-
 ## Summary Capita Selekta

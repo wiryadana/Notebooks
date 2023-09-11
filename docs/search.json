@@ -360,57 +360,57 @@
     "objectID": "statistik.html#distribusi-normal",
     "href": "statistik.html#distribusi-normal",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.8 Distribusi normal",
-    "text": "40.8 Distribusi normal"
+    "section": "40.7 Distribusi normal",
+    "text": "40.7 Distribusi normal"
   },
   {
     "objectID": "statistik.html#uji-t-berpasangan-dan-tak-berpasangan",
     "href": "statistik.html#uji-t-berpasangan-dan-tak-berpasangan",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.9 Uji T berpasangan dan tak berpasangan",
-    "text": "40.9 Uji T berpasangan dan tak berpasangan"
+    "section": "40.8 Uji T berpasangan dan tak berpasangan",
+    "text": "40.8 Uji T berpasangan dan tak berpasangan"
   },
   {
     "objectID": "statistik.html#one-way-anova",
     "href": "statistik.html#one-way-anova",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.10 One Way ANOVA",
-    "text": "40.10 One Way ANOVA"
+    "section": "40.9 One Way ANOVA",
+    "text": "40.9 One Way ANOVA"
   },
   {
     "objectID": "statistik.html#ancova-dan-repeated-measurements-anova",
     "href": "statistik.html#ancova-dan-repeated-measurements-anova",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.11 Ancova dan Repeated Measurements ANOVA",
-    "text": "40.11 Ancova dan Repeated Measurements ANOVA"
+    "section": "40.10 Ancova dan Repeated Measurements ANOVA",
+    "text": "40.10 Ancova dan Repeated Measurements ANOVA"
   },
   {
     "objectID": "statistik.html#tabel-2-x-2-odd-ratio-prevalence-ratio-dan-relative-risk",
     "href": "statistik.html#tabel-2-x-2-odd-ratio-prevalence-ratio-dan-relative-risk",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.12 Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk",
-    "text": "40.12 Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk"
+    "section": "40.11 Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk",
+    "text": "40.11 Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk"
   },
   {
     "objectID": "statistik.html#prinsip-analisis-data-biner",
     "href": "statistik.html#prinsip-analisis-data-biner",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.13 Prinsip Analisis Data Biner",
-    "text": "40.13 Prinsip Analisis Data Biner"
+    "section": "40.12 Prinsip Analisis Data Biner",
+    "text": "40.12 Prinsip Analisis Data Biner"
   },
   {
     "objectID": "statistik.html#regresi-logistik-sederhana",
     "href": "statistik.html#regresi-logistik-sederhana",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.14 Regresi Logistik Sederhana",
-    "text": "40.14 Regresi Logistik Sederhana"
+    "section": "40.13 Regresi Logistik Sederhana",
+    "text": "40.13 Regresi Logistik Sederhana"
   },
   {
     "objectID": "statistik.html#regresi-logistik-berganda",
     "href": "statistik.html#regresi-logistik-berganda",
     "title": "40  Statistik Kedokteran Dasar",
-    "section": "40.15 Regresi Logistik Berganda",
-    "text": "40.15 Regresi Logistik Berganda"
+    "section": "40.14 Regresi Logistik Berganda",
+    "text": "40.14 Regresi Logistik Berganda"
   },
   {
     "objectID": "metpen.html#overview-of-clinical-research",
@@ -739,6 +739,13 @@
     "href": "statistik.html#regresi-linier-sederhana",
     "title": "40  Statistik Kedokteran Dasar",
     "section": "40.6 Regresi Linier Sederhana",
-    "text": "40.6 Regresi Linier Sederhana"
+    "text": "40.6 Regresi Linier Sederhana\n.. lanjutan korelasi linier dan regresi linier sederhana dan multipel\n\nMemilih analisis bivariat\n\n\n\n\n\n\n  \n    \n    \n      var_ind\n      var_dep\n      ana_biv\n      ana_mul\n    \n  \n  \n    kontinyu (normal)\nkontinyu(normal)\nkorelasi pearson(rho) ; regresi linier sederhana (slope, intercept)\nkorelasi pearson partial / regresi linier berganda\n    kontinyu(non-normal)\nkontinyu (non-normal)\nkorelasi speramn (rho)\nkorelasi spearman parsial\n  \n  \n  \n\n\n\n\n\nRegresi Linier\nasumsi regresi linier: - distribusi nornal - tidak ada kolinearity - variansi asusmsi sama\nRegresi nilai: intercept (a), slope/tangent (bx) dan error (e) Intercept: nilai Y saat X = O slope: perubahan rerata variabel dependen untuk setiap unit perubahan variabel independen\nYi = a + bX + ei (a atau b0 dan b1 adalah effect size) dan p value\n\n\nKorelasi Linier\nMengukur seberapa konsisten peribahan variabel indepen diikuti oleh peribahan variabel dependen (hubungan kovariansi) koefisien korelasi (r), menunjukan kekuatan hubungan antara variabel dependen dan variable independen.\nada 2 nilai: (rentang nilai -1 sd +1) - koefisien korelasi (rho), Ada kecenderungan hubungan x dengan y, tetapi tidak menunjukan seberapa kuat. - koefisien determinasi (r atau R2), seberapa persen pengaruh independen mempengaruhi dependen (effect size) - tambahan p value\ncontoh R2 adalah R2 45% pada konsumsi garam dan tekanan diastolik adalah variasi tekanan darah dapat dijelaskan sebesar 45% oleh konsuksi garam, sisanya 55% dijelaskan oleh factor lain. Nilai ini yang dimaknai oleh klinisi serta signifikansi korelasi (p) (kemungkinan hasil korelasi akibat by chance).\ntambah interpretasi regresi: a (intercept) = jika seorang tidak konsumsi garam berapa tekanan darahnya b (slope) = kenaikan tekanan darah setiap unit peningkatan konsumsi garam.\nPerbedaan korelasi dan regresi adalah korelasi belum bisa menentukan ind dan dependen, sedangkan regresi harus sudah ditentukan mana independen dan dependent.\nVisualisasi dengan scatter plot.\n\n\nRegresi dan korelasi Linier Berganda\nMultipel variabel independen melihat pengarihnya terhadap variabel dependen.\nJika menggunakan korelasi maka nilainya rho partial (korelasi partial), jika regresi multipel (regresi berganda) maka slopenya multipel (a + b0 + b1 + bx… + e)\nNisal: peneliti ingin mengetahui antara LFG (ml/menit) dengan estimasi data IMT (kg/m2), umur (tahun), dan TDD (mmhg), semua variabel independen berskala kontinyu.\nlfg = 72,74 + 3,11 (IMT) - 1,15 (umur) - 0,23 (tdd).\nR2 = 0,35, maka 3 variabel independen berperan 35% menjelaskan variabel dependen.\nUji hipotesis: hipotesis nol omnibus = kesalahan tipe 1 (\\(\\alpha\\)) merupakan hipotesis nol, artinya keseluruhan var indepen tidak dapat mengestimasi var dependen. Menguji B=0.\nKoefisien regresi (\\(\\beta\\)) pada persamaan regresi => hubungan antara variabel masing masing independen dan variabel dependen.\n\nAsas Kolinearitas\nperhatikan nilai tolerance dan VIF (variance inflation factor) Nilai VIP besar lebih dari 10 atau tolerance < 0,10 maka dianggap terjadi multikolinearitas antara variabel dependen dalam model."
+  },
+  {
+    "objectID": "statistik.html#korelasi-linier-dan-multipel",
+    "href": "statistik.html#korelasi-linier-dan-multipel",
+    "title": "40  Statistik Kedokteran Dasar",
+    "section": "40.5 Korelasi Linier dan multipel",
+    "text": "40.5 Korelasi Linier dan multipel\nDasar-dasar dan aplikasi biostatistika klinik\n\nmengestimasi kuatnya hubungan atau besarnya perbedaan (besarnya efek)\nmelakukan uji kemaknaan statistik (inferensial)\nmengontrol pengaruh variable pengganggu terhadap besar efek dan inferensi\n\nhubungan semu dapat diperoleh dari analissis bivariat, lalu multivariat untuk mengekslusi hubungan semu.\nKorelasi = antara independen dan dependennya memiliki hubungan garis lurus. Korelasi ada 2, liner dan non linier. Korelasi ada fleksibilitas variabel independen dan dependennya.\nJenis analisis statistik: - Tentukan pertama parametrik atau non-parametrik - Skala variabel: kontinyu (variabel skala dan interval), ordinal, nominal, diskriit - Uji normalitas: normal/non normal (tes kolmogorov smirnov atau shapiro-wilk) - Uji kesamaan varisi: sama/tidak sama (uji levene) - Uji kolinearitas: hubungan antar variabel independen (penting untuk uji partial korelasi, regresi linier berganda)\nvariabel: - jika bisa dipecah menjadi 5 atau lebih, bisa dikatakan continyu. - jika kontinyu dipecah menjadi beberapa kategori : bisa ordinal - jika yes no= nominal - diskrit = tidak bisa dibedakan antara kategori?\nPemilihan uji statistik: 1. tentukan variabel dependen (umumnya satu variable dependen) 2. tentukan jumlah variabel independen - bila tidak ada variabel independen, statistik yang dipakai adalah analisis univariat (deskriptif) - bila ada satu variabel independen, statistik yang dipakai adalah bivariat - bila ada lebih dari satu variable independen, statistik yang dipakai adalah analisis multivariat.\nSentral limit theorem: jika lebih dari 30 bisa berdistribusi normal."
   }
 ]

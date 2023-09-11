@@ -79,8 +79,7 @@ Hypothesis:
 
 a statement about relathionsip between two or more variables that suggest an answer to the research question, is declarative statement that predicts an expected outcome.
 
-Research hypothesis:
-kalimat deklaratif yang mencoba memberikan jawaban sementara atas pertanyaan penelitian.
+Research hypothesis: kalimat deklaratif yang mencoba memberikan jawaban sementara atas pertanyaan penelitian.
 
 Statistical hypotesis: biasanya tidak ditulis di proposal.
 
