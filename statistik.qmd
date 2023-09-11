@@ -188,7 +188,7 @@ hipotesis nol omnibus = kesalahan tipe 1 ($\alpha$) merupakan hipotesis nol, art
 Koefisien regresi ($\beta$) pada persamaan regresi => hubungan antara variabel masing masing independen dan variabel dependen.
 
 ###### Asas Kolinearitas
-perhatikan nilai tolerance dan VIF (variance inflation factor)
+Perhatikan nilai tolerance dan VIF (variance inflation factor).
 Nilai VIP besar lebih dari 10 atau tolerance < 0,10 maka dianggap terjadi multikolinearitas antara variabel dependen dalam model. 
 
 ## Distribusi normal

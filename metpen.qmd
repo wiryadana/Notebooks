@@ -89,6 +89,49 @@ Jika hypotesis yang kita uji tidak sesuai dengan data, maka bukan berarti ilmu i
 
 ## Sample Size and Power
 
+Sample size pentingnya untuk bisa mewakili populasi dan dapat inferensi ke populasi itu kembali, serta:
+
+- untuk mendeteksi treatment effects jika memang ada di populasi (mendapatkan hasil statistik signifikan dan secara klinis penting)
+- Presisi estimasi
+- avoid wasting resources
+- avoid misleading conclusion
+
+**Two many subject proves everything, too few subject proves nothing**
+
+Kapan ketika perhitungan sample size tidak diperlukan?
+ - Penelitian kualitatif
+ - Pilot studi, biasanya 10 -20 subjek untuk menentukan sample size studi yang lebih besar.
+ 
+ Sampel size sesuai dengan design, analysis plan dan outcome. Sample size harus sesuai untuk memenuhi statistical significance dan clinically important, tanpa membuang sumber daya terlalu banyak.
+ 
+Sampel size berhubungan power. Power = makin kuat penelitian mampu mendeteksi sebuah efek di populasi, maka semakin banyak sample size dibutuhkan.
+ 
+Definition of Power: the probability of concluding the new treatment is effective if it truly is effective. Biasanya 80%
+type I error = the probability of concluding that the new treatment is effective if it truly is not effective. (positive palsu, alpha)
+type II error = the probability of concluding the new treatment not effective if it is truly effective (negative palsu, 1 - power atau beta)
+
+Elemen menentukan sample size:
+$\Delta$ = **effect size** or difference under null hypotesis (perbedaan klinis yang dianggap penting) diambil dari studi sebelumnya dan tinjauan pustaka. Jika effect size besar, maka sampel di butuhkan lebih kecil, begitu kebalikannya
+$\alpha$ = type I error, 0,05
+$\beta$ = type 2 error, 0,2
+$\sigma$ = standard deviation, makin heterogen populasi maka sample size makin besar.
+r = ratio of number of patients in the two groups, usually  r = 1
+
+Hubungan sampel size dengan hasil presisi, dimana hasil confidence interval akan lebih sempit (lebih presisi) jika sample size besar.
+Jika hipotesis 2 arah, sample lebih besar, biasanya lebih disarankan hipotesis 2 arah.
+Pertimbangan tambahan sampel jika kemungkinan loss to follow up terutama pada kohort prospektif dan clinical trial. Jika cross sectional, tidak perlu.
+Jika tidak ada studi sebelumnya sebagai patokan sampel, maka tetap harus memperhitungkan sampel dengan cara pilot study.
+
+Jika tidak bisa memenuhi jumlah sampel sesuai perhitungan sebelum penelitian (apriori), kita bisa mennetukan apakah hasil studi kita underpower dengan memperhitungkan hasil tes post-hoc.
+
+Stategi meminimalkan sample size
+- pakai varibael kontinyu
+- paired measurement.
+
+rule of thumb: 10 - 50 per variabel, atau 30 sampel. Pakai rule of thumb jika tidak ada data yang bisa mendukung perhitungan jumlah sampel.
+
+Effect size tidak boleh mengutip dari penelitian lain secara *eksplisit* di proposal.
+
 ## Effect Size, Confident Interval, and P Value
 
 ## Research Design
