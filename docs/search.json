@@ -263,7 +263,7 @@
     "href": "biomol.html#gene-expression",
     "title": "37  Biologi Molekular",
     "section": "37.9 Gene Expression",
-    "text": "37.9 Gene Expression"
+    "text": "37.9 Gene Expression\nJumlah gene sel manusia ada sekitar 20 rb - 30 rb. Setiap sel somatik sama jumlahnya, yang berbeda adalah aktivasinya pada masing-masing tipe sel.\nProses transkripsi: ada inisiasi, elongasi dan terminasi. Proses translasi: iniasi, elongasi, terminasi\n\n37.9.1 Transkripsi\n\nInisiasi\nRNA Pol 1, RNA pol 2, RNA pol 3.\nPromoter mengenali sekuens DNA spesifik yang disebut responsive element dalam proses inisiasi transkripsi. Ada komples TATAA Box. Kompleks promotor menarik aparatus faktor faktor yang membentu proses transkripsi. Selain promotor adalah enhancer. Enhancer terletak lebih jauh dari gene terkait, baik upstream atau downstream yang membentuk sebuah DNA loop berikatan dengan kompleks inisiasi.\n\n\nElongasi\n\n\nTerminasi\nTerminasi terjadi karena pemotongan strand RNA pada sekuens tertentu. RNA kemudian ditambah poly A tail untuk meningkatkan stabilitas. Makin panjang Poly A tail, makin stabil.\n\n\nPost transcriptional Step in Gene Expression.\n\nmature RNA megalami splicing\nPenambahan 5’ end cap, menjadi 7 mentilguanosin cap\nPenambahan 3’ poli adenin tail\n\nTerjadi regulasi paska transkripsi melibatkan small/micro RNA.\n\n\n\n37.9.2 Translasi\n\n\n37.9.3 Regulasi Transkripsi\nRegulasi mRNA tergantung 1. kestabilan mRNA 2. pasangan mirna (RNAi) 3. keadaan sel 4. Metilasi DNA (pada sitosin)\nTranscription control of genes transcriptional regulation occurs at two interconnected levels - Histon complex - histon COde -"
   },
   {
     "objectID": "biomol.html#control-of-gene-expression",
