@@ -1,1 +1,131 @@
 # Statistics and R languange
+
+## Dataframe Operation
+```{r}
+worms <- read.csv("mock_data/worms.csv")
+```
+
+Checking the columns
+```{r}
+names(worms)
+```
+
+SUmmary
+```{r}
+summary(worms)
+```
+
+The use of aggregates function
+```{r}
+with(worms, tapply(Worm.density, Vegetation, mean))
+```
+
+```{r}
+aggregate(worms[,c(2,3,5,7)], list(Community = worms$Vegetation), mean)
+```
+Multiple classification
+```{r}
+aggregate(worms[,c(2,3,5,7)],
+          list(moisture = worms$Damp, 
+               community = worms$Vegetation),
+          mean
+          )
+```
+
+#### Get to Know the Data
+
+##### Check if any unusual data points
+```{r}
+das <- read.csv("mock_data/das.csv")
+
+plot(das$y)
+```
+
+To find which data is the outlier in the above scatter plot
+```{r}
+which(das$y > 10)
+```
+
+So it is the the 50 th data point.
+
+
+##### Find Relathionsip
+
+###### Numeric vs Numeric Variabales
+```{r}
+scat <- read.csv("mock_data/scatter.csv")
+plot(scat$x, scat$y, pch=21, bg="red")
+```
+
+From plot above we can see :
+1. The relathioship between response and explanatory variables is curved
+2. Degree of scatter from left to right increases (non heterogenous), thus heterocedascity.
+
+###### Categorical vs Numeric Variabales
+```{r}
+weather <- read.csv("mock_data/weather.data.csv")
+plot(factor(weather$month), weather$upper)
+```
+
+We see an overall pattern of temperature in a year. We see an outlier at month-6, it turns out a missing data that inputted as zero.
+
+###### making Conditional Plot (COPLOT)
+
+```{r}
+coplot <- read.csv("mock_data/coplot.csv")
+```
+
+Alter graphics parameter to specifiy two sets of axis on the same row then make a simple scatter plot
+```{r}
+par(mfrow=c(1,2))
+plot(coplot$x, coplot$y)
+plot(coplot$y, coplot$x)
+```
+
+To look for interaction between explanatory variables and response variables, we employ coplot. It plot Y agains X conditional on the value of Z. Z is numeric variables, by default the coplot split Z into six graphs, with the lowest value appear in the bottom left-hand.
+```{r}
+coplot(coplot$y ~ coplot$x | coplot$z, pch = 16, panel=panel.smooth)
+```
+The relathiosip of X and Y change according to Z, as increasing Z the trend comes positive.
+
+###### Interaction in Categorical Data
+```{r}
+np <- read.csv("mock_data/np.csv")
+np$nitrogen <- as.factor(np$nitrogen)
+np$phosporus <- as.factor(np$phosphorus)
+```
+
+```{r}
+par(mfrow=c(1,2))
+plot(np$nitrogen, np$yield, main = "Nitrogen")
+plot(np$phosporus, np$yield, main = "Phosporus")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

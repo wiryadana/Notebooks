@@ -312,7 +312,7 @@ Endotrachea intubation & mechanical ventilation allow blood redistributed to vit
 
 #### Mechanical Ventilation
 
-mechanical ventialtion is used to assist or replace sponstaneus breathung. Its application of high oxygen content + positive pressure. Primary indication is **acute respiratory** failure which there are two basic types: 1. hypoxemic and 2. hypercarbic. *Hypoexemic* present when arterial O2 saturation <90% despite increased inspired O2 fraction due to ventilation perfusion mismatch or shunting. *Hypercarbic* characterized by elevated arterial CO2 (usually >50 mmHg) resulting from conditions that decrease minute ventilation or increased physiologic dead space. 
+mechanical ventialtion is used to assist or replace sponstaneus breathung. Its application of high oxygen content + positive pressure. Primary indication is **acute respiratory** failure which there are two basic types: 1. hypoxemic and 2. hypercarbic. *Hypoexemic* present when arterial O2 saturation \<90% despite increased inspired O2 fraction due to ventilation perfusion mismatch or shunting. *Hypercarbic* characterized by elevated arterial CO2 (usually \>50 mmHg) resulting from conditions that decrease minute ventilation or increased physiologic dead space.
 
 ##### Types of Mechanical Ventilation
 
@@ -320,48 +320,37 @@ there are two types of MV: noninvasive ventilation (NIV) and invasive (conventio
 
 ###### Noninvasive ventilation
 
-NIV: effective in acute and chronic respiratory failure with fewer complication (pneumonia & tracheolaringeal trauma). NIV provided by tight fitting mask, a nasal mask similar to taht used for sleep apnea. It is especially effective in COPD. Modes used are bilevel positive airway pressure (BiPAP) or pressure support ventilation (PSV). Both used positive pressure during inspiration and expiration, althouhg lower in expiration. Trial showed: COPD exacerbation ph 7,25 - 7,35 associated with good outcomes, for ph <7,25 the failure increase with decreasing ph. patient with ph >7,35 NIV is not better than conventional treatment (controlled O2, systemic glucocorticoid, bronchodilator and antibiotics).
+NIV: effective in acute and chronic respiratory failure with fewer complication (pneumonia & tracheolaringeal trauma). NIV provided by tight fitting mask, a nasal mask similar to taht used for sleep apnea. It is especially effective in COPD. Modes used are bilevel positive airway pressure (BiPAP) or pressure support ventilation (PSV). Both used positive pressure during inspiration and expiration, althouhg lower in expiration. Trial showed: COPD exacerbation ph 7,25 - 7,35 associated with good outcomes, for ph \<7,25 the failure increase with decreasing ph. patient with ph \>7,35 NIV is not better than conventional treatment (controlled O2, systemic glucocorticoid, bronchodilator and antibiotics).
 
 THe used of NIV in other respiratory failure is limited, and in some conditions contraindicated (cardiac arrest, respiratory arrest, decreased consciousness, GI bleeding, hemodynamic instability, MI, facial trauma, upper airway obstruction, inability to clear secretion), and may delay life saving measure. Reduced respiratory rate, decreased the use of accesory muscle (scalene, sternomastoid and intercostal) are good clinical indicator of improvement. ABG should be evaluated hours after NIV initiation, if no improvement it may need a conventional MV
 
 ###### Invasive Ventilation (Conventional MV)
-Intubation (cuffed tibed inserted to trachea) to allow conditioned (warmed, oxygenated, humidified) gas delivered to the airways. 
+
+Intubation (cuffed tibed inserted to trachea) to allow conditioned (warmed, oxygenated, humidified) gas delivered to the airways.
 
 Principles of MV: optimize oxygenation while avoiding ventilator-induced lung injury due to overstretch and collapse/re-recruitment (protective ventilatory strategy)
 
 ##### Modes of Ventilation
 
-modes are the manner in which breaths are triggered, cycled and limited.
--  trigger: inspiratory effort or time based signal
--  cycle : refers to the factors that determine the end of inspiration (volume, pressure and time cycling)
--  limiting factors are operator-specified values: airway pressure.
+modes are the manner in which breaths are triggered, cycled and limited. - trigger: inspiratory effort or time based signal - cycle : refers to the factors that determine the end of inspiration (volume, pressure and time cycling) - limiting factors are operator-specified values: airway pressure.
 
 Most patient ventilated with assist-control, intermittent mandatory ventilation, PSV.
 
 ###### Assist control ventilation
 
-Assist control (ACMV) is the most widely used. Used in initiation of MV.
-trigger: initiated by patient inspiratory effort, if none detected, by specified time signal.
-cycle: pressure or volume cycle.
-limit: specified tidal-volume, RR defined by patients rate or backup rate.
+Assist control (ACMV) is the most widely used. Used in initiation of MV. trigger: initiated by patient inspiratory effort, if none detected, by specified time signal. cycle: pressure or volume cycle. limit: specified tidal-volume, RR defined by patients rate or backup rate.
 
 problem: auto-peep might occurs if dynamic hyperinflation due to high RR happens.
 
 ###### Intermittent Mandatory Ventilation
-Most commmon modes: SIMV
-trigger: set mandatory breath, between each mandatory breath patient can breath spontaneously. in SIMV, mandatory breath delivered in syncrony with patients breath.if patient fail to initiate a breath, the machine give fixed volume and reset its timer for next breath.
-cycle: defined volume,
-limit: 
 
-difference with ACMV: only the a preset number of breath are ventilator-assisted.
-SIMV allowd patients with intact respiratory drive to exercise inspiratory msucles between assisted breath, useful for supporting and weaning intubation.
-problem: difficult to use in tacypnea, due to expiration attemp during ventilator inspiratory cycle. The pressure increase, and may abort the inspiration and thus lower tidal volume. In contrast, for tachypnea represent of metabocl or respiratory acidosis, change in ACMV will increase minute ventilation and help normalize pH
+Most commmon modes: SIMV trigger: set mandatory breath, between each mandatory breath patient can breath spontaneously. in SIMV, mandatory breath delivered in syncrony with patients breath.if patient fail to initiate a breath, the machine give fixed volume and reset its timer for next breath. cycle: defined volume, limit:
+
+difference with ACMV: only the a preset number of breath are ventilator-assisted. SIMV allowd patients with intact respiratory drive to exercise inspiratory msucles between assisted breath, useful for supporting and weaning intubation. problem: difficult to use in tacypnea, due to expiration attemp during ventilator inspiratory cycle. The pressure increase, and may abort the inspiration and thus lower tidal volume. In contrast, for tachypnea represent of metabocl or respiratory acidosis, change in ACMV will increase minute ventilation and help normalize pH
 
 ###### Pressure-support Ventilation
 
-trigger: patient breath
-cycle: flow, isnpiration is terminated when airflow fall below a certain level.
-limit: pressure
+trigger: patient breath cycle: flow, isnpiration is terminated when airflow fall below a certain level. limit: pressure
 
 provides graded asistence and differs from the other two in that the operator set the pressure level to augment every spontaneous breath. The level of pressure is adjusted by observing the patiens RR.
 
@@ -369,9 +358,7 @@ provides graded asistence and differs from the other two in that the operator se
 
 useful to limit peak pressure, in patients with preexisting barotreauma or post htoracic surgery.
 
-trigger: time
-cycle: time,
-limit: pressure
+trigger: time cycle: time, limit: pressure
 
 minute ventilation is altered through RR and pressure control.
 
@@ -383,10 +370,10 @@ All ventilation occurs through the patients spontaneus efforts. The machine prov
 
 Whatever the modes of MV, the principles:
 
-1. Set target tidal volume close to 6 ml/kg of ideal body weight
-2. Prevent plateu pressure exceed 30 cm H~2~O
-3. Use the lowest possible FIO~2~ to keep SaO~2~ $\ge$ 90%
-4. Adjust the PEEP to maintain alveolar patency while preventing overdistention and closure/reopening.
+1.  Set target tidal volume close to 6 ml/kg of ideal body weight
+2.  Prevent plateu pressure exceed 30 cm H~2~O
+3.  Use the lowest possible FIO~2~ to keep SaO~2~ $\ge$ 90%
+4.  Adjust the PEEP to maintain alveolar patency while preventing overdistention and closure/reopening.
 
 ##### Maintenance for mechanical Ventilated patients
 
@@ -437,9 +424,9 @@ Once patients determined that able to breath spontaneously, then proceeed to rem
 
 #### Prolonged MV and Tracheostomy
 
-5-13 % patients with MV will go on to require prolonged MV (>21 days). It is important to decide whether and when to perform a trachoestomy. Tracheostomy is though to be more comfortable, require less sedation, and provide a more secure airway and reduce weaning time. 
+5-13 % patients with MV will go on to require prolonged MV (\>21 days). It is important to decide whether and when to perform a trachoestomy. Tracheostomy is though to be more comfortable, require less sedation, and provide a more secure airway and reduce weaning time.
 
-In general, if a need of MV for >10-14 days, a tracheostomy would be indicated.
+In general, if a need of MV for \>10-14 days, a tracheostomy would be indicated.
 
 ##### Maintenance for mechanical Ventilated patients
 
@@ -447,7 +434,7 @@ In general, if a need of MV for >10-14 days, a tracheostomy would be indicated.
 
 Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (\> 10 - 15 cmH~2~O) at a constant inspiratory flow rate of 1 L/s(shown in figure @fig-airwayresistance. Normally, respiratory system compliance is \~ 100 ml/cmH~2~O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax & increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.
 
-![Graph Illustration taken from harrison](Airway_resistance.png){#fig-airwayresistance}
+![Graph Illustration taken from harrison](Airway_resistance.png)
 
 Patients frequently require sedatives & analgetics.
 
@@ -619,6 +606,138 @@ Current evidence does not support the routine use of glucocorticoids.
 extrapulmonary organ failures and sepsis counts \> 80% of deaths. Risk factor for reduced survival are age (\>60 yo), preexistin organ dysfunction. Patients who survives despite prolonged respiratory failures and dependent on MV may recover within 6 months.
 
 ### Approach to Circulatory Shock
+
+shock is the clinical condition of organ dysfuntion resulting from imbalance between celular oxygen supply and demand. Shock is reversible in early state, but if left untreated leads to multisystem organ dysfunction and death.
+
+#### Pathophysiology of Shock
+
+The cellular oxygen imbalance most commonly related to impaired oxygen delivery in the setting circulatory failure. 
+- shock may also occurs in the setting of failure oxygen utilization (cyanide poisoning)
+- and state of increased oxygen demand.
+
+In the setting of inadequate oxygen supply, the cell cannot maintain aerobic metabolism, thus forced into anaerobic metabolism and produce lactate and less ATP. Less ATP supply impaired cell ability to maintain hemeostasis such as maintaining N/K pump. Celular pump failure cause influx of calcium and leads to activation of phospolipases and protease, causing cellular swelling and death. In addition, hypoxia cause leakage of intracellular contents to the extracellular space, activating inflamatory cascasdes.
+
+Oxygen delivery influenced by two major components, namely Cardiac Output (CO) and arterial oxygen content (CaO~2~. 
+
+DO~2~ = CO x CaO~2~, major determinants of CO are HR and SV
+
+DO~2~ = (HR x SV) x CaO~2~, major determinants of SV are preload, afterload (SVR), and cardiac contractility. thus
+
+SV ~ (Preload x Contractility)/SVR
+
+Preload refees to myocardical fibers lenght before contraction (LV-EDV). Contractility refers to the ability of the ventricile to contract independent of preload and afterload. SVR represent afterload, force that ventricle must overcome to send the blood out of the cardiac cambers. 
+
+The CaO~2~ is composed of oxygen carried by convection with hemoglobin and oxygen dissolved in blood,
+
+CaO~2~ = (Kg x 1,39 x SaO~2~) + (PaO~2~ x 0,03)
+
+A disease process that affects these variables (HR, preload, contractility, SVR, SaO2, or Hb) has potential to reduce DO~2~.
+
+#### Classification of Shock
+
+Four major shock types are distributive, cardiogenic, hypovolemic, and obstrictive. Each has unique hemodynamics profile.
+
+##### Distributive Shock
+
+Distributive shock is condition of reduced O~2~ delivery where the primary physiologic distubance is **reduction in SVR**. There are **increase of CO** as a compensatory effort. CVP and PCWP reduced. The most common etiology is sepsis. Sepsis is life-threatening organ dysfunction due to dysregulated host response to infection. If accompanied by persistent hypotension despite adequate fluid resuscitation and needed vasopressor support, it is called septic shock. Other medical cause : Anaphylaxis (IgE mediated vasodilatation after exposure to allergen), pancreatitis, severe burns, liver failure. There almost 35% extravasation of circulating blood volume within 10 minutes. Patiens with severe brain or spinal cord injury may have a reduction in SVR due to disruption of autonomic pathways and blood pooling in venous system. Other cause is adrenal insuficiency due to chronic steroid use, medication , malignancy, adrenal hemmorhage, infection or autoimune. Acute stress condition, created deficit in steroid, and cause vasodilatation as well as aldosteron deficiency-mediated hypovolemia.
+
+##### Cardiogenic Shock
+
+Cardiogenic shock is characterized by reduced O~2~ delivery related to a reduction in CO owing to a primary cardiac problem. There are compensatory response as an increase in SVR. If left ventricle is dysfunction, there will be increased PCWP, and if right ventricle is will present as increased CVP. SV may reduced due to reduced contractility (MI, Cardiomyopathies, myocarditis), valvular disease, or due to alteration in HR (bradiaritmia and tachyarithmia)
+
+##### Hypovolemic Shock
+
+Hypovolemic shock encompasses disease that reduce CO and DO~2~ via a reduction in preload. There is elevation is SVR and low CVP-PCWP. Most common cause is hemmorhage followed by fluid loss from diarhea or vomiting, diuresis, skin damage.
+
+##### Obstructive Shock
+
+Obstructive shock is reduced O~2~ delivery related to reduced CO because impairment in blood flow, both inflow and outflow, in extracardiac pulmonary vascular or other mechanical process. Inflow obstruction Etiology: tension pneumothorax, cardiac tamponade, restrictive pericarditis. Outflow obstruction etiology: pulmonary embolism, venous air embolis, fat embolism or aortic dissection.
+
+UGD => hypovolemic (30,8%) > septic (27,2%) > distributive non septic (23,4%) > cardiogenic (14%) >>>> obstructiove shock (0,9%).
+ICU => Shock predominates )62%) >> Hypovolemic (16%) ~ cardiogenic shock (15%) >>> obstructive shock (2%).
+
+Mortality rate: cardiogenic ~ septic > hypovolemic
+
+#### Stages of Shock
+There are 3, preshock, shock and irreversible shock.
+Body utilize variety of physiologic response to counter initial insult. There no overt sign of organ dysfunction. Lab: slight elevation of creatine or troponin or mild elevation of lactate. If host compensatory mechanism are not enough, organ dysfuction occurs and irreversible Shock ensued.
+
+#### Evaluation of the patient with Shock
+
+early recongition is paramount important to reverse the stages of shock. Anamnesis to find the cause. Physical examination to identify circulatory failure (hypotension SBP <90 mmHG, or MAP < 65 mmHg) and sign of organ dysfunction. Check urine output.
+Finding:
+High CO shock: warm peripherals, CRT <2 S, large pulse pressure (LOW DBP).
+Low CO shock: delayed CRT, cool extremities, weak pulses. 
+
+Increased instravasular filling pressure and JVP (cardiogenic, obstrctive shock)
+
+**Shock Index** : defined as the HR/SBP with normal SI 0,5 - 0,7
+
+Lab test: 
+- Lactate
+- Renal function
+- liver function
+- cardiac enzymes
+- CBC
+- Hemostatic index
+- UL
+- PP test if needed
+- ECG
+- CXR
+- POCUS (RUSH, ACES, SESAME protocol)
+
+#### Initial Treatment of Shock
+
+##### Initiate treatment for circulatory shock.
+
+Find venous access and invasive monitoring if needed
+
+##### Volume Resuscitation
+
+The physiologic goal of volume resuscitation is to move the patient to the
+**nonpreload-dependent portion of the Starling curve**. Most patients with any of the four shock types will benefit from an increase in intra-vascular volume.
+suspected septic shock, a minimum of 30 mL/kg is recommended by the Surviving Sepsis Campaign. While the need for volume resuscitation is most apparent for patients with distributive or hypovolemic shock, even patients with cardiogenic shock may benefit from cautious volume replacement. In these patients, there should be a careful assessment of volume status prior to volume administration.
+
+Volume resuscitation will begin with **crystalloid**. In patients with hypovolemic shock due to ongoing hemorrhage, volume replacement with packed red blood cells is warranted. In cases of massive transfusion, platelets and fresh frozen plasma should be provided to offset the dilution of these components during volume replacement. Because hemoglobin is a key determinant of CaCO2, **red cell administration may be a part of volume replacement even without hemorrhage in order to optimize oxygen delivery if hemoglobin content is <7 g/dL.**
+
+Assessment of intravascular volume status (and the adequacy of volume resuscitation) begins with the physical examination. The **passive leg raise (PLR) test can predict responsiveness to additional intravenous fluid (IVF) by providing the patient with an endogenous volume bolus.** While the patient is resting in a semirecumbent position at a 45° angle, the bed is placed in Trendelenburg position such that the patient’s head becomes horizontal and the legs are extended at a 45° angle. There is then an immediate (within 1 min) assessment of changes in CO (or pulse pressure variation as a surrogate). It is important to emphasize that one does not merely look for changes in blood pressure; if the shock patient is mechanically ventilated there is the option of looking at changes in **SV variation (or pulse pressure variation)** during the respiratory cycle to assess volume responsiveness. A >12% SV variation suggests a volume-responsive state. This measurement requires that the patient be in a volume cycle mode of ventilation, without breath-to-breath variations in intrathoracic pressure and without arrhythmias.
+
+There is also increased use of echocardiography to assist in determination of intravascular fluid status, with a variety of static and dynamic
+variables The most commonly used parameters to assess adequacy of volume resuscitation are inferior vena cava (IVC) diameter and IVC collapse. Alternatively, serial assessments of LV function can be performed while volume is being administered. Placement of a pulmonary artery catheter (PAC) is another tool for assessment of volume status. This more invasive measure involves placement of the PAC into the central venous circulation and through the right heart. Ports in the PAC (Swan-Ganz catheter) allow for direct measurement of CVP, pulmonary artery (PA), and PCWPs. The PCWP is used as
+a surrogate for LA pressure.
+
+##### Vasopresor and Inotropic Support
+
+If hypotension and inadequate tissue perfusion persist, then vasopressor and inotropic support should be initiated. **The use of vasopressors and inotropes must be tailored to the primary physiologic disturbance.** 
+
+In distributive shock, the aim is to increase the SVR. **Norepinephrine is the first-choice vasopressor**, with potent α1 and β1 adrenergic effects. The α1 causes vasoconstriction while β1 has positive inotropic and chronotropic effects. At high doses, epinephrine has a similar profile (at lower doses the β effects predominate) but is associated with tachyarrhythmia, myocardial ischemia, decreased splanchnic blood flow, pulmonary hypertension, and acidosis. In distributive shock, vasopressin deficiency may be present. Vasopressin acts on the vasopressin receptor to reverse vasodilation and redistribute flow to the splanchnic circulation.
+**Dopamine does not have a role as a first-line agent in distributive shock.** 
+
+For patients with **cardiogenic shock, dobutamine is the first-line agent**; it is a synthetic catecholamine with primarily β-mediated effects and minimal α adrenergic effects. The β1 effect is manifest in increased inotropy and the β2 effect leads to vasodilation with decreased afterload; it can be used with norepinephrine in patients with mixed distributive and cardiogenic shock.
+
+##### Oxygenation and Ventilation Support
+
+Supplemental oxygen should be initiated and titrated to
+maintain SpO2 of 92–95%. patients may require intuvation and MV for two reason:
+
+1. primary pulmonary process or related to LV dysfunction and elevations of PCWP. For patients with all types of shock, there can be development of ARDS and subsequent V/Q mismatch and shunt.
+
+2. high minute ventilatory needs to compensate for metabolic acidosis. As shock progresses, they may not be able to maintain adequate respiratory compensation.
+
+It is important to provide ventilation with lung-protective strategies
+focused on low tidal volume ventilation and optimization of positive
+end-expiratory pressure to minimize ventilator-induced lung injury.
+
+##### Antibiotics
+
+For patients presenting with undifferentiated shock, if the diagnosis of septic shock is being entertained, then broad-spectrum antibiotics should be administered after obtaining appropriate cultures. While it is ideal to initiate antibiotics after appropriate cultures, the inability to obtain cultures should not delay the start of treatment
+
+##### Other specific treatment for specific etiology
+
+The initial evaluation (history, physical examination, and diagnostic
+testing) may have identified an etiology of shock that requires urgent
+lifesaving intervention in addition to the initial treatment steps out-
+lined above.
 
 ### Sepsis
 

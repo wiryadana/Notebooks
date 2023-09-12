@@ -241,45 +241,50 @@ post M, defosforilasi pRB
 
 Jumlah gene sel manusia ada sekitar 20 rb - 30 rb. Setiap sel somatik sama jumlahnya, yang berbeda adalah aktivasinya pada masing-masing tipe sel.
 
-Proses transkripsi: ada inisiasi, elongasi dan terminasi.
-Proses translasi: iniasi, elongasi, terminasi
+Proses transkripsi: ada inisiasi, elongasi dan terminasi. Proses translasi: iniasi, elongasi, terminasi
 
 ### Transkripsi
+
 #### Inisiasi
+
 RNA Pol 1, RNA pol 2, RNA pol 3.
 
-Promoter mengenali sekuens DNA spesifik yang disebut responsive element dalam proses inisiasi transkripsi. Ada komples TATAA Box. Kompleks promotor menarik aparatus faktor faktor yang membentu proses transkripsi. Selain promotor adalah enhancer. Enhancer terletak lebih jauh dari gene terkait, baik upstream atau downstream yang membentuk sebuah DNA loop berikatan dengan kompleks inisiasi. 
+Promoter mengenali sekuens DNA spesifik yang disebut responsive element dalam proses inisiasi transkripsi. Ada komples TATAA Box. Kompleks promotor menarik aparatus faktor faktor yang membentu proses transkripsi. Selain promotor adalah enhancer. Enhancer terletak lebih jauh dari gene terkait, baik upstream atau downstream yang membentuk sebuah DNA loop berikatan dengan kompleks inisiasi.
 
 #### Elongasi
 
 #### Terminasi
-Terminasi terjadi karena pemotongan strand RNA pada sekuens tertentu. RNA kemudian ditambah poly A tail untuk meningkatkan stabilitas. Makin panjang Poly A tail, makin stabil. 
+
+Terminasi terjadi karena pemotongan strand RNA pada sekuens tertentu. RNA kemudian ditambah poly A tail untuk meningkatkan stabilitas. Makin panjang Poly A tail, makin stabil.
 
 #### Post transcriptional Step in Gene Expression.
 
-1. mature RNA megalami splicing
-2. Penambahan 5' end cap, menjadi 7 mentilguanosin cap
-3. Penambahan 3' poli adenin tail
+1.  mature RNA megalami splicing
+2.  Penambahan 5' end cap, menjadi 7 mentilguanosin cap
+3.  Penambahan 3' poli adenin tail
 
 Terjadi regulasi paska transkripsi melibatkan small/micro RNA.
 
 ### Translasi
 
 ### Regulasi Transkripsi
- Regulasi mRNA tergantung
- 1. kestabilan mRNA
- 2. pasangan mirna (RNAi)
- 3. keadaan sel
- 4. Metilasi DNA (pada sitosin)
 
-Transcription control of genes
-transcriptional regulation occurs at two interconnected levels
-- Histon complex - **histon COde**
-- 
+Regulasi mRNA tergantung 1. kestabilan mRNA 2. pasangan mirna (RNAi) 3. keadaan sel 4. Metilasi DNA (pada sitosin)
+
+Transcription control of genes transcriptional regulation occurs at two interconnected levels - Histon complex - **histon COde** -
 
 ## Control of Gene Expression
 
 ## Genetic Variation
+
+Microevolution is a change in allele frequencies in a population over generations. Three mechanism:
+
+- Natural Selection
+- Genetic Drift
+- Gene flow
+
+only natural selection causes adaptive evolution.
+Hardy - Winberg Equilibrium: genetic variation will remain constant from one generation to the next in the absence of disturbing factors.
 
 ## Genotyping
 
@@ -288,3 +293,8 @@ transcriptional regulation occurs at two interconnected levels
 ## Molecular Biology Technique
 
 ## Aplication of Molecular Biology in Medicine
+
+
+
+
+
