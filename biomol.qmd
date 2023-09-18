@@ -231,9 +231,76 @@ Durasi 1 jam CDC2 - cyclin B hyperforilasi pRb
 
 post M, defosforilasi pRB
 
-## Free Radical & Antioksidan
+## Mutastion & Free Radical & Antioksidan
 
-## Replication
+Mutasi basa: substitusi, delesi, insensi.
+
+### SUbstitusi biasanya terjadi 1 basa saja, sehingga sering juga disebut point mutation.
+
+Substitusi bisa transversi menjadi transisi. Transisi: purin \> purin Transversi: purin \> pirimidin atau sebaliknya.
+
+Hasil preotein: Silent mutation: asam amino sama Missense mutation: berubah kode asam amino Nonsense mutation: berubah menjadi stop kodon stop codon mutation: merubah stop kodon menjadi kodon asam amino.
+
+### Delesi dan Insersi
+
+Delesi dan insersi mengubah reading frame, sehingga disebut dengan frameshift mutation.
+
+### 
+
+### Molecular effect of Mutation
+
+Within coding region - Silent (biasanya mutatasi pada basa ketiga di kodon, sering tidak mengganti asam amino) - Missense - Non-sense (premature stop codon) - Frameshift
+
+Within non-coding region - SPlicing mutation - Regulatory Sequence mutation
+
+### Clinical Effect of Mutation
+
+-   Acceptable
+-   Partially acceptable
+-   Unacceptable (fatal/letal)
+
+bisa menumbulkan kanker, inborn error metabolism.
+
+Kanker muncul: - altered protein
+
+### DNA Repair
+
+#### SPontaneous Mutation
+
+-   Mismatch Repair DNA kita secara natural ada metilasi, jika belum termetilasi setelah replikasi maka akan di excisi oleh endonuclease.
+
+#### Metagen
+
+-   Photoreactivation Timin Dimer, dipotong pada dimernya lalu dilakukan excision repair.
+
+Tipe Repair - Base excision repor - Nucleotide excision repair.
+
+### Free Radical
+
+Molekul yang memiliki elektron yang tidak berpasangan di orbit terluarnya. Radikal bebas tidak stabil, sehingga mencuri elektron dari molekul lain, dan mencipkan radikal bebas lain.
+
+Oksidant: elektron acceptor, Fe3+ + e =\> Fe2+
+
+Sifat: 1. Highly reactive, 2. Unstable 3. Very short half-life 4. Generate new radicals by chain reaction 5. Cause damage to biomolecules, cells
+
+#### Reactive Oxygen Species (ROS)
+
+-   H2O2
+
+ada juga Reactive nitrogen species
+
+Sulit diperiksa secara langsung. Pemeriksaan secara tidak langsung dengan pemeriksaan produk dari hasil paparan radikal bebas.
+
+Sumber radikal bebas: - Mitokondria pada proses pembentukan ATP,
+
+#### Sumber Radikal Bebas
+
+-   Endogen
+-   EKsogen
+
+## DNA Replication
+
+Replikasi DNA terjadi pada fase S pada siklus sel bertujuan membuat copy DNA untuk diwarikan ke sel keturunanya.
 
 ## Mutation & DNA Repair
 
@@ -279,22 +346,30 @@ Transcription control of genes transcriptional regulation occurs at two intercon
 
 Microevolution is a change in allele frequencies in a population over generations. Three mechanism:
 
-- Natural Selection
-- Genetic Drift
-- Gene flow
+-   Natural Selection
+-   Genetic Drift
+-   Gene flow
 
-only natural selection causes adaptive evolution.
-Hardy - Winberg Equilibrium: genetic variation will remain constant from one generation to the next in the absence of disturbing factors.
+only natural selection causes adaptive evolution. Hardy - Winberg Equilibrium: genetic variation will remain constant from one generation to the next in the absence of disturbing factors.
 
 ## Genotyping
 
+Process determining the genetic constitution of an individual. Perbedaan interspesies \<1%.
+
+Genotyping pada manusia untuk mengetahui susceptibilitas atas penyakit dan response terhadap pengobatan.
+
+### Polimorfisme vs Mutasi
+
+Perubahan basa DNA, mutasi perubahan sekuens dari normal. Polimorfisme adalah perubahan basa yang merupakan variasi normal.
+
+Polimorfisme bisa berupa silent point mutation.
+
 ## Stem Cell
+
+Sel yang belum terspesialisasi. 
+
+- Ebroyonic Stem Cells ( inner cells mass)
 
 ## Molecular Biology Technique
 
 ## Aplication of Molecular Biology in Medicine
-
-
-
-
-

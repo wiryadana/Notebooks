@@ -140,58 +140,63 @@ gt(stat_biv)
 
 ##### Regresi Linier
 
-asumsi regresi linier:
-- distribusi nornal
-- tidak ada kolinearity
-- variansi asusmsi sama
+asumsi regresi linier: - distribusi nornal - tidak ada kolinearity - variansi asusmsi sama
 
-Regresi nilai: intercept (a), slope/tangent (bx) dan error (e)
-Intercept: nilai Y saat X = O
-slope: perubahan rerata variabel dependen untuk setiap unit perubahan variabel independen
+Regresi nilai: intercept (a), slope/tangent (bx) dan error (e) Intercept: nilai Y saat X = O slope: perubahan rerata variabel dependen untuk setiap unit perubahan variabel independen
 
-Y~i~ = a + bX + ei (a atau b0 dan b1 adalah effect size)
-dan p value
+Y~i~ = a + bX + ei (a atau b0 dan b1 adalah effect size) dan p value
 
 ##### Korelasi Linier
-Mengukur seberapa konsisten peribahan variabel indepen diikuti oleh peribahan variabel dependen (hubungan kovariansi)
-koefisien korelasi (r), menunjukan kekuatan hubungan antara variabel dependen dan variable independen. 
 
-ada 2 nilai: (rentang nilai -1 sd +1)
-- koefisien korelasi (rho), Ada kecenderungan hubungan x dengan y, tetapi tidak menunjukan seberapa kuat.
-- koefisien determinasi (r atau R^2^), seberapa persen pengaruh independen mempengaruhi dependen (effect size)
-- tambahan p value
+Mengukur seberapa konsisten peribahan variabel indepen diikuti oleh peribahan variabel dependen (hubungan kovariansi) koefisien korelasi (r), menunjukan kekuatan hubungan antara variabel dependen dan variable independen.
+
+ada 2 nilai: (rentang nilai -1 sd +1) - koefisien korelasi (rho), Ada kecenderungan hubungan x dengan y, tetapi tidak menunjukan seberapa kuat. - koefisien determinasi (r atau R^2^), seberapa persen pengaruh independen mempengaruhi dependen (effect size) - tambahan p value
 
 contoh R^2^ adalah R^2^ 45% pada konsumsi garam dan tekanan diastolik adalah variasi tekanan darah dapat dijelaskan sebesar 45% oleh konsuksi garam, sisanya 55% dijelaskan oleh factor lain. Nilai ini yang dimaknai oleh klinisi serta signifikansi korelasi (p) (kemungkinan hasil korelasi akibat by chance).
 
-tambah interpretasi regresi:
-a (intercept) = jika seorang tidak konsumsi garam berapa tekanan darahnya
-b (slope) = kenaikan tekanan darah setiap unit peningkatan konsumsi garam.
+tambah interpretasi regresi: a (intercept) = jika seorang tidak konsumsi garam berapa tekanan darahnya b (slope) = kenaikan tekanan darah setiap unit peningkatan konsumsi garam.
 
 Perbedaan korelasi dan regresi adalah korelasi belum bisa menentukan ind dan dependen, sedangkan regresi harus sudah ditentukan mana independen dan dependent.
 
 Visualisasi dengan scatter plot.
 
 ##### Regresi dan korelasi Linier Berganda
+
 Multipel variabel independen melihat pengarihnya terhadap variabel dependen.
 
 Jika menggunakan korelasi maka nilainya rho partial (korelasi partial), jika regresi multipel (regresi berganda) maka slopenya multipel (a + b0 + b1 + bx... + e)
 
-Nisal: peneliti ingin mengetahui antara LFG (ml/menit) dengan estimasi data IMT (kg/m^2^), umur (tahun), dan TDD (mmhg), semua variabel independen berskala kontinyu. 
+Nisal: peneliti ingin mengetahui antara LFG (ml/menit) dengan estimasi data IMT (kg/m^2^), umur (tahun), dan TDD (mmhg), semua variabel independen berskala kontinyu.
 
 lfg = 72,74 + 3,11 (IMT) - 1,15 (umur) - 0,23 (tdd).
 
-R^2^ = 0,35, maka 3 variabel independen berperan 35% menjelaskan variabel dependen. 
+R^2^ = 0,35, maka 3 variabel independen berperan 35% menjelaskan variabel dependen.
 
-Uji hipotesis:
-hipotesis nol omnibus = kesalahan tipe 1 ($\alpha$) merupakan hipotesis nol, artinya keseluruhan var indepen tidak dapat mengestimasi var dependen. Menguji B=0.
+Uji hipotesis: hipotesis nol omnibus = kesalahan tipe 1 ($\alpha$) merupakan hipotesis nol, artinya keseluruhan var indepen tidak dapat mengestimasi var dependen. Menguji B=0.
 
-Koefisien regresi ($\beta$) pada persamaan regresi => hubungan antara variabel masing masing independen dan variabel dependen.
+Koefisien regresi ($\beta$) pada persamaan regresi =\> hubungan antara variabel masing masing independen dan variabel dependen.
 
 ###### Asas Kolinearitas
-Perhatikan nilai tolerance dan VIF (variance inflation factor).
-Nilai VIP besar lebih dari 10 atau tolerance < 0,10 maka dianggap terjadi multikolinearitas antara variabel dependen dalam model. 
+
+Perhatikan nilai tolerance dan VIF (variance inflation factor). Nilai VIP besar lebih dari 10 atau tolerance \< 0,10 maka dianggap terjadi multikolinearitas antara variabel dependen dalam model.
 
 ## Distribusi normal
+
+Two problems: Important differences are often obscured and overgeneralize.
+
+Generalisisasi: - Sampel cukup dan representatif. - Random sampling. - Ada pembanding.
+
+Cara membuat distribusi normal: 1. di log 2. di akar kuadratkan 3. Dibagi akar kuadratkan
+
+Jika tetap tidak berdistribusi normal, lanjutkan dengan analisis non-parametrik. Non-parametrik bukan berarti tidak bisa dianalisis. Tetap bermakna.
+
+Normal distribution: bell shaped, symetrical distribution with mean, median and mode all coincidence at its peak.
+
+```{r}
+hist(rnorm(n= 1000, mean = 0, sd = 1))
+```
+
+Insert Zscore Formula:
 
 ## Uji T berpasangan dan tak berpasangan
 
@@ -199,10 +204,30 @@ Nilai VIP besar lebih dari 10 atau tolerance < 0,10 maka dianggap terjadi multik
 
 ## Ancova dan Repeated Measurements ANOVA
 
+Variabel Y = Kuantitatif
+Variabel X = Kuantitaif/Kualitatif
+
+Jika prediktornya adalah kontinous dan categorical variable, dan response variabel kontinous, maka menggunakan ANCOVA.
+
+Asumsi:
+1. distribusi normal
+2. Tidak ada outliers
+3. Variansi homogen,
+4. Linearity antar DV dan RV
+5. Independece of errors.
+6. Absence of multicolinearity
+7. 
+
 ## Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk
+
+
 
 ## Prinsip Analisis Data Biner
 
+
+
 ## Regresi Logistik Sederhana
+
+
 
 ## Regresi Logistik Berganda

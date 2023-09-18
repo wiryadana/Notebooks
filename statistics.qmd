@@ -1,21 +1,25 @@
 # Statistics and R languange
 
 ## Dataframe Operation
+
 ```{r}
 worms <- read.csv("mock_data/worms.csv")
 ```
 
 Checking the columns
+
 ```{r}
 names(worms)
 ```
 
 SUmmary
+
 ```{r}
 summary(worms)
 ```
 
 The use of aggregates function
+
 ```{r}
 with(worms, tapply(Worm.density, Vegetation, mean))
 ```
@@ -23,7 +27,9 @@ with(worms, tapply(Worm.density, Vegetation, mean))
 ```{r}
 aggregate(worms[,c(2,3,5,7)], list(Community = worms$Vegetation), mean)
 ```
+
 Multiple classification
+
 ```{r}
 aggregate(worms[,c(2,3,5,7)],
           list(moisture = worms$Damp, 
@@ -35,6 +41,7 @@ aggregate(worms[,c(2,3,5,7)],
 #### Get to Know the Data
 
 ##### Check if any unusual data points
+
 ```{r}
 das <- read.csv("mock_data/das.csv")
 
@@ -42,26 +49,26 @@ plot(das$y)
 ```
 
 To find which data is the outlier in the above scatter plot
+
 ```{r}
 which(das$y > 10)
 ```
 
 So it is the the 50 th data point.
 
-
 ##### Find Relathionsip
 
 ###### Numeric vs Numeric Variabales
+
 ```{r}
 scat <- read.csv("mock_data/scatter.csv")
 plot(scat$x, scat$y, pch=21, bg="red")
 ```
 
-From plot above we can see :
-1. The relathioship between response and explanatory variables is curved
-2. Degree of scatter from left to right increases (non heterogenous), thus heterocedascity.
+From plot above we can see : 1. The relathioship between response and explanatory variables is curved 2. Degree of scatter from left to right increases (non heterogenous), thus heterocedascity.
 
 ###### Categorical vs Numeric Variabales
+
 ```{r}
 weather <- read.csv("mock_data/weather.data.csv")
 plot(factor(weather$month), weather$upper)
@@ -76,6 +83,7 @@ coplot <- read.csv("mock_data/coplot.csv")
 ```
 
 Alter graphics parameter to specifiy two sets of axis on the same row then make a simple scatter plot
+
 ```{r}
 par(mfrow=c(1,2))
 plot(coplot$x, coplot$y)
@@ -83,12 +91,15 @@ plot(coplot$y, coplot$x)
 ```
 
 To look for interaction between explanatory variables and response variables, we employ coplot. It plot Y agains X conditional on the value of Z. Z is numeric variables, by default the coplot split Z into six graphs, with the lowest value appear in the bottom left-hand.
+
 ```{r}
 coplot(coplot$y ~ coplot$x | coplot$z, pch = 16, panel=panel.smooth)
 ```
+
 The relathiosip of X and Y change according to Z, as increasing Z the trend comes positive.
 
 ###### Interaction in Categorical Data
+
 ```{r}
 np <- read.csv("mock_data/np.csv")
 np$nitrogen <- as.factor(np$nitrogen)
@@ -101,6 +112,162 @@ plot(np$nitrogen, np$yield, main = "Nitrogen")
 plot(np$phosporus, np$yield, main = "Phosporus")
 ```
 
+Finding mean for each groups
+
+```{r}
+tapply(np$yield, list(np$nitrogen, np$phosporus), mean)
+```
+
+```{r}
+barplot(tapply(np$yield, list(np$nitrogen, np$phosporus), mean),
+        beside = TRUE,
+        xlab = "phosporus")
+legend("topleft", legend = c("no", "yes"), title = "Nitrogen", fill = c("black", "lightgrey"))
+```
+
+Nitrogen only, gives (effect sizes) 2.29/1.47 (1.55) while nitrogen + phosporus gives 3,48/1.87 (1.86) increase in yield. Thus effect size of nitrogen increase depends on phosporus. This is called statistical interaction.
+
+## Central Tendency
+
+## Variance
+
+A measure of variability is perhaps the most important quantity in statistical analysis. The greater variability \~ the greater the uncertainty, the harder to distinguish competing hypothesis.
+
+#### Ilustration of Variance
+
+Just learn how to make the graph
+
+Finding Range
+
+```{r}
+y <- c(13,7,5,12,9,15,6,11,9,7,12)
+plot(1:11, y, ylim=c(0,20), pch=16, col="blue")
+
+lines(c(4.5,4.5), c(5,15), col="brown")
+lines(c(4.5,3.5), c(5,5), col="brown", lty=2)
+lines(c(4.5,5.5), c(15,15), col="brown", lty=2)
+
+range(y)
+```
+
+#### Illustration of Mean Value
+
+```{r}
+plot(1:11, y, ylim=c(0,20), pch=16, col="blue")
+abline(h=mean(y), col="green")
+for(i in 1:11) lines(c(i,i), c(mean(y), y[i]), col="red")
+```
+
+When Variance are different, dont compare the means.
+
+## Single-Samples
+
+-   what is the mean value?
+-   is it different from current expectation or theory?
+-   what is the estimate?
+
+## Two-Samples
+
+## Regression
+
+## Analysis of Variance
+
+## Analysis of Covariance (ANCOVA)
+
+Ancova involves a combination of regression and analysis of variance.
+The response variable is a continous, and there is at least one continous explanatory variable & at least one categorical variable.
+
+Principle of parsimony
+If the simpler model does not explain significantly less of the variation in the response, then the simpler model preferred. Test explanatory power: Anova or AIC
+
+- anova: retain the more complicated model,
+- AIC: prefer model with lower value.
+
+Illustration:
+response variable: fruit
+explanatory variable: root size and grazing
+
+```{r}
+com <- read.csv("mock_data/ipomopsis.csv")
+names(com)
+str(com)
+
+com$Grazing <- as.factor(com$Grazing)
+```
+First lets see the data
+```{r}
+plot(com$Root, com$Fruit, pch=16, col="darkblue")
+```
+Bigger roots produced more seeds
+
+```{r}
+plot(com$Grazing, com$Fruit, col="lightgreen")
+tapply(com$Fruit, com$Grazing, mean)
+```
+It seems that the grazed plants produced more fruits. Lets do the ANOVA
+
+```{r}
+summary(aov(com$Fruit ~ com$Grazing))
+```
+
+It is indeed significant from ANOVA.
+
+Lets do the ANCOVA,
+we use the most complex model, two intercept and two slopes for the grazed and ungrazed (use asterisk*).
+in ANCOVA, order of the explanatory variables matter.
+
+**ROOT** first
+```{r}
+model1a <- lm(com$Fruit ~ com$Root*com$Grazing)
+summary.aov(model1a)
+```
+
+**Grazing** first
+```{r}
+model1b <- lm(com$Fruit ~ com$Grazing*com$Root)
+summary.aov(model1b)
+```
+
+Both produces similar error sum of square (1680) and interaction sum of squares (5). The regression sum of square where higher when root fitted after grazing (19149) then before grazing (16795) due to non-orthogonal data. 
+
+The SSRdiff, representing differences in slope between grazed and ungrazed treatments appear insignificant, thus we can remove it. Then we fit difference intercepts for grazed and ungrazed plants but fit the same slope to both graphs (we use + sign in formula):
+
+```{r}
+model2 <- lm(com$Fruit ~ com$Grazing + com$Root)
+summary.aov(model2)
+```
+
+Does the simpler model have significantly lower explanatory power? we use anova:
+
+```{r}
+anova(model1b, model2)
+```
+
+the simpler model does not produce lower explanatory power (p = 0,75), thus we can adopt it. 
+
+if we see the linear model of model2
+```{r}
+summary.lm(model2)
+```
+
+The model has high explanatory variables, accounting for 93% variation (multiple r squared).
+The intercept (-127.8) is the intercept for the graph of fruit production against plant rootstock size for the grazing variable which the factor level whose come first (in this case grazed).
+```{r}
+levels(com$Grazing)
+```
+The com$GrazingUngrazed is the difference in intercept for the ungrazed plants (-127.8 + 36.1 = -91.726).
+THe com$Root is the slope, the gradient of fruit production against initial rootstock size. It is same for both grazed or ungrazed, if it is difference it will showed in the fourth row the difference between slopes.
+
+```{r}
+plot(com$Root, com$Fruit, pch=21, bg=(1+as.numeric(com$Grazing)))
+legend("bottomright",
+       c("Grazed", "Ungrazed"),
+       col = c(2,3),
+       pch = 16)
+abline(-127.829, 23.56, col=2)
+abline(-127.829 + 36.103, 23.56, col=3)
+```
+This showed that, the Grazed plants had relatively larger rootstock size then ungrazed plants, thus explain why in the boxplot of fruit ~ grazing showed that grazed plants produce more fruits while it actually reduce fruit production.
 
 
 
@@ -108,24 +275,16 @@ plot(np$phosporus, np$yield, main = "Phosporus")
 
 
 
+## Multiple Regression
 
+## Contrast
 
+## Other Response Variables
 
+## Count Data
 
+## Proportion Data
 
+## Binary Response Variable
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Death and Failure

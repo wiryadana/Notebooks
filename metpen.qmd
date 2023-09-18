@@ -127,36 +127,48 @@ Sebainya tidak perlu dilakukan analisis untuk mendapatkan nilai P untuk membandi
 Desain:
 
 ### Cross sectional
-Pengukuran variabel bebeas dan tergantung terjadi bersamaan.
-Baik untuk penyakit yang durasi sakitnya lama, dan kejadian cukup banyak.
+
+Pengukuran variabel bebeas dan tergantung terjadi bersamaan. Baik untuk penyakit yang durasi sakitnya lama, dan kejadian cukup banyak.
 
 ### Kasus-Kontrol
-Identifikasi sampel dengan variabel tergantung dulu, kemudian dicari kontrolnya, lalu dilihat secara retrospektif mencari variabel bebasnya. Lalu dihitung rasio odds. 
-Odds: Perbandingan terjadinya efek dibandingkan tidak terjadinya efek pada suatu kelompok
-Rasio Odds: perbandingan odds antar 2 kelompok.
+
+Identifikasi sampel dengan variabel tergantung dulu, kemudian dicari kontrolnya, lalu dilihat secara retrospektif mencari variabel bebasnya. Lalu dihitung rasio odds. Odds: Perbandingan terjadinya efek dibandingkan tidak terjadinya efek pada suatu kelompok Rasio Odds: perbandingan odds antar 2 kelompok.
 
 Matching case control:
 
 Variabel bebas bisa banyak
 
 ### kohort
-Mengidentifikasi variabel bebas, lalu diobersevari untuk melihat variabel tergantung.
-Baik untuk kasus yang jarang, dan perjalananya penyakit jarang.
+
+Mengidentifikasi variabel bebas, lalu diobersevari untuk melihat variabel tergantung. Baik untuk kasus yang jarang, dan perjalananya penyakit jarang.
 
 Variabel tergantung bisa banyak
 
 ### Nested Case-Cohort Study atau Nested Control Study
 
-Umumnya penelitian yang sampelnya bisa disimpan di Lab dan pemeriksaannya mahal.
-Controlnya: di matching => case cohort study
-Controlnya: di Random => case control study
+Umumnya penelitian yang sampelnya bisa disimpan di Lab dan pemeriksaannya mahal. Controlnya: di matching =\> case cohort study Controlnya: di Random =\> case control study
 
 ### Uji Diagnostik
 
 Selalu tabel 2 x 2.
 
+## Cross Sectional & Case-Control Study
 
-## Cross Sectional and Case Control
+### Cross-sectional Study
+
+Cross sectional study assessing prevalence (old and new patient). 
+
+1. Formulate appropriate research question and hypothesis
+2. Identify indepent and dependent variables
+3. Determine research subjects
+4. Carry out measurements
+5. Do analysis
+
+Tabel 2x2 harus risk factor di kiri, effect di atas.
+
+----------------------------------------------------------------------
+
+### Case-Control Study
 
 ## Cohort Study
 

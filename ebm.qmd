@@ -116,10 +116,16 @@ bila sampel kecil, nilai P bisa bermakna tetapi interval kepercayaan melewati ni
 
 Start from dependent variable to independent variable. Harus jelas bagaiamna kita memilih kasus dan kontrolnya.
 
+## Study About Diagnosis
 
-## Study About DIagnosis
+EBM: integration of best research evidence with clinical expertise and patients values.
+
+Sensitivitas dan spesifitias realtif stabil terhadap prevalensi penyakit
+PPV dan NPV harus memeprhatikan prevalensi penyakit di tempat kita.
 
 ## Study about Therapy
+
+
 
 ## Study about Prognosis
 
