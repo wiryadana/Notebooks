@@ -354,22 +354,37 @@ only natural selection causes adaptive evolution. Hardy - Winberg Equilibrium: g
 
 ## Genotyping
 
-Process determining the genetic constitution of an individual. Perbedaan interspesies \<1%.
+Process determining the genetic constitution of an individual and comparing to the other individual or reference sequence. 
+Perbedaan interspesies <1%.
 
 Genotyping pada manusia untuk mengetahui susceptibilitas atas penyakit dan response terhadap pengobatan.
 
 ### Polimorfisme vs Mutasi
 
-Perubahan basa DNA, mutasi perubahan sekuens dari normal. Polimorfisme adalah perubahan basa yang merupakan variasi normal.
+Perubahan basa DNA, mutasi perubahan sekuens dari normal. 
+Polimorfisme adalah perubahan basa yang merupakan variasi normal.
+Cut-off point antara mutasi dan polimorfisme adalah 1%, artinya variasi alele setidaknya memiliki frekuensi minimal 1% di populasi.
 
 Polimorfisme bisa berupa silent point mutation.
 
+#### SNP
+
+Variation when a single nucleotide in genome is altered. SNP do not always affect the way protein functions.
+
+- Linked SNP/Indicative SNP : do not reside within genes, do not affect protein function, but correspond to certain characteristics
+- Causative SNP: affect the way protein functions, whether:
+    - Coding SNP: located in coding region, changes the amino acid sequence
+    - Non-coding SNP: within gene regulatory sequences: change timing and expression of gene.
+
+
 ## Stem Cell
 
-Sel yang belum terspesialisasi. 
+Sel yang belum terspesialisasi.
 
-- Ebroyonic Stem Cells ( inner cells mass)
+-   Ebroyonic Stem Cells ( inner cells mass)
 
 ## Molecular Biology Technique
+
+DNA universal
 
 ## Aplication of Molecular Biology in Medicine

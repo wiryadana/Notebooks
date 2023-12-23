@@ -1,1 +1,87 @@
-# Anesthesiology 
+# Perioperative Consultation & Anesthesia
+
+## Perioperative Consultation
+
+### Common Risk Score
+
+#### Assess Respiratory Risk in Surgical Patients in Catalonia (ARISCAT) Score
+
+It used to predicts risk of pulmonary complications after surgery, including respiratory failure. Postoperative pulmonary complications (PPCs) include complications affecting the respiratory system after anesthesia and surgery. These complications are common, difficult to predict, and have significant effects on patient. The ARISCAT risk index is mostly used in operations other than thoracic surgery.
+
+##### Applicable to:
+Patients undergoing surgery under general, neuraxial, or regional anesthesia.
+
+##### Scoring
+
+##### Advice
+
+Interpretation:
+
+ARISCAT Score
+
+#### Revised Lee Cardiac Risk Index for Pre-Operative Risk (RCRI)
+
+It used to estimates risk of cardiac complications after non cardiac surgery.
+The RCRI score identifies a risk class based on the presence or absence of six factors (predictors) associated with preoperative cardiac complications.
+
+##### Applicable to:
+- Patients ≥45 years old (or 18-44 years old with significant cardiovascular disease)
+- Undergoing elective non-cardiac surgery or urgent/semi-urgent (non-emergent) non-cardiac surgery.
+- Use with caution in emergency surgery patients, as the score is not as well validated in this population.
+
+##### Scoring
+Baseline risk: 3,9% of 30-day risk of death, MI, or cardiac arrest
+Scoring Points Includes: 
+
+- **Elevated-risk surgery** [YES / NO]
+    Intraperitoneal; intrathoracic; suprainguinal vascular
+- **History of ischemic heart disease** [YES / NO]
+    History of myocardial infarction (MI); history of positive exercise test; current chest pain considered due to myocardial ischemia; use of nitrate therapy or ECG with pathological Q waves
+- **History of congestive heart failure** [YES / NO]
+    Pulmonary edema, bilateral rales or S3 gallop; paroxysmal nocturnal dyspnea; chest x-ray (CXR) showing pulmonary vascular redistribution
+- **History of cerebrovascular disease** [YES / NO]
+    Prior transient ischemic attack (TIA) or stroke
+- **Pre-operative treatment with insulin** [YES / NO]
+    Pre-operative treatment with insulin
+- **pre-operative creatinine [YES / NO]**
+    Pre-operative creatinine >2 mg/dL / 176.8 µmol/L
+    
+Subsequently, it assigns a class (a risk index) from I-IV, listed below.
+
+- Class I [0 predictores] correlates with a 3.9% 30-day risk of death, myocardial ischemia (MI), or cardiac arrest (CA). 
+- Class II [1 predictores] correlates with a 6% 30-day risk of death, MI, or CA. 
+- Class III [2 predictores] correlates with a 10.1% 30-day risk of death, MI, or CA. 
+-  Class IV [greater than or equal to 3 predictors] correlates with a more than 15% 30-day risk of death, MI, or CA.
+
+##### Advice
+
+- If the RCRI is ≥1, the patient’s age is ≥65, or they are between 45-64 with significant cardiac disease*, the next step is to measure the patient’s NT-ProBNP or BNP if this is available at your institution.
+
+- If the NT-ProBNP is ≥300 ng/L or BNP is ≥92 ng/L, then there should be an EKG ordered in the PACU and troponins should be measured daily for 48-72 hours.
+
+- If, after risk stratification, the NT-ProBNP is <300 ng/L or BNP <92 ng/L, no routine postoperative cardiac monitoring is warranted.
+
+- If the institution does not have these assays available, then all patients should be monitored with an EKG in the PACU and troponin measurements daily for 48-72 hours if they meet one of the following: RCRI ≥1, age ≥65, or age 45-64 with the aforementioned cardiac disease including: 
+    - known history of coronary artery disease, 
+    - cerebral vascular disease, 
+    - peripheral artery disease, 
+    - congestive heart failure, 
+    - severe PHTN or a severe obstructive intracardiac abnormality (e.g. severe aortic stenosis, 
+    - severe mitral stenosis, or severe hypertrophic obstructive cardiomyopathy).
+
+
+#### CAPRINI VTE Score
+
+#### IMPROVE Bleeding Score
+
+## Anesthesia
+
+### Standard Anesthesia (just to know)
+
+Patients were monitored in the operating room under the ASA standards and 0.03 mg/kg midazolam was administered intravenously to the patients for premedication. Following preoxygenation; anesthesia was induced with 2–2.5 mg/kg propofol, 1–1.5 mcg/kg fentanyl, and 0.1 mg/kg vecuronium intravenously. After the intubation with a left-sided double-lumen endobronchial tube, anesthesia was maintained by administering 2–3% sevoflurane in oxygen and air mixture. Intraoperative lung-protective ventilation (tidal volume 5–7 mL/kg, positive end-expiratory pressure 5–7 cmH2O, and ventilatory plateau pressures below 30 cmH2O whenever possible) was administered in all patients.
+
+### Standard Postoperative Analgesia Protocol
+
+Before the end of the surgical procedure; metoclopramide, to prevent PONV; dexketoprofen (50 mg), and tramadol (100 mg) were given to the patients intravenously. Intravenous morphine was administered via patient-controlled analgesia (PCA) pump for 24 hours in the postoperative surgical intensive care unit. The PCA pump’s dose delivery was limited to administering a bolus dose of 1 mg morphine and delivering a maximum dose of 12 mg morphine in total within 4 hours with lockout intervals of 15 minutes. Paracetamol 1 g every 8 hours and dexketoprofen 50 mg twice daily were administered intravenously for multimodal analgesia. As a rescue analgesic agent, 0.5 mg/kg tramadol was given to patients intravenously when a score of VAS at coughing ≥ 4.
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9333546/

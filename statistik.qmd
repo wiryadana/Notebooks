@@ -4,11 +4,144 @@
 
 Metode sains: bisa diulang dengan hasil yang sama. observasi, measurement, verification and evaluation (self correction)
 
+### Methods of acquiring knowledge
+
+- Method of Tenacity
+- Method of Authority
+- Method of Intuition
+- Method of Science
+
+### Benefits of Conducting Research
+
+- Expanding frontiers of knowledge
+- New inventions and discoveries
+- Solving problems affecting the society
+- Increasing efficiency and reducing costs
+- Research strives to make life easier
+- Luxury and comfort
+- Infotainment
+- Economic growth
+
+### Qualities of a researcher
+- Scientific attitude
+- Research aptitude
+- Persistence
+- Self Motivation
+- Courage to ask questions
+- Skepticism and receptivity
+- Objectivity
+- Industriousness
+- Honesty and truthfulness
+- Open-mindedness
+- Above-average intelligence
+- Knowledge
+- Imagination
+- Self-confidence
+- Search for perfection
+- Team spirit
+
+### Bioethical
+
+- Autonomy - consent to treatment
+- Beneficence
+- Justice
+- Utility - balancing benefit
+- Inform Consent
+- Confidentiality
+
+### Induction and Deduction in Research
+
+- Deductive reasoning is the process of reasoning from a general assumption to a specific application.
+  Contoh: General proposition: all crows are black
+          Specific proposition: this bird is a crow, therefore it is black
+
+- Indcution normally involves generalization from the behavior of a few samples to that of a population
+  contoh: all jasmine flowers are scented, if a situation or condition is true in all observed cases, then the situation or condition must be true in all cases.
+  
+- Hypothetico-deductive method or inductive-deductive method. 
+
+### Scientific Method
+It should be unprejudice
+
+- Make observations or gather information
+- Develop hypothesis
+- Predicts results
+- Design an experiment to falsify the hypothesis
+- Conduct the experiment and collect data
+- Evaluation and conclusion
+- Acceptance, modification or rejection of the hypothesis
+
+### First Draft
+
+- Why did you start the experiment? (introduction)
+- What did you do? How was it done (The materials and methods)
+- What did you find? What was learned? (the results)
+- What do the results mean? How do they relate to what is already known? (the discussion)
+
+### Structure of a Research Paper
+
+- Title
+- Running Title
+- Author
+- Institution
+- Abstract
+- Keywords
+- Introduction
+- Materials and Methods
+- Results
+- Discussion
+- Conclusion
+- Acknowledgements
+- References
+- Tables and Figures
+
+### Seven Categories of plagiarism
+
+- direct plagiarism
+- mosaic plagiarism
+- paraphrase plagiarism
+- insufficient acknowledgement
+- complete plagiarism
+- self plagiarism
+- accidental plagiarism
+
+### Characteristics of Good Research
+
+- Research is based on the work of others
+- Research is a blend of logic and imagination
+- Research tries to identify and avoid bias
+- Repeatability
+- Research must be generalizable to other settings
+- Research is systematic
+- Research generates new questions
+- Research is an apolitical activity
+
 ## Kiat-kiat Publikasi Majalah Terakreditasi dengan OJS
 
-Kendala Publikasi di Indonesia: - Indonesia lack of language access. Why we dont make one in Bahasa Indonesia? - Lack of Cultural backgroud dalam menulis.
+### Kendala Publikasi di Indonesia: 
+- Indonesia lack of language access. Why we dont make one in Bahasa Indonesia? 
+- Lack of Cultural backgroud dalam menulis.
 
-Kenapa publikasi penting? - Rekognisi atas hasil penelitian anda baik pengakuan regional, nasional dan internasional - H Index - Jaminan kolaborasi di tingkat regional, nasional, dan internasional
+### Kenapa publikasi penting? 
+
+- Rekognisi atas hasil penelitian anda baik pengakuan regional, nasional dan internasional 
+- H Index 
+- Jaminan kolaborasi di tingkat regional, nasional, dan internasional
+
+### Jurnal
+Jurnal biasanya di rangking berdasarkan dimana jurnal tersebut di indeksasi (misal scopus, medline, ISI, Sinta, dll)
+
+#### Kriteria Jurnal International
+
+a. Tulisan memenuhi kaidah ilmiah dan etika keilmuan
+b. Memiliki ISSN
+c. Ditulis dengan bahasa resmi PBB (inggris, france, arab, rusia, and china)
+d. Memiliki terbitas versi online
+e. Dikelola secara profesional
+f. Editorial board pakar di bidangnya, dan berasal dari berbagai negara
+g. artikel ilmiah diterbitkan dalam satu isu berasal dari penulis berbagai negara
+h. memuat karya ilmiah dari penulis yang berasal dari berbagai negara dalam setiap penerbitannya
+i. Terindeks database international berputasi.
 
 Publikasi:
 
@@ -21,6 +154,9 @@ Author vs Behavior
 
 -   Author
     -   Want to publish more, write in detail
+    -   peer review essential
+    -   other journal functions crucial
+    -   wider dissemination
 -   Reader
     -   want to read less. (judul yg baik)
     -   Want integrated system
@@ -28,7 +164,9 @@ Author vs Behavior
     -   Quality information is important
     -   Want to read less
 
-Unsur Utama dalam Publikasi: - Isue Etik + pernyataan tidak ada conflict of interest + Pencantuman sumber dana + Image manipulation guidelines
+Unsur Utama dalam Publikasi: 
+
+- Isue Etik + pernyataan tidak ada conflict of interest + Pencantuman sumber dana + Image manipulation guidelines
 
 -   Gaya Selingkung dan Bahasa
     -   Sesuai author guidelines
@@ -38,9 +176,9 @@ Unsur Utama dalam Publikasi: - Isue Etik + pernyataan tidak ada conflict of inte
     -   Abstract: ditulis selesai IMRAD. Tidak boleh sebelum lengkap dan menyeluruh menulis IMRAD. Bisa terjadi inkonsistensi dgn discussion.
     -   Introduction: clearly state the problem being investigated, background that explains the problem, reasons for conducting the research. Summarize relevant research to provide context. State how your work differs from published work. Identify the questions you are answering.
     -   Methods: Jika RCT sebaiknya diregister, agar SOP penelitian bisa dibaca orang lain dan terrekognisi. PRovide the readers enough details so they can understand and replicate your research. Explain how you studied the problemm identify procedures, order the chronologically where possible. Include the frequency of observations, what types of data were recorded.
-    -   Results: -- to be continued
-    -   Discussion: -- to be continued
-    -   Conclusion: -- to be continued
+    -   Results: present the finding objectively, follow logical sequence, show figures/table and provide brief description.
+    -   Discussion: Describe your results in the context of what was already known, how the result relate, do not extend your conlusion beyond what is directly supoorted by you results, outline the next step of the study.
+    -   References: acknowledge sources, citation follow journal guideline.
 -   Submit artikel/pemilihan jurnal
 -   proses publikasi/peer review
 
@@ -53,11 +191,13 @@ Validitas Internal
 
 Validitas External
 
--   loss to follow up \< 20%?
+-   loss to follow up < 20%?
 
 Saat ini sudah bergeser pada Systematic Review dan Metanalysis.
 
 ## Effect Size, COnfidence Interval
+
+
 
 ## Uji Hipotesis
 
@@ -204,30 +344,16 @@ Insert Zscore Formula:
 
 ## Ancova dan Repeated Measurements ANOVA
 
-Variabel Y = Kuantitatif
-Variabel X = Kuantitaif/Kualitatif
+Variabel Y = Kuantitatif Variabel X = Kuantitaif/Kualitatif
 
 Jika prediktornya adalah kontinous dan categorical variable, dan response variabel kontinous, maka menggunakan ANCOVA.
 
-Asumsi:
-1. distribusi normal
-2. Tidak ada outliers
-3. Variansi homogen,
-4. Linearity antar DV dan RV
-5. Independece of errors.
-6. Absence of multicolinearity
-7. 
+Asumsi: 1. distribusi normal 2. Tidak ada outliers 3. Variansi homogen, 4. Linearity antar DV dan RV 5. Independece of errors. 6. Absence of multicolinearity 7.
 
 ## Tabel 2 x 2, Odd ratio, Prevalence Ratio dan Relative Risk
 
-
-
 ## Prinsip Analisis Data Biner
 
-
-
 ## Regresi Logistik Sederhana
-
-
 
 ## Regresi Logistik Berganda

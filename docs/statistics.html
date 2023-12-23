@@ -61,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -398,6 +399,20 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#dataframe-operation" id="toc-dataframe-operation" class="nav-link active" data-scroll-target="#dataframe-operation">Dataframe Operation</a></li>
+  <li><a href="#central-tendency" id="toc-central-tendency" class="nav-link" data-scroll-target="#central-tendency">Central Tendency</a></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">Variance</a></li>
+  <li><a href="#single-samples" id="toc-single-samples" class="nav-link" data-scroll-target="#single-samples">Single-Samples</a></li>
+  <li><a href="#two-samples" id="toc-two-samples" class="nav-link" data-scroll-target="#two-samples">Two-Samples</a></li>
+  <li><a href="#regression" id="toc-regression" class="nav-link" data-scroll-target="#regression">Regression</a></li>
+  <li><a href="#analysis-of-variance" id="toc-analysis-of-variance" class="nav-link" data-scroll-target="#analysis-of-variance">Analysis of Variance</a></li>
+  <li><a href="#analysis-of-covariance-ancova" id="toc-analysis-of-covariance-ancova" class="nav-link" data-scroll-target="#analysis-of-covariance-ancova">Analysis of Covariance (ANCOVA)</a></li>
+  <li><a href="#multiple-regression" id="toc-multiple-regression" class="nav-link" data-scroll-target="#multiple-regression">Multiple Regression</a></li>
+  <li><a href="#contrast" id="toc-contrast" class="nav-link" data-scroll-target="#contrast">Contrast</a></li>
+  <li><a href="#other-response-variables" id="toc-other-response-variables" class="nav-link" data-scroll-target="#other-response-variables">Other Response Variables</a></li>
+  <li><a href="#count-data" id="toc-count-data" class="nav-link" data-scroll-target="#count-data">Count Data</a></li>
+  <li><a href="#proportion-data" id="toc-proportion-data" class="nav-link" data-scroll-target="#proportion-data">Proportion Data</a></li>
+  <li><a href="#binary-response-variable" id="toc-binary-response-variable" class="nav-link" data-scroll-target="#binary-response-variable">Binary Response Variable</a></li>
+  <li><a href="#death-and-failure" id="toc-death-and-failure" class="nav-link" data-scroll-target="#death-and-failure">Death and Failure</a></li>
   </ul>
 </nav>
     </div>
@@ -548,11 +563,227 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="statistics_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Finding mean for each groups</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>         no      yes
+no  1.47384 1.875928
+yes 2.28999 3.480184</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Nitrogen only, gives (effect sizes) 2.29/1.47 (1.55) while nitrogen + phosporus gives 3,48/1.87 (1.86) increase in yield. Thus effect size of nitrogen increase depends on phosporus. This is called statistical interaction.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="central-tendency" class="level2">
+<h2 class="anchored" data-anchor-id="central-tendency">Central Tendency</h2>
+</section>
+<section id="variance" class="level2">
+<h2 class="anchored" data-anchor-id="variance">Variance</h2>
+<p>A measure of variability is perhaps the most important quantity in statistical analysis. The greater variability ~ the greater the uncertainty, the harder to distinguish competing hypothesis.</p>
+<section id="ilustration-of-variance" class="level4">
+<h4 class="anchored" data-anchor-id="ilustration-of-variance">Ilustration of Variance</h4>
+<p>Just learn how to make the graph</p>
+<p>Finding Range</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  5 15</code></pre>
+</div>
+</div>
+</section>
+<section id="illustration-of-mean-value" class="level4">
+<h4 class="anchored" data-anchor-id="illustration-of-mean-value">Illustration of Mean Value</h4>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>When Variance are different, dont compare the means.</p>
+</section>
+</section>
+<section id="single-samples" class="level2">
+<h2 class="anchored" data-anchor-id="single-samples">Single-Samples</h2>
+<ul>
+<li>what is the mean value?</li>
+<li>is it different from current expectation or theory?</li>
+<li>what is the estimate?</li>
+</ul>
+</section>
+<section id="two-samples" class="level2">
+<h2 class="anchored" data-anchor-id="two-samples">Two-Samples</h2>
+</section>
+<section id="regression" class="level2">
+<h2 class="anchored" data-anchor-id="regression">Regression</h2>
+</section>
+<section id="analysis-of-variance" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-variance">Analysis of Variance</h2>
+</section>
+<section id="analysis-of-covariance-ancova" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-covariance-ancova">Analysis of Covariance (ANCOVA)</h2>
+<p>Ancova involves a combination of regression and analysis of variance. The response variable is a continous, and there is at least one continous explanatory variable &amp; at least one categorical variable.</p>
+<p>Principle of parsimony If the simpler model does not explain significantly less of the variation in the response, then the simpler model preferred. Test explanatory power: Anova or AIC</p>
+<ul>
+<li>anova: retain the more complicated model,</li>
+<li>AIC: prefer model with lower value.</li>
+</ul>
+<p>Illustration: response variable: fruit explanatory variable: root size and grazing</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Root"    "Fruit"   "Grazing"</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   40 obs. of  3 variables:
+ $ Root   : num  6.22 6.49 4.92 5.13 5.42 ...
+ $ Fruit  : num  59.8 61 14.7 19.3 34.2 ...
+ $ Grazing: chr  "Ungrazed" "Ungrazed" "Ungrazed" "Ungrazed" ...</code></pre>
+</div>
+</div>
+<p>First lets see the data</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Bigger roots produced more seeds</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Grazed Ungrazed 
+ 67.9405  50.8805 </code></pre>
+</div>
+</div>
+<p>It seems that the grazed plants produced more fruits. Lets do the ANOVA</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
+com$Grazing  1   2910  2910.4   5.309 0.0268 *
+Residuals   38  20833   548.2                 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>It is indeed significant from ANOVA.</p>
+<p>Lets do the ANCOVA, we use the most complex model, two intercept and two slopes for the grazed and ungrazed (use asterisk*). in ANCOVA, order of the explanatory variables matter.</p>
+<p><strong>ROOT</strong> first</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                     Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+com$Root              1  16795   16795 359.968  &lt; 2e-16 ***
+com$Grazing           1   5264    5264 112.832 1.21e-12 ***
+com$Root:com$Grazing  1      5       5   0.103     0.75    
+Residuals            36   1680      47                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p><strong>Grazing</strong> first</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                     Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+com$Grazing           1   2910    2910  62.380 2.26e-09 ***
+com$Root              1  19149   19149 410.420  &lt; 2e-16 ***
+com$Grazing:com$Root  1      5       5   0.103     0.75    
+Residuals            36   1680      47                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Both produces similar error sum of square (1680) and interaction sum of squares (5). The regression sum of square where higher when root fitted after grazing (19149) then before grazing (16795) due to non-orthogonal data.</p>
+<p>The SSRdiff, representing differences in slope between grazed and ungrazed treatments appear insignificant, thus we can remove it. Then we fit difference intercepts for grazed and ungrazed plants but fit the same slope to both graphs (we use + sign in formula):</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)    
+com$Grazing  1   2910    2910   63.93 1.4e-09 ***
+com$Root     1  19149   19149  420.62 &lt; 2e-16 ***
+Residuals   37   1684      46                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Does the simpler model have significantly lower explanatory power? we use anova:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Model 1: com$Fruit ~ com$Grazing * com$Root
+Model 2: com$Fruit ~ com$Grazing + com$Root
+  Res.Df    RSS Df Sum of Sq      F Pr(&gt;F)
+1     36 1679.7                           
+2     37 1684.5 -1   -4.8122 0.1031   0.75</code></pre>
+</div>
+</div>
+<p>the simpler model does not produce lower explanatory power (p = 0,75), thus we can adopt it.</p>
+<p>if we see the linear model of model2</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = com$Fruit ~ com$Grazing + com$Root)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.1920  -2.8224   0.3223   3.9144  17.3290 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)         -127.829      9.664  -13.23 1.35e-15 ***
+com$GrazingUngrazed   36.103      3.357   10.75 6.11e-13 ***
+com$Root              23.560      1.149   20.51  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 6.747 on 37 degrees of freedom
+Multiple R-squared:  0.9291,    Adjusted R-squared:  0.9252 
+F-statistic: 242.3 on 2 and 37 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>The model has high explanatory variables, accounting for 93% variation (multiple r squared). The intercept (-127.8) is the intercept for the graph of fruit production against plant rootstock size for the grazing variable which the factor level whose come first (in this case grazed).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Grazed"   "Ungrazed"</code></pre>
+</div>
+</div>
+<p>The com<span class="math inline">\(GrazingUngrazed is the difference in intercept for the ungrazed plants (-127.8 + 36.1 = -91.726). THe com\)</span>Root is the slope, the gradient of fruit production against initial rootstock size. It is same for both grazed or ungrazed, if it is difference it will showed in the fourth row the difference between slopes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="statistics_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This showed that, the Grazed plants had relatively larger rootstock size then ungrazed plants, thus explain why in the boxplot of fruit ~ grazing showed that grazed plants produce more fruits while it actually reduce fruit production.</p>
+</section>
+<section id="multiple-regression" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-regression">Multiple Regression</h2>
+</section>
+<section id="contrast" class="level2">
+<h2 class="anchored" data-anchor-id="contrast">Contrast</h2>
+</section>
+<section id="other-response-variables" class="level2">
+<h2 class="anchored" data-anchor-id="other-response-variables">Other Response Variables</h2>
+</section>
+<section id="count-data" class="level2">
+<h2 class="anchored" data-anchor-id="count-data">Count Data</h2>
+</section>
+<section id="proportion-data" class="level2">
+<h2 class="anchored" data-anchor-id="proportion-data">Proportion Data</h2>
+</section>
+<section id="binary-response-variable" class="level2">
+<h2 class="anchored" data-anchor-id="binary-response-variable">Binary Response Variable</h2>
+</section>
+<section id="death-and-failure" class="level2">
+<h2 class="anchored" data-anchor-id="death-and-failure">Death and Failure</h2>
 
 
-</section>
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

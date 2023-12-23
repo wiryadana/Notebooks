@@ -270,11 +270,6 @@ abline(-127.829 + 36.103, 23.56, col=3)
 This showed that, the Grazed plants had relatively larger rootstock size then ungrazed plants, thus explain why in the boxplot of fruit ~ grazing showed that grazed plants produce more fruits while it actually reduce fruit production.
 
 
-
-
-
-
-
 ## Multiple Regression
 
 ## Contrast
