@@ -1,6 +1,77 @@
 # Nefrology & urology
 
-
 ## Nefrology
+
+### Hypertension
+
+### FLuid and Electrolyte Disorders
+
+#### Disorders of Extracelular Volume
+
+#### Disorders of Water Metabolism
+
+#### Disorders of Potassium Metabolism
+
+The most frequent electrolyte abnormalities in clinical medicine.Patients with disor-
+ders of potassium metabolism may be asymptomatic, or they may have
+symptoms ranging from mild weakness to sudden death. 
+
+##### Normal Physiology
+
+###### Potassium Intake
+
+Potassium is necessary for essentially all cellular functions, is present
+in most foods, and is excreted primarily by the kidney. Typical diet 70 mmol of potassium, while the recommended intake is 120 mmol per day.
+Gastrointestinal tract efficiently absorbs potassium.
+
+###### Potassium Distribution
+
+After absorption from the GI tract, potassium distributes rapidly into the extracellular fluid (ECF) and intracellular fluid (ICF) compartments. Cellular potassium uptake is rapid and limits the magnitude of changes in serum potassium concentration. During potassium deficiency, shift of potassium from intracellular to extracellular compartments limits the change in extracellular potassium concentration. 
+
+Most potassium is in the ICF. Most body potassium is intracellular, with only 1% to 2% in the ECF. Potassium is the major intracellular cation, with cytosolic K+ concentrations about 100 to 120 mmol/L. Total intracellular K+ content is 3000 to 3500 mmol in healthy adults and is found primarily in muscle (70%), with a lesser amount in bone, red blood cells, liver, and skin.
+
+###### Renal Handling of Potassium in Normal Kidney
+
+###### Renal Potassium Handling in Chronic Kidney Disease
+
+##### Hypokalemia
+
+##### Hyperkalemia
+
+#### Disorders of Calcium, Phosphate and Magnesium Metabolism
+
+#### Acid-Base Balance
+
+##### Metabolic Acidosis
+
+##### Metabolic Alkalosis
+
+##### Respiratory Acidosis
+
+##### Respiratory Alkalosis
+
+##### Mixed Acid Base Balance
+
+### Infectious Disease in Kidney
+
+### Acute Kidney Injury
+
+### GLomerular Disease
+
+### Tubulointerstitial Disease
+
+### Diabetic Kidney Disease
+
+### Renovascular Disease
+
+### Pregnancy and Renal Disease
+
+### Congenital Disease of the Kidney
+
+### Chronic Kidney Disease
+
+### Dialytic Therapy
+
+### Transplantation
 
 ## Urology
