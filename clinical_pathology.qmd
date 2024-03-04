@@ -1,1 +1,58 @@
 # Clinical Pathology
+
+## Hematology Laboratory
+
+## Clinical Chemistry
+
+### Acid-Base Analysis
+
+Understanding Acid-base analysis is essential for emergency/critical care.[@marino]
+
+#### Basic Concepts of Acid-Base
+
+hydrogen ion concentration is expressed as pH:
+
+$$
+pH = Log (1/[H^+]) = - log [H^+]
+$$
+
+The physiological range is 7.40, which corresponds to a $[H^+] = 40 nEq/L$
+
+The balance of of hidrogen ions in ECF is determined by partial pressure of CO2 and concentration of bicarbonate. The equation are as follows:
+
+$$
+[H^+ = 24 x (PCO_2 / HCO_3)]
+$$ The dynamics of $PCO_2 / HCO_3$ identifies the primary acid base disorders and the secondary responses. If the primary changes if the $PCO_2$ then the disturbance if called respiratory acidosis or alkalosis, if the primary forces is the changes in $HCO_3$ then it is metabolic acidosis or alkalosis. If there are primary forces, the the body will reacth with secondary responses to limit the changes in $H^+$. This accomplished by changing the other component of $PCO_2 / HCO_3$ ratio in the same direction. if the primary problem is an increase in PaCO2 (respiratory acidosis), the secondary response will involve an increase in HCO3, and this will limit the change in \[H+\] produced by the increase in PaCO2. Secondary responses should not be called "compensatory responses" because they do not completely correct the change in \[H+\] produced by the primary acid-base disorder.[@marino]
+
+##### Metabolic Acidosis
+
+The secondary response to metabolic acidosis is an increase in minute ventilation (tidak volume and respiratory rate) thus resulting in decreased of $PCO_2$. This response appears in 30 - 120 minutes, and can take 12 - 24 hours to complete. The magnitude of the response is defined by the equation:
+
+$$
+\Delta PaCO_2 = 1.2 \times \Delta HCO_3
+$$
+Using the normal PaCO2 of 40 mmHg, a normal HCO3 of 24 mEq/L
+$$
+Expected \ PaCO_2 = 40 - [1.2 times (24 - currect \  HCO_3)]
+$$
+For a metabolic acidosis with a plasma HCO3 of 14 mEq/L, the ΔHCO3 is 24 – 14 = 10 mEq/L, the ΔPaCO2 is 1.2 × 10 = 12 mm Hg, and the expected PaCO2 is 40 – 12 = 28 mm Hg. If the PaCO2 is > 28 mm Hg, there is a secondary respiratory acidosis. If the PaCO2 is < 28 mm Hg, there is a secondary respiratory alkalosis.
+
+##### Metabolic Alkalosis
+
+The secondary response to metabolic alkalosis is a decrease in minute ventilation and a subsequent increase in PaCO2.
+
+$$
+\Delta PaCO_2 = 0.7 x \Delta HCO_3
+$$
+Using a normal PaCO2 of 40 mmHg and a normal HCO3 of 24 mEq/L, the above equation can be rewritten as follows:
+
+$$
+Expected \ PaCO_2 = 40 + [0.7 times (current \ HCO_3 - 24)] 
+$$
+For a metabolic alkalosis with a plasma HCO3 of 40 mEq/L, the ΔHCO3 is 40 – 24 = 16 mEq/L, the ΔPaCO2 is 0.7 × 16 = 11 mm Hg, and the expected PaCO2 is 40 + 11 = 51 mm Hg.
+
+##### Respiratory Acidosis
+
+
+
+##### Respiratory Alkalosis

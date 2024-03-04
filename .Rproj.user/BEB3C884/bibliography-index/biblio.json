@@ -68,6 +68,27 @@
             "publisher": "McGraw Hill",
             "title": "Harrison’s Principles of Internal Medicine, 21e",
             "type": "book"
+        },
+        {
+            "ISBN": "1451121180",
+            "abstract": "\"A fundamental sourcebook for the care of critically ill patients. This edition continues the original intent to provide a \"generic textbook\" that presents fundamental concepts and patient care practices that can be used in any adult intensive care unit,regardless of the specialty focus of the unit\"–Provided by publisher.",
+            "author": [
+                {
+                    "family": "Marino",
+                    "given": "Paul L."
+                }
+            ],
+            "id": "marino",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "publisher": "Lippincott Williams & Wilkins",
+            "title": "Marino’s the ICU book",
+            "type": "book"
         }
     ],
     "project_biblios": [
