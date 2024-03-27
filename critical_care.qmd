@@ -611,21 +611,19 @@ shock is the clinical condition of organ dysfuntion resulting from imbalance bet
 
 #### Pathophysiology of Shock
 
-The cellular oxygen imbalance most commonly related to impaired oxygen delivery in the setting circulatory failure. 
-- shock may also occurs in the setting of failure oxygen utilization (cyanide poisoning)
-- and state of increased oxygen demand.
+The cellular oxygen imbalance most commonly related to impaired oxygen delivery in the setting circulatory failure. - shock may also occurs in the setting of failure oxygen utilization (cyanide poisoning) - and state of increased oxygen demand.
 
 In the setting of inadequate oxygen supply, the cell cannot maintain aerobic metabolism, thus forced into anaerobic metabolism and produce lactate and less ATP. Less ATP supply impaired cell ability to maintain hemeostasis such as maintaining N/K pump. Celular pump failure cause influx of calcium and leads to activation of phospolipases and protease, causing cellular swelling and death. In addition, hypoxia cause leakage of intracellular contents to the extracellular space, activating inflamatory cascasdes.
 
-Oxygen delivery influenced by two major components, namely Cardiac Output (CO) and arterial oxygen content (CaO~2~. 
+Oxygen delivery influenced by two major components, namely Cardiac Output (CO) and arterial oxygen content (CaO~2~.
 
 DO~2~ = CO x CaO~2~, major determinants of CO are HR and SV
 
 DO~2~ = (HR x SV) x CaO~2~, major determinants of SV are preload, afterload (SVR), and cardiac contractility. thus
 
-SV ~ (Preload x Contractility)/SVR
+SV \~ (Preload x Contractility)/SVR
 
-Preload refees to myocardical fibers lenght before contraction (LV-EDV). Contractility refers to the ability of the ventricile to contract independent of preload and afterload. SVR represent afterload, force that ventricle must overcome to send the blood out of the cardiac cambers. 
+Preload refees to myocardical fibers lenght before contraction (LV-EDV). Contractility refers to the ability of the ventricile to contract independent of preload and afterload. SVR represent afterload, force that ventricle must overcome to send the blood out of the cardiac cambers.
 
 The CaO~2~ is composed of oxygen carried by convection with hemoglobin and oxygen dissolved in blood,
 
@@ -653,38 +651,23 @@ Hypovolemic shock encompasses disease that reduce CO and DO~2~ via a reduction i
 
 Obstructive shock is reduced O~2~ delivery related to reduced CO because impairment in blood flow, both inflow and outflow, in extracardiac pulmonary vascular or other mechanical process. Inflow obstruction Etiology: tension pneumothorax, cardiac tamponade, restrictive pericarditis. Outflow obstruction etiology: pulmonary embolism, venous air embolis, fat embolism or aortic dissection.
 
-UGD => hypovolemic (30,8%) > septic (27,2%) > distributive non septic (23,4%) > cardiogenic (14%) >>>> obstructiove shock (0,9%).
-ICU => Shock predominates )62%) >> Hypovolemic (16%) ~ cardiogenic shock (15%) >>> obstructive shock (2%).
+UGD =\> hypovolemic (30,8%) \> septic (27,2%) \> distributive non septic (23,4%) \> cardiogenic (14%) \>\>\>\> obstructiove shock (0,9%). ICU =\> Shock predominates )62%) \>\> Hypovolemic (16%) \~ cardiogenic shock (15%) \>\>\> obstructive shock (2%).
 
-Mortality rate: cardiogenic ~ septic > hypovolemic
+Mortality rate: cardiogenic \~ septic \> hypovolemic
 
 #### Stages of Shock
-There are 3, preshock, shock and irreversible shock.
-Body utilize variety of physiologic response to counter initial insult. There no overt sign of organ dysfunction. Lab: slight elevation of creatine or troponin or mild elevation of lactate. If host compensatory mechanism are not enough, organ dysfuction occurs and irreversible Shock ensued.
+
+There are 3, preshock, shock and irreversible shock. Body utilize variety of physiologic response to counter initial insult. There no overt sign of organ dysfunction. Lab: slight elevation of creatine or troponin or mild elevation of lactate. If host compensatory mechanism are not enough, organ dysfuction occurs and irreversible Shock ensued.
 
 #### Evaluation of the patient with Shock
 
-early recongition is paramount important to reverse the stages of shock. Anamnesis to find the cause. Physical examination to identify circulatory failure (hypotension SBP <90 mmHG, or MAP < 65 mmHg) and sign of organ dysfunction. Check urine output.
-Finding:
-High CO shock: warm peripherals, CRT <2 S, large pulse pressure (LOW DBP).
-Low CO shock: delayed CRT, cool extremities, weak pulses. 
+early recongition is paramount important to reverse the stages of shock. Anamnesis to find the cause. Physical examination to identify circulatory failure (hypotension SBP \<90 mmHG, or MAP \< 65 mmHg) and sign of organ dysfunction. Check urine output. Finding: High CO shock: warm peripherals, CRT \<2 S, large pulse pressure (LOW DBP). Low CO shock: delayed CRT, cool extremities, weak pulses.
 
 Increased instravasular filling pressure and JVP (cardiogenic, obstrctive shock)
 
 **Shock Index** : defined as the HR/SBP with normal SI 0,5 - 0,7
 
-Lab test: 
-- Lactate
-- Renal function
-- liver function
-- cardiac enzymes
-- CBC
-- Hemostatic index
-- UL
-- PP test if needed
-- ECG
-- CXR
-- POCUS (RUSH, ACES, SESAME protocol)
+Lab test: - Lactate - Renal function - liver function - cardiac enzymes - CBC - Hemostatic index - UL - PP test if needed - ECG - CXR - POCUS (RUSH, ACES, SESAME protocol)
 
 #### Initial Treatment of Shock
 
@@ -694,39 +677,31 @@ Find venous access and invasive monitoring if needed
 
 ##### Volume Resuscitation
 
-The physiologic goal of volume resuscitation is to move the patient to the
-**nonpreload-dependent portion of the Starling curve**. Most patients with any of the four shock types will benefit from an increase in intra-vascular volume.
-suspected septic shock, a minimum of 30 mL/kg is recommended by the Surviving Sepsis Campaign. While the need for volume resuscitation is most apparent for patients with distributive or hypovolemic shock, even patients with cardiogenic shock may benefit from cautious volume replacement. In these patients, there should be a careful assessment of volume status prior to volume administration.
+The physiologic goal of volume resuscitation is to move the patient to the **nonpreload-dependent portion of the Starling curve**. Most patients with any of the four shock types will benefit from an increase in intra-vascular volume. suspected septic shock, a minimum of 30 mL/kg is recommended by the Surviving Sepsis Campaign. While the need for volume resuscitation is most apparent for patients with distributive or hypovolemic shock, even patients with cardiogenic shock may benefit from cautious volume replacement. In these patients, there should be a careful assessment of volume status prior to volume administration.
 
-Volume resuscitation will begin with **crystalloid**. In patients with hypovolemic shock due to ongoing hemorrhage, volume replacement with packed red blood cells is warranted. In cases of massive transfusion, platelets and fresh frozen plasma should be provided to offset the dilution of these components during volume replacement. Because hemoglobin is a key determinant of CaCO2, **red cell administration may be a part of volume replacement even without hemorrhage in order to optimize oxygen delivery if hemoglobin content is <7 g/dL.**
+Volume resuscitation will begin with **crystalloid**. In patients with hypovolemic shock due to ongoing hemorrhage, volume replacement with packed red blood cells is warranted. In cases of massive transfusion, platelets and fresh frozen plasma should be provided to offset the dilution of these components during volume replacement. Because hemoglobin is a key determinant of CaCO2, **red cell administration may be a part of volume replacement even without hemorrhage in order to optimize oxygen delivery if hemoglobin content is \<7 g/dL.**
 
-Assessment of intravascular volume status (and the adequacy of volume resuscitation) begins with the physical examination. The **passive leg raise (PLR) test can predict responsiveness to additional intravenous fluid (IVF) by providing the patient with an endogenous volume bolus.** While the patient is resting in a semirecumbent position at a 45° angle, the bed is placed in Trendelenburg position such that the patient’s head becomes horizontal and the legs are extended at a 45° angle. There is then an immediate (within 1 min) assessment of changes in CO (or pulse pressure variation as a surrogate). It is important to emphasize that one does not merely look for changes in blood pressure; if the shock patient is mechanically ventilated there is the option of looking at changes in **SV variation (or pulse pressure variation)** during the respiratory cycle to assess volume responsiveness. A >12% SV variation suggests a volume-responsive state. This measurement requires that the patient be in a volume cycle mode of ventilation, without breath-to-breath variations in intrathoracic pressure and without arrhythmias.
+Assessment of intravascular volume status (and the adequacy of volume resuscitation) begins with the physical examination. The **passive leg raise (PLR) test can predict responsiveness to additional intravenous fluid (IVF) by providing the patient with an endogenous volume bolus.** While the patient is resting in a semirecumbent position at a 45° angle, the bed is placed in Trendelenburg position such that the patient's head becomes horizontal and the legs are extended at a 45° angle. There is then an immediate (within 1 min) assessment of changes in CO (or pulse pressure variation as a surrogate). It is important to emphasize that one does not merely look for changes in blood pressure; if the shock patient is mechanically ventilated there is the option of looking at changes in **SV variation (or pulse pressure variation)** during the respiratory cycle to assess volume responsiveness. A \>12% SV variation suggests a volume-responsive state. This measurement requires that the patient be in a volume cycle mode of ventilation, without breath-to-breath variations in intrathoracic pressure and without arrhythmias.
 
-There is also increased use of echocardiography to assist in determination of intravascular fluid status, with a variety of static and dynamic
-variables The most commonly used parameters to assess adequacy of volume resuscitation are inferior vena cava (IVC) diameter and IVC collapse. Alternatively, serial assessments of LV function can be performed while volume is being administered. Placement of a pulmonary artery catheter (PAC) is another tool for assessment of volume status. This more invasive measure involves placement of the PAC into the central venous circulation and through the right heart. Ports in the PAC (Swan-Ganz catheter) allow for direct measurement of CVP, pulmonary artery (PA), and PCWPs. The PCWP is used as
-a surrogate for LA pressure.
+There is also increased use of echocardiography to assist in determination of intravascular fluid status, with a variety of static and dynamic variables The most commonly used parameters to assess adequacy of volume resuscitation are inferior vena cava (IVC) diameter and IVC collapse. Alternatively, serial assessments of LV function can be performed while volume is being administered. Placement of a pulmonary artery catheter (PAC) is another tool for assessment of volume status. This more invasive measure involves placement of the PAC into the central venous circulation and through the right heart. Ports in the PAC (Swan-Ganz catheter) allow for direct measurement of CVP, pulmonary artery (PA), and PCWPs. The PCWP is used as a surrogate for LA pressure.
 
 ##### Vasopresor and Inotropic Support
 
-If hypotension and inadequate tissue perfusion persist, then vasopressor and inotropic support should be initiated. **The use of vasopressors and inotropes must be tailored to the primary physiologic disturbance.** 
+If hypotension and inadequate tissue perfusion persist, then vasopressor and inotropic support should be initiated. **The use of vasopressors and inotropes must be tailored to the primary physiologic disturbance.**
 
-In distributive shock, the aim is to increase the SVR. **Norepinephrine is the first-choice vasopressor**, with potent α1 and β1 adrenergic effects. The α1 causes vasoconstriction while β1 has positive inotropic and chronotropic effects. At high doses, epinephrine has a similar profile (at lower doses the β effects predominate) but is associated with tachyarrhythmia, myocardial ischemia, decreased splanchnic blood flow, pulmonary hypertension, and acidosis. In distributive shock, vasopressin deficiency may be present. Vasopressin acts on the vasopressin receptor to reverse vasodilation and redistribute flow to the splanchnic circulation.
-**Dopamine does not have a role as a first-line agent in distributive shock.** 
+In distributive shock, the aim is to increase the SVR. **Norepinephrine is the first-choice vasopressor**, with potent α1 and β1 adrenergic effects. The α1 causes vasoconstriction while β1 has positive inotropic and chronotropic effects. At high doses, epinephrine has a similar profile (at lower doses the β effects predominate) but is associated with tachyarrhythmia, myocardial ischemia, decreased splanchnic blood flow, pulmonary hypertension, and acidosis. In distributive shock, vasopressin deficiency may be present. Vasopressin acts on the vasopressin receptor to reverse vasodilation and redistribute flow to the splanchnic circulation. **Dopamine does not have a role as a first-line agent in distributive shock.**
 
 For patients with **cardiogenic shock, dobutamine is the first-line agent**; it is a synthetic catecholamine with primarily β-mediated effects and minimal α adrenergic effects. The β1 effect is manifest in increased inotropy and the β2 effect leads to vasodilation with decreased afterload; it can be used with norepinephrine in patients with mixed distributive and cardiogenic shock.
 
 ##### Oxygenation and Ventilation Support
 
-Supplemental oxygen should be initiated and titrated to
-maintain SpO2 of 92–95%. patients may require intuvation and MV for two reason:
+Supplemental oxygen should be initiated and titrated to maintain SpO2 of 92--95%. patients may require intuvation and MV for two reason:
 
-1. primary pulmonary process or related to LV dysfunction and elevations of PCWP. For patients with all types of shock, there can be development of ARDS and subsequent V/Q mismatch and shunt.
+1.  primary pulmonary process or related to LV dysfunction and elevations of PCWP. For patients with all types of shock, there can be development of ARDS and subsequent V/Q mismatch and shunt.
 
-2. high minute ventilatory needs to compensate for metabolic acidosis. As shock progresses, they may not be able to maintain adequate respiratory compensation.
+2.  high minute ventilatory needs to compensate for metabolic acidosis. As shock progresses, they may not be able to maintain adequate respiratory compensation.
 
-It is important to provide ventilation with lung-protective strategies
-focused on low tidal volume ventilation and optimization of positive
-end-expiratory pressure to minimize ventilator-induced lung injury.
+It is important to provide ventilation with lung-protective strategies focused on low tidal volume ventilation and optimization of positive end-expiratory pressure to minimize ventilator-induced lung injury.
 
 ##### Antibiotics
 
@@ -734,10 +709,7 @@ For patients presenting with undifferentiated shock, if the diagnosis of septic 
 
 ##### Other specific treatment for specific etiology
 
-The initial evaluation (history, physical examination, and diagnostic
-testing) may have identified an etiology of shock that requires urgent
-lifesaving intervention in addition to the initial treatment steps out-
-lined above.
+The initial evaluation (history, physical examination, and diagnostic testing) may have identified an etiology of shock that requires urgent lifesaving intervention in addition to the initial treatment steps out- lined above.
 
 ### Sepsis
 

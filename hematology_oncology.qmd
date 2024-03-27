@@ -4,9 +4,60 @@
 
 ## Hematology
 
-
 ### Transfusion Medicine
 
-
-
 ## Medical Oncology
+
+## Procedures in Hematology and Medical Oncology
+
+### Examination of Blood Cells & Marrow Cells
+
+#### Examination of Blood Cells
+
+##### Automated Quantitative Parameter
+
+Red cell parameter that measured directly: MCV, Red cell number, hemoglobin concentration, and red cell distribution width. Parameter derived from calculation: HCT, MCH, MCHC
+
+###### Measurement of RBC count and hematocrite
+
+HCT are measured from RBC x MCV/10, falsely elevated MCV and decreased RBC can be observed when red cell autoantibodies are presents and binding capability at room temperature, thus creatig red cell clumping.
+
+###### Measurement of Hemoglobin
+
+RBC contain mixture of HB, including: oxyhemoglobin, carboxyhemoglobin, methemoglobin, and other minor hemoglobin. HB quantification done lysing the cell and converted the all HB variants to cyanmethemoglobin for quantification by absorptio at 540 mm. Major interference with this method is the present of chylomicronemia.
+
+###### Standard Red Cell Indices
+
+**Mean Cell Volume**
+
+Mean cell volume (MCV) are measured directly by electrical impendance or light scattering. 
+
+**Mean Cell Hemoglobin**
+
+Mean cell hemoglobin (MCH) is the amount of HB per red cell. It is derived from Hemoglobin content and red cell count, two most accurate measurement, thus could provide consistent result among many type of analyzer. Reduced cell hemogobin is paralel to the reduced MCV.
+Mean cell hemoglobin concentration is not used much for diagnostic, it is primarily ised for quality control purpose.
+
+**Red Cell Distribution Width**
+
+Red cell distribution widht or RDW is an estimate of volume variability in red cells population. RDW expressed as 1 SD of red cell volume measurements divided by the MCV.RDW has developed as biomarker for various clinical condition and may be a surrogate of systemic inflamation
+
+**Reticulocyte Count & RNA Content**
+
+Reticulocyte is a newly released anuclete red cell that enters bloodstream with residual but detectable RNA. The Reticulocyte counts permits an estimate of marrow erythrocyte production, thus provide tools for evaluation anemia due to inadequate production or accelerated destruction. Reticulocytes are now measured by exposig the samples with Fluoresced, RNA binding Dyes. Measurement are reported in abosolute counts, reticulosytes per microliter of Blood, obviating the need to corrrect for reduced red cell counts in anemia.
+
+The measuremet of Reticulocytes specific hemoglobin content (CHr and RET-He) are closely related to iron availability withiin 24-48 hours, and is very usefull in detecting functional iron deficiency in complex clinical situation such as chronic inflamation or chronic kidney disease. Reticulocytes specific hemoglobin  are superior to traditional iron parameter due to feritin also acts as a acute phase reactants.
+
+**Other Indices**
+
+Nucleated red cells: are presents in newborns, physiologicaly stress individual and variety disorders such as hypoxic states, severe hemolytics anemia, primary myelofibrosis, infiltrative disease of the marrow.
+
+
+###### Leukocyte Counts and Differetial
+
+
+
+##### Qualitative Parameter
+
+#### Examination of Marrow Cells
+
+Bone marrow aspiration was devised by Arinkin in 1923, then the egular use posterior illiac crest for aspiration and biopsy occured in 1970.
