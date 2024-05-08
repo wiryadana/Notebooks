@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,16 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,16 +82,47 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="site_libs/viz-1.8.2/viz.js"></script>
 <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-<script src="site_libs/grViz-binding-1.0.10/grViz.js"></script>
+<script src="site_libs/grViz-binding-1.0.11/grViz.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -92,11 +130,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./critical_care.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -104,345 +147,397 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Wiryadana’s Notebook</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/wiryadana/the_wiryadana_notebooks" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="./The-Wiryadana-s-Notebook.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
+    <a href="https://github.com/wiryadana/the_wiryadana_notebooks" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./The-Wiryadana-s-Notebook.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./internal_medicine.html" class="sidebar-item-text sidebar-link">Internal Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a href="./internal_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Internal Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./critical_care.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a>
+  <a href="./critical_care.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hematology_oncology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hematology &amp; Medical Oncology</span></a>
+  <a href="./hematology_oncology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hematology &amp; Medical Oncology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./allergy_imunology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Allergy &amp; Immunology</span></a>
+  <a href="./allergy_imunology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Allergy &amp; Immunology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rheumatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Rheumatology</span></a>
+  <a href="./rheumatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Rheumatology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./infectious_disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Infectious Disease</span></a>
+  <a href="./infectious_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Infectious Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cardiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiology &amp; Vascular Medicine</span></a>
+  <a href="./cardiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiology &amp; Vascular Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./respirology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Respiratory Medicine</span></a>
+  <a href="./respirology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Respiratory Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./nefrology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></a>
+  <a href="./nefrology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gastroenterology_hepatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gastroenterology &amp; Hepatology</span></a>
+  <a href="./gastroenterology_hepatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gastroenterology &amp; Hepatology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endocrine_metabolism.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Endocrine &amp; Metabolism</span></a>
+  <a href="./endocrine_metabolism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Endocrine &amp; Metabolism</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./psychosomatic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Psychosomatic Medicine</span></a>
+  <a href="./psychosomatic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Psychosomatic Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./geriatry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Geriatry</span></a>
+  <a href="./geriatry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Geriatry</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./others.html" class="sidebar-item-text sidebar-link">The Rest of Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a href="./others.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Rest of Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_nutrition.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Clinical Nutrition</span></a>
+  <a href="./clinical_nutrition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Clinical Nutrition</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./surgery.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Surgery</span></a>
+  <a href="./surgery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Surgery</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./neurology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">neurology</span></a>
+  <a href="./neurology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">neurology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anesthesiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Anesthesiology</span></a>
+  <a href="./anesthesiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Perioperative Consultation &amp; Anesthesia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./obgyn.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Obstetric &amp; Gynecology</span></a>
+  <a href="./obgyn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Obstetric &amp; Gynecology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dermatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Dermato-venereology</span></a>
+  <a href="./dermatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Dermato-venereology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./poison_drugs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Poison, Envenomation and Drug Overdose</span></a>
+  <a href="./poison_drugs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Poison, Envenomation and Drug Overdose</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./enviromental.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Disease due to Enviromental Exposure</span></a>
+  <a href="./enviromental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Disease due to Enviromental Exposure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./travel_medicine.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Travel Medicine</span></a>
+  <a href="./travel_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Travel Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Radiology</span></a>
+  <a href="./radiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Radiology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anatomical_pathology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Anatomical Pathology</span></a>
+  <a href="./anatomical_pathology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Anatomical Pathology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_pathology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Clinical Pathology</span></a>
+  <a href="./clinical_pathology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Clinical Pathology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_microbiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Clinical Microbiology</span></a>
+  <a href="./clinical_microbiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Clinical Microbiology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ent.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ear, Nose &amp; Throat</span></a>
+  <a href="./ent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ear, Nose &amp; Throat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ophtalmology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Ophtalmology</span></a>
+  <a href="./ophtalmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Ophtalmology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rehabilitation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Rehabilitation &amp; Physical Medicine</span></a>
+  <a href="./rehabilitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Rehabilitation &amp; Physical Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./disaster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Disaster Medicine, Wilderness medicine, Transport Medicine</span></a>
+  <a href="./disaster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Disaster Medicine, Wilderness medicine, Transport Medicine</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pharmacology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Pharmacology</span></a>
+  <a href="./pharmacology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Pharmacology</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./medical_procedure.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Common Medical Procedures for Internist</span></a>
+  <a href="./medical_procedure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Common Medical Procedures for Internist</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./bioinformatics.html" class="sidebar-item-text sidebar-link">Bioinformatics &amp; Genomic Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a href="./bioinformatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioinformatics &amp; Genomic Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./genomic_medicine.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Genomic Medicine</span></a>
+  <a href="./genomic_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Genomic Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./linux_programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Linux &amp; Bioinformatic Programs</span></a>
+  <a href="./linux_programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Linux &amp; Bioinformatic Programs</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./statistics.html" class="sidebar-item-text sidebar-link">Statistics and R languange</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a href="./statistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics and R languange</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_r.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Basic R and Base Plot</span></a>
+  <a href="./basic_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Basic R and Base Plot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tidyverse_ggplot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tidyverse &amp; ggplot2</span></a>
+  <a href="./tidyverse_ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tidyverse &amp; ggplot2</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./mkdu.html" class="sidebar-item-text sidebar-link">Mata Kuliah Dasar Umum</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a href="./mkdu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mata Kuliah Dasar Umum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./biomol.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Biologi Molekular</span></a>
+  <a href="./biomol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Biologi Molekular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metpen.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Metodologi Penelitian</span></a>
+  <a href="./metpen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Metodologi Penelitian</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./filsum.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Filsafat Ilmu</span></a>
+  <a href="./filsum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Filsafat Ilmu</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistik.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistik Kedokteran Dasar</span></a>
+  <a href="./statistik.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistik Kedokteran Dasar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ebm.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Evidence-based Medicine</span></a>
+  <a href="./ebm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Evidence-based Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tugasmkdu.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Tugas MKDU</span></a>
+  <a href="./tugasmkdu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Tugas MKDU</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#approach-to-critical-ill-patients" id="toc-approach-to-critical-ill-patients" class="nav-link active" data-scroll-target="#approach-to-critical-ill-patients"><span class="toc-section-number">2.1</span>  Approach to Critical Ill Patients</a>
+  <li><a href="#approach-to-critical-ill-patients" id="toc-approach-to-critical-ill-patients" class="nav-link active" data-scroll-target="#approach-to-critical-ill-patients"><span class="header-section-number">2.1</span> Approach to Critical Ill Patients</a>
   <ul class="collapse">
-  <li><a href="#shock" id="toc-shock" class="nav-link" data-scroll-target="#shock"><span class="toc-section-number">2.1.1</span>  Shock</a></li>
-  <li><a href="#initial-evaluation" id="toc-initial-evaluation" class="nav-link" data-scroll-target="#initial-evaluation"><span class="toc-section-number">2.1.2</span>  Initial Evaluation</a></li>
-  <li><a href="#respiratory-failure" id="toc-respiratory-failure" class="nav-link" data-scroll-target="#respiratory-failure"><span class="toc-section-number">2.1.3</span>  Respiratory Failure</a></li>
-  <li><a href="#multiorgan-system-failure" id="toc-multiorgan-system-failure" class="nav-link" data-scroll-target="#multiorgan-system-failure"><span class="toc-section-number">2.1.4</span>  Multiorgan system failure</a></li>
+  <li><a href="#shock" id="toc-shock" class="nav-link" data-scroll-target="#shock"><span class="header-section-number">2.1.1</span> Shock</a></li>
+  <li><a href="#initial-evaluation" id="toc-initial-evaluation" class="nav-link" data-scroll-target="#initial-evaluation"><span class="header-section-number">2.1.2</span> Initial Evaluation</a></li>
+  <li><a href="#respiratory-failure" id="toc-respiratory-failure" class="nav-link" data-scroll-target="#respiratory-failure"><span class="header-section-number">2.1.3</span> Respiratory Failure</a></li>
+  <li><a href="#multiorgan-system-failure" id="toc-multiorgan-system-failure" class="nav-link" data-scroll-target="#multiorgan-system-failure"><span class="header-section-number">2.1.4</span> Multiorgan system failure</a></li>
   </ul></li>
-  <li><a href="#specific-critical-illness" id="toc-specific-critical-illness" class="nav-link" data-scroll-target="#specific-critical-illness"><span class="toc-section-number">2.2</span>  Specific Critical illness</a>
+  <li><a href="#specific-critical-illness" id="toc-specific-critical-illness" class="nav-link" data-scroll-target="#specific-critical-illness"><span class="header-section-number">2.2</span> Specific Critical illness</a>
   <ul class="collapse">
-  <li><a href="#acute-respiratory-distress-syndrome-ards" id="toc-acute-respiratory-distress-syndrome-ards" class="nav-link" data-scroll-target="#acute-respiratory-distress-syndrome-ards"><span class="toc-section-number">2.2.1</span>  Acute Respiratory Distress Syndrome (ARDS)</a></li>
-  <li><a href="#diagnostic-criteria-for-ards" id="toc-diagnostic-criteria-for-ards" class="nav-link" data-scroll-target="#diagnostic-criteria-for-ards"><span class="toc-section-number">2.2.2</span>  Diagnostic Criteria for ARDS</a></li>
-  <li><a href="#epidemiology" id="toc-epidemiology" class="nav-link" data-scroll-target="#epidemiology"><span class="toc-section-number">2.2.3</span>  Epidemiology</a></li>
-  <li><a href="#approach-to-circulatory-shock" id="toc-approach-to-circulatory-shock" class="nav-link" data-scroll-target="#approach-to-circulatory-shock"><span class="toc-section-number">2.2.4</span>  Approach to Circulatory Shock</a></li>
-  <li><a href="#sepsis" id="toc-sepsis" class="nav-link" data-scroll-target="#sepsis"><span class="toc-section-number">2.2.5</span>  Sepsis</a></li>
-  <li><a href="#cardiogenic-shock-and-pulmonary-edema" id="toc-cardiogenic-shock-and-pulmonary-edema" class="nav-link" data-scroll-target="#cardiogenic-shock-and-pulmonary-edema"><span class="toc-section-number">2.2.6</span>  Cardiogenic Shock and Pulmonary edema</a></li>
-  <li><a href="#cardiac-arrest" id="toc-cardiac-arrest" class="nav-link" data-scroll-target="#cardiac-arrest"><span class="toc-section-number">2.2.7</span>  Cardiac Arrest</a></li>
-  <li><a href="#neurological-critical-illness" id="toc-neurological-critical-illness" class="nav-link" data-scroll-target="#neurological-critical-illness"><span class="toc-section-number">2.2.8</span>  Neurological Critical illness</a></li>
+  <li><a href="#acute-respiratory-distress-syndrome-ards" id="toc-acute-respiratory-distress-syndrome-ards" class="nav-link" data-scroll-target="#acute-respiratory-distress-syndrome-ards"><span class="header-section-number">2.2.1</span> Acute Respiratory Distress Syndrome (ARDS)</a></li>
+  <li><a href="#diagnostic-criteria-for-ards" id="toc-diagnostic-criteria-for-ards" class="nav-link" data-scroll-target="#diagnostic-criteria-for-ards"><span class="header-section-number">2.2.2</span> Diagnostic Criteria for ARDS</a></li>
+  <li><a href="#epidemiology" id="toc-epidemiology" class="nav-link" data-scroll-target="#epidemiology"><span class="header-section-number">2.2.3</span> Epidemiology</a></li>
+  <li><a href="#approach-to-circulatory-shock" id="toc-approach-to-circulatory-shock" class="nav-link" data-scroll-target="#approach-to-circulatory-shock"><span class="header-section-number">2.2.4</span> Approach to Circulatory Shock</a></li>
+  <li><a href="#sepsis" id="toc-sepsis" class="nav-link" data-scroll-target="#sepsis"><span class="header-section-number">2.2.5</span> Sepsis</a></li>
+  <li><a href="#cardiogenic-shock-and-pulmonary-edema" id="toc-cardiogenic-shock-and-pulmonary-edema" class="nav-link" data-scroll-target="#cardiogenic-shock-and-pulmonary-edema"><span class="header-section-number">2.2.6</span> Cardiogenic Shock and Pulmonary edema</a></li>
+  <li><a href="#cardiac-arrest" id="toc-cardiac-arrest" class="nav-link" data-scroll-target="#cardiac-arrest"><span class="header-section-number">2.2.7</span> Cardiac Arrest</a></li>
+  <li><a href="#neurological-critical-illness" id="toc-neurological-critical-illness" class="nav-link" data-scroll-target="#neurological-critical-illness"><span class="header-section-number">2.2.8</span> Neurological Critical illness</a></li>
   </ul></li>
-  <li><a href="#important-calculation" id="toc-important-calculation" class="nav-link" data-scroll-target="#important-calculation"><span class="toc-section-number">2.3</span>  Important Calculation</a>
+  <li><a href="#important-calculation" id="toc-important-calculation" class="nav-link" data-scroll-target="#important-calculation"><span class="header-section-number">2.3</span> Important Calculation</a>
   <ul class="collapse">
-  <li><a href="#airway-ventilation" id="toc-airway-ventilation" class="nav-link" data-scroll-target="#airway-ventilation"><span class="toc-section-number">2.3.1</span>  Airway &amp; Ventilation</a></li>
-  <li><a href="#circulation" id="toc-circulation" class="nav-link" data-scroll-target="#circulation"><span class="toc-section-number">2.3.2</span>  Circulation</a></li>
+  <li><a href="#airway-ventilation" id="toc-airway-ventilation" class="nav-link" data-scroll-target="#airway-ventilation"><span class="header-section-number">2.3.1</span> Airway &amp; Ventilation</a></li>
+  <li><a href="#circulation" id="toc-circulation" class="nav-link" data-scroll-target="#circulation"><span class="header-section-number">2.3.2</span> Circulation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -450,9 +545,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./critical_care.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></h1>
 </div>
 
 
@@ -465,7 +560,9 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <section id="approach-to-critical-ill-patients" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="approach-to-critical-ill-patients"><span class="header-section-number">2.1</span> Approach to Critical Ill Patients</h2>
@@ -487,28 +584,25 @@ div.csl-indent {
 <p>Includes 6 organ systems, with each graded 0 to 4 according to the degree of dysfunction. Increased score correlate with mortality and can be evaluated repeatedly <span class="citation" data-cites="harrison_2022">(<a href="references.html#ref-harrison_2022" role="doc-biblioref">Loscalzo et al. 2022</a>)</span>.</p>
 <p>A derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate <span class="math inline">\(\geq\)</span> 22/min, altered mental status, or systolic BP <span class="math inline">\(\le\)</span> 100 mmhg.</p>
 <div class="cell">
-
-</div>
-<div class="cell">
 <div class="cell-output-display">
-
-<div id="hcoaovtpnt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hcoaovtpnt table {
+<div>
+<div id="xwugpdvubw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xwugpdvubw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hcoaovtpnt thead, #hcoaovtpnt tbody, #hcoaovtpnt tfoot, #hcoaovtpnt tr, #hcoaovtpnt td, #hcoaovtpnt th {
+#xwugpdvubw thead, #xwugpdvubw tbody, #xwugpdvubw tfoot, #xwugpdvubw tr, #xwugpdvubw td, #xwugpdvubw th {
   border-style: none;
 }
 
-#hcoaovtpnt p {
+#xwugpdvubw p {
   margin: 0;
   padding: 0;
 }
 
-#hcoaovtpnt .gt_table {
+#xwugpdvubw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -534,12 +628,12 @@ div.csl-indent {
   border-left-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_caption {
+#xwugpdvubw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hcoaovtpnt .gt_title {
+#xwugpdvubw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -551,7 +645,7 @@ div.csl-indent {
   border-bottom-width: 0;
 }
 
-#hcoaovtpnt .gt_subtitle {
+#xwugpdvubw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -563,7 +657,7 @@ div.csl-indent {
   border-top-width: 0;
 }
 
-#hcoaovtpnt .gt_heading {
+#xwugpdvubw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -575,13 +669,13 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_bottom_border {
+#xwugpdvubw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_col_headings {
+#xwugpdvubw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -596,7 +690,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_col_heading {
+#xwugpdvubw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -616,7 +710,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#hcoaovtpnt .gt_column_spanner_outer {
+#xwugpdvubw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -628,15 +722,15 @@ div.csl-indent {
   padding-right: 4px;
 }
 
-#hcoaovtpnt .gt_column_spanner_outer:first-child {
+#xwugpdvubw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hcoaovtpnt .gt_column_spanner_outer:last-child {
+#xwugpdvubw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hcoaovtpnt .gt_column_spanner {
+#xwugpdvubw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -648,11 +742,11 @@ div.csl-indent {
   width: 100%;
 }
 
-#hcoaovtpnt .gt_spanner_row {
+#xwugpdvubw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hcoaovtpnt .gt_group_heading {
+#xwugpdvubw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -678,7 +772,7 @@ div.csl-indent {
   text-align: left;
 }
 
-#hcoaovtpnt .gt_empty_group_heading {
+#xwugpdvubw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -693,15 +787,15 @@ div.csl-indent {
   vertical-align: middle;
 }
 
-#hcoaovtpnt .gt_from_md > :first-child {
+#xwugpdvubw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hcoaovtpnt .gt_from_md > :last-child {
+#xwugpdvubw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hcoaovtpnt .gt_row {
+#xwugpdvubw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -720,7 +814,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#hcoaovtpnt .gt_stub {
+#xwugpdvubw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -733,7 +827,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hcoaovtpnt .gt_stub_row_group {
+#xwugpdvubw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -747,15 +841,15 @@ div.csl-indent {
   vertical-align: top;
 }
 
-#hcoaovtpnt .gt_row_group_first td {
+#xwugpdvubw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hcoaovtpnt .gt_row_group_first th {
+#xwugpdvubw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hcoaovtpnt .gt_summary_row {
+#xwugpdvubw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -765,16 +859,16 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hcoaovtpnt .gt_first_summary_row {
+#xwugpdvubw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_first_summary_row.thick {
+#xwugpdvubw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hcoaovtpnt .gt_last_summary_row {
+#xwugpdvubw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -784,7 +878,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_grand_summary_row {
+#xwugpdvubw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -794,7 +888,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hcoaovtpnt .gt_first_grand_summary_row {
+#xwugpdvubw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -804,7 +898,7 @@ div.csl-indent {
   border-top-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_last_grand_summary_row_top {
+#xwugpdvubw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -814,11 +908,11 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_striped {
+#xwugpdvubw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hcoaovtpnt .gt_table_body {
+#xwugpdvubw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -827,7 +921,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_footnotes {
+#xwugpdvubw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -841,7 +935,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_footnote {
+#xwugpdvubw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -850,7 +944,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hcoaovtpnt .gt_sourcenotes {
+#xwugpdvubw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -864,7 +958,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hcoaovtpnt .gt_sourcenote {
+#xwugpdvubw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -872,127 +966,137 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hcoaovtpnt .gt_left {
+#xwugpdvubw .gt_left {
   text-align: left;
 }
 
-#hcoaovtpnt .gt_center {
+#xwugpdvubw .gt_center {
   text-align: center;
 }
 
-#hcoaovtpnt .gt_right {
+#xwugpdvubw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hcoaovtpnt .gt_font_normal {
+#xwugpdvubw .gt_font_normal {
   font-weight: normal;
 }
 
-#hcoaovtpnt .gt_font_bold {
+#xwugpdvubw .gt_font_bold {
   font-weight: bold;
 }
 
-#hcoaovtpnt .gt_font_italic {
+#xwugpdvubw .gt_font_italic {
   font-style: italic;
 }
 
-#hcoaovtpnt .gt_super {
+#xwugpdvubw .gt_super {
   font-size: 65%;
 }
 
-#hcoaovtpnt .gt_footnote_marks {
+#xwugpdvubw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hcoaovtpnt .gt_asterisk {
+#xwugpdvubw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hcoaovtpnt .gt_indent_1 {
+#xwugpdvubw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hcoaovtpnt .gt_indent_2 {
+#xwugpdvubw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hcoaovtpnt .gt_indent_3 {
+#xwugpdvubw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hcoaovtpnt .gt_indent_4 {
+#xwugpdvubw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hcoaovtpnt .gt_indent_5 {
+#xwugpdvubw .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_heading">
-      <td colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Calculation of SOFA Score</td>
-    </tr>
-    
-    <tr class="gt_col_headings gt_spanner_row">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id="System">System</th>
-      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="5" scope="colgroup" id="Score">
-        <span class="gt_column_spanner">Score</span>
-      </th>
-    </tr>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0">0</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="1">1</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="2">2</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="3">3</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="4">4</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="System" class="gt_row gt_left">Respiration (PaO2 / FiO2)</td>
-<td headers="0" class="gt_row gt_center">&gt;= 400</td>
-<td headers="1" class="gt_row gt_left">&lt;400</td>
-<td headers="2" class="gt_row gt_center">&lt;300</td>
-<td headers="3" class="gt_row gt_center">&lt;200 with respiratory support</td>
-<td headers="4" class="gt_row gt_left">&lt;100 with respiratory support</td></tr>
-    <tr><td headers="System" class="gt_row gt_left">Coagulation (plt)</td>
-<td headers="0" class="gt_row gt_center">&gt;= 150</td>
-<td headers="1" class="gt_row gt_left">&lt;150</td>
-<td headers="2" class="gt_row gt_center">&lt;100</td>
-<td headers="3" class="gt_row gt_center">&lt;50</td>
-<td headers="4" class="gt_row gt_left">&lt;20</td></tr>
-    <tr><td headers="System" class="gt_row gt_left">Liver (bilirubin, mg/dl)</td>
-<td headers="0" class="gt_row gt_center">&lt;1,2</td>
-<td headers="1" class="gt_row gt_left">1,2 - 1,9</td>
-<td headers="2" class="gt_row gt_center">2,0 - 5,9</td>
-<td headers="3" class="gt_row gt_center">6,0 - 11,9</td>
-<td headers="4" class="gt_row gt_left">&gt;12,0</td></tr>
-    <tr><td headers="System" class="gt_row gt_left">Cardiovascular</td>
-<td headers="0" class="gt_row gt_center">MAP &gt;= 70</td>
-<td headers="1" class="gt_row gt_left">MAP &lt; 70</td>
-<td headers="2" class="gt_row gt_center">Dopamin &lt;5 or dobutamine any dose</td>
-<td headers="3" class="gt_row gt_center">Dopamine 5,1 - 15 or epinefrin &lt;= 0,1 or Norepinefrin &lt;=0,1</td>
-<td headers="4" class="gt_row gt_left">Dopamin &gt;15 or epinefrin &gt;0,1 or Norepinefrin &gt;0,1</td></tr>
-    <tr><td headers="System" class="gt_row gt_left">CNS (GCS)</td>
-<td headers="0" class="gt_row gt_center">15</td>
-<td headers="1" class="gt_row gt_left">13-14</td>
-<td headers="2" class="gt_row gt_center">2023-12-10</td>
-<td headers="3" class="gt_row gt_center">2023-09-06</td>
-<td headers="4" class="gt_row gt_left">&lt;6</td></tr>
-    <tr><td headers="System" class="gt_row gt_left">Renal (Creatinin mg/dl or urine output ml/day)</td>
-<td headers="0" class="gt_row gt_center">1.2</td>
-<td headers="1" class="gt_row gt_left">1,2 - 1,9</td>
-<td headers="2" class="gt_row gt_center">2,0 - 3,4</td>
-<td headers="3" class="gt_row gt_center">3,5 - 4,9 (&lt;500 cc)</td>
-<td headers="4" class="gt_row gt_left">&gt;5,0 (&lt; 200 cc)</td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border">Calculation of SOFA Score</th>
+</tr>
+<tr class="odd gt_col_headings gt_spanner_row">
+<th rowspan="2" id="System" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">System</th>
+<th colspan="5" id="Score" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Score</span></th>
+</tr>
+<tr class="header gt_col_headings">
+<th id="0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">0</th>
+<th id="1" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">1</th>
+<th id="2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">2</th>
+<th id="3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">3</th>
+<th id="4" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">4</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="System">Respiration (PaO2 / FiO2)</td>
+<td class="gt_row gt_center" headers="0">&gt;= 400</td>
+<td class="gt_row gt_left" headers="1">&lt;400</td>
+<td class="gt_row gt_center" headers="2">&lt;300</td>
+<td class="gt_row gt_center" headers="3">&lt;200 with respiratory support</td>
+<td class="gt_row gt_left" headers="4">&lt;100 with respiratory support</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="System">Coagulation (plt)</td>
+<td class="gt_row gt_center" headers="0">&gt;= 150</td>
+<td class="gt_row gt_left" headers="1">&lt;150</td>
+<td class="gt_row gt_center" headers="2">&lt;100</td>
+<td class="gt_row gt_center" headers="3">&lt;50</td>
+<td class="gt_row gt_left" headers="4">&lt;20</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="System">Liver (bilirubin, mg/dl)</td>
+<td class="gt_row gt_center" headers="0">&lt;1,2</td>
+<td class="gt_row gt_left" headers="1">1,2 - 1,9</td>
+<td class="gt_row gt_center" headers="2">2,0 - 5,9</td>
+<td class="gt_row gt_center" headers="3">6,0 - 11,9</td>
+<td class="gt_row gt_left" headers="4">&gt;12,0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="System">Cardiovascular</td>
+<td class="gt_row gt_center" headers="0">MAP &gt;= 70</td>
+<td class="gt_row gt_left" headers="1">MAP &lt; 70</td>
+<td class="gt_row gt_center" headers="2">Dopamin &lt;5 or dobutamine any dose</td>
+<td class="gt_row gt_center" headers="3">Dopamine 5,1 - 15 or epinefrin &lt;= 0,1 or Norepinefrin &lt;=0,1</td>
+<td class="gt_row gt_left" headers="4">Dopamin &gt;15 or epinefrin &gt;0,1 or Norepinefrin &gt;0,1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="System">CNS (GCS)</td>
+<td class="gt_row gt_center" headers="0">15</td>
+<td class="gt_row gt_left" headers="1">13-14</td>
+<td class="gt_row gt_center" headers="2">2023-12-10</td>
+<td class="gt_row gt_center" headers="3">2023-09-06</td>
+<td class="gt_row gt_left" headers="4">&lt;6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="System">Renal (Creatinin mg/dl or urine output ml/day)</td>
+<td class="gt_row gt_center" headers="0">1.2</td>
+<td class="gt_row gt_left" headers="1">1,2 - 1,9</td>
+<td class="gt_row gt_center" headers="2">2,0 - 3,4</td>
+<td class="gt_row gt_center" headers="3">3,5 - 4,9 (&lt;500 cc)</td>
+<td class="gt_row gt_left" headers="4">&gt;5,0 (&lt; 200 cc)</td>
+</tr>
+</tbody>
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -1048,7 +1152,7 @@ div.csl-indent {
 <li>Peripheral AV shunts</li>
 </ul>
 <p>The need for arterial line and CVC - if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.</p>
-<p>Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed (look <a href="#fig-shockalgorithm">Figure&nbsp;<span>2.1</span></a>).</p>
+<p>Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed (look <a href="#fig-shockalgorithm" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</p>
 <section id="the-need-for-mechanical-ventilation" class="level4">
 <h4 class="anchored" data-anchor-id="the-need-for-mechanical-ventilation">The need for Mechanical Ventilation</h4>
 <p>Always asses the ability of a patient to protect his or her airway and to maintain adequate gas exhange. Early intubation or mechanical ventilation often required for two main reasons:</p>
@@ -1076,15 +1180,16 @@ Sign of respiratory distress:</p>
 <li>Right heart failure patients or preexisting pulmonary hypertension, due to increased right ventricula afterload due to PPV.</li>
 </ol>
 <p>Many patients may be fluid responsive. Therefore, fluid administration and vasopressor support might needed before intubation.</p>
-<div class="cell">
-
-</div>
 <div class="cell fig-cap-location-bottom" data-layout-align="center">
-<div id="fig-shockalgorithm" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9fd516f972c310385061" style="width:100%;height:812px;"></div>
-<script type="application/json" data-for="htmlwidget-9fd516f972c310385061">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB, fontsize = 10]\n\nnode[shape = rectangle]\n\na [label = \"Shock\"]\nb [label = \"Cold, clammy extremities\"]\nc [label = \"Warm, bounding pulse\"]\nd [label = \"Low cardiac output\"]\ne [label = \"JVP Increased, crackles\"]\nf [label = \"JVP decrease, orthostasis\"]\ng [label = \"Heart is full/cardiogenic shock\"]\nh [label = \"Evaluate for MI\"]\ni [label = \"Consider Echo, invasive monitoring\"]\nj [label = \"Inotropes, afterload reduction\"]\nk [label = \"High Cardiac Output\"]\nl [label = \"Septic shock, liver failure\"]\nm [label = \"Antibiotics, aggresive resuscitation\"]\nn [label = \"Heart is Empty/Hypovolemic shock\"]\no [label = \"IV fluids\"]\np [label = \"no improvement??\"]\nq [label = \"What does not fit??\"]\nr [label = \"Adrenal crisis, right heart syndrome, pericardial disease\"]\ns [label = \"Consider echo, invasive monitoring\"]\nt [label = \"May convert to\"]\n\na -> b \na -> c\nb -> d\nd -> e\nd -> f\ne -> g\ng -> h\nh -> i\ni -> j\nc -> k\nk -> l\nl -> m\nf -> n\nn -> o\no -> p\np -> q\nq -> r\nr -> s\no -> t\nt -> k\n\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Approach to Shock</figcaption><p></p>
+<div id="fig-shockalgorithm" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shockalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-7a61c8b83a856d7591db" style="width:100%;height:812px;"></div>
+<script type="application/json" data-for="htmlwidget-7a61c8b83a856d7591db">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB, fontsize = 10]\n\nnode[shape = rectangle]\n\na [label = \"Shock\"]\nb [label = \"Cold, clammy extremities\"]\nc [label = \"Warm, bounding pulse\"]\nd [label = \"Low cardiac output\"]\ne [label = \"JVP Increased, crackles\"]\nf [label = \"JVP decrease, orthostasis\"]\ng [label = \"Heart is full/cardiogenic shock\"]\nh [label = \"Evaluate for MI\"]\ni [label = \"Consider Echo, invasive monitoring\"]\nj [label = \"Inotropes, afterload reduction\"]\nk [label = \"High Cardiac Output\"]\nl [label = \"Septic shock, liver failure\"]\nm [label = \"Antibiotics, aggresive resuscitation\"]\nn [label = \"Heart is Empty/Hypovolemic shock\"]\no [label = \"IV fluids\"]\np [label = \"no improvement??\"]\nq [label = \"What does not fit??\"]\nr [label = \"Adrenal crisis, right heart syndrome, pericardial disease\"]\ns [label = \"Consider echo, invasive monitoring\"]\nt [label = \"May convert to\"]\n\na -> b \na -> c\nb -> d\nd -> e\nd -> f\ne -> g\ng -> h\nh -> i\ni -> j\nc -> k\nk -> l\nl -> m\nf -> n\nn -> o\no -> p\np -> q\nq -> r\nr -> s\no -> t\nt -> k\n\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shockalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Approach to Shock
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1213,11 +1318,15 @@ Sign of respiratory distress:</p>
 <section id="maintenance-for-mechanical-ventilated-patients" class="level5">
 <h5 class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients">Maintenance for mechanical Ventilated patients</h5>
 <p><strong>Respiratory System Mechanics</strong></p>
-<p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
-<div id="fig-airwayresistance" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="Airway_resistance.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2.2: Graph Illustration taken from harrison</figcaption><p></p>
+<p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
+<div id="fig-airwayresistance" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-airwayresistance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Airway_resistance.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-airwayresistance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Graph Illustration taken from harrison
+</figcaption>
 </figure>
 </div>
 <p>Patients frequently require sedatives &amp; analgetics.</p>
@@ -1264,11 +1373,11 @@ Sign of respiratory distress:</p>
 <section id="maintenance-for-mechanical-ventilated-patients-1" class="level5">
 <h5 class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients-1">Maintenance for mechanical Ventilated patients</h5>
 <p><strong>Respiratory System Mechanics</strong></p>
-<p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
+<p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Airway_resistance.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Graph Illustration taken from harrison</figcaption><p></p>
+<figcaption>Graph Illustration taken from harrison</figcaption>
 </figure>
 </div>
 <p>Patients frequently require sedatives &amp; analgetics.</p>
@@ -1323,24 +1432,24 @@ Sign of respiratory distress:</p>
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="diagnostic-criteria-for-ards"><span class="header-section-number">2.2.2</span> Diagnostic Criteria for ARDS</h3>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="rgavdtgvwz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rgavdtgvwz table {
+<div>
+<div id="jwovnecvfb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jwovnecvfb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rgavdtgvwz thead, #rgavdtgvwz tbody, #rgavdtgvwz tfoot, #rgavdtgvwz tr, #rgavdtgvwz td, #rgavdtgvwz th {
+#jwovnecvfb thead, #jwovnecvfb tbody, #jwovnecvfb tfoot, #jwovnecvfb tr, #jwovnecvfb td, #jwovnecvfb th {
   border-style: none;
 }
 
-#rgavdtgvwz p {
+#jwovnecvfb p {
   margin: 0;
   padding: 0;
 }
 
-#rgavdtgvwz .gt_table {
+#jwovnecvfb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1366,12 +1475,12 @@ Sign of respiratory distress:</p>
   border-left-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_caption {
+#jwovnecvfb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rgavdtgvwz .gt_title {
+#jwovnecvfb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1383,7 +1492,7 @@ Sign of respiratory distress:</p>
   border-bottom-width: 0;
 }
 
-#rgavdtgvwz .gt_subtitle {
+#jwovnecvfb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1395,7 +1504,7 @@ Sign of respiratory distress:</p>
   border-top-width: 0;
 }
 
-#rgavdtgvwz .gt_heading {
+#jwovnecvfb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1407,13 +1516,13 @@ Sign of respiratory distress:</p>
   border-right-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_bottom_border {
+#jwovnecvfb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_col_headings {
+#jwovnecvfb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1428,7 +1537,7 @@ Sign of respiratory distress:</p>
   border-right-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_col_heading {
+#jwovnecvfb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1448,7 +1557,7 @@ Sign of respiratory distress:</p>
   overflow-x: hidden;
 }
 
-#rgavdtgvwz .gt_column_spanner_outer {
+#jwovnecvfb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1460,15 +1569,15 @@ Sign of respiratory distress:</p>
   padding-right: 4px;
 }
 
-#rgavdtgvwz .gt_column_spanner_outer:first-child {
+#jwovnecvfb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rgavdtgvwz .gt_column_spanner_outer:last-child {
+#jwovnecvfb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rgavdtgvwz .gt_column_spanner {
+#jwovnecvfb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1480,11 +1589,11 @@ Sign of respiratory distress:</p>
   width: 100%;
 }
 
-#rgavdtgvwz .gt_spanner_row {
+#jwovnecvfb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rgavdtgvwz .gt_group_heading {
+#jwovnecvfb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1510,7 +1619,7 @@ Sign of respiratory distress:</p>
   text-align: left;
 }
 
-#rgavdtgvwz .gt_empty_group_heading {
+#jwovnecvfb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1525,15 +1634,15 @@ Sign of respiratory distress:</p>
   vertical-align: middle;
 }
 
-#rgavdtgvwz .gt_from_md > :first-child {
+#jwovnecvfb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rgavdtgvwz .gt_from_md > :last-child {
+#jwovnecvfb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rgavdtgvwz .gt_row {
+#jwovnecvfb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1552,7 +1661,7 @@ Sign of respiratory distress:</p>
   overflow-x: hidden;
 }
 
-#rgavdtgvwz .gt_stub {
+#jwovnecvfb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1565,7 +1674,7 @@ Sign of respiratory distress:</p>
   padding-right: 5px;
 }
 
-#rgavdtgvwz .gt_stub_row_group {
+#jwovnecvfb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1579,15 +1688,15 @@ Sign of respiratory distress:</p>
   vertical-align: top;
 }
 
-#rgavdtgvwz .gt_row_group_first td {
+#jwovnecvfb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rgavdtgvwz .gt_row_group_first th {
+#jwovnecvfb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rgavdtgvwz .gt_summary_row {
+#jwovnecvfb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1597,16 +1706,16 @@ Sign of respiratory distress:</p>
   padding-right: 5px;
 }
 
-#rgavdtgvwz .gt_first_summary_row {
+#jwovnecvfb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_first_summary_row.thick {
+#jwovnecvfb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rgavdtgvwz .gt_last_summary_row {
+#jwovnecvfb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1616,7 +1725,7 @@ Sign of respiratory distress:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_grand_summary_row {
+#jwovnecvfb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1626,7 +1735,7 @@ Sign of respiratory distress:</p>
   padding-right: 5px;
 }
 
-#rgavdtgvwz .gt_first_grand_summary_row {
+#jwovnecvfb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1636,7 +1745,7 @@ Sign of respiratory distress:</p>
   border-top-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_last_grand_summary_row_top {
+#jwovnecvfb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1646,11 +1755,11 @@ Sign of respiratory distress:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_striped {
+#jwovnecvfb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rgavdtgvwz .gt_table_body {
+#jwovnecvfb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1659,7 +1768,7 @@ Sign of respiratory distress:</p>
   border-bottom-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_footnotes {
+#jwovnecvfb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1673,7 +1782,7 @@ Sign of respiratory distress:</p>
   border-right-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_footnote {
+#jwovnecvfb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1682,7 +1791,7 @@ Sign of respiratory distress:</p>
   padding-right: 5px;
 }
 
-#rgavdtgvwz .gt_sourcenotes {
+#jwovnecvfb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1696,7 +1805,7 @@ Sign of respiratory distress:</p>
   border-right-color: #D3D3D3;
 }
 
-#rgavdtgvwz .gt_sourcenote {
+#jwovnecvfb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1704,85 +1813,87 @@ Sign of respiratory distress:</p>
   padding-right: 5px;
 }
 
-#rgavdtgvwz .gt_left {
+#jwovnecvfb .gt_left {
   text-align: left;
 }
 
-#rgavdtgvwz .gt_center {
+#jwovnecvfb .gt_center {
   text-align: center;
 }
 
-#rgavdtgvwz .gt_right {
+#jwovnecvfb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rgavdtgvwz .gt_font_normal {
+#jwovnecvfb .gt_font_normal {
   font-weight: normal;
 }
 
-#rgavdtgvwz .gt_font_bold {
+#jwovnecvfb .gt_font_bold {
   font-weight: bold;
 }
 
-#rgavdtgvwz .gt_font_italic {
+#jwovnecvfb .gt_font_italic {
   font-style: italic;
 }
 
-#rgavdtgvwz .gt_super {
+#jwovnecvfb .gt_super {
   font-size: 65%;
 }
 
-#rgavdtgvwz .gt_footnote_marks {
+#jwovnecvfb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rgavdtgvwz .gt_asterisk {
+#jwovnecvfb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rgavdtgvwz .gt_indent_1 {
+#jwovnecvfb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rgavdtgvwz .gt_indent_2 {
+#jwovnecvfb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rgavdtgvwz .gt_indent_3 {
+#jwovnecvfb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rgavdtgvwz .gt_indent_4 {
+#jwovnecvfb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rgavdtgvwz .gt_indent_5 {
+#jwovnecvfb .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Severity (PaO2/FiO2)">Severity (PaO2/FiO2)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Onset">Onset</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Chest Radiograph">Chest Radiograph</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Absence of Left Atrial Hypertension">Absence of Left Atrial Hypertension</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="Severity (PaO2/FiO2)" class="gt_row gt_left">mild: 200 mmHg&lt; X  &lt;=300 mmHg; moderate: 100 mmHg &lt; X &lt;=200 mmHg; Severe: &lt;= 100 mmHg</td>
-<td headers="Onset" class="gt_row gt_left">Acute: within 1 week of clinical insult or new, or worsening respiratory symptoms</td>
-<td headers="Chest Radiograph" class="gt_row gt_left">Bilateral opacities consistent with pulmonary edema not fully explained by effusion, lobat/lung collapse, or nodules</td>
-<td headers="Absence of Left Atrial Hypertension" class="gt_row gt_left">Hydrostatic edema is not the primary cause of Respiratory Failure</td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="Severity (PaO2/FiO2)" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Severity (PaO2/FiO2)</th>
+<th id="Onset" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Onset</th>
+<th id="Chest Radiograph" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Chest Radiograph</th>
+<th id="Absence of Left Atrial Hypertension" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Absence of Left Atrial Hypertension</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Severity (PaO2/FiO2)">mild: 200 mmHg&lt; X &lt;=300 mmHg; moderate: 100 mmHg &lt; X &lt;=200 mmHg; Severe: &lt;= 100 mmHg</td>
+<td class="gt_row gt_left" headers="Onset">Acute: within 1 week of clinical insult or new, or worsening respiratory symptoms</td>
+<td class="gt_row gt_left" headers="Chest Radiograph">Bilateral opacities consistent with pulmonary edema not fully explained by effusion, lobat/lung collapse, or nodules</td>
+<td class="gt_row gt_left" headers="Absence of Left Atrial Hypertension">Hydrostatic edema is not the primary cause of Respiratory Failure</td>
+</tr>
+</tbody>
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -1827,11 +1938,15 @@ Sign of respiratory distress:</p>
 <li>adequte nutrition</li>
 </ol>
 <div class="cell fig-cap-location-bottom" data-layout-align="center">
-<div id="fig-ardsalgorithm" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4cef6ccc68feb30fef60" style="width:100%;height:812px;"></div>
-<script type="application/json" data-for="htmlwidget-4cef6ccc68feb30fef60">{"x":{"diagram":"\n      digraph ards {\n      \n      graph[layout = dot, rankdir = TB, fontsize = 10]\n      \n      node[shape = rectangle]\n      \n      a [label = \"Initiate volume/pressure limited ventilation, (TV <= 6 ml/kg; Plateu pressure <= 30 cmH20, RR <= 35)\"]\n      b [label = \"Oxygenate, (FiO2 <= 0.6; SpO2 88-95%)\"]\n      c [label = \"Minimize acidosis (ph => 7.3; RR < 35)\"]\n      d [label = \"Diuresis (MAP => 65; avoid hypoperfusion)\"]\n      \n      a -> b -> c -> d\n      \n      \n      }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2.3: ARDS Algorithm</figcaption><p></p>
+<div id="fig-ardsalgorithm" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ardsalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-23ec0d6f4aa3c75fe2e2" style="width:100%;height:812px;"></div>
+<script type="application/json" data-for="htmlwidget-23ec0d6f4aa3c75fe2e2">{"x":{"diagram":"\n      digraph ards {\n      \n      graph[layout = dot, rankdir = TB, fontsize = 10]\n      \n      node[shape = rectangle]\n      \n      a [label = \"Initiate volume/pressure limited ventilation, (TV <= 6 ml/kg; Plateu pressure <= 30 cmH20, RR <= 35)\"]\n      b [label = \"Oxygenate, (FiO2 <= 0.6; SpO2 88-95%)\"]\n      c [label = \"Minimize acidosis (ph => 7.3; RR < 35)\"]\n      d [label = \"Diuresis (MAP => 65; avoid hypoperfusion)\"]\n      \n      a -> b -> c -> d\n      \n      \n      }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ardsalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: ARDS Algorithm
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1985,7 +2100,7 @@ Sign of respiratory distress:</p>
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="circulation"><span class="header-section-number">2.3.2</span> Circulation</h3>
 <section id="oxygen-delivery" class="level4">
 <h4 class="anchored" data-anchor-id="oxygen-delivery">Oxygen Delivery</h4>
-<p>Oxygen delivery (DO<sub>2</sub> or QO<sub>2</sub>) is a function of cardiac output and the content of O<sub>2</sub> in the arterial blood (CaO<sub>2</sub>). CaO<sub>2</sub> is determined by HB concenctration, arterial HB saturation, and dissolved O<sub>2</sub> disolved in plasma (not bound to HB). Equation provided at <a href="#eq-delivery-oxygen">Equation&nbsp;<span>2.1</span></a>. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible.</p>
+<p>Oxygen delivery (DO<sub>2</sub> or QO<sub>2</sub>) is a function of cardiac output and the content of O<sub>2</sub> in the arterial blood (CaO<sub>2</sub>). CaO<sub>2</sub> is determined by HB concenctration, arterial HB saturation, and dissolved O<sub>2</sub> disolved in plasma (not bound to HB). Equation provided at <a href="#eq-delivery-oxygen" class="quarto-xref">Equation&nbsp;<span>2.1</span></a>. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible.</p>
 <p>Arterial oxygen content (CaO<sub>2</sub>) normally around 21.16 mL/dL, while the mixed venous blood (VO<sub>2</sub>) is 15.76 mL/dL, thus normal tissue extraction is around 25%. Reduced VO<sub>2</sub> may results from inadequate CO, reduced HB or reduced SaO<sub>2</sub>. Abnormally high VO<sub>2</sub> may be caused by fever, agitation, shivering and thyrotoxicosis.</p>
 <p><span id="eq-delivery-oxygen"><span class="math display">\[
 QO~2~ = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB% Saturation} + 0.0031 \times PaO2)
@@ -1997,8 +2112,8 @@ QO~2~ = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \
 \]</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-harrison_2022" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-harrison_2022" class="csl-entry" role="listitem">
 Loscalzo, J, A Fauci, D Kasper, S Hauser, D Longo, and J Jameson. 2022. <em>Harrison’s <span>Principles</span> of <span>Internal</span> <span>Medicine</span>, 21e</em>. 21st ed. McGraw Hill. <a href="https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&amp;sectionid=259856983">https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&amp;sectionid=259856983</a>.
 </div>
 </div>
@@ -2034,9 +2149,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -2072,10 +2201,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -2085,8 +2231,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -2098,9 +2253,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -2142,17 +2533,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./internal_medicine.html" class="pagination-link">
+      <a href="./internal_medicine.html" class="pagination-link" aria-label="Internal Medicine">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Internal Medicine</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./hematology_oncology.html" class="pagination-link">
+      <a href="./hematology_oncology.html" class="pagination-link" aria-label="Hematology &amp; Medical Oncology">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hematology &amp; Medical Oncology</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

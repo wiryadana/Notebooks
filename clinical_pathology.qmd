@@ -2,6 +2,10 @@
 
 ## Hematology Laboratory
 
+### Hematologic Malignancy
+
+The latest classification of hematopoetic and limfoid malignancy was WHO 2016. This classification combine clinical, morphological, immunophenotype, cytogenetics and meolecular features.  
+
 ## Clinical Chemistry
 
 ### Acid-Base Analysis
@@ -30,12 +34,9 @@ The secondary response to metabolic acidosis is an increase in minute ventilatio
 
 $$
 \Delta PaCO_2 = 1.2 \times \Delta HCO_3
-$$
-Using the normal PaCO2 of 40 mmHg, a normal HCO3 of 24 mEq/L
-$$
+$$ Using the normal PaCO2 of 40 mmHg, a normal HCO3 of 24 mEq/L $$
 Expected \ PaCO_2 = 40 - [1.2 times (24 - currect \  HCO_3)]
-$$
-For a metabolic acidosis with a plasma HCO3 of 14 mEq/L, the ΔHCO3 is 24 – 14 = 10 mEq/L, the ΔPaCO2 is 1.2 × 10 = 12 mm Hg, and the expected PaCO2 is 40 – 12 = 28 mm Hg. If the PaCO2 is > 28 mm Hg, there is a secondary respiratory acidosis. If the PaCO2 is < 28 mm Hg, there is a secondary respiratory alkalosis.
+$$ For a metabolic acidosis with a plasma HCO3 of 14 mEq/L, the ΔHCO3 is 24 -- 14 = 10 mEq/L, the ΔPaCO2 is 1.2 × 10 = 12 mm Hg, and the expected PaCO2 is 40 -- 12 = 28 mm Hg. If the PaCO2 is \> 28 mm Hg, there is a secondary respiratory acidosis. If the PaCO2 is \< 28 mm Hg, there is a secondary respiratory alkalosis.
 
 ##### Metabolic Alkalosis
 
@@ -43,16 +44,225 @@ The secondary response to metabolic alkalosis is a decrease in minute ventilatio
 
 $$
 \Delta PaCO_2 = 0.7 x \Delta HCO_3
-$$
-Using a normal PaCO2 of 40 mmHg and a normal HCO3 of 24 mEq/L, the above equation can be rewritten as follows:
+$$ Using a normal PaCO2 of 40 mmHg and a normal HCO3 of 24 mEq/L, the above equation can be rewritten as follows:
 
 $$
 Expected \ PaCO_2 = 40 + [0.7 times (current \ HCO_3 - 24)] 
-$$
-For a metabolic alkalosis with a plasma HCO3 of 40 mEq/L, the ΔHCO3 is 40 – 24 = 16 mEq/L, the ΔPaCO2 is 0.7 × 16 = 11 mm Hg, and the expected PaCO2 is 40 + 11 = 51 mm Hg.
+$$ For a metabolic alkalosis with a plasma HCO3 of 40 mEq/L, the ΔHCO3 is 40 -- 24 = 16 mEq/L, the ΔPaCO2 is 0.7 × 16 = 11 mm Hg, and the expected PaCO2 is 40 + 11 = 51 mm Hg.
 
 ##### Respiratory Acidosis
 
-
-
 ##### Respiratory Alkalosis
+
+### Liver Function Test
+
+#### Liver Function
+
+1.  Excretion Functions (Test bilirubin, urobilinogen)
+2.  Synthetic Functions (Serum protein, albumin, globuilin, prothrombin,ammonia)
+3.  General Metabolic Functions
+4.  Storage Site
+5.  Hematopoeisis
+6.  Catabolism of Steoroid Hormones
+7.  Clearence of Exogenous Substances (Bromosulphthalein)
+
+liver has a large amount of anatomical and functional reserve and capacity for rapid regeneration, functional deficiency becomes apparent if there is an extensive liver damage. Test for hepatic Injury (ALT, AST, GGT, ALP, 5'-nucleotidase)
+
+**Indication of Liver Function Test:**
+
+1.  Screen for liver disease;
+2.  Identify the nature of liver disease (hepatocellular, cholestatic, or infiltrative);
+3.  Assess severity and prognosis of liver disease; and
+4.  Follow up the course of liver disease
+
+**Limitation Liver Function Test:**
+
+1.  Do not necessarily assess liver function
+2.  Lack sensitivity (i.e. may be normal in some liver diseases like cirrhosis)
+3.  Lack specificity (i.e. may be abnormal in non-liver disorders e.g. serum albumin is low in nephrotic syndrome and in cirrhosis)
+
+**Non hepatic Cause of Abnormal lver Function Test:** **Increased serum bilirubin:** -- Hemolysis -- Ineffective erythropoiesis -- Resorption of a large hematoma
+
+**Increased aminotransferases:** -- Muscle injury -- Alcohol abuse -- Myocardial infarction
+
+**Increased serum alkaline phosphatase:** -- Pregnancy -- Bone disease
+
+**Low serum albumin:** -- Poor nutritional status -- Proteinuria -- Malabsorption -- Severe illness causing protein catabolism
+
+##### Excretion Function
+
+###### Bilirubin metabolism
+
+Biliruin is mostly (85%) from breakdown of HB of Old red cells in reticuloendothelial cells, mainly in Spleen. Normal serum bilirubin is less than 1 mg/dl. Common method to measure bilirubin are Diazo methods, which measure total bilirubin and conjugated bilirubin (thus named an direct bilirubin), while the unconjugated bilirubin were calculated from substraction of total bilirubin - conjugated bilirubin Other derived from premature destruction of red cell precusor in bone marrow. The Steps are following:
+
+![Normal Bilirubin Metabolism](image/bilirubin_normal.png){#bilirubin_normal fig-align="center"}
+
+1.  HB, degraded within macropahes to form heme and globin. Globin consist of amino acids, which are recycled. While Heme (iron + protoporphyrin) release iron, which is stored as ferritin. The protoporphyrin then converted to biliverdin, then to bilirubin.[@PK_2018]
+
+2.  Released bilirubin into the circulation and bind albumin, this called unconjugated bilirubin. It is insoluble to water, but lipid soluble.
+
+3.  Billirubin-albumin complex reaches the liver whee it is taken up by the hepatocytes. Albumin released back to the circulation.
+
+4.  Bilirubin then conjugated with glucoronic acid to form bilirubin monoglucoronid and diglucoronid (conjugated bilirubin). This Process is mediated by the ezyme glucoronyl transferase. Conjugated bilirubin is more soluble in water.
+
+5.  Conjugated bilirubin is secreted from the hepatocytes into biliary canaliculi, from where it passes into the bile duct and gallbladder along with bile.
+
+6.  When bilirubin reaches the large instensites, it is converted to urobilinogen by the baterial enzyme.
+
+7.  Most urobilinogen is excreted in feses as urobilin, thus coloring the feses yellow. A part of urobilinogen is absorbed into the circlation from where it reaches the liver, taken up and reexcreted into the bile. Small amaount of urobilinogen in cleared in urine.
+
+Jaundice or icterus referes to yellow discoloration of skin, screa and mucous membranes due to increased level of serum bilirubin. Jaundice will clinicaly evident when serum bilirubin level exceeds **2.0 mg/dL**.
+
+1.  According to type of dominant bilirubin:
+
+A. Predominant unconjugated hyperbilirubinemia
+
+If \> 85% of total is unconjugated bilirubin or indirect bilirubin. The cause are hemolysis, ineffective eryhtropoeisus, resorption large hematome, gilbert syndrome.
+
+B. Predominant conjugated hyperbilirubinemia
+
+If \> 50% of total is conjugated or direct bilirubin. Cause are hepatitis, cirrhosis, cholestasis, drugs (anabolic steroid, oral contraceptives), toxin, dubin johnson syndrome, rotor syndrome
+
+C. Mixed (Conjugated and Unconjugated)
+
+if conjugated bilirubin is 20-50% of total, it may results from viral or alcoholic hepatisis.
+
+2.  According to site of disease
+
+![Sites of Cholestasis](image/Site_Cholestasis.png){#sites_cholestasis}
+
+A. Prehepatic There is excessive formation of bilirubin exceeding the capacity of the liver to conjugate it for excretion. The dominant bilirubin is unconjugated. Bilirubin is absent in urine, since of is water insoluble. Urobilinogen is increased in urine and feses. Jaudice is usually mild (total bilirubin usually \< 5.0 mg/dl, conjugated is \< 15% of total). The cuase is usually hematological problem.
+
+B. Hepatic
+
+Both Unconjugated and Conjuated are increased. mainly increased unconjunjugated 1. defective uptake 2. defective conjugation 3. physiologic jaundice (newborn)
+
+mainly Conjugated ilirubin 1. Hepatocellular disease: Liver enzume increase. Biliruibin is around 4.0 s.d 8.0 mg/dl. Conjugated bilirubin is 20-50% of total bilirubin. In hepatocellular injury, both conjugated and unconjugated bilirubins are increased. Unconjugated bilirubin is increased due to reduced ability of liver cells to conjugate bilirubin. Conjugated bilirubin is raised from cholestasis due to hepatocyte swelling.
+
+2.  Intrahepatic Cholestasis: In intrahepatic cholestasis, there may be (1) impairment of secretion of bilirubin from hepatocytes into the biliary canaliculi; (2) obstruction of bile flow in canaliculi by swollen hepatocytes;or (3) damage to intrahepatic canaliculi.
+
+Drugs commonly associated with cholestatic injury are oral contraceptives, anabolic steroids, oral anti-diabetics, phenothiazines, and erythromycin.
+
+Primary biliary cirrhosis, there is autoimmune destruction of intrahepatic bile ducts. It predominantly occurs in middle-aged, females and is characterized by chronic eleva- tion of alkaline phosphatase and positive anti-mitochondrial antibody in serum.
+
+Primary sclerosing cholangitis is an autoimmune disorder occurring in young to middle-aged men in whom there is inflammation and destruction of both intrahepatic and extra-hepatic bile ducts. Associated inflammatory bowel disease is often present. Serum alkaline phosphatase is elevated and many patients have circulating perinuclear antineutrophil cytoplasmic antibodies.
+
+C. Post Hepatic
+
+Obstruction of extrahepatic biliary tract prevents flow of bile into the duodenum. This causes "regurgitation" of conjugated bilirubin into the circulation. (Biliary canaliculi distend and rupture due to backpressure of bile and conjugated bilirubin escapes into the sinusoids). Conjugated bilirubin is usually \>50% of total in posthepatic jaundice. Urinary and fecal urobilinogen are decreased, faeces are clay-colored, and bilirubin (being conjugated and water-soluble) appears in urine. Cause of Posthepatic Jaundice:
+
+-   Carcinoma of head of pancreas
+-   Carcinoma of ampulla of Vater
+-   Secondaries in porta hepatis
+-   Gallstones in or stricture of common bile duct
+
+![Three types of Jaundice Differential Diagnosis](image/Types_jaundice.png){#dd_jaundice}
+
+###### Clinial Algorithm of Jaundice
+ 
+Normal serum bilirubin is less than 1 mg/dl. conjugated bilirubin is 10% or less, while unconjugated bilirubin is 90% or more. This is because conjugated bilirubin is rapidly secreted into the bile after its formation and removed through the gut. Conjugated bilirubin is composed of blirubin glucuronide, bilirubin diglucuronide, and delta (δ) bilirubin. Delta bilirubin represents bilirubin covalently bound to albumin in circulation. Normally, δ bilirubin is absent or present in very small amount. In cholestasis, proportion of δ-bilirubin increases. Owing to its longer half-life, it is cleared slowly from circulation. Conjugated bilirubin is weakly bound to albumin, is water-soluble, and can be excreted in urine. Unconjugated bilirubin is tightly bound to albumin and is water-insoluble.
+
+![Jaundice Algorithm](image/jaundice_algorithm.png){#jaundice_algorithm}
+
+##### Synthetic Function
+
+Markers of hepatic synthetic function are serum albumin and prothrombin time (PT). Hypoalbuminemia and a prolonged PT indicate a severe functional impairment of liver. 
+
+###### Protein Synthetic
+
+Liver is the sole organ to synthesisze plasma protein, except gamma globulin which synthesized by Plasma Cell. Normal total serum protein in adults is about 5.5 - 8.0 gm / dl, albumin 3.5 - 5.0 which comprise the 60% of serum protein. 
+
+Test for protein in liver disease incldue total serum protein, serum albumin, calculation of albumin/globulin rtio (normal > 1.5) and serum electrophoresis.the common laboratory method to measure total protein is biuret and refractometer method. 
+
+Total serum protein level is affected by both  and gamma globulins. In cirrhosis, decrease in albumin level is often compensated by increase in the level of gamma globulins; therefore, estimation of total serum proteins is of limited value in cirrhosis. Estimation of serum albumin and serum protein electrophoresis are
+more helpful.
+
+Albumin is synthesized exclusively in liver and constitutes about 60% of total proteins in 
+serum; therefore its estimation is an important investigation in liver disease. Half-life of albumin is about 20 days and therefore fall in its level in response to decreased synthesis is not immediately apparent. Therefore, in acute liver disease (e.g. viral hepatitis), there is little change in albumin level. Serum albumin level is low in chronic liver disease (cirrhosis) and correlates with synthetic capacity of hepatocytes; therefore, it is helpful in following progression of cirrhosis. Also, fall in serum
+albumin level correlates with severity of ascites. In cirrhosis and in chronic active hepatitis, serum gamma
+globulins are increased due to inflammation. Low albumin and raised gamma globulins in serum cause 
+reversal of albumin/globulin ratio. Serum albumin is estimated by bromocresol green method
+
+Causes of decreased serum albumin:
+• Decreased intake: malnutrition.
+• Decreased absorption: malabsorption syndromes.
+• Decreased synthesis: liver disease, chronic infections.
+• Increased catabolism: thyrotoxicosis, fever, malignancy, infections.
+• Increased loss: nephrotic syndrome, severe burns, protein-losing enteropathies, ascites
+• Increased blood volume: pregnancy, congestive cardiac failure.
+
+Serum Protein Elektrophoresis:
+1. In cirrhosis, albumin may be reduced and there may be polyclonal increase of IgG and IgA, with β-γ
+bridging. (IgA migrates between β and γ regions which obscures the demarcation between β and γ peaks).
+2. In primary biliary cirrhosis, there is polyclonal increase of IgM.
+3. In α1-antitrypsin deficiency (associated with cirrhosis) α1- globulin band is reduced.
+4. In chronic active hepatitis, IgG is elevated.
+
+![Serum Protein Electrophoresis patterns and densitometer scans in Normal, Cirhosis and Alpha 1 antitripsin deficienct individuals](image/spe.png){#spe}
+
+###### Prothorombin Time (PT)
+
+Most of the coagulation protein are synthesized in the liver. Vitamin K is required for the synthesis of factors II, VII, IX, X by the hepatocytes, thus it is called vitamin K dependent factors. 
+Synthesis of the factors is deficient in hepatocellular disease. In Addition, in obstructive jaundice, vitamin K (a fat soluble vitamin) cannot be absorbed due to the absence of bile in the intentine. 
+
+PT measures three out of four vitamin K-dependent factors (II, VII, and X) and is prolonged in hepatocellular
+disease and in obstructive jaundice. Intramuscular injection of vitamin K corrects prolonged PT in obstructive jaundice but not in hepatocellular jaundice. To distinguish between a prolonged PT due to hepato-
+cellular disease from that due to cholestasis with fat malabsorption, PT is repeated after administration of
+vitamin K. Reduction of prolonged PT occurs in cholestatic liver disease, but not in hepatocellular disease. In acute fulminant liver failure, marked prolongation of PT is an unfavourable prognostic sign.
+
+###### Blood Ammonia 
+
+Blood ammonia is mainly derived from GI tract. In the gut, bacterial enzyme act on nitrogen-containing foods to produce ammonia, which is carried to the liver via portal vein. In the liver, ammonia is converted to non -toxic urea in urea cycle. 
+
+Increased blood ammonia seen in:
+- Fulminant hepatic failure
+- cirrhosis
+- Reye's Syndrome
+- "Shunting" of portal blood to systemic circulation
+- Gastrointestinal hemmorhage (there is increased of production of ammonia from blood proteins by bacterial enzymes.) In hepatic disease, gastrointestinal hemmorhage is associated with increased risk of hepatic encepalopathy.
+- Inherited deficiensys of ure cycle enzymes.
+
+If the ammonia is inreased, it might helful indicates a hepatic encepalopathy.
+
+### Coagulation Study
+
+### Renal Function Test
+
+### Endocrine and Metabolic Study
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
