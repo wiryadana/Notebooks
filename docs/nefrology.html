@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -68,11 +76,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./nefrology.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,349 +93,402 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Wiryadana’s Notebook</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/wiryadana/the_wiryadana_notebooks" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="./The-Wiryadana-s-Notebook.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
+    <a href="https://github.com/wiryadana/the_wiryadana_notebooks" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./The-Wiryadana-s-Notebook.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./internal_medicine.html" class="sidebar-item-text sidebar-link">Internal Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a href="./internal_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Internal Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./critical_care.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a>
+  <a href="./critical_care.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hematology_oncology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hematology &amp; Medical Oncology</span></a>
+  <a href="./hematology_oncology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Hematology &amp; Medical Oncology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./allergy_imunology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Allergy &amp; Immunology</span></a>
+  <a href="./allergy_imunology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Allergy &amp; Immunology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rheumatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Rheumatology</span></a>
+  <a href="./rheumatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Rheumatology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./infectious_disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Infectious Disease</span></a>
+  <a href="./infectious_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Infectious Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cardiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiology &amp; Vascular Medicine</span></a>
+  <a href="./cardiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiology &amp; Vascular Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./respirology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Respiratory Medicine</span></a>
+  <a href="./respirology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Respiratory Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./nefrology.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></a>
+  <a href="./nefrology.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gastroenterology_hepatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gastroenterology &amp; Hepatology</span></a>
+  <a href="./gastroenterology_hepatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gastroenterology &amp; Hepatology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endocrine_metabolism.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Endocrine &amp; Metabolism</span></a>
+  <a href="./endocrine_metabolism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Endocrine &amp; Metabolism</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./psychosomatic.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Psychosomatic Medicine</span></a>
+  <a href="./psychosomatic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Psychosomatic Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./geriatry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Geriatry</span></a>
+  <a href="./geriatry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Geriatry</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./others.html" class="sidebar-item-text sidebar-link">The Rest of Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a href="./others.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Rest of Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_nutrition.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Clinical Nutrition</span></a>
+  <a href="./clinical_nutrition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Clinical Nutrition</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./surgery.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Surgery</span></a>
+  <a href="./surgery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Surgery</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./neurology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">neurology</span></a>
+  <a href="./neurology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">neurology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anesthesiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Perioperative Consultation &amp; Anesthesia</span></a>
+  <a href="./anesthesiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Perioperative Consultation &amp; Anesthesia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./obgyn.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Obstetric &amp; Gynecology</span></a>
+  <a href="./obgyn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Obstetric &amp; Gynecology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dermatology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Dermato-venereology</span></a>
+  <a href="./dermatology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Dermato-venereology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./poison_drugs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Poison, Envenomation and Drug Overdose</span></a>
+  <a href="./poison_drugs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Poison, Envenomation and Drug Overdose</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./enviromental.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Disease due to Enviromental Exposure</span></a>
+  <a href="./enviromental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Disease due to Enviromental Exposure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./travel_medicine.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Travel Medicine</span></a>
+  <a href="./travel_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Travel Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Radiology</span></a>
+  <a href="./radiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Radiology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anatomical_pathology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Anatomical Pathology</span></a>
+  <a href="./anatomical_pathology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Anatomical Pathology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_pathology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Clinical Pathology</span></a>
+  <a href="./clinical_pathology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Clinical Pathology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clinical_microbiology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Clinical Microbiology</span></a>
+  <a href="./clinical_microbiology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Clinical Microbiology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ent.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ear, Nose &amp; Throat</span></a>
+  <a href="./ent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ear, Nose &amp; Throat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ophtalmology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Ophtalmology</span></a>
+  <a href="./ophtalmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Ophtalmology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rehabilitation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Rehabilitation &amp; Physical Medicine</span></a>
+  <a href="./rehabilitation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Rehabilitation &amp; Physical Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./disaster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Disaster Medicine, Wilderness medicine, Transport Medicine</span></a>
+  <a href="./disaster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Disaster Medicine, Wilderness medicine, Transport Medicine</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pharmacology.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Pharmacology</span></a>
+  <a href="./pharmacology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Pharmacology</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./medical_procedure.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Common Medical Procedures for Internist</span></a>
+  <a href="./medical_procedure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Common Medical Procedures for Internist</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./bioinformatics.html" class="sidebar-item-text sidebar-link">Bioinformatics &amp; Genomic Medicine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a href="./bioinformatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioinformatics &amp; Genomic Medicine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./genomic_medicine.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Genomic Medicine</span></a>
+  <a href="./genomic_medicine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Genomic Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./linux_programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Linux &amp; Bioinformatic Programs</span></a>
+  <a href="./linux_programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Linux &amp; Bioinformatic Programs</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./statistics.html" class="sidebar-item-text sidebar-link">Statistics and R languange</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a href="./statistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics and R languange</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic_r.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Basic R and Base Plot</span></a>
+  <a href="./basic_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Basic R and Base Plot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tidyverse_ggplot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tidyverse &amp; ggplot2</span></a>
+  <a href="./tidyverse_ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Tidyverse &amp; ggplot2</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./mkdu.html" class="sidebar-item-text sidebar-link">Mata Kuliah Dasar Umum</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a href="./mkdu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mata Kuliah Dasar Umum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./biomol.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Biologi Molekular</span></a>
+  <a href="./biomol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Biologi Molekular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metpen.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Metodologi Penelitian</span></a>
+  <a href="./metpen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Metodologi Penelitian</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./filsum.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Filsafat Ilmu</span></a>
+  <a href="./filsum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Filsafat Ilmu</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistik.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistik Kedokteran Dasar</span></a>
+  <a href="./statistik.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistik Kedokteran Dasar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ebm.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Evidence-based Medicine</span></a>
+  <a href="./ebm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Evidence-based Medicine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tugasmkdu.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Tugas MKDU</span></a>
+  <a href="./tugasmkdu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Tugas MKDU</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#nefrology" id="toc-nefrology" class="nav-link active" data-scroll-target="#nefrology"><span class="toc-section-number">9.1</span>  Nefrology</a>
+  <li><a href="#nefrology" id="toc-nefrology" class="nav-link active" data-scroll-target="#nefrology"><span class="header-section-number">9.1</span> Nefrology</a>
   <ul class="collapse">
-  <li><a href="#hypertension" id="toc-hypertension" class="nav-link" data-scroll-target="#hypertension"><span class="toc-section-number">9.1.1</span>  Hypertension</a></li>
-  <li><a href="#fluid-and-electrolyte-disorders" id="toc-fluid-and-electrolyte-disorders" class="nav-link" data-scroll-target="#fluid-and-electrolyte-disorders"><span class="toc-section-number">9.1.2</span>  FLuid and Electrolyte Disorders</a></li>
-  <li><a href="#infectious-disease-in-kidney" id="toc-infectious-disease-in-kidney" class="nav-link" data-scroll-target="#infectious-disease-in-kidney"><span class="toc-section-number">9.1.3</span>  Infectious Disease in Kidney</a></li>
-  <li><a href="#acute-kidney-injury" id="toc-acute-kidney-injury" class="nav-link" data-scroll-target="#acute-kidney-injury"><span class="toc-section-number">9.1.4</span>  Acute Kidney Injury</a></li>
-  <li><a href="#glomerular-disease" id="toc-glomerular-disease" class="nav-link" data-scroll-target="#glomerular-disease"><span class="toc-section-number">9.1.5</span>  GLomerular Disease</a></li>
-  <li><a href="#tubulointerstitial-disease" id="toc-tubulointerstitial-disease" class="nav-link" data-scroll-target="#tubulointerstitial-disease"><span class="toc-section-number">9.1.6</span>  Tubulointerstitial Disease</a></li>
-  <li><a href="#diabetic-kidney-disease" id="toc-diabetic-kidney-disease" class="nav-link" data-scroll-target="#diabetic-kidney-disease"><span class="toc-section-number">9.1.7</span>  Diabetic Kidney Disease</a></li>
-  <li><a href="#renovascular-disease" id="toc-renovascular-disease" class="nav-link" data-scroll-target="#renovascular-disease"><span class="toc-section-number">9.1.8</span>  Renovascular Disease</a></li>
-  <li><a href="#pregnancy-and-renal-disease" id="toc-pregnancy-and-renal-disease" class="nav-link" data-scroll-target="#pregnancy-and-renal-disease"><span class="toc-section-number">9.1.9</span>  Pregnancy and Renal Disease</a></li>
-  <li><a href="#congenital-disease-of-the-kidney" id="toc-congenital-disease-of-the-kidney" class="nav-link" data-scroll-target="#congenital-disease-of-the-kidney"><span class="toc-section-number">9.1.10</span>  Congenital Disease of the Kidney</a></li>
-  <li><a href="#chronic-kidney-disease" id="toc-chronic-kidney-disease" class="nav-link" data-scroll-target="#chronic-kidney-disease"><span class="toc-section-number">9.1.11</span>  Chronic Kidney Disease</a></li>
-  <li><a href="#dialytic-therapy" id="toc-dialytic-therapy" class="nav-link" data-scroll-target="#dialytic-therapy"><span class="toc-section-number">9.1.12</span>  Dialytic Therapy</a></li>
-  <li><a href="#transplantation" id="toc-transplantation" class="nav-link" data-scroll-target="#transplantation"><span class="toc-section-number">9.1.13</span>  Transplantation</a></li>
+  <li><a href="#hypertension" id="toc-hypertension" class="nav-link" data-scroll-target="#hypertension"><span class="header-section-number">9.1.1</span> Hypertension</a></li>
+  <li><a href="#fluid-and-electrolyte-disorders" id="toc-fluid-and-electrolyte-disorders" class="nav-link" data-scroll-target="#fluid-and-electrolyte-disorders"><span class="header-section-number">9.1.2</span> FLuid and Electrolyte Disorders</a></li>
+  <li><a href="#infectious-disease-in-kidney" id="toc-infectious-disease-in-kidney" class="nav-link" data-scroll-target="#infectious-disease-in-kidney"><span class="header-section-number">9.1.3</span> Infectious Disease in Kidney</a></li>
+  <li><a href="#acute-kidney-injury" id="toc-acute-kidney-injury" class="nav-link" data-scroll-target="#acute-kidney-injury"><span class="header-section-number">9.1.4</span> Acute Kidney Injury</a></li>
+  <li><a href="#glomerular-disease" id="toc-glomerular-disease" class="nav-link" data-scroll-target="#glomerular-disease"><span class="header-section-number">9.1.5</span> GLomerular Disease</a></li>
+  <li><a href="#tubulointerstitial-disease" id="toc-tubulointerstitial-disease" class="nav-link" data-scroll-target="#tubulointerstitial-disease"><span class="header-section-number">9.1.6</span> Tubulointerstitial Disease</a></li>
+  <li><a href="#diabetic-kidney-disease" id="toc-diabetic-kidney-disease" class="nav-link" data-scroll-target="#diabetic-kidney-disease"><span class="header-section-number">9.1.7</span> Diabetic Kidney Disease</a></li>
+  <li><a href="#renovascular-disease" id="toc-renovascular-disease" class="nav-link" data-scroll-target="#renovascular-disease"><span class="header-section-number">9.1.8</span> Renovascular Disease</a></li>
+  <li><a href="#pregnancy-and-renal-disease" id="toc-pregnancy-and-renal-disease" class="nav-link" data-scroll-target="#pregnancy-and-renal-disease"><span class="header-section-number">9.1.9</span> Pregnancy and Renal Disease</a></li>
+  <li><a href="#congenital-disease-of-the-kidney" id="toc-congenital-disease-of-the-kidney" class="nav-link" data-scroll-target="#congenital-disease-of-the-kidney"><span class="header-section-number">9.1.10</span> Congenital Disease of the Kidney</a></li>
+  <li><a href="#chronic-kidney-disease" id="toc-chronic-kidney-disease" class="nav-link" data-scroll-target="#chronic-kidney-disease"><span class="header-section-number">9.1.11</span> Chronic Kidney Disease</a></li>
+  <li><a href="#dialytic-therapy" id="toc-dialytic-therapy" class="nav-link" data-scroll-target="#dialytic-therapy"><span class="header-section-number">9.1.12</span> Dialytic Therapy</a></li>
+  <li><a href="#transplantation" id="toc-transplantation" class="nav-link" data-scroll-target="#transplantation"><span class="header-section-number">9.1.13</span> Transplantation</a></li>
+  <li><a href="#edema-and-diuretics-use" id="toc-edema-and-diuretics-use" class="nav-link" data-scroll-target="#edema-and-diuretics-use"><span class="header-section-number">9.1.14</span> Edema and Diuretics use</a></li>
   </ul></li>
-  <li><a href="#urology" id="toc-urology" class="nav-link" data-scroll-target="#urology"><span class="toc-section-number">9.2</span>  Urology</a></li>
+  <li><a href="#urology" id="toc-urology" class="nav-link" data-scroll-target="#urology"><span class="header-section-number">9.2</span> Urology</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./nefrology.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Nefrology &amp; urology</span></h1>
 </div>
 
 
@@ -435,7 +501,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="nefrology" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="nefrology"><span class="header-section-number">9.1</span> Nefrology</h2>
@@ -533,6 +601,95 @@ ul.task-list li input[type="checkbox"] {
 <section id="transplantation" class="level3" data-number="9.1.13">
 <h3 data-number="9.1.13" class="anchored" data-anchor-id="transplantation"><span class="header-section-number">9.1.13</span> Transplantation</h3>
 </section>
+<section id="edema-and-diuretics-use" class="level3" data-number="9.1.14">
+<h3 data-number="9.1.14" class="anchored" data-anchor-id="edema-and-diuretics-use"><span class="header-section-number">9.1.14</span> Edema and Diuretics use</h3>
+<section id="diuretics-type" class="level5">
+<h5 class="anchored" data-anchor-id="diuretics-type">Diuretics Type</h5>
+<p>Diuretics are based on the sites of action. These are as follows:</p>
+<div id="fig-diuretics" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diuretics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="image/diuretics.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diuretics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: The proximal tubule (PT, purple segment) is represented by a typical PT cell. The loop of Henle (LH) includes a thick ascending limb (TAL, green segment), and a typical TAL cell is shown in green. The distal convoluted tubule (DCT, blue segment) is represented by a typical DCT cell in blue. The collecting duct (CD, yellow and orange segments) includes principal cells (PC), shown in yellow.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="proximal-tubular-diuretics" class="level5">
+<h5 class="anchored" data-anchor-id="proximal-tubular-diuretics">Proximal Tubular Diuretics</h5>
+<p>Carbonic Anhydrase inhibitor (CAI) work by inhibiting generation of intracellular Hidrogen ion, which is a requirement for absorption of natrium. This is the main action for its diuretics property. Most of the work in proximal tubule where bulk of natrium absorption, although Na absorption in more distal tubule will reduce CAI effects. Acetazolamide is the only diuretics used in practice. Asetasolamide has short action, due to ready absorbed and easily eliminated by tubular action. Prolonged used will cause metabolic acidosis, thus <strong>acetazolamied 250 to 500 mg</strong> daily used to correct metabolic alkalosis as side effects of thiazide or loop diuretics. Its use shouldbe cautiously in advanced kidney disease as it will systemically accumulates with repeat dosing.</p>
+</section>
+<section id="distal-convoluted-tubule-diuretics" class="level5">
+<h5 class="anchored" data-anchor-id="distal-convoluted-tubule-diuretics">Distal Convoluted Tubule Diuretics</h5>
+<p>The major site of action of thiazide diuretics is the early DCT where they inhibit the coupled reabsorption of Na+ and chloride (Cl−). Thiazides also :</p>
+<ol type="1">
+<li>inhibit NaCl/fluid reabsorption in the medullary-collecting duct.</li>
+<li>The water-soluble thiazides such as hydrochlorothiazide (HCTZ) also inhibit CA when given at high doses, and therein further increase Na+ excretion.</li>
+<li>thiazide diuretics impair urinary diluting capacity without affecting urinary concentrating mechanisms,</li>
+<li>reduce calcium (Ca++) and urate excretion,</li>
+<li>increase magnesium (Mg++) excretion</li>
+<li>thiazide diuretic to minimize the development of loop diuretic–related DCT cell hypertrophy that might otherwise increase Na+ absorption</li>
+</ol>
+<p>The onset of diuresis with hidrochlorotiazid (HCTZ) occurs within 2 hours, peaks between 3 and 6 hours, and dose-dependently continues for upward to 12 hours. The half-life (t 12) of HCTZ is prolonged both in decompensated HF and kidney failure. Doses of thiazide diuretics in the <strong>100 to 200 mg/day</strong> range are required to initiate a diuresis in patients with chronic <strong>kidney disease (CKD)</strong>, although the overall natriuretic response is arbitrated by the GFR/filtered Na+ load.</p>
+<p>A newer thiazid diuretis are chlorthalidone. chlorthalidone and HCTZ are structurally similar, they differ pharmacokinetically in that chlorthalidone has a longer t 12 of 40 to 60 hours versus 3.2 to 13.1 hours for HCTZ, as well as a larger volume of distribution by virtue of its extensive partitioning into red blood cells. This latter feature creates a depot that promotes continuous streaming of chlorthalidone (red cell → plasma → tubular secretion). This plasma half-life dif-ference for chlorthalidone correlates with a more extended diuretic effect and is a likely explanation for the observation that chlorthalidone is a better mg-for-mg antihypertensive than HCTZ.</p>
+</section>
+<section id="loop-diuretics" class="level5">
+<h5 class="anchored" data-anchor-id="loop-diuretics">Loop Diuretics</h5>
+<p>Loop diuretics act predominantly at the luminal membrane in the thick ascending limb (TAL) of the loop of Henle where they compete with Cl− for binding to the Na+/K+/2Cl− cotransporter, thereby inhibiting Na+ and Cl− reabsorption. Loop diuretics also:</p>
+<ol type="1">
+<li><p>a decrease in both free water (H2O) excretion and absorption during H2O loading and dehydration, respectively,</p></li>
+<li><p>a 30% increase in fractional Ca++ excretion, a significant increase in Mg++ excretion,</p></li>
+<li><p>brief increase followed by a more long-lived decrease in uric acid excretion.</p></li>
+<li><p>Stimulate renal prostaglandin synthesis, particularly that of the vasodilatory prostaglandin E2 (PGE2).</p></li>
+</ol>
+<p>Angiotensin-II, generated following the administration of intravenous loop diuretics, coupled with an increased synthesis of PGE2, are the likely reasons for the shift in renal blood flow (RBF) from the inner to the outer renal cortex with these drugs; however, both total RBF and GFR are maintained when loop diuretics are administered to normal subjects. Loop diuretics are highly protein bound, therefore to gain access to their tubular site of action they must be secreted as is the case for thiazide diuretics. Tubular secretion of loop diuretics may be interfered by elevated levels of endogenous organic acids, as arise in CKD, and by drugs that share the same transporter site, such as salicylates and nonsteroidal antiinflammatory drugs (NSAIDs). Uremic toxins and fatty acids can decrease loop diuretic protein binding and further alter diuretic pharmacokinetics.</p>
+<p>Furosemide is the most widely used diuretic in this class; however, its use is complicated by variable absorption with a bioavailability ranging from 12% to 112%. The coefficient of variation for absorption varies from 25% to 43% for different furosemide products, and exchanging one furosemide. formulation for another will not standardize patient absorption and/or response to oral furosemide. Loop diuretics are commonly used in the patient with CKD, with the renal clearance of these drugs reduced in parallel with the degree of reduction in kidney function. In general, furosemide pharmacokinetics are more significantly changed in CKD than the other loop diuretics, with both its renal metabolism and intact clearance reduced in CKD.</p>
+</section>
+<section id="distal-potassium-sparing-diuretics" class="level5">
+<h5 class="anchored" data-anchor-id="distal-potassium-sparing-diuretics">Distal Potassium-Sparing Diuretics</h5>
+<p>There are two classes of K+-sparing diuretics: competitive antagonists of aldosterone, such as spironolactone or eplerenone, and compounds that work independent of aldosterone, such as amiloride and triamterene. Drugs in this class reduce active Na+ absorption in the late DCT/collecting duct (CD). Basolateral Na+/K+-ATPase activity reduced, intracellular K+ concentration decreases, and the electrochemical gradient for K+ is lowered, thereby reducing K+ secretion. K+-sparing diuretics also reduce Ca++ and Mg++ excretion, which is a useful feature in the HF patient. Because K+-sparing diuretics are only modestly natriuretic, their clinical utility resides more in their K+-sparing capacity, particularly when more proximally acting diuretics increase distal Na+ delivery or in the instance of either primary or secondary aldosteronism.</p>
+<p>Spironolactone is a well-absorbed, highly protein-bound, lipid-soluble K+-sparing diuretic with a 20-hour half-life. The onset of action for spironolactone is characteristically slow, with a peak response at times 48-hours or more after the initial dose. Spironolactone, unlike amiloride and triamterene, remains active (as a diuretic and antihypertensive agent) in advanced kidney failure in that its locus of action is basolateral; thus it does not require glomerular filtration or tubular secretion to gain access to its effect site. Eplerenone is a mineralocorticoid receptor antagonist that is highly selective for the aldosterone receptor; accordingly, its much lower affinity for androgen and progesterone receptors results in considerably less gynecomastia than is the case with spironolactone.</p>
+</section>
+<section id="osmotic-diuretics" class="level5">
+<h5 class="anchored" data-anchor-id="osmotic-diuretics">Osmotic Diuretics</h5>
+<p>Mannitol is a polysaccharide diuretic given intravenously that is freely eliminated by glomerular filtration. Mannitol is poorly reabsorbed along the length of the nephron and thereby exerts a dose-dependent osmotic effect. This osmotic effect traps water and solutes in the tubular fluid, thus increasing Na+, K+, Cl−, and HCO3− excretion. The plasma half life mannitol depends on the level of kidney function but usually is between 30 and 60 minutes; thus its diuretic properties are quite transient. Mannitol has been used to reduce the incidence of acute kidney injury (AKI) in patients undergoing cardiopulmonary bypass, having rhabdomyolysis, or following exposure to contrast media. mannitol also expands extracellular fluid (ECF) volume and can precipitate pulmonary edema in patients with HF, it should be used cautiously, if at all, in these patients. excessive mannitol administration, particularly in the setting of a reduced GFR, can cause dilutional hyponatremia, hyperkalemia, and/or AKI. The latter is dose dependent, relates to afferent arteriolar vasoconstriction, and commonly corrects with the elimination of excess mannitol as may be accomplished with hemodialysis.</p>
+</section>
+<section id="edema-treatment" class="level4">
+<h4 class="anchored" data-anchor-id="edema-treatment">Edema Treatment</h4>
+<p>The pathophysiology of Na+ and H2O retention in the patient with edema is typically characterized by a complex interchange of hemodynamic and neurohumoral factors. For example, systemically perceived arterial underfilling sets into motion related Na+ and H2O retention in the patient with HF. In other instances, such as in the patient with a reduced GFR and/or nephrotic syndrome, Na+ and H2O retention derives from a more primary set of renal processes. There are two important considerations that should be brought to bear before and/or concurrent with initiation of diuretic therapy: the need to restrict dietary Na+ intake (2 to 4 g Na+ day) and dose reduction/elimination of drugs that foster Na+ retention, such as NSAIDs, nonspecific vasodilators like hydralazine and minoxidil, and high-dose β-blockers or central α-agonists.</p>
+<p>A compound, such as chlorthalidone, can be quite effective in the setting of mild to moderate edema given once or twice daily in the 25- to 50-mg/day range. When the underlying disease state worsens and/or dietary Na+ restriction cannot be adequately maintained, then conversion to a loop diuretic–based regimen becomes the more practiced approach. Combination diuretic therapy can be considered thereafter, either because the severity of the edema requires “sequential nephron blockade” or because the underlying disease state is particularly sensitive to medications other than loop diuretics, as is the case for spironolactone (50 → 400-mg/day range) use in the patient with advanced cases of cirrhosis and ascites.</p>
+<p>Determining the minimally effective dose for a diuretic effect is a necessary clinical exercise, particularly in the patient with a reduced GFR. Gradually increasing a diuretic dose until a response is seen will establish the threshold/ effect dose, and thereafter the frequency of dosing can be established based on clinical circumstances. The beginning dose from which dose titration proceeds is influenced by both the level of kidney function and the severity of the edematous state. If kidney function is reduced, the diuretic dose-response curve shifts to the right and the maximal effectiveness, based on absolute Na+ excretion rate, can be significantly reduced, therein making dietary Na+ restriction of considerable importance. In CKD patients with edema furosemid 40 mg twice daily would be considered adequate starting doses that could then be gradually incremented until the desired effect is achieved. Often, the dose that elicits an increase in urine output can be continued indefinitely unless the underlying disease state worsens and/or dietary Na+ intake becomes inordinately high. Conversely, a diuretic dose that establishes “euvolemia” can occasionally be lowered and restriction of dietary Na+ intake given added opportunity to minimize edema redevelopment. Diuretic dose reduction should always be a sought after consideration, as it minimizes loss of K+, Mg++, and, in the case of loop diuretics, Ca++.</p>
+<section id="adaptation-to-diuretic-therapy" class="level5">
+<h5 class="anchored" data-anchor-id="adaptation-to-diuretic-therapy">Adaptation to Diuretic Therapy</h5>
+<p>Diuretic-induced inhibition of Na+ reabsorption in one nephron segment elicits important adaptations in other nephron segments, which not only limits their antihypertensive and fluid-depleting actions but also contributes to the development of side effects. The initial dose of a diuretic normally produces a brisk diuresis, which is quickly followed by a new equilibrium state in which daily fluid and electrolyte excretion either matches or is less than intake with body weight stabilizing. In nonedematous patients given either a thiazide or a loop diuretic, this adaptation, or <strong>braking phenomenon</strong>, occurs within 1 to 2 days and limits net weight loss to 1 to 2 kg.</p>
+<div id="fig-natriuresis" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-natriuresis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="image/natriuresis.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-natriuresis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Effect of a loop diuretic on urinary sodium (Na ) excretion. Each bar represents a 6-hour time interval. Purple bars indicate periods during which urinary Na+ excretion (UNaV) exceeds that of dietary intake. Blue areas indicate periods of postdiuretic Na+ retention, during which dietary Na+ intake exceeds urinary Na+ excretion. The horizontal black line indicates dietary Na+ intake per 24-hour period. Changes in the magnitude of the natriuretic response over several days are reflective of the “braking phenomenon.” Inset shows the effect of diuretics on weight (and extracellular fluid volume) during several days of diuretic administration.
+</figcaption>
+</figure>
+</div>
+<p>For example, furosemide administered orally to subjects ingesting a high-Na+ diet (270 mmol/24 hours) produced an initial brisk natriuresis, which resulted in a negative Na+ balance over the ensuing 6 hours. This was followed by an 18-hour period when Na+ excretion was reduced to levels well below the prescribed Na+ intake, resulting in a positive Na+ balance. This postdiuresis Na+ retention matched the initial natriuresis with the result at the end of the day being a neutral Na+ balance state and no weight loss. After 3 successive days of furosemide administration, a similar pattern of Na+ loss and retention was demonstrated each day. if Na+ intake is kept very low, balance can remain negative after a single dose of furosemide, even though there is some blunting of the initial natriuretic response.</p>
+<div id="fig-ckddiuretics" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ckddiuretics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="image/ckd_diuretics.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ckddiuretics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: (A) Comparison of effects of chronic kidney disease (CKD) and conditions marked by edema on the loop diuretic dose response, expressed as fractional Na+ excretion (FENa). Diuretic delivery via secretion into the lumen is impaired in CKD (pharmacokinetic abnormal- ity), whereas the response to delivered drug is diminished with edema (pharmacodynamic defect). (B) Effect of CKD on the absolute response to a loop diuretic. Compare with panel A. (C) Pharmacokinetics of intravenous and oral loop diuretics. The diuretic thresholds for normal and edematous individuals are shown as horizontal lines; whereas a normal individual responds appropriately to either an intravenous or oral diuretic, some edematous individuals can only reach threshold excretion with intravenous diuretic administration.
+</figcaption>
+</figure>
+</div>
+<p>The mechanistic basis for the braking phenomenon is complex. The relationship between natriuresis and the rate of furosemide excretion is shifted to the right in subjects receiving a low-salt diet, which denotes a blunting of tubular response. It appears to be unrelated to aldosterone, as spironolactone therapy has little effect on the Na+ retention. Structural hypertrophy in the distal nephron also occurs in rats receiving prolonged infusions of loop diuretics. These structural changes are marked by increased distal nephron Na+ and Cl− absorption and K+ secretion, phenomena which are aldosterone independent. These structural adaptationsmay contribute to postdiuretic Na+ retention and to diuretic tolerance in humans, and could explain the <strong>Na+ retention persisting for up to 2 weeks after loop diuretic therapy is discontinued</strong>.</p>
+<p>Plasma renin activity (PRA) and plasma aldosterone concentrations rise within minutes of receiving an intravenous diuretic, a transient process that is independent of volume loss and/or sympathetic nervous system (SNS) activation. This rise in PRA is caused by inhibition of NaCl reabsorption at themacula densa in conjunction with loop-diuretic stimulation of renal prostaglandin release. Shortly after this initial rise in PRA, diuretics cause a more sustained increase in PRA and aldosterone arising from an increase in SNS activity (β-agonism) anda fall in ECF volume. The increase in renal prostaglandin production is the likely explanation for the preload reduction and decrease in ventricular filling pressures that occur within 15 minutes of loop diuretic administration.</p>
+</section>
+</section>
+</section>
 </section>
 <section id="urology" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="urology"><span class="header-section-number">9.2</span> Urology</h2>
@@ -568,9 +725,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -606,10 +777,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -619,8 +807,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -632,9 +829,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -676,17 +1109,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./respirology.html" class="pagination-link">
+      <a href="./respirology.html" class="pagination-link" aria-label="Respiratory Medicine">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Respiratory Medicine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./gastroenterology_hepatology.html" class="pagination-link">
+      <a href="./gastroenterology_hepatology.html" class="pagination-link" aria-label="Gastroenterology &amp; Hepatology">
         <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gastroenterology &amp; Hepatology</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

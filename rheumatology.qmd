@@ -1,3 +1,105 @@
 # Rheumatology
 
+## Autoimmune
 
+## Joint Disease
+
+### Crystal Deposition Disease
+
+#### Gout and Hyperuricemia
+
+Gout is a metabolic disorder resulting from the tissue deposition of monosodium urate crystals in or around joints and/or the crystallization of uric acid in the renal collecting system. The metabolic derangement responsible for gout is the supersaturation of blood and body fluids with the urate ion to the point that crystal formation is possible. At physiologic pH and at normal body temperature, urate is considered to be supersaturated at concentrations of 6.8 mg/dL or greater. Therefore, from a biologic perspective, hyperuricemia is any serum urate level greater than 6.8 mg/dL in both men and women. Although hyperuricemia is a necessary prerequisite for developing gout, only 20% of all hyperuricemic subjects will ultimately develop gout.
+
+##### Epidemiologi
+
+A number of factors have been proposed to explain this dramatic rise. These include the overall increase in longevity; the increased prevalence of hypertension, metabolic syndrome, and obesity; the ubiquitous use of thiazide diuretics and low-dose aspirin; changes in dietary trends, including the greater use of high-fructose corn syrup as a sweetener; and finally, the increase in survival of patients with end-stage renal disease and organ transplantation. There is a direct correlation between the degree of serum urate elevation and the likelihood of developing gout. The reported annual incidence of gout in subjects with baseline serum urate levels greater than or equal to 9 mg/dL is 4.9%, compared with only 0.5% in people with serum urate levels of 7.0 to 8.9 mg/dL.
+
+##### pathobiology
+
+Uric acid is the end product of purine metabolism in humans. In most mammals, purine catabolism is taken one step further through the enzyme uric acid oxidase or uricase, with the purine end product in these species being the very soluble allantoin. Humans and most other hominoids lost the ability to produce the enzyme uricase nearly 18 million years ago. As a result, uric acid accumulation is possible. Whether caused by overproduction of uric acid or its underexcretion by the kidneys, this accumulation leads to supersaturation of urate ion in blood and the precipitation of monosodium urate crystals in synovial fluid, soft tissues, and organs.
+
+Urate is produced by the conversion of a very soluble molecule, hypoxanthine, to the less soluble xanthine, which, in turn, is converted to the very insoluble uric acid by progressive purine ring oxidations catalyzed by the enzyme xanthine oxidase. Xanthine oxidase is present in several organs, but most activity in the body is found in the liver and intestines. Because of its potential for causing disease, urate elimination is very important. The total daily accumulation of uric acid from de novo synthesis, nucleotide degradation, and dietary consumption is normally balanced by renal excretion of approximately two thirds of the total urate turnover and intestinal elimination by the remaining one third.
+
+Simply put, hyperuricemia occurs when urate production is not balanced by renal excretion. In 90% of all gout patients, the cause of this imbalance is renal underexcretion. The remaining 10% of gout cases are caused by purine overproduction or a combination of overproduction and underexcretion.
+
+uric acid is small and not protein bound, it is completely filtered by the glomerulus. In normal persons, approximately 8 to 10% of the filtered load is ultimately cleared in the urine. Both reabsorption and secretion occur in this segment through the actions of several organic acid transporters, with the net effect being the reabsorption of nearly 90% of the uric acid filtered at the glomerulus. These organic acid transporters are also responsible for eliminating organic acids other than uric acid as well as many commonly used medications. The gouty subjects excrete only 70% as much uric acid as normal individuals at any given serum urate concentration.
+
+10% of gouty subjects, hyperuricemia is caused by uric acid overproduction rather than reduced renal excretion. In most of these people, the hyperuricemia reflects accelerated cell turnover (e.g., lymphoproliferative and myeloproliferative diseases, psoriasis, chronic hemolytic states, polycythemia vera, and certain muscle glycogenoses) or by enhanced purine nucleotide breakdown (e.g., alcohol abuse or fructose ingestion). Regardless of the cause, urate overproduction is documented by a 24-hour urine collection showing greater than 1000 mg of uric acid while eating a standard Western diet.
+
+Monosodium urate crystals in joints, soft tissues, and organs are the cause of pain and destruction in gout. Urate crystals will form only when physiologic conditions permit. A reduction in pH or temperature will lower the solubility threshold even further. Not all people who are hyperuricemic will form crystals, however. There appears to be an additional requirement of a "nucleation factor" that is still poorly defined. Monosodium urate crystals form in joints and soft tissues of individuals long before they cause any symptoms of gout. They deposit in small lattice structures called microtophi on the surface of cartilage and synovial lining. These microtophi slowly grow but are generally stable as long as the environment surrounding them does not change drastically with regard to pH, urate concentration, or temperature. At the time of the first and subsequent flares, something does change in the joint environment to cause these crystal lattice structures to break apart and shed a massive number of crystals into the joint space. These newly released and nonopsonized crystals activate receptors on synovial macrophages and are then phagocytized by monocytes and macrophages, leading to interaction with the NLRP3 inflammasome. This results in the rapid production of interleukin-1β (IL-1β), which is responsible for all the cardinal features of the severe inflammation associated with acute gout.
+
+Although monocytes and macrophages are the major cellular sources of IL-1β, neutrophils predominate at the site of inflammation (e.g., joint), where monosodium urate crystals become extremely pro-inflammatory by activating neutrophils that then generate reactive oxygen species. However, neutrophils also have a major role in the resolution of acute gout through the formation of neutrophil extracellular traps (NETs). Neutrophil proteases are released into the NETs and cause the formation of cell aggregates that contain cellular debris and DNA. These cellular aggregates within NETs can rapidly degrade pro-inflammatory cytokines, thereby allowing for the spontaneous resolution of joint inflammation after 3 days (even in the absence of treatment). Therefore, neutrophils play a dual role in gouty inflammation, amplifying it initially but then mediating its resolution.
+
+##### Clinical Manifestation
+
+Classic gout passes through three stages: asymptomatic hyperuricemia, acute intermittent gout symptoms, and chronic persistent gout symptoms. Asymptomatic hyperuricemia refers to a state in which serum urate exceeds the level of solubility (6.8 mg/dL) but symptoms of crystalline deposition have not yet occurred. Only 15 to 20% of all hyperuricemic people are prone to develop monosodium urate crystals, and for this group, the period of asymptomatic hyperuricemia begins a stage of subclinical structural changes. In men, asymptomatic hyperuricemia frequently begins at puberty, whereas in women, it is usually delayed until menopause.
+
+the first flare usually occurs between the fourth and sixth decades of life. In women, the age of onset is older and varies with several factors, most importantly the age of menopause. The classic gout flare is hallmarked by the rapid development of warmth, swelling, erythema, and exquisite pain in one or occasionally two joints. The characteristically severe pain evolves from its faintest twinge to its most intense level over an 8- to 12-hour period. Initial episodes are usually monoarticular and involve lower extremity joints. The most common joint involved is the first metatarsal phalangeal joint (termed podagra), followed by the ankle, midfoot, and knee. After years of recurrent gouty flares, upper extremity joints, including the wrists, elbows, and small joints of the hands, can also become involved. Systemic symptoms of fever, chills, and malaise may accompany gouty flares, along with an intense erythema extending beyond the area of the involved joint. This may lead to confusion with an infectious process. Factors capable of provoking episodes of flare are those that cause fluctuations in serum urate levels, including trauma, surgery, starvation, overindulgence in certain high-purine foods, and the ingestion of any medication that raises or lowers serum urate.
+
+Another characteristic of classic gout flares is their self-remitting nature for reasons discussed previously. For the first several acute flares, the duration of the attack is 5 to 8 days. The resolution of symptoms is gradual but complete, even if no anti-inflammatory therapy is administered. The periods between the flares are devoid of articular pain, although synovial fluid aspirates during this stage continue to show low-grade inflammation and the presence of monosodium urate crystals.
+
+the untreated patient will progress to persistent gouty arthritis, also referred to as advanced gout. This stage usually develops after 10 or more years of acute intermittent gout and is evident when the pain-free intercritical periods have disappeared. The subcutaneous tophus is the most characteristic lesion of advanced gout. The development of tophaceous deposits of monosodium urate is a function of the duration and severity of hyperuricemia as well as the presence of proteinuria. Subcutaneous tophi may occur anywhere over the body but most commonly in the fingers, wrists, ears, knees, and olecranon bursa and at pressure points under the ulnar aspect of the forearm and Achilles tendon.
+
+Approximately 5% of patients with gout exhibit the onset of symptoms before age 25 years. Early-onset gout represents a special subset of patients who generally have a genetic component (see Table 257-2), with a more accelerated clinical course requiring more aggressive antihyperuricemic therapy.
+
+![A, The marked swelling of the first metatarsophalangeal joint (podagra) is demonstrated. A dusky blue hue over an intense erythema is characteristic. B, Ankle swelling is shown with erythema extending beyond the area of the tibiotalar joint.](image/gout_1.png){#fig-gout1}
+
+##### Diagnosis
+
+Hyperuricemia is an essential risk factor for developing gout, but it is not a reliable diagnostic test because many people with elevated serum urate levels will never develop gout. Serum urate levels during an acute flare of gout are also unreliable because they may be suppressed by as much as 1.5 to 2.0 mg/dL from baseline values. The definitive diagnosis of gout is made by polarized compensated microscopy of a synovial fluid aspirate from the affected joint. The presence of intracellular needle-shaped crystals with strong negative birefringence is the diagnostic "gold standard." Similar microscopic results from a tophus aspirate or spontaneously draining fluid would also confirm the diagnosis of gout.
+
+The presumptive diagnosis of gout is based on a pattern of acutejoint symptoms coupled with the patient's own medical history or a family history. Key features include joint erythema, difficulty walking, time to maximal pain less than 24 hours, resolution by 2 weeks, presence of a tophus, and history of involvement of the first metatarsophalangeal joint.7 The patient's medical history may reveal comorbidities frequently associated with gout or the use of medications associated with urate retention. The characteristic clinical presentation is the rapid onset (over 8 to 12 hours) of severe pain in one or several lower extremity joints (especially the great toe, midfoot, and ankle).
+
+Radiographic evaluation is not helpful in the early phase of gout except to rule out fracture. In advanced gout, affected joints may show **punched-out periarticular erosions with classic overhanging edges**. Ultrasonography can detect monosodium urate crystals layered over articular cartilage in early disease and may be diagnostic
+
+![Comparison of ultrasonographic appearance of normal (left) and gouty (right) knee with the probe in the suprapatellar, transverse orientation and the knee in flexion. The normal knee shows soft tissues overlying an anechoic (black) layer that represents hyaline cartilage. The single bright stripe represents the bony cortex of the anterior distal femur. The gouty knee demonstrated the "double-contour" sign composed of a layer crystals covering the hyaline cartilage and the lower bright contour being the femoral cortex.](image/gout_2.png){#fig-goutusg}
+
+The differential diagnosis of acute gout includes bacterial infection, trauma, sarcoidosis, and calcium pyrophosphate arthropathy (pseudogout). Diseases occasionally confused with advanced gout include rheumatoid arthritis, reactive arthritis, and calcium pyrophosphate arthropathy.
+
+##### Treatment
+
+###### Education
+
+Patients be informed about dietary and other lifestyle changes, such as weight loss, that will lower their serum uric acid and lessen flares. Diet education inclde *Avoid* Organ meats High fructose corn syrup−sweetened drinks, and Alcohol overuse. *Limit* Beef, pork, lamb, shellfish, Beer. *Encourage* Low-fat dairy, smoking cessation and well hydrated.
+
+###### Gout Flare
+
+The treatment goal for gouty flare is to relieve pain and terminate the flare as quickly as possible. The therapeutic options include nonsteroidal anti-inflammatory drugs (NSAIDs), oral colchicine, and corticosteroids. Ensuring adequate dosing of anti-inflammatory therapy, and continuing the treatment until the flare has completely resolved (usually 6 to 10 days). During the acute flare, subjects already taking urate lowering therapy should continue the drug, whereas those not receiving this therapy should not be started.
+
+-   NSAID: may be inappropriate for patients with renal insufficiency or peptic ulcer disease
+
+-   Oral colchicine administered as 1.2 mg (two tablets) at the time of flare onset followed in 1 hour by a third 0.6-mg tablet is the recommended dosing for the first 24 hours. This is followed by 7 to 10 days of once-daily or twice-daily colchicine depending on renal function.
+
+-   Corticosteroid administered if poor renal function or intolerance to colcisine, Safer and similar efficacy than NSAIDS.
+
+###### Maintenance of Urate Lowering Therapy
+
+The principal goal of treating gout is to lower the serum uric acid below its saturation point so that the process of crystallization will cease and the accumulated urate burden will be gradually diminished. Urate-lowering therapy is recommended for all patients with two or more gouty flares per year, patients with advanced disease, and those with kidney stones.
+
+Both allopurinol and febuxostat are xanthine oxidase inhibitors that are considered first-line urate-lowering therapy. 
+
+###### **Treat to Target Approach**
+
+The American College of Rheumatology recommends a "treat-to-target" approach, using urate-lowering medications to lower serum uric acid levels to less than 6 mg/dL in patients with a history of two or more clinical flares, with close monitoring of uric acid levels.
+The 2012 American College of Rheumatology guidelines recommend a target serum urate of less than 6 mg/dL in all subjects, with an even lower target (<5 mg/dL) for patients with more advanced gout.
+The American College of Rheumatology guidelines recommend that the allopurinol starting dose be no greater than 100 mg/day. The dose is gradually escalated by 100 mg daily every 2 to 5 weeks, with serum urate monitoring until the target serum urate is achieved. The maximal U.S. Food and Drug Administration (FDA) approved dose of allopurinol is 800 mg daily.
+
+In subjects with advanced chronic kidney disease, the initial dose should be reduced to 50 mg daily, with incre- mental dose escalations of 50 mg. Febuxostat is an alternative urate-lowering therapy and should be used in patients who have failed allopurinol treatment
+or have demonstrated sensitivity or intolerance to allopurinol. The initial febuxostat dose of 40 mg daily can be increased to 80 mg daily after 2 weeks of therapy if the serum urate target is not achieved.
+
+Patient who have not attained the target serum urate despite maximal doses of either allopurinol or febuxostat, uricosuric agents (probenecid, up to 2 g daily). Pegloticase (8 mg by IV infusion every 2 weeks) is an intravenously administered monomethoxypoly(ethylene glycol)-conjugated recombinant uricase that dramatically lowers serum urate levels. It is approved by the FDA for the treatment of gout in patients for whom conventional therapy has been ineffective.
+
+Before the initiation of any form of urate-lowering therapy, the patient should be placed on anti-inflammatory therapy to prevent or minimize the anticipated increase in flare activity that is associated with starting urate-lowering therapy. Background anti-inflammatory prophylaxis is in the form of colchicine once or twice daily or low-dose NSAIDs. Anti-inflammatory prophylaxis should be continued until the subject has been free of gout flares for 6 months or longer.
+
+###### **Treat to symptoms Approach**
+
+the 2016 American College of Physicians guideline advocates a "treat-to-symptoms" approach, emphasizing the use of anti-inflammatory medications to control flares and reserving urate-lowering medications for patients with frequent flares. This later approach is not evidence-based.
+
+
+#### Calcium Pyrophospate
+
+#### Basic Calcium Arthropathy
+
+### Arthrocentesis Technique
+
+Read from Robert hedge Procedures
