@@ -76,8 +76,14 @@ execute:
 
 format:
   html:
-    theme: cosmo
-    number-depth: 3
+    theme: 
+      light: zephyr   # Tema flatly/litera/zephyr seringkali lebih elegan untuk teks panjang
+      dark: darkly       # Berikan opsi dark mode pembaca
+    fontsize: 1.1em      # Sedikit membesarkan ukuran font dasar
+    linestretch: 1.6     # Memberikan jarak antar baris agar paragraf tidak menumpuk
+    toc: true
+    toc-depth: 3
+    toc-title: "Daftar Isi Bab"
   pdf:
     documentclass: scrreprt
     include-in-header: 

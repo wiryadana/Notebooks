@@ -6,17 +6,30 @@
 
 Important for:
 
-1.  resource allocation
+::: {.callout-note title="Importance of Illness Severity Assessment"}
+- Resource allocation
+- Hospital administrative policies
+- Assess quality of care
+:::
 
-2.  Hospital administrative policies
-
-3.  asses quality of care
+::: {.callout-important title="Red Flag"}
+Patient with RR > 22/min, GCS Decreased, atau SBP < 100 mmHg has high mortality.
+:::
 
 Two most commonly used scoring systems:
 
 1.  SOFA (Sequential Organ Failure Assessment)
 
 2.  APACHE (Acute Physiology and Chronic Health Evaluation)
+
+
+As the current guideline, qSOFA not recommended as the main diagnostic tools.[^1]
+
+[^1]: Sepsis-3 Guidelines, JAMA (2016).
+
+::: {.column-margin}
+![Ilustrasi SOFA](image/qsofa.jpg)
+:::
 
 ##### SOFA Score
 
@@ -32,6 +45,8 @@ library(googlesheets4)
 library(gt)
 library(DiagrammeR)
 
+googlesheets4::gs4_deauth()
+
 sofa <- read_sheet("https://docs.google.com/spreadsheets/d/1X1v0OOdzwSVROfs8C8JMvcjdi0EUFy9cQGwfcwFLuqE/edit#gid=0", sheet = 1)
 
 sofa_tbl <- 
@@ -42,7 +57,13 @@ sofa_tbl <-
   tab_spanner(
     label = "Score",
     columns = c("0","1","2","3","4")
-  )
+  ) |>
+  opt_row_striping() |>                 # Menambahkan warna selang-seling pada baris
+  tab_options(
+    table.width = pct(100),             # Memperlebar tabel memenuhi halaman
+    data_row.padding = px(12)           # Memberi ruang napas (spasi) antar teks di dalam sel
+  ) |>
+  cols_align(align = "center", columns = c("0","1","2","3","4"))
 ```
 
 ```{r}
@@ -68,35 +89,35 @@ shock is a multisystem end-organ hypoperfusion. The resulting hypoperfusion foll
 
 Reduced MAP could be the product of decreased cardiac output and/or systemic vascular resistance (SVR). Thus every shock patients should be evaluated for adequacy of cardiac output. Sign of diminished cardiac output includes (Cold Shock):
 
--   A narrow pulse preassure (SBP - DBP), marker of stroke volume
--   Cool extremities and delayed capillary refill time (COLD SHOCK). Palpate proximal extremities (eg Thigh) rather than distal extremities to determine relative "coolness" as peripheral artery disease may always have cool distal extremities.
+- A narrow pulse preassure (SBP - DBP), marker of stroke volume
+- Cool extremities and delayed capillary refill time (COLD SHOCK). Palpate proximal extremities (eg Thigh) rather than distal extremities to determine relative "coolness" as peripheral artery disease may always have cool distal extremities.
 
 Contrary, there are sign of increased cardiac output (Warm Shock), that may results from decreased SVR:
 
--   A widened pulse pressure (particularly reduced DBP)
--   Warm extremities with bounding pulse,
--   Rapid capillary refill time
+- A widened pulse pressure (particularly reduced DBP)
+- Warm extremities with bounding pulse,
+- Rapid capillary refill time
 
 If reduced cardiac output found, then conduct assesment of volume status.
 
--   History suggesting fluid loss or hemmorhage
--   Reduced JVP
--   Straight leg raise or fluid challange
--   USG Marker: inferior vena cava collapse, left ventricular stroke volume
+- History suggesting fluid loss or hemmorhage
+- Reduced JVP
+- Straight leg raise or fluid challange
+- USG Marker: inferior vena cava collapse, left ventricular stroke volume
 
 reduced cardiac function with increased intravascular volume - S3 or S4 gallop - JVP increased - Extremity Edema - Crackles on lung auscultation - Chest Xray show cardiomegaly, widening vascular pedicle, kerley B lines, pulmonary edema. - ECG: ischemic with or withour chest pain.
 
 If sign of increased cardiac output found, conduct search for cause of reduced SVR.
 
--   Sepsis
--   Liver Failure
--   Severe Pancreatitis
--   Adrenal Insufficiency
--   Burns
--   Trauma
--   Anaphylaxis
--   Thyrotoxicosis
--   Peripheral AV shunts
+- Sepsis
+- Liver Failure
+- Severe Pancreatitis
+- Adrenal Insufficiency
+- Burns
+- Trauma
+- Anaphylaxis
+- Thyrotoxicosis
+- Peripheral AV shunts
 
 The need for arterial line and CVC - if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.
 
@@ -117,10 +138,10 @@ Often occurs as a consquence of an increased load on the respiratory system in t
 Also in shock, a large percentage of CO need for respiratory muscle (10 folds), lactic acid production from inefficient respiratory muscle activity presents an additional ventilatory load. Ventilatory supports relieve work of breathing and allow redistribution of limited CO to other vital organ.\
 Sign of respiratory distress:
 
--   inability to speak full sentences,
--   accessory muscle activity
--   paradoxical abdominal muscle activity
--   extreme tachypnea (\>40 breath/min)
+- inability to speak full sentences,
+- accessory muscle activity
+- paradoxical abdominal muscle activity
+- extreme tachypnea (\>40 breath/min)
 
 After intubation and mechanical ventilation, declines in MAP frequently seen. The reasons:
 
@@ -253,42 +274,42 @@ It occurs due to alveolar flooding, subsquent Ventilation-perfusion (VP) mismatc
 
 Alveolar flooding occurs due:
 
--   pulmonary edema, pulmonary edema further caused by:
-    -   elevated pulmonary microvascular pressures (heart failure or fluid overload) or
-    -   ARDS (low pressure pulmonary edema), defined as: acute onset ($\le$ 1 week) of bilateral opacities on chest imaging that are not fully explained by cardiac failure or fluid overload and ventilation perfusion mismatch, and shunt physiology that require positive end-expiratory pressure (PEEP)
--   lung injury
--   pneumonia
--   alveolar hemorrhage
+- pulmonary edema, pulmonary edema further caused by:
+  - elevated pulmonary microvascular pressures (heart failure or fluid overload) or
+  - ARDS (low pressure pulmonary edema), defined as: acute onset ($\le$ 1 week) of bilateral opacities on chest imaging that are not fully explained by cardiac failure or fluid overload and ventilation perfusion mismatch, and shunt physiology that require positive end-expiratory pressure (PEEP)
+- lung injury
+- pneumonia
+- alveolar hemorrhage
 
 Type 1 RF occurs in sepsis, gastric aspiration, pneumonia, covid-19, near drowning, multiple blood transfusion & pancreatitis.
 
 ###### General Treatment
 
--   Mechanical ventilation. Mechanical ventilation with high tidal volume (12 ml/kg ideal body weight) traditionally further injured the lung due to repeated alveoli overdistention and stretching. This is called ventilator induced volutrauma and even induce ARDS in patients without ARDS initialy. many studies point toward low tidal volume (6 ml/kg ideal body weight) improve survival.
+- Mechanical ventilation. Mechanical ventilation with high tidal volume (12 ml/kg ideal body weight) traditionally further injured the lung due to repeated alveoli overdistention and stretching. This is called ventilator induced volutrauma and even induce ARDS in patients without ARDS initialy. many studies point toward low tidal volume (6 ml/kg ideal body weight) improve survival.
 
-    reproduce Figure of Preassure volume relathionsip!!!
+  reproduce Figure of Preassure volume relathionsip!!!
 
--   Prone positioning
+- Prone positioning
 
--   Low CVP or low PCWP or fluid conservatice approach fluid conservative management to maintain low CVP or PCWP associated with fewer days with mechanical ventilation than fluid liberal approach in patients that who have been resuscitated from shock.
+- Low CVP or low PCWP or fluid conservatice approach fluid conservative management to maintain low CVP or PCWP associated with fewer days with mechanical ventilation than fluid liberal approach in patients that who have been resuscitated from shock.
 
 ##### Type 2 Respiratory Failure: Hypercapnic Respiratory Failure
 
 It is a consequence of alveolar hypoventilation and the results from inability to eliminate CO2 effectively. The cause categorized into:
 
--   impaired CNS drive to breathe ("wont breathe") Cause: drug overdose, brainstem injury, sleep-disordered breathing, severe hypothyroidism
+- impaired CNS drive to breathe ("wont breathe") Cause: drug overdose, brainstem injury, sleep-disordered breathing, severe hypothyroidism
 
--   reduced strength or impaired neuromuscular function in respiratory systems ("cant breathe") cause: impaired neuromuscular transmission (eg. myasthenia gravis, Guillain-Barre syndrome, amyotrophic lateral sclerosis) or respiratory muscle weakness (eg. myopathy, electrolye problem, fatigue)
+- reduced strength or impaired neuromuscular function in respiratory systems ("cant breathe") cause: impaired neuromuscular transmission (eg. myasthenia gravis, Guillain-Barre syndrome, amyotrophic lateral sclerosis) or respiratory muscle weakness (eg. myopathy, electrolye problem, fatigue)
 
--   increased load on respiratory system ("cant breathe") cause:
+- increased load on respiratory system ("cant breathe") cause:
 
-    -   increased resistive load eg. brochospasm
+  - increased resistive load eg. brochospasm
 
-    -   reduced lung compliance eg. alveolar edema, atelectasis, intrinsip PEEP
+  - reduced lung compliance eg. alveolar edema, atelectasis, intrinsip PEEP
 
-    -   reduced chest wall compliance eg. pneumothorax, pleural effusion, abdominal distention
+  - reduced chest wall compliance eg. pneumothorax, pleural effusion, abdominal distention
 
-    -   increased minute ventilation requirements eg. pulmoanry embolus with increased dead space fraction, sepsis
+  - increased minute ventilation requirements eg. pulmoanry embolus with increased dead space fraction, sepsis
 
 ###### general Treatment
 
@@ -575,9 +596,9 @@ Patient meeting criteria ARDS frequently become respiratory fatigues, so it requ
 
 Mechanical ventilatio (MV) can save lifes, but also can aggravate lung injury due to volutrauma and atelectrauma. Volutrauma can occurs due to overdistention of alveoli due to effort to inflate the consolited lungs thus damaging the still functioning alveoli.
 
--   **Low tidal volume 6ml/kg predicted body weight are better than coenventional 12 ml/kg bodyweight.**
--   lower airway pressure, plateu pressure $\le$ 30 cm H~2~O.
--   RR $\le$ 35
+- **Low tidal volume 6ml/kg predicted body weight are better than coenventional 12 ml/kg bodyweight.**
+- lower airway pressure, plateu pressure $\le$ 30 cm H~2~O.
+- RR $\le$ 35
 
 ###### Minimize atelectrauma
 
@@ -732,11 +753,13 @@ Oxygen delivery (DO~2~ or QO~2~) is a function of cardiac output and the content
 Arterial oxygen content (CaO~2~) normally around 21.16 mL/dL, while the mixed venous blood (VO~2~) is 15.76 mL/dL, thus normal tissue extraction is around 25%. Reduced VO~2~ may results from inadequate CO, reduced HB or reduced SaO~2~. Abnormally high VO~2~ may be caused by fever, agitation, shivering and thyrotoxicosis.
 
 $$
-QO~2~ = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB% Saturation} + 0.0031 \times PaO2)
+QO_2 = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB\% Saturation} + 0.0031 \times PaO_2)
 $$ {#eq-delivery-oxygen}
 
 $$
-QO~2~ = 50 \text{ dL/min} \times (1.39 \times 15 \text{g/dL} \times 100\% + 0.0031 \times 100)
-$$ $$
-QO~2~ = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \text{ mL O2 per min}
+QO_2 = 50 \text{ dL/min} \times (1.39 \times 15 \text{g/dL} \times 100\% + 0.0031 \times 100)
+$$ 
+
+$$
+QO_2 = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \text{ mL O2 per min}
 $$

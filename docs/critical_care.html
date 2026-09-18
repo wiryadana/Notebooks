@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Wiryadana’s Notebook - 2&nbsp; Emergency &amp; Intensive Care Medicine</title>
+<title>2&nbsp; Emergency &amp; Intensive Care Medicine – The Wiryadana's Notebook</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -52,15 +57,20 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <link href="./hematology_oncology.html" rel="next">
 <link href="./internal_medicine.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4a0aeeedd585969ed31af654d0cd9fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d5fdfaae7e6058da28066c57981604dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4a0aeeedd585969ed31af654d0cd9fae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -88,14 +98,19 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="site_libs/viz-1.8.2/viz.js"></script>
-<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-<script src="site_libs/grViz-binding-1.0.11/grViz.js"></script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+
+<script src="site_libs/grViz-binding-1.0.12/grViz.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -108,7 +123,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -126,19 +141,181 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./critical_care.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -155,28 +332,29 @@ window.Quarto = {
     <a href="https://github.com/wiryadana/the_wiryadana_notebooks" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <a href="./The-Wiryadana-s-Notebook.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-bi-linkedin pe-1"></i>
+              <i class="bi bi-linkedin pe-1"></i>
             LinkedIn
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -203,7 +381,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./internal_medicine.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Internal Medicine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -286,7 +464,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./others.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Rest of Medicine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -411,7 +589,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./bioinformatics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bioinformatics &amp; Genomic Medicine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -434,7 +612,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./statistics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Statistics and R languange</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -457,7 +635,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./mkdu.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mata Kuliah Dasar Umum</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -513,7 +691,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Daftar Isi Bab</h2>
    
   <ul>
   <li><a href="#approach-to-critical-ill-patients" id="toc-approach-to-critical-ill-patients" class="nav-link active" data-scroll-target="#approach-to-critical-ill-patients"><span class="header-section-number">2.1</span> Approach to Critical Ill Patients</a>
@@ -543,7 +721,8 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./internal_medicine.html">Internal Medicine</a></li><li class="breadcrumb-item"><a href="./critical_care.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Emergency &amp; Intensive Care Medicine</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -564,45 +743,78 @@ window.Quarto = {
 </header>
 
 
-<section id="approach-to-critical-ill-patients" class="level2" data-number="2.1">
+<section id="approach-to-critical-ill-patients" class="level2 page-columns page-full" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="approach-to-critical-ill-patients"><span class="header-section-number">2.1</span> Approach to Critical Ill Patients</h2>
-<section id="assesment-of-illness-severity" class="level4">
-<h4 class="anchored" data-anchor-id="assesment-of-illness-severity">Assesment of illness severity</h4>
+<section id="assesment-of-illness-severity" class="level4 page-columns page-full" data-number="2.1.0.1">
+<h4 data-number="2.1.0.1" class="anchored" data-anchor-id="assesment-of-illness-severity"><span class="header-section-number">2.1.0.1</span> Assesment of illness severity</h4>
 <p>Important for:</p>
-<ol type="1">
-<li><p>resource allocation</p></li>
-<li><p>Hospital administrative policies</p></li>
-<li><p>asses quality of care</p></li>
-</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Importance of Illness Severity Assessment">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Importance of Illness Severity Assessment
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Resource allocation</li>
+<li>Hospital administrative policies</li>
+<li>Assess quality of care</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Red Flag">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Red Flag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Patient with RR &gt; 22/min, GCS Decreased, atau SBP &lt; 100 mmHg has high mortality.</p>
+</div>
+</div>
 <p>Two most commonly used scoring systems:</p>
 <ol type="1">
 <li><p>SOFA (Sequential Organ Failure Assessment)</p></li>
 <li><p>APACHE (Acute Physiology and Chronic Health Evaluation)</p></li>
 </ol>
-<section id="sofa-score" class="level5">
-<h5 class="anchored" data-anchor-id="sofa-score">SOFA Score</h5>
+<p>As the current guideline, qSOFA not recommended as the main diagnostic tools.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image/qsofa.jpg" class="img-fluid figure-img"></p>
+<figcaption>Ilustrasi SOFA</figcaption>
+</figure>
+</div>
+</div></div><section id="sofa-score" class="level5" data-number="2.1.0.1.1">
+<h5 data-number="2.1.0.1.1" class="anchored" data-anchor-id="sofa-score"><span class="header-section-number">2.1.0.1.1</span> SOFA Score</h5>
 <p>Includes 6 organ systems, with each graded 0 to 4 according to the degree of dysfunction. Increased score correlate with mortality and can be evaluated repeatedly <span class="citation" data-cites="harrison_2022">(<a href="references.html#ref-harrison_2022" role="doc-biblioref">Loscalzo et al. 2022</a>)</span>.</p>
 <p>A derivation, the qSOFA or quick SOFA intented to screen patients for srisk of poor outcomes from sepsis. It is not intended for sepsis diagnostic screening tool, but in it often used as such in resources poor area. qSOFA used for bedside evaluation that may identify patient with suspected infection who are at greater risk for a poor outcome outside the ICU. The score range from 0 to 3 points in each three category including blood preasure, respiratory rate and mental status. Poor outcimes predicted if there at least 2 clinical criteria: (1) respiratory rate <span class="math inline">\(\geq\)</span> 22/min, altered mental status, or systolic BP <span class="math inline">\(\le\)</span> 100 mmhg.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<div id="lpglvnjqcm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lpglvnjqcm table {
+<div id="odhwmqcaac" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#odhwmqcaac table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lpglvnjqcm thead, #lpglvnjqcm tbody, #lpglvnjqcm tfoot, #lpglvnjqcm tr, #lpglvnjqcm td, #lpglvnjqcm th {
+#odhwmqcaac thead, #odhwmqcaac tbody, #odhwmqcaac tfoot, #odhwmqcaac tr, #odhwmqcaac td, #odhwmqcaac th {
   border-style: none;
 }
 
-#lpglvnjqcm p {
+#odhwmqcaac p {
   margin: 0;
   padding: 0;
 }
 
-#lpglvnjqcm .gt_table {
+#odhwmqcaac .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -613,7 +825,7 @@ window.Quarto = {
   font-weight: normal;
   font-style: normal;
   background-color: #FFFFFF;
-  width: auto;
+  width: 100%;
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
@@ -628,12 +840,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_caption {
+#odhwmqcaac .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lpglvnjqcm .gt_title {
+#odhwmqcaac .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -645,7 +857,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#lpglvnjqcm .gt_subtitle {
+#odhwmqcaac .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -657,7 +869,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#lpglvnjqcm .gt_heading {
+#odhwmqcaac .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -669,13 +881,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_bottom_border {
+#odhwmqcaac .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_col_headings {
+#odhwmqcaac .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -690,7 +902,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_col_heading {
+#odhwmqcaac .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -710,7 +922,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#lpglvnjqcm .gt_column_spanner_outer {
+#odhwmqcaac .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -722,15 +934,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#lpglvnjqcm .gt_column_spanner_outer:first-child {
+#odhwmqcaac .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lpglvnjqcm .gt_column_spanner_outer:last-child {
+#odhwmqcaac .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lpglvnjqcm .gt_column_spanner {
+#odhwmqcaac .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -742,11 +954,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#lpglvnjqcm .gt_spanner_row {
+#odhwmqcaac .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lpglvnjqcm .gt_group_heading {
+#odhwmqcaac .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -772,7 +984,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#lpglvnjqcm .gt_empty_group_heading {
+#odhwmqcaac .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -787,17 +999,17 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#lpglvnjqcm .gt_from_md > :first-child {
+#odhwmqcaac .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lpglvnjqcm .gt_from_md > :last-child {
+#odhwmqcaac .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lpglvnjqcm .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
+#odhwmqcaac .gt_row {
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 5px;
   padding-right: 5px;
   margin: 10px;
@@ -814,7 +1026,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#lpglvnjqcm .gt_stub {
+#odhwmqcaac .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -827,7 +1039,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#lpglvnjqcm .gt_stub_row_group {
+#odhwmqcaac .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -841,15 +1053,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#lpglvnjqcm .gt_row_group_first td {
+#odhwmqcaac .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lpglvnjqcm .gt_row_group_first th {
+#odhwmqcaac .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lpglvnjqcm .gt_summary_row {
+#odhwmqcaac .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -859,16 +1071,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#lpglvnjqcm .gt_first_summary_row {
+#odhwmqcaac .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_first_summary_row.thick {
+#odhwmqcaac .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lpglvnjqcm .gt_last_summary_row {
+#odhwmqcaac .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -878,7 +1090,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_grand_summary_row {
+#odhwmqcaac .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -888,7 +1100,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#lpglvnjqcm .gt_first_grand_summary_row {
+#odhwmqcaac .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -898,7 +1110,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_last_grand_summary_row_top {
+#odhwmqcaac .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -908,11 +1120,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_striped {
+#odhwmqcaac .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lpglvnjqcm .gt_table_body {
+#odhwmqcaac .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -921,7 +1133,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_footnotes {
+#odhwmqcaac .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -935,7 +1147,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_footnote {
+#odhwmqcaac .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -944,7 +1156,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#lpglvnjqcm .gt_sourcenotes {
+#odhwmqcaac .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -958,7 +1170,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#lpglvnjqcm .gt_sourcenote {
+#odhwmqcaac .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -966,132 +1178,151 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#lpglvnjqcm .gt_left {
+#odhwmqcaac .gt_left {
   text-align: left;
 }
 
-#lpglvnjqcm .gt_center {
+#odhwmqcaac .gt_center {
   text-align: center;
 }
 
-#lpglvnjqcm .gt_right {
+#odhwmqcaac .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lpglvnjqcm .gt_font_normal {
+#odhwmqcaac .gt_font_normal {
   font-weight: normal;
 }
 
-#lpglvnjqcm .gt_font_bold {
+#odhwmqcaac .gt_font_bold {
   font-weight: bold;
 }
 
-#lpglvnjqcm .gt_font_italic {
+#odhwmqcaac .gt_font_italic {
   font-style: italic;
 }
 
-#lpglvnjqcm .gt_super {
+#odhwmqcaac .gt_super {
   font-size: 65%;
 }
 
-#lpglvnjqcm .gt_footnote_marks {
+#odhwmqcaac .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lpglvnjqcm .gt_asterisk {
+#odhwmqcaac .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lpglvnjqcm .gt_indent_1 {
+#odhwmqcaac .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lpglvnjqcm .gt_indent_2 {
+#odhwmqcaac .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lpglvnjqcm .gt_indent_3 {
+#odhwmqcaac .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lpglvnjqcm .gt_indent_4 {
+#odhwmqcaac .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lpglvnjqcm .gt_indent_5 {
+#odhwmqcaac .gt_indent_5 {
   text-indent: 25px;
+}
+
+#odhwmqcaac .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#odhwmqcaac div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 
-<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
 <thead>
-<tr class="header gt_heading">
-<th colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border">Calculation of SOFA Score</th>
+<tr class="gt_heading header">
+<td colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border">Calculation of SOFA Score</td>
 </tr>
-<tr class="odd gt_col_headings gt_spanner_row">
+<tr class="gt_col_headings gt_spanner_row even">
 <th rowspan="2" id="System" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">System</th>
-<th colspan="5" id="Score" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Score</span></th>
+<th colspan="5" id="Score" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+Score
+</div></th>
 </tr>
-<tr class="header gt_col_headings">
-<th id="0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">0</th>
-<th id="1" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">1</th>
-<th id="2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">2</th>
-<th id="3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">3</th>
-<th id="4" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">4</th>
+<tr class="gt_col_headings header">
+<th id="a0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">0</th>
+<th id="a1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">1</th>
+<th id="a2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">2</th>
+<th id="a3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">3</th>
+<th id="a4" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">4</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_left" headers="System">Respiration (PaO2 / FiO2)</td>
 <td class="gt_row gt_center" headers="0">&gt;= 400</td>
-<td class="gt_row gt_left" headers="1">&lt;400</td>
+<td class="gt_row gt_center" headers="1">&lt;400</td>
 <td class="gt_row gt_center" headers="2">&lt;300</td>
 <td class="gt_row gt_center" headers="3">&lt;200 with respiratory support</td>
-<td class="gt_row gt_left" headers="4">&lt;100 with respiratory support</td>
+<td class="gt_row gt_center" headers="4">&lt;100 with respiratory support</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="System">Coagulation (plt)</td>
-<td class="gt_row gt_center" headers="0">&gt;= 150</td>
-<td class="gt_row gt_left" headers="1">&lt;150</td>
-<td class="gt_row gt_center" headers="2">&lt;100</td>
-<td class="gt_row gt_center" headers="3">&lt;50</td>
-<td class="gt_row gt_left" headers="4">&lt;20</td>
+<td class="gt_row gt_left gt_striped" headers="System">Coagulation (plt)</td>
+<td class="gt_row gt_center gt_striped" headers="0">&gt;= 150</td>
+<td class="gt_row gt_center gt_striped" headers="1">&lt;150</td>
+<td class="gt_row gt_center gt_striped" headers="2">&lt;100</td>
+<td class="gt_row gt_center gt_striped" headers="3">&lt;50</td>
+<td class="gt_row gt_center gt_striped" headers="4">&lt;20</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="System">Liver (bilirubin, mg/dl)</td>
 <td class="gt_row gt_center" headers="0">&lt;1,2</td>
-<td class="gt_row gt_left" headers="1">1,2 - 1,9</td>
+<td class="gt_row gt_center" headers="1">1,2 - 1,9</td>
 <td class="gt_row gt_center" headers="2">2,0 - 5,9</td>
 <td class="gt_row gt_center" headers="3">6,0 - 11,9</td>
-<td class="gt_row gt_left" headers="4">&gt;12,0</td>
+<td class="gt_row gt_center" headers="4">&gt;12,0</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="System">Cardiovascular</td>
-<td class="gt_row gt_center" headers="0">MAP &gt;= 70</td>
-<td class="gt_row gt_left" headers="1">MAP &lt; 70</td>
-<td class="gt_row gt_center" headers="2">Dopamin &lt;5 or dobutamine any dose</td>
-<td class="gt_row gt_center" headers="3">Dopamine 5,1 - 15 or epinefrin &lt;= 0,1 or Norepinefrin &lt;=0,1</td>
-<td class="gt_row gt_left" headers="4">Dopamin &gt;15 or epinefrin &gt;0,1 or Norepinefrin &gt;0,1</td>
+<td class="gt_row gt_left gt_striped" headers="System">Cardiovascular</td>
+<td class="gt_row gt_center gt_striped" headers="0">MAP &gt;= 70</td>
+<td class="gt_row gt_center gt_striped" headers="1">MAP &lt; 70</td>
+<td class="gt_row gt_center gt_striped" headers="2">Dopamin &lt;5 or dobutamine any dose</td>
+<td class="gt_row gt_center gt_striped" headers="3">Dopamine 5,1 - 15 or epinefrin &lt;= 0,1 or Norepinefrin &lt;=0,1</td>
+<td class="gt_row gt_center gt_striped" headers="4">Dopamin &gt;15 or epinefrin &gt;0,1 or Norepinefrin &gt;0,1</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="System">CNS (GCS)</td>
 <td class="gt_row gt_center" headers="0">15</td>
-<td class="gt_row gt_left" headers="1">13-14</td>
+<td class="gt_row gt_center" headers="1">13-14</td>
 <td class="gt_row gt_center" headers="2">2023-12-10</td>
 <td class="gt_row gt_center" headers="3">2023-09-06</td>
-<td class="gt_row gt_left" headers="4">&lt;6</td>
+<td class="gt_row gt_center" headers="4">&lt;6</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="System">Renal (Creatinin mg/dl or urine output ml/day)</td>
-<td class="gt_row gt_center" headers="0">1.2</td>
-<td class="gt_row gt_left" headers="1">1,2 - 1,9</td>
-<td class="gt_row gt_center" headers="2">2,0 - 3,4</td>
-<td class="gt_row gt_center" headers="3">3,5 - 4,9 (&lt;500 cc)</td>
-<td class="gt_row gt_left" headers="4">&gt;5,0 (&lt; 200 cc)</td>
+<td class="gt_row gt_left gt_striped" headers="System">Renal (Creatinin mg/dl or urine output ml/day)</td>
+<td class="gt_row gt_center gt_striped" headers="0">1.2</td>
+<td class="gt_row gt_center gt_striped" headers="1">1,2 - 1,9</td>
+<td class="gt_row gt_center gt_striped" headers="2">2,0 - 3,4</td>
+<td class="gt_row gt_center gt_striped" headers="3">3,5 - 4,9 (&lt;500 cc)</td>
+<td class="gt_row gt_center gt_striped" headers="4">&gt;5,0 (&lt; 200 cc)</td>
 </tr>
 </tbody>
 </table>
@@ -1099,10 +1330,9 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</div>
 </section>
-<section id="apacahe-score" class="level5">
-<h5 class="anchored" data-anchor-id="apacahe-score">APACAHE Score</h5>
+<section id="apacahe-score" class="level5" data-number="2.1.0.1.2">
+<h5 data-number="2.1.0.1.2" class="anchored" data-anchor-id="apacahe-score"><span class="header-section-number">2.1.0.1.2</span> APACAHE Score</h5>
 <p>SLightly more complicated than SOFA Score. (updated later)</p>
 </section>
 </section>
@@ -1153,8 +1383,8 @@ window.Quarto = {
 </ul>
 <p>The need for arterial line and CVC - if shock prolonged and doest resolve with proper fluid resuscitation and vasoactive agent.</p>
 <p>Initial evaluation followed with early aggresive targeted resuscitation improve survival. If initial bedside evaluation yield confounding data, objective assesment with USG/Echo needed (look <a href="#fig-shockalgorithm" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</p>
-<section id="the-need-for-mechanical-ventilation" class="level4">
-<h4 class="anchored" data-anchor-id="the-need-for-mechanical-ventilation">The need for Mechanical Ventilation</h4>
+<section id="the-need-for-mechanical-ventilation" class="level4" data-number="2.1.2.1">
+<h4 data-number="2.1.2.1" class="anchored" data-anchor-id="the-need-for-mechanical-ventilation"><span class="header-section-number">2.1.2.1</span> The need for Mechanical Ventilation</h4>
 <p>Always asses the ability of a patient to protect his or her airway and to maintain adequate gas exhange. Early intubation or mechanical ventilation often required for two main reasons:</p>
 <ol type="1">
 <li>Acute hypoxemic respiratory failure.</li>
@@ -1181,11 +1411,11 @@ Sign of respiratory distress:</p>
 </ol>
 <p>Many patients may be fluid responsive. Therefore, fluid administration and vasopressor support might needed before intubation.</p>
 <div class="cell fig-cap-location-bottom" data-layout-align="center">
-<div id="fig-shockalgorithm" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-shockalgorithm" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-shockalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-3034b4ea5ca38e8d5b23" style="width:100%;height:812px;"></div>
-<script type="application/json" data-for="htmlwidget-3034b4ea5ca38e8d5b23">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB, fontsize = 10]\n\nnode[shape = rectangle]\n\na [label = \"Shock\"]\nb [label = \"Cold, clammy extremities\"]\nc [label = \"Warm, bounding pulse\"]\nd [label = \"Low cardiac output\"]\ne [label = \"JVP Increased, crackles\"]\nf [label = \"JVP decrease, orthostasis\"]\ng [label = \"Heart is full/cardiogenic shock\"]\nh [label = \"Evaluate for MI\"]\ni [label = \"Consider Echo, invasive monitoring\"]\nj [label = \"Inotropes, afterload reduction\"]\nk [label = \"High Cardiac Output\"]\nl [label = \"Septic shock, liver failure\"]\nm [label = \"Antibiotics, aggresive resuscitation\"]\nn [label = \"Heart is Empty/Hypovolemic shock\"]\no [label = \"IV fluids\"]\np [label = \"no improvement??\"]\nq [label = \"What does not fit??\"]\nr [label = \"Adrenal crisis, right heart syndrome, pericardial disease\"]\ns [label = \"Consider echo, invasive monitoring\"]\nt [label = \"May convert to\"]\n\na -> b \na -> c\nb -> d\nd -> e\nd -> f\ne -> g\ng -> h\nh -> i\ni -> j\nc -> k\nk -> l\nl -> m\nf -> n\nn -> o\no -> p\np -> q\nq -> r\nr -> s\no -> t\nt -> k\n\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-2738aaeef50376f4b072" style="width:100%;height:812px;"></div>
+<script type="application/json" data-for="htmlwidget-2738aaeef50376f4b072">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB, fontsize = 10]\n\nnode[shape = rectangle]\n\na [label = \"Shock\"]\nb [label = \"Cold, clammy extremities\"]\nc [label = \"Warm, bounding pulse\"]\nd [label = \"Low cardiac output\"]\ne [label = \"JVP Increased, crackles\"]\nf [label = \"JVP decrease, orthostasis\"]\ng [label = \"Heart is full/cardiogenic shock\"]\nh [label = \"Evaluate for MI\"]\ni [label = \"Consider Echo, invasive monitoring\"]\nj [label = \"Inotropes, afterload reduction\"]\nk [label = \"High Cardiac Output\"]\nl [label = \"Septic shock, liver failure\"]\nm [label = \"Antibiotics, aggresive resuscitation\"]\nn [label = \"Heart is Empty/Hypovolemic shock\"]\no [label = \"IV fluids\"]\np [label = \"no improvement??\"]\nq [label = \"What does not fit??\"]\nr [label = \"Adrenal crisis, right heart syndrome, pericardial disease\"]\ns [label = \"Consider echo, invasive monitoring\"]\nt [label = \"May convert to\"]\n\na -> b \na -> c\nb -> d\nd -> e\nd -> f\ne -> g\ng -> h\nh -> i\ni -> j\nc -> k\nk -> l\nl -> m\nf -> n\nn -> o\no -> p\np -> q\nq -> r\nr -> s\no -> t\nt -> k\n\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shockalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2.1: Approach to Shock
@@ -1198,8 +1428,8 @@ Figure&nbsp;2.1: Approach to Shock
 <section id="respiratory-failure" class="level3" data-number="2.1.3">
 <h3 data-number="2.1.3" class="anchored" data-anchor-id="respiratory-failure"><span class="header-section-number">2.1.3</span> Respiratory Failure</h3>
 <p>Respiratory failure mechanistically on the basis of pathophysiology can be categorized onto:</p>
-<section id="type-1-acute-hypoxemic-respiratory-failure" class="level5">
-<h5 class="anchored" data-anchor-id="type-1-acute-hypoxemic-respiratory-failure">Type 1: Acute Hypoxemic Respiratory Failure</h5>
+<section id="type-1-acute-hypoxemic-respiratory-failure" class="level5" data-number="2.1.3.0.1">
+<h5 data-number="2.1.3.0.1" class="anchored" data-anchor-id="type-1-acute-hypoxemic-respiratory-failure"><span class="header-section-number">2.1.3.0.1</span> Type 1: Acute Hypoxemic Respiratory Failure</h5>
 <p>It occurs due to alveolar flooding, subsquent Ventilation-perfusion (VP) mismatch and intrapulmonary shunt physiology.</p>
 <p>Alveolar flooding occurs due:</p>
 <ul>
@@ -1213,8 +1443,8 @@ Figure&nbsp;2.1: Approach to Shock
 <li>alveolar hemorrhage</li>
 </ul>
 <p>Type 1 RF occurs in sepsis, gastric aspiration, pneumonia, covid-19, near drowning, multiple blood transfusion &amp; pancreatitis.</p>
-<section id="general-treatment" class="level6">
-<h6 class="anchored" data-anchor-id="general-treatment">General Treatment</h6>
+<section id="general-treatment" class="level6" data-number="2.1.3.0.1.1">
+<h6 data-number="2.1.3.0.1.1" class="anchored" data-anchor-id="general-treatment"><span class="header-section-number">2.1.3.0.1.1</span> General Treatment</h6>
 <ul>
 <li><p>Mechanical ventilation. Mechanical ventilation with high tidal volume (12 ml/kg ideal body weight) traditionally further injured the lung due to repeated alveoli overdistention and stretching. This is called ventilator induced volutrauma and even induce ARDS in patients without ARDS initialy. many studies point toward low tidal volume (6 ml/kg ideal body weight) improve survival.</p>
 <p>reproduce Figure of Preassure volume relathionsip!!!</p></li>
@@ -1223,8 +1453,8 @@ Figure&nbsp;2.1: Approach to Shock
 </ul>
 </section>
 </section>
-<section id="type-2-respiratory-failure-hypercapnic-respiratory-failure" class="level5">
-<h5 class="anchored" data-anchor-id="type-2-respiratory-failure-hypercapnic-respiratory-failure">Type 2 Respiratory Failure: Hypercapnic Respiratory Failure</h5>
+<section id="type-2-respiratory-failure-hypercapnic-respiratory-failure" class="level5" data-number="2.1.3.0.2">
+<h5 data-number="2.1.3.0.2" class="anchored" data-anchor-id="type-2-respiratory-failure-hypercapnic-respiratory-failure"><span class="header-section-number">2.1.3.0.2</span> Type 2 Respiratory Failure: Hypercapnic Respiratory Failure</h5>
 <p>It is a consequence of alveolar hypoventilation and the results from inability to eliminate CO2 effectively. The cause categorized into:</p>
 <ul>
 <li><p>impaired CNS drive to breathe (“wont breathe”) Cause: drug overdose, brainstem injury, sleep-disordered breathing, severe hypothyroidism</p></li>
@@ -1237,76 +1467,76 @@ Figure&nbsp;2.1: Approach to Shock
 <li><p>increased minute ventilation requirements eg. pulmoanry embolus with increased dead space fraction, sepsis</p></li>
 </ul></li>
 </ul>
-<section id="general-treatment-1" class="level6">
-<h6 class="anchored" data-anchor-id="general-treatment-1">general Treatment</h6>
+<section id="general-treatment-1" class="level6" data-number="2.1.3.0.2.1">
+<h6 data-number="2.1.3.0.2.1" class="anchored" data-anchor-id="general-treatment-1"><span class="header-section-number">2.1.3.0.2.1</span> general Treatment</h6>
 <p>Principal: reversing the underlying cause(s). Non-invasive ventilation (NIV) with positive pressure ventilation with tight fitting mask or nasal mask (avoidance of intubation) may stabilize these patients. It tested extensively in exacerbation of COPD. Contraindication for NIV include hemodynamic instability, inability to protect airway, respiratory arrests, significant airway secretions, significant aspiration risk.</p>
 </section>
 </section>
-<section id="type-3-respiratory-failure-lung-atelectasis" class="level5">
-<h5 class="anchored" data-anchor-id="type-3-respiratory-failure-lung-atelectasis">Type 3 Respiratory Failure: Lung Atelectasis</h5>
+<section id="type-3-respiratory-failure-lung-atelectasis" class="level5" data-number="2.1.3.0.3">
+<h5 data-number="2.1.3.0.3" class="anchored" data-anchor-id="type-3-respiratory-failure-lung-atelectasis"><span class="header-section-number">2.1.3.0.3</span> Type 3 Respiratory Failure: Lung Atelectasis</h5>
 <p>The primary cause is lung atelectasis. It is common in perioperaticve period, this form is also called perioperative respiratory failure. Post general anesthesia, there are decrease in functional residual capacity lead to collapse of dependent lung units.</p>
-<section id="general-treatment-2" class="level6">
-<h6 class="anchored" data-anchor-id="general-treatment-2">general treatment</h6>
+<section id="general-treatment-2" class="level6" data-number="2.1.3.0.3.1">
+<h6 data-number="2.1.3.0.3.1" class="anchored" data-anchor-id="general-treatment-2"><span class="header-section-number">2.1.3.0.3.1</span> general treatment</h6>
 <p>treatment include: frequent positional changes, chest physiotherapy, upright positioning, control of incisional/or abdominal pain.</p>
 </section>
 </section>
-<section id="type-4-respiratory-failure-metabolic-demands" class="level5">
-<h5 class="anchored" data-anchor-id="type-4-respiratory-failure-metabolic-demands">Type 4 Respiratory Failure: Metabolic Demands</h5>
+<section id="type-4-respiratory-failure-metabolic-demands" class="level5" data-number="2.1.3.0.4">
+<h5 data-number="2.1.3.0.4" class="anchored" data-anchor-id="type-4-respiratory-failure-metabolic-demands"><span class="header-section-number">2.1.3.0.4</span> Type 4 Respiratory Failure: Metabolic Demands</h5>
 <p>Most often due to hypoperfusion of respiratory muscles in patients in shock. Normally, respiratory muscle consume &lt; 5% total cardiac outpur (CO) and oxygen delivery. Patients in shock oftern experience respiratory distress due to pulmonary edema (eg. in cardiogenic shock), lactic acidosis and anemia. In these conditions, up to 40% CO distributed to respiratory muscle.</p>
-<section id="general-treatment-3" class="level6">
-<h6 class="anchored" data-anchor-id="general-treatment-3">General Treatment</h6>
+<section id="general-treatment-3" class="level6" data-number="2.1.3.0.4.1">
+<h6 data-number="2.1.3.0.4.1" class="anchored" data-anchor-id="general-treatment-3"><span class="header-section-number">2.1.3.0.4.1</span> General Treatment</h6>
 <p>Endotrachea intubation &amp; mechanical ventilation allow blood redistributed to vital organ and reverse the underlying cause.</p>
 </section>
 </section>
-<section id="mechanical-ventilation" class="level4">
-<h4 class="anchored" data-anchor-id="mechanical-ventilation">Mechanical Ventilation</h4>
+<section id="mechanical-ventilation" class="level4" data-number="2.1.3.1">
+<h4 data-number="2.1.3.1" class="anchored" data-anchor-id="mechanical-ventilation"><span class="header-section-number">2.1.3.1</span> Mechanical Ventilation</h4>
 <p>mechanical ventialtion is used to assist or replace sponstaneus breathung. Its application of high oxygen content + positive pressure. Primary indication is <strong>acute respiratory</strong> failure which there are two basic types: 1. hypoxemic and 2. hypercarbic. <em>Hypoexemic</em> present when arterial O2 saturation &lt;90% despite increased inspired O2 fraction due to ventilation perfusion mismatch or shunting. <em>Hypercarbic</em> characterized by elevated arterial CO2 (usually &gt;50 mmHg) resulting from conditions that decrease minute ventilation or increased physiologic dead space.</p>
-<section id="types-of-mechanical-ventilation" class="level5">
-<h5 class="anchored" data-anchor-id="types-of-mechanical-ventilation">Types of Mechanical Ventilation</h5>
+<section id="types-of-mechanical-ventilation" class="level5" data-number="2.1.3.1.1">
+<h5 data-number="2.1.3.1.1" class="anchored" data-anchor-id="types-of-mechanical-ventilation"><span class="header-section-number">2.1.3.1.1</span> Types of Mechanical Ventilation</h5>
 <p>there are two types of MV: noninvasive ventilation (NIV) and invasive (conventional MV)</p>
-<section id="noninvasive-ventilation" class="level6">
-<h6 class="anchored" data-anchor-id="noninvasive-ventilation">Noninvasive ventilation</h6>
+<section id="noninvasive-ventilation" class="level6" data-number="2.1.3.1.1.1">
+<h6 data-number="2.1.3.1.1.1" class="anchored" data-anchor-id="noninvasive-ventilation"><span class="header-section-number">2.1.3.1.1.1</span> Noninvasive ventilation</h6>
 <p>NIV: effective in acute and chronic respiratory failure with fewer complication (pneumonia &amp; tracheolaringeal trauma). NIV provided by tight fitting mask, a nasal mask similar to taht used for sleep apnea. It is especially effective in COPD. Modes used are bilevel positive airway pressure (BiPAP) or pressure support ventilation (PSV). Both used positive pressure during inspiration and expiration, althouhg lower in expiration. Trial showed: COPD exacerbation ph 7,25 - 7,35 associated with good outcomes, for ph &lt;7,25 the failure increase with decreasing ph. patient with ph &gt;7,35 NIV is not better than conventional treatment (controlled O2, systemic glucocorticoid, bronchodilator and antibiotics).</p>
 <p>THe used of NIV in other respiratory failure is limited, and in some conditions contraindicated (cardiac arrest, respiratory arrest, decreased consciousness, GI bleeding, hemodynamic instability, MI, facial trauma, upper airway obstruction, inability to clear secretion), and may delay life saving measure. Reduced respiratory rate, decreased the use of accesory muscle (scalene, sternomastoid and intercostal) are good clinical indicator of improvement. ABG should be evaluated hours after NIV initiation, if no improvement it may need a conventional MV</p>
 </section>
-<section id="invasive-ventilation-conventional-mv" class="level6">
-<h6 class="anchored" data-anchor-id="invasive-ventilation-conventional-mv">Invasive Ventilation (Conventional MV)</h6>
+<section id="invasive-ventilation-conventional-mv" class="level6" data-number="2.1.3.1.1.2">
+<h6 data-number="2.1.3.1.1.2" class="anchored" data-anchor-id="invasive-ventilation-conventional-mv"><span class="header-section-number">2.1.3.1.1.2</span> Invasive Ventilation (Conventional MV)</h6>
 <p>Intubation (cuffed tibed inserted to trachea) to allow conditioned (warmed, oxygenated, humidified) gas delivered to the airways.</p>
 <p>Principles of MV: optimize oxygenation while avoiding ventilator-induced lung injury due to overstretch and collapse/re-recruitment (protective ventilatory strategy)</p>
 </section>
 </section>
-<section id="modes-of-ventilation" class="level5">
-<h5 class="anchored" data-anchor-id="modes-of-ventilation">Modes of Ventilation</h5>
+<section id="modes-of-ventilation" class="level5" data-number="2.1.3.1.2">
+<h5 data-number="2.1.3.1.2" class="anchored" data-anchor-id="modes-of-ventilation"><span class="header-section-number">2.1.3.1.2</span> Modes of Ventilation</h5>
 <p>modes are the manner in which breaths are triggered, cycled and limited. - trigger: inspiratory effort or time based signal - cycle : refers to the factors that determine the end of inspiration (volume, pressure and time cycling) - limiting factors are operator-specified values: airway pressure.</p>
 <p>Most patient ventilated with assist-control, intermittent mandatory ventilation, PSV.</p>
-<section id="assist-control-ventilation" class="level6">
-<h6 class="anchored" data-anchor-id="assist-control-ventilation">Assist control ventilation</h6>
+<section id="assist-control-ventilation" class="level6" data-number="2.1.3.1.2.1">
+<h6 data-number="2.1.3.1.2.1" class="anchored" data-anchor-id="assist-control-ventilation"><span class="header-section-number">2.1.3.1.2.1</span> Assist control ventilation</h6>
 <p>Assist control (ACMV) is the most widely used. Used in initiation of MV. trigger: initiated by patient inspiratory effort, if none detected, by specified time signal. cycle: pressure or volume cycle. limit: specified tidal-volume, RR defined by patients rate or backup rate.</p>
 <p>problem: auto-peep might occurs if dynamic hyperinflation due to high RR happens.</p>
 </section>
-<section id="intermittent-mandatory-ventilation" class="level6">
-<h6 class="anchored" data-anchor-id="intermittent-mandatory-ventilation">Intermittent Mandatory Ventilation</h6>
+<section id="intermittent-mandatory-ventilation" class="level6" data-number="2.1.3.1.2.2">
+<h6 data-number="2.1.3.1.2.2" class="anchored" data-anchor-id="intermittent-mandatory-ventilation"><span class="header-section-number">2.1.3.1.2.2</span> Intermittent Mandatory Ventilation</h6>
 <p>Most commmon modes: SIMV trigger: set mandatory breath, between each mandatory breath patient can breath spontaneously. in SIMV, mandatory breath delivered in syncrony with patients breath.if patient fail to initiate a breath, the machine give fixed volume and reset its timer for next breath. cycle: defined volume, limit:</p>
 <p>difference with ACMV: only the a preset number of breath are ventilator-assisted. SIMV allowd patients with intact respiratory drive to exercise inspiratory msucles between assisted breath, useful for supporting and weaning intubation. problem: difficult to use in tacypnea, due to expiration attemp during ventilator inspiratory cycle. The pressure increase, and may abort the inspiration and thus lower tidal volume. In contrast, for tachypnea represent of metabocl or respiratory acidosis, change in ACMV will increase minute ventilation and help normalize pH</p>
 </section>
-<section id="pressure-support-ventilation" class="level6">
-<h6 class="anchored" data-anchor-id="pressure-support-ventilation">Pressure-support Ventilation</h6>
+<section id="pressure-support-ventilation" class="level6" data-number="2.1.3.1.2.3">
+<h6 data-number="2.1.3.1.2.3" class="anchored" data-anchor-id="pressure-support-ventilation"><span class="header-section-number">2.1.3.1.2.3</span> Pressure-support Ventilation</h6>
 <p>trigger: patient breath cycle: flow, isnpiration is terminated when airflow fall below a certain level. limit: pressure</p>
 <p>provides graded asistence and differs from the other two in that the operator set the pressure level to augment every spontaneous breath. The level of pressure is adjusted by observing the patiens RR.</p>
 </section>
-<section id="pressure-control-ventilation-pcv" class="level6">
-<h6 class="anchored" data-anchor-id="pressure-control-ventilation-pcv">Pressure-Control Ventilation (PCV)</h6>
+<section id="pressure-control-ventilation-pcv" class="level6" data-number="2.1.3.1.2.4">
+<h6 data-number="2.1.3.1.2.4" class="anchored" data-anchor-id="pressure-control-ventilation-pcv"><span class="header-section-number">2.1.3.1.2.4</span> Pressure-Control Ventilation (PCV)</h6>
 <p>useful to limit peak pressure, in patients with preexisting barotreauma or post htoracic surgery.</p>
 <p>trigger: time cycle: time, limit: pressure</p>
 <p>minute ventilation is altered through RR and pressure control.</p>
 </section>
-<section id="continous-positive-airway-pressure-cpap" class="level6">
-<h6 class="anchored" data-anchor-id="continous-positive-airway-pressure-cpap">Continous Positive Airway Pressure (CPAP)</h6>
+<section id="continous-positive-airway-pressure-cpap" class="level6" data-number="2.1.3.1.2.5">
+<h6 data-number="2.1.3.1.2.5" class="anchored" data-anchor-id="continous-positive-airway-pressure-cpap"><span class="header-section-number">2.1.3.1.2.5</span> Continous Positive Airway Pressure (CPAP)</h6>
 <p>All ventilation occurs through the patients spontaneus efforts. The machine provide fresh gas to the circuit and set constant pressure.</p>
 </section>
 </section>
-<section id="protective-ventilatory-strategy" class="level5">
-<h5 class="anchored" data-anchor-id="protective-ventilatory-strategy">Protective Ventilatory Strategy</h5>
+<section id="protective-ventilatory-strategy" class="level5" data-number="2.1.3.1.3">
+<h5 data-number="2.1.3.1.3" class="anchored" data-anchor-id="protective-ventilatory-strategy"><span class="header-section-number">2.1.3.1.3</span> Protective Ventilatory Strategy</h5>
 <p>Whatever the modes of MV, the principles:</p>
 <ol type="1">
 <li>Set target tidal volume close to 6 ml/kg of ideal body weight</li>
@@ -1315,11 +1545,11 @@ Figure&nbsp;2.1: Approach to Shock
 <li>Adjust the PEEP to maintain alveolar patency while preventing overdistention and closure/reopening.</li>
 </ol>
 </section>
-<section id="maintenance-for-mechanical-ventilated-patients" class="level5">
-<h5 class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients">Maintenance for mechanical Ventilated patients</h5>
+<section id="maintenance-for-mechanical-ventilated-patients" class="level5" data-number="2.1.3.1.4">
+<h5 data-number="2.1.3.1.4" class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients"><span class="header-section-number">2.1.3.1.4</span> Maintenance for mechanical Ventilated patients</h5>
 <p><strong>Respiratory System Mechanics</strong></p>
 <p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
-<div id="fig-airwayresistance" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-airwayresistance" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-airwayresistance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Airway_resistance.png" class="img-fluid figure-img">
@@ -1330,22 +1560,22 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 </figure>
 </div>
 <p>Patients frequently require sedatives &amp; analgetics.</p>
-<section id="analgesics" class="level6">
-<h6 class="anchored" data-anchor-id="analgesics">Analgesics</h6>
+<section id="analgesics" class="level6" data-number="2.1.3.1.4.1">
+<h6 data-number="2.1.3.1.4.1" class="anchored" data-anchor-id="analgesics"><span class="header-section-number">2.1.3.1.4.1</span> Analgesics</h6>
 <p>Opieates is the mainstay of mechanicaly ventilated patients</p>
 </section>
-<section id="sedatives" class="level6">
-<h6 class="anchored" data-anchor-id="sedatives">Sedatives</h6>
+<section id="sedatives" class="level6" data-number="2.1.3.1.4.2">
+<h6 data-number="2.1.3.1.4.2" class="anchored" data-anchor-id="sedatives"><span class="header-section-number">2.1.3.1.4.2</span> Sedatives</h6>
 <p>After pain adequately controlled, sedation needed for anxiolysis, treatment of subjective dyspnea, reduction of autonomic hyperactiviy, reduction of total O2 consumption. Nonbenzodiazepin are preffered because benzodiazepin associated with increased delirium and worse patients outcome.</p>
 <p>Amnesia could be achieved with propofol or benzodiazepine such lorazepam or midazolam.</p>
 </section>
-<section id="neuromuscular-blocking-agents" class="level6">
-<h6 class="anchored" data-anchor-id="neuromuscular-blocking-agents">Neuromuscular Blocking Agents</h6>
+<section id="neuromuscular-blocking-agents" class="level6" data-number="2.1.3.1.4.3">
+<h6 data-number="2.1.3.1.4.3" class="anchored" data-anchor-id="neuromuscular-blocking-agents"><span class="header-section-number">2.1.3.1.4.3</span> Neuromuscular Blocking Agents</h6>
 <p>Patients with ventilatory dyssyncrony despite optimal sedation may needed paralytics agents. Wathout for prolonged weakness, a myopathy known as the postparalytics syndrome. Thus, neuromuscular blocking is the last agent, only in patients which fail to achieve ventilator syncrony with aggresive sedation. Remember, neuromuscular blocking agent do not results in pharmacological paralysis without altering mental status, thus sedative is almost always required for amnesia.</p>
 </section>
 </section>
-<section id="ventilator-weaning-and-extubation" class="level5">
-<h5 class="anchored" data-anchor-id="ventilator-weaning-and-extubation">Ventilator Weaning and Extubation</h5>
+<section id="ventilator-weaning-and-extubation" class="level5" data-number="2.1.3.1.5">
+<h5 data-number="2.1.3.1.5" class="anchored" data-anchor-id="ventilator-weaning-and-extubation"><span class="header-section-number">2.1.3.1.5</span> Ventilator Weaning and Extubation</h5>
 <p>Recognition of patients readyness to be liberated from mechanical ventilation is important. Screening conducted daily, criteria:</p>
 <ol type="1">
 <li>Stable oxygenation (Pao<sub>2</sub> / Fio<sub>2</sub> &gt; 200 and PEEP <span class="math inline">\(\le\)</span> 5 cm H<sub>2</sub>O)</li>
@@ -1366,12 +1596,12 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 <p>Once patients determined that able to breath spontaneously, then proceeed to remove the artificial airway which should be undertaken only when it is patients showed the ability to protect airway, able to cough and clear secretions, alert enough to follow commands. If reintubation is deemed difficult if required, evaluation with cuff-leak test is supported by evidence. If possibility of post-extubation stridor, administration of systemic steoroid should be given.</p>
 </section>
 </section>
-<section id="prolonged-mv-and-tracheostomy" class="level4">
-<h4 class="anchored" data-anchor-id="prolonged-mv-and-tracheostomy">Prolonged MV and Tracheostomy</h4>
+<section id="prolonged-mv-and-tracheostomy" class="level4" data-number="2.1.3.2">
+<h4 data-number="2.1.3.2" class="anchored" data-anchor-id="prolonged-mv-and-tracheostomy"><span class="header-section-number">2.1.3.2</span> Prolonged MV and Tracheostomy</h4>
 <p>5-13 % patients with MV will go on to require prolonged MV (&gt;21 days). It is important to decide whether and when to perform a trachoestomy. Tracheostomy is though to be more comfortable, require less sedation, and provide a more secure airway and reduce weaning time.</p>
 <p>In general, if a need of MV for &gt;10-14 days, a tracheostomy would be indicated.</p>
-<section id="maintenance-for-mechanical-ventilated-patients-1" class="level5">
-<h5 class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients-1">Maintenance for mechanical Ventilated patients</h5>
+<section id="maintenance-for-mechanical-ventilated-patients-1" class="level5" data-number="2.1.3.2.1">
+<h5 data-number="2.1.3.2.1" class="anchored" data-anchor-id="maintenance-for-mechanical-ventilated-patients-1"><span class="header-section-number">2.1.3.2.1</span> Maintenance for mechanical Ventilated patients</h5>
 <p><strong>Respiratory System Mechanics</strong></p>
 <p>Peak airway pressure dtermined by two variable: airway resistance and respiratory system compliance. At the end of inspiration, there are transient pause of inspiratory flow, the pressure called plateu pressure. Plateu pressure determined by respiratory system compliance. During volume controlled ventilation, the difference peak airway pressure (airway + respiratory system) and plateu pressure (respiratory system) provides a quantitative assesment of airway resistance. Patients with increased airway resistence typically have increased peak airway pressures and abnormally high gradients between peak and plateu airway pressure (&gt; 10 - 15 cmH<sub>2</sub>O) at a constant inspiratory flow rate of 1 L/s(shown in figure <a href="#fig-airwayresistance" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. Normally, respiratory system compliance is ~ 100 ml/cmH<sub>2</sub>O, divided by the lungs and chest wall. Pathophysiologic process decrease wall compliance such as pleural effusion, pneumothorax &amp; increase abdominal girth. Lung compliance decreased by pneumonia, pulmonary edema, alveolar hemorrhae, interstitial lung disease, or auto PEEP. Auto-PEEP occurs when there is insufficient time for emptying of alveoli before the next inspiratory cycle, thus alveoli failed to decompress fully and remains positive pressure at all phase of respiration. Theis phenomenon results most commonly from obstruction of distal airways such as Asthma or COPD.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -1381,22 +1611,22 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 </figure>
 </div>
 <p>Patients frequently require sedatives &amp; analgetics.</p>
-<section id="analgesics-1" class="level6">
-<h6 class="anchored" data-anchor-id="analgesics-1">Analgesics</h6>
+<section id="analgesics-1" class="level6" data-number="2.1.3.2.1.1">
+<h6 data-number="2.1.3.2.1.1" class="anchored" data-anchor-id="analgesics-1"><span class="header-section-number">2.1.3.2.1.1</span> Analgesics</h6>
 <p>Opieates is the mainstay of mechanicaly ventilated patients</p>
 </section>
-<section id="sedatives-1" class="level6">
-<h6 class="anchored" data-anchor-id="sedatives-1">Sedatives</h6>
+<section id="sedatives-1" class="level6" data-number="2.1.3.2.1.2">
+<h6 data-number="2.1.3.2.1.2" class="anchored" data-anchor-id="sedatives-1"><span class="header-section-number">2.1.3.2.1.2</span> Sedatives</h6>
 <p>After pain adequately controlled, sedation needed for anxiolysis, treatment of subjective dyspnea, reduction of autonomic hyperactiviy, reduction of total O2 consumption. Nonbenzodiazepin are preffered because benzodiazepin associated with increased delirium and worse patients outcome.</p>
 <p>Amnesia could be achieved with propofol or benzodiazepine such lorazepam or midazolam.</p>
 </section>
-<section id="neuromuscular-blocking-agents-1" class="level6">
-<h6 class="anchored" data-anchor-id="neuromuscular-blocking-agents-1">Neuromuscular Blocking Agents</h6>
+<section id="neuromuscular-blocking-agents-1" class="level6" data-number="2.1.3.2.1.3">
+<h6 data-number="2.1.3.2.1.3" class="anchored" data-anchor-id="neuromuscular-blocking-agents-1"><span class="header-section-number">2.1.3.2.1.3</span> Neuromuscular Blocking Agents</h6>
 <p>Patients with ventilatory dyssyncrony despite optimal sedation may needed paralytics agents. Wathout for prolonged weakness, a myopathy known as the postparalytics syndrome. Thus, neuromuscular blocking is the last agent, only in patients which fail to achieve ventilator syncrony with aggresive sedation. Remember, neuromuscular blocking agent do not results in pharmacological paralysis without altering mental status, thus sedative is almost always required for amnesia.</p>
 </section>
 </section>
-<section id="ventilator-weaning-and-extubation-1" class="level5">
-<h5 class="anchored" data-anchor-id="ventilator-weaning-and-extubation-1">Ventilator Weaning and Extubation</h5>
+<section id="ventilator-weaning-and-extubation-1" class="level5" data-number="2.1.3.2.2">
+<h5 data-number="2.1.3.2.2" class="anchored" data-anchor-id="ventilator-weaning-and-extubation-1"><span class="header-section-number">2.1.3.2.2</span> Ventilator Weaning and Extubation</h5>
 <p>Recognition of patients readyness to be liberated from mechanical ventilation is important. Screening conducted daily, criteria:</p>
 <ol type="1">
 <li>Stable oxygenation (Pao<sub>2</sub> / Fio<sub>2</sub> &gt; 200 and PEEP <span class="math inline">\(\le\)</span> 5 cm H<sub>2</sub>O)</li>
@@ -1432,24 +1662,23 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="diagnostic-criteria-for-ards"><span class="header-section-number">2.2.2</span> Diagnostic Criteria for ARDS</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<div id="esavkgjruq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#esavkgjruq table {
+<div id="rzpcjdojph" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rzpcjdojph table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#esavkgjruq thead, #esavkgjruq tbody, #esavkgjruq tfoot, #esavkgjruq tr, #esavkgjruq td, #esavkgjruq th {
+#rzpcjdojph thead, #rzpcjdojph tbody, #rzpcjdojph tfoot, #rzpcjdojph tr, #rzpcjdojph td, #rzpcjdojph th {
   border-style: none;
 }
 
-#esavkgjruq p {
+#rzpcjdojph p {
   margin: 0;
   padding: 0;
 }
 
-#esavkgjruq .gt_table {
+#rzpcjdojph .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1475,12 +1704,12 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-left-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_caption {
+#rzpcjdojph .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#esavkgjruq .gt_title {
+#rzpcjdojph .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1492,7 +1721,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-bottom-width: 0;
 }
 
-#esavkgjruq .gt_subtitle {
+#rzpcjdojph .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1504,7 +1733,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-top-width: 0;
 }
 
-#esavkgjruq .gt_heading {
+#rzpcjdojph .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1516,13 +1745,13 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-right-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_bottom_border {
+#rzpcjdojph .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_col_headings {
+#rzpcjdojph .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1537,7 +1766,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-right-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_col_heading {
+#rzpcjdojph .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1557,7 +1786,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   overflow-x: hidden;
 }
 
-#esavkgjruq .gt_column_spanner_outer {
+#rzpcjdojph .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1569,15 +1798,15 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 4px;
 }
 
-#esavkgjruq .gt_column_spanner_outer:first-child {
+#rzpcjdojph .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#esavkgjruq .gt_column_spanner_outer:last-child {
+#rzpcjdojph .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#esavkgjruq .gt_column_spanner {
+#rzpcjdojph .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1589,11 +1818,11 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   width: 100%;
 }
 
-#esavkgjruq .gt_spanner_row {
+#rzpcjdojph .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#esavkgjruq .gt_group_heading {
+#rzpcjdojph .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1619,7 +1848,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   text-align: left;
 }
 
-#esavkgjruq .gt_empty_group_heading {
+#rzpcjdojph .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1634,15 +1863,15 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   vertical-align: middle;
 }
 
-#esavkgjruq .gt_from_md > :first-child {
+#rzpcjdojph .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#esavkgjruq .gt_from_md > :last-child {
+#rzpcjdojph .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#esavkgjruq .gt_row {
+#rzpcjdojph .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1661,7 +1890,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   overflow-x: hidden;
 }
 
-#esavkgjruq .gt_stub {
+#rzpcjdojph .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1674,7 +1903,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 5px;
 }
 
-#esavkgjruq .gt_stub_row_group {
+#rzpcjdojph .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1688,15 +1917,15 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   vertical-align: top;
 }
 
-#esavkgjruq .gt_row_group_first td {
+#rzpcjdojph .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#esavkgjruq .gt_row_group_first th {
+#rzpcjdojph .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#esavkgjruq .gt_summary_row {
+#rzpcjdojph .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1706,16 +1935,16 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 5px;
 }
 
-#esavkgjruq .gt_first_summary_row {
+#rzpcjdojph .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_first_summary_row.thick {
+#rzpcjdojph .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#esavkgjruq .gt_last_summary_row {
+#rzpcjdojph .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1725,7 +1954,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-bottom-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_grand_summary_row {
+#rzpcjdojph .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1735,7 +1964,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 5px;
 }
 
-#esavkgjruq .gt_first_grand_summary_row {
+#rzpcjdojph .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1745,7 +1974,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-top-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_last_grand_summary_row_top {
+#rzpcjdojph .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1755,11 +1984,11 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-bottom-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_striped {
+#rzpcjdojph .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#esavkgjruq .gt_table_body {
+#rzpcjdojph .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1768,7 +1997,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-bottom-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_footnotes {
+#rzpcjdojph .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1782,7 +2011,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-right-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_footnote {
+#rzpcjdojph .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1791,7 +2020,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 5px;
 }
 
-#esavkgjruq .gt_sourcenotes {
+#rzpcjdojph .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1805,7 +2034,7 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   border-right-color: #D3D3D3;
 }
 
-#esavkgjruq .gt_sourcenote {
+#rzpcjdojph .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1813,74 +2042,83 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
   padding-right: 5px;
 }
 
-#esavkgjruq .gt_left {
+#rzpcjdojph .gt_left {
   text-align: left;
 }
 
-#esavkgjruq .gt_center {
+#rzpcjdojph .gt_center {
   text-align: center;
 }
 
-#esavkgjruq .gt_right {
+#rzpcjdojph .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#esavkgjruq .gt_font_normal {
+#rzpcjdojph .gt_font_normal {
   font-weight: normal;
 }
 
-#esavkgjruq .gt_font_bold {
+#rzpcjdojph .gt_font_bold {
   font-weight: bold;
 }
 
-#esavkgjruq .gt_font_italic {
+#rzpcjdojph .gt_font_italic {
   font-style: italic;
 }
 
-#esavkgjruq .gt_super {
+#rzpcjdojph .gt_super {
   font-size: 65%;
 }
 
-#esavkgjruq .gt_footnote_marks {
+#rzpcjdojph .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#esavkgjruq .gt_asterisk {
+#rzpcjdojph .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#esavkgjruq .gt_indent_1 {
+#rzpcjdojph .gt_indent_1 {
   text-indent: 5px;
 }
 
-#esavkgjruq .gt_indent_2 {
+#rzpcjdojph .gt_indent_2 {
   text-indent: 10px;
 }
 
-#esavkgjruq .gt_indent_3 {
+#rzpcjdojph .gt_indent_3 {
   text-indent: 15px;
 }
 
-#esavkgjruq .gt_indent_4 {
+#rzpcjdojph .gt_indent_4 {
   text-indent: 20px;
 }
 
-#esavkgjruq .gt_indent_5 {
+#rzpcjdojph .gt_indent_5 {
   text-indent: 25px;
+}
+
+#rzpcjdojph .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#rzpcjdojph div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 
-<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
-<th id="Severity (PaO2/FiO2)" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Severity (PaO2/FiO2)</th>
+<tr class="gt_col_headings header">
+<th id="Severity-(PaO2/FiO2)" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Severity (PaO2/FiO2)</th>
 <th id="Onset" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Onset</th>
-<th id="Chest Radiograph" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Chest Radiograph</th>
-<th id="Absence of Left Atrial Hypertension" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Absence of Left Atrial Hypertension</th>
+<th id="Chest-Radiograph" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Chest Radiograph</th>
+<th id="Absence-of-Left-Atrial-Hypertension" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Absence of Left Atrial Hypertension</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
@@ -1896,39 +2134,38 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 </div>
 </div>
 </div>
-</div>
 <p>ddx: - cardiogenic pulmonary edema - bilateral pneumonia - alveolar hemorrhage</p>
 </section>
 <section id="epidemiology" class="level3" data-number="2.2.3">
 <h3 data-number="2.2.3" class="anchored" data-anchor-id="epidemiology"><span class="header-section-number">2.2.3</span> Epidemiology</h3>
 <p>Estimated incidence: 60/100.000 population.</p>
-<section id="etiology" class="level4">
-<h4 class="anchored" data-anchor-id="etiology">Etiology</h4>
+<section id="etiology" class="level4" data-number="2.2.3.1">
+<h4 data-number="2.2.3.1" class="anchored" data-anchor-id="etiology"><span class="header-section-number">2.2.3.1</span> Etiology</h4>
 <p>ARDS can be caused by diffuse lung injury from many medical and surgical disorders. It may be direct (on the lung) or indirect (extrapulmoner including thoracic structure). The most case (&gt;80%) are caused by pneumonia and sepsis. Then, gastric aspiration, trauma, multiple transfusiion, pancreatitis, and drug overdose. Traumatic cause include pulmonary contusion, multiple bone fractures, chest trauma/flail chest. The risk increase with predisposing medical condition.</p>
 </section>
-<section id="pathophysiology" class="level4">
-<h4 class="anchored" data-anchor-id="pathophysiology">Pathophysiology</h4>
+<section id="pathophysiology" class="level4" data-number="2.2.3.2">
+<h4 data-number="2.2.3.2" class="anchored" data-anchor-id="pathophysiology"><span class="header-section-number">2.2.3.2</span> Pathophysiology</h4>
 <p>Natural history of ARDS divided into 3 phases - exudative, proliferative, and fibrotic.</p>
-<section id="exudative-phase" class="level5">
-<h5 class="anchored" data-anchor-id="exudative-phase">Exudative Phase</h5>
+<section id="exudative-phase" class="level5" data-number="2.2.3.2.1">
+<h5 data-number="2.2.3.2.1" class="anchored" data-anchor-id="exudative-phase"><span class="header-section-number">2.2.3.2.1</span> Exudative Phase</h5>
 <p>This phase encompases the first 7 days after precipitating ARDS risk factor. The alveolar capillary endhotelial cells and type 1 pneumocytes injured, loss of tight alveolar barrier to fluid and macromolecules. Edema fluid contain protein accumulates in the interstitial and alveolar spaces. Proinflamatory cytokines increase followed by leukocytes recruitment. The leaked plasma condensed and agrreagte in the air spaces + cellular debris + dysfunctional surfactant to form hyaline membran whorls.</p>
 <p>Alveolar edema predominantly involves dependent portions of the lung with diminished aeration. Large lung dimineshed aeration cause increase in lung compliance. Alteration in alveolar spaces are exacerbated by microvascular occlusion leading to reduced perfusion and pulmonary hypertension. it also cause intrapulmonary shunting and hypoxemia, leading to dyspnea.</p>
 <p>sign: - dyspnea, may leads to respiratory fatigue - chest radiograph reveals opacities resembling pulmonary edema. distinguishing featues from cardiogenic pulmonary edema are no cardiomegaly, no pleural effusin, or no pulmonary vascular redistribution. - laboratory finding indicative of the underlying disoder.</p>
 </section>
-<section id="proliferative-phase" class="level5">
-<h5 class="anchored" data-anchor-id="proliferative-phase">Proliferative Phase</h5>
+<section id="proliferative-phase" class="level5" data-number="2.2.3.2.2">
+<h5 data-number="2.2.3.2.2" class="anchored" data-anchor-id="proliferative-phase"><span class="header-section-number">2.2.3.2.2</span> Proliferative Phase</h5>
 <p>phase day 7 to 21. May showed an improvement, including weaning of mechanical ventilation. It may shows some degree of lung repair, reduced alveolar exudates, and shift to lymphocytes predominant infiltrat, increased surfactant.</p>
 <p>sign: - improvement in symtoms, but still dyspnea - tachypnea - hypoxemia</p>
 </section>
-<section id="fibrotic-phase" class="level5">
-<h5 class="anchored" data-anchor-id="fibrotic-phase">Fibrotic Phase</h5>
+<section id="fibrotic-phase" class="level5" data-number="2.2.3.2.3">
+<h5 data-number="2.2.3.2.3" class="anchored" data-anchor-id="fibrotic-phase"><span class="header-section-number">2.2.3.2.3</span> Fibrotic Phase</h5>
 <p>Phase 3-4 weeks after lung injury. Many patients may recover, but some enter a fibrotic phase. The exudate convert to extensive alveolar duct and interstitial fibrosis. desctruction of acinar architecture leads to emphysema like changes (bullae), and may also develop microvascular occlusion and pulmonary hypertension.</p>
 </section>
 </section>
-<section id="treatment" class="level4">
-<h4 class="anchored" data-anchor-id="treatment">Treatment</h4>
-<section id="general-principles" class="level5">
-<h5 class="anchored" data-anchor-id="general-principles">General Principles</h5>
+<section id="treatment" class="level4" data-number="2.2.3.3">
+<h4 data-number="2.2.3.3" class="anchored" data-anchor-id="treatment"><span class="header-section-number">2.2.3.3</span> Treatment</h4>
+<section id="general-principles" class="level5" data-number="2.2.3.3.1">
+<h5 data-number="2.2.3.3.1" class="anchored" data-anchor-id="general-principles"><span class="header-section-number">2.2.3.3.1</span> General Principles</h5>
 <p>Emphasize on treatment of the Critical ill</p>
 <ol type="1">
 <li>treatment of underlying cause</li>
@@ -1938,11 +2175,11 @@ Figure&nbsp;2.2: Graph Illustration taken from harrison
 <li>adequte nutrition</li>
 </ol>
 <div class="cell fig-cap-location-bottom" data-layout-align="center">
-<div id="fig-ardsalgorithm" class="cell-output-display quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-ardsalgorithm" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ardsalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="grViz html-widget html-fill-item" id="htmlwidget-46a3e655d986eaeef973" style="width:100%;height:812px;"></div>
-<script type="application/json" data-for="htmlwidget-46a3e655d986eaeef973">{"x":{"diagram":"\n      digraph ards {\n      \n      graph[layout = dot, rankdir = TB, fontsize = 10]\n      \n      node[shape = rectangle]\n      \n      a [label = \"Initiate volume/pressure limited ventilation, (TV <= 6 ml/kg; Plateu pressure <= 30 cmH20, RR <= 35)\"]\n      b [label = \"Oxygenate, (FiO2 <= 0.6; SpO2 88-95%)\"]\n      c [label = \"Minimize acidosis (ph => 7.3; RR < 35)\"]\n      d [label = \"Diuresis (MAP => 65; avoid hypoperfusion)\"]\n      \n      a -> b -> c -> d\n      \n      \n      }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-db7b48d064e37fc9f780" style="width:100%;height:812px;"></div>
+<script type="application/json" data-for="htmlwidget-db7b48d064e37fc9f780">{"x":{"diagram":"\n      digraph ards {\n      \n      graph[layout = dot, rankdir = TB, fontsize = 10]\n      \n      node[shape = rectangle]\n      \n      a [label = \"Initiate volume/pressure limited ventilation, (TV <= 6 ml/kg; Plateu pressure <= 30 cmH20, RR <= 35)\"]\n      b [label = \"Oxygenate, (FiO2 <= 0.6; SpO2 88-95%)\"]\n      c [label = \"Minimize acidosis (ph => 7.3; RR < 35)\"]\n      d [label = \"Diuresis (MAP => 65; avoid hypoperfusion)\"]\n      \n      a -> b -> c -> d\n      \n      \n      }\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ardsalgorithm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2.3: ARDS Algorithm
@@ -1951,11 +2188,11 @@ Figure&nbsp;2.3: ARDS Algorithm
 </div>
 </div>
 </section>
-<section id="mechanical-ventilation-1" class="level5">
-<h5 class="anchored" data-anchor-id="mechanical-ventilation-1">Mechanical Ventilation</h5>
+<section id="mechanical-ventilation-1" class="level5" data-number="2.2.3.3.2">
+<h5 data-number="2.2.3.3.2" class="anchored" data-anchor-id="mechanical-ventilation-1"><span class="header-section-number">2.2.3.3.2</span> Mechanical Ventilation</h5>
 <p>Patient meeting criteria ARDS frequently become respiratory fatigues, so it requires mechanical ventilation.</p>
-<section id="minimize-ventilator-induced-lung-injury" class="level6">
-<h6 class="anchored" data-anchor-id="minimize-ventilator-induced-lung-injury">Minimize ventilator induced lung injury</h6>
+<section id="minimize-ventilator-induced-lung-injury" class="level6" data-number="2.2.3.3.2.1">
+<h6 data-number="2.2.3.3.2.1" class="anchored" data-anchor-id="minimize-ventilator-induced-lung-injury"><span class="header-section-number">2.2.3.3.2.1</span> Minimize ventilator induced lung injury</h6>
 <p>Mechanical ventilatio (MV) can save lifes, but also can aggravate lung injury due to volutrauma and atelectrauma. Volutrauma can occurs due to overdistention of alveoli due to effort to inflate the consolited lungs thus damaging the still functioning alveoli.</p>
 <ul>
 <li><strong>Low tidal volume 6ml/kg predicted body weight are better than coenventional 12 ml/kg bodyweight.</strong></li>
@@ -1963,39 +2200,39 @@ Figure&nbsp;2.3: ARDS Algorithm
 <li>RR <span class="math inline">\(\le\)</span> 35</li>
 </ul>
 </section>
-<section id="minimize-atelectrauma" class="level6">
-<h6 class="anchored" data-anchor-id="minimize-atelectrauma">Minimize atelectrauma</h6>
+<section id="minimize-atelectrauma" class="level6" data-number="2.2.3.3.2.2">
+<h6 data-number="2.2.3.3.2.2" class="anchored" data-anchor-id="minimize-atelectrauma"><span class="header-section-number">2.2.3.3.2.2</span> Minimize atelectrauma</h6>
 <p>In presence of fluid and loss of surfactant, PEEP is required to prevent atelectasis. PEEP is adjusted to minimize FIO<sub>2</sub> while able to provide adequate PaO<sub>2</sub> without causing alveolar overdistention. Follow table of PEEP-FiO<sub>2</sub> combinations from ARDS Network trial.</p>
 <p>other technique includes <strong>recruitment manuever</strong>, that transiently increase PEEP to high levels to recruit ateletatic lung can increase oxygenation, but a mortality benefit has not been established.</p>
 </section>
-<section id="prone-positioning" class="level6">
-<h6 class="anchored" data-anchor-id="prone-positioning">Prone positioning</h6>
+<section id="prone-positioning" class="level6" data-number="2.2.3.3.2.3">
+<h6 data-number="2.2.3.3.2.3" class="anchored" data-anchor-id="prone-positioning"><span class="header-section-number">2.2.3.3.2.3</span> Prone positioning</h6>
 <p>It improves survival.</p>
 </section>
 </section>
-<section id="fluid-management" class="level5">
-<h5 class="anchored" data-anchor-id="fluid-management">Fluid Management</h5>
+<section id="fluid-management" class="level5" data-number="2.2.3.3.3">
+<h5 data-number="2.2.3.3.3" class="anchored" data-anchor-id="fluid-management"><span class="header-section-number">2.2.3.3.3</span> Fluid Management</h5>
 <p>increased pulmonary vascular permeability leading to interstitial and alveolar edema fluid rich in protein is a centra features of ARDS. impaired vascular integrity augments the normal increase in extravascular lung water. Thus keeping low left atrial filling pressure could minimize pulmonary edema. Fluid restriction and diuretics should be an important aspect of ARDS management, limited only by hypotension and hypoperfusion.</p>
 </section>
-<section id="neuromuscular-blockage" class="level5">
-<h5 class="anchored" data-anchor-id="neuromuscular-blockage">Neuromuscular blockage</h5>
+<section id="neuromuscular-blockage" class="level5" data-number="2.2.3.3.4">
+<h5 data-number="2.2.3.3.4" class="anchored" data-anchor-id="neuromuscular-blockage"><span class="header-section-number">2.2.3.3.4</span> Neuromuscular blockage</h5>
 <p>Sedation alone may not adequate for ventilator syncrony. Selective use of neuromuscular blockage for ventilator syncrony could improves survival.</p>
 </section>
-<section id="glucocorticoids" class="level5">
-<h5 class="anchored" data-anchor-id="glucocorticoids">Glucocorticoids</h5>
+<section id="glucocorticoids" class="level5" data-number="2.2.3.3.5">
+<h5 data-number="2.2.3.3.5" class="anchored" data-anchor-id="glucocorticoids"><span class="header-section-number">2.2.3.3.5</span> Glucocorticoids</h5>
 <p>Current evidence does not support the routine use of glucocorticoids.</p>
 </section>
 </section>
-<section id="prognosis" class="level4">
-<h4 class="anchored" data-anchor-id="prognosis">Prognosis</h4>
+<section id="prognosis" class="level4" data-number="2.2.3.4">
+<h4 data-number="2.2.3.4" class="anchored" data-anchor-id="prognosis"><span class="header-section-number">2.2.3.4</span> Prognosis</h4>
 <p>extrapulmonary organ failures and sepsis counts &gt; 80% of deaths. Risk factor for reduced survival are age (&gt;60 yo), preexistin organ dysfunction. Patients who survives despite prolonged respiratory failures and dependent on MV may recover within 6 months.</p>
 </section>
 </section>
 <section id="approach-to-circulatory-shock" class="level3" data-number="2.2.4">
 <h3 data-number="2.2.4" class="anchored" data-anchor-id="approach-to-circulatory-shock"><span class="header-section-number">2.2.4</span> Approach to Circulatory Shock</h3>
 <p>shock is the clinical condition of organ dysfuntion resulting from imbalance between celular oxygen supply and demand. Shock is reversible in early state, but if left untreated leads to multisystem organ dysfunction and death.</p>
-<section id="pathophysiology-of-shock" class="level4">
-<h4 class="anchored" data-anchor-id="pathophysiology-of-shock">Pathophysiology of Shock</h4>
+<section id="pathophysiology-of-shock" class="level4" data-number="2.2.4.1">
+<h4 data-number="2.2.4.1" class="anchored" data-anchor-id="pathophysiology-of-shock"><span class="header-section-number">2.2.4.1</span> Pathophysiology of Shock</h4>
 <p>The cellular oxygen imbalance most commonly related to impaired oxygen delivery in the setting circulatory failure. - shock may also occurs in the setting of failure oxygen utilization (cyanide poisoning) - and state of increased oxygen demand.</p>
 <p>In the setting of inadequate oxygen supply, the cell cannot maintain aerobic metabolism, thus forced into anaerobic metabolism and produce lactate and less ATP. Less ATP supply impaired cell ability to maintain hemeostasis such as maintaining N/K pump. Celular pump failure cause influx of calcium and leads to activation of phospolipases and protease, causing cellular swelling and death. In addition, hypoxia cause leakage of intracellular contents to the extracellular space, activating inflamatory cascasdes.</p>
 <p>Oxygen delivery influenced by two major components, namely Cardiac Output (CO) and arterial oxygen content (CaO<sub>2</sub>.</p>
@@ -2007,60 +2244,60 @@ Figure&nbsp;2.3: ARDS Algorithm
 <p>CaO<sub>2</sub> = (Kg x 1,39 x SaO<sub>2</sub>) + (PaO<sub>2</sub> x 0,03)</p>
 <p>A disease process that affects these variables (HR, preload, contractility, SVR, SaO2, or Hb) has potential to reduce DO<sub>2</sub>.</p>
 </section>
-<section id="classification-of-shock" class="level4">
-<h4 class="anchored" data-anchor-id="classification-of-shock">Classification of Shock</h4>
+<section id="classification-of-shock" class="level4" data-number="2.2.4.2">
+<h4 data-number="2.2.4.2" class="anchored" data-anchor-id="classification-of-shock"><span class="header-section-number">2.2.4.2</span> Classification of Shock</h4>
 <p>Four major shock types are distributive, cardiogenic, hypovolemic, and obstrictive. Each has unique hemodynamics profile.</p>
-<section id="distributive-shock" class="level5">
-<h5 class="anchored" data-anchor-id="distributive-shock">Distributive Shock</h5>
+<section id="distributive-shock" class="level5" data-number="2.2.4.2.1">
+<h5 data-number="2.2.4.2.1" class="anchored" data-anchor-id="distributive-shock"><span class="header-section-number">2.2.4.2.1</span> Distributive Shock</h5>
 <p>Distributive shock is condition of reduced O<sub>2</sub> delivery where the primary physiologic distubance is <strong>reduction in SVR</strong>. There are <strong>increase of CO</strong> as a compensatory effort. CVP and PCWP reduced. The most common etiology is sepsis. Sepsis is life-threatening organ dysfunction due to dysregulated host response to infection. If accompanied by persistent hypotension despite adequate fluid resuscitation and needed vasopressor support, it is called septic shock. Other medical cause : Anaphylaxis (IgE mediated vasodilatation after exposure to allergen), pancreatitis, severe burns, liver failure. There almost 35% extravasation of circulating blood volume within 10 minutes. Patiens with severe brain or spinal cord injury may have a reduction in SVR due to disruption of autonomic pathways and blood pooling in venous system. Other cause is adrenal insuficiency due to chronic steroid use, medication , malignancy, adrenal hemmorhage, infection or autoimune. Acute stress condition, created deficit in steroid, and cause vasodilatation as well as aldosteron deficiency-mediated hypovolemia.</p>
 </section>
-<section id="cardiogenic-shock" class="level5">
-<h5 class="anchored" data-anchor-id="cardiogenic-shock">Cardiogenic Shock</h5>
+<section id="cardiogenic-shock" class="level5" data-number="2.2.4.2.2">
+<h5 data-number="2.2.4.2.2" class="anchored" data-anchor-id="cardiogenic-shock"><span class="header-section-number">2.2.4.2.2</span> Cardiogenic Shock</h5>
 <p>Cardiogenic shock is characterized by reduced O<sub>2</sub> delivery related to a reduction in CO owing to a primary cardiac problem. There are compensatory response as an increase in SVR. If left ventricle is dysfunction, there will be increased PCWP, and if right ventricle is will present as increased CVP. SV may reduced due to reduced contractility (MI, Cardiomyopathies, myocarditis), valvular disease, or due to alteration in HR (bradiaritmia and tachyarithmia)</p>
 </section>
-<section id="hypovolemic-shock" class="level5">
-<h5 class="anchored" data-anchor-id="hypovolemic-shock">Hypovolemic Shock</h5>
+<section id="hypovolemic-shock" class="level5" data-number="2.2.4.2.3">
+<h5 data-number="2.2.4.2.3" class="anchored" data-anchor-id="hypovolemic-shock"><span class="header-section-number">2.2.4.2.3</span> Hypovolemic Shock</h5>
 <p>Hypovolemic shock encompasses disease that reduce CO and DO<sub>2</sub> via a reduction in preload. There is elevation is SVR and low CVP-PCWP. Most common cause is hemmorhage followed by fluid loss from diarhea or vomiting, diuresis, skin damage.</p>
 </section>
-<section id="obstructive-shock" class="level5">
-<h5 class="anchored" data-anchor-id="obstructive-shock">Obstructive Shock</h5>
+<section id="obstructive-shock" class="level5" data-number="2.2.4.2.4">
+<h5 data-number="2.2.4.2.4" class="anchored" data-anchor-id="obstructive-shock"><span class="header-section-number">2.2.4.2.4</span> Obstructive Shock</h5>
 <p>Obstructive shock is reduced O<sub>2</sub> delivery related to reduced CO because impairment in blood flow, both inflow and outflow, in extracardiac pulmonary vascular or other mechanical process. Inflow obstruction Etiology: tension pneumothorax, cardiac tamponade, restrictive pericarditis. Outflow obstruction etiology: pulmonary embolism, venous air embolis, fat embolism or aortic dissection.</p>
 <p>UGD =&gt; hypovolemic (30,8%) &gt; septic (27,2%) &gt; distributive non septic (23,4%) &gt; cardiogenic (14%) &gt;&gt;&gt;&gt; obstructiove shock (0,9%). ICU =&gt; Shock predominates )62%) &gt;&gt; Hypovolemic (16%) ~ cardiogenic shock (15%) &gt;&gt;&gt; obstructive shock (2%).</p>
 <p>Mortality rate: cardiogenic ~ septic &gt; hypovolemic</p>
 </section>
 </section>
-<section id="stages-of-shock" class="level4">
-<h4 class="anchored" data-anchor-id="stages-of-shock">Stages of Shock</h4>
+<section id="stages-of-shock" class="level4" data-number="2.2.4.3">
+<h4 data-number="2.2.4.3" class="anchored" data-anchor-id="stages-of-shock"><span class="header-section-number">2.2.4.3</span> Stages of Shock</h4>
 <p>There are 3, preshock, shock and irreversible shock. Body utilize variety of physiologic response to counter initial insult. There no overt sign of organ dysfunction. Lab: slight elevation of creatine or troponin or mild elevation of lactate. If host compensatory mechanism are not enough, organ dysfuction occurs and irreversible Shock ensued.</p>
 </section>
-<section id="evaluation-of-the-patient-with-shock" class="level4">
-<h4 class="anchored" data-anchor-id="evaluation-of-the-patient-with-shock">Evaluation of the patient with Shock</h4>
+<section id="evaluation-of-the-patient-with-shock" class="level4" data-number="2.2.4.4">
+<h4 data-number="2.2.4.4" class="anchored" data-anchor-id="evaluation-of-the-patient-with-shock"><span class="header-section-number">2.2.4.4</span> Evaluation of the patient with Shock</h4>
 <p>early recongition is paramount important to reverse the stages of shock. Anamnesis to find the cause. Physical examination to identify circulatory failure (hypotension SBP &lt;90 mmHG, or MAP &lt; 65 mmHg) and sign of organ dysfunction. Check urine output. Finding: High CO shock: warm peripherals, CRT &lt;2 S, large pulse pressure (LOW DBP). Low CO shock: delayed CRT, cool extremities, weak pulses.</p>
 <p>Increased instravasular filling pressure and JVP (cardiogenic, obstrctive shock)</p>
 <p><strong>Shock Index</strong> : defined as the HR/SBP with normal SI 0,5 - 0,7</p>
 <p>Lab test: - Lactate - Renal function - liver function - cardiac enzymes - CBC - Hemostatic index - UL - PP test if needed - ECG - CXR - POCUS (RUSH, ACES, SESAME protocol)</p>
 </section>
-<section id="initial-treatment-of-shock" class="level4">
-<h4 class="anchored" data-anchor-id="initial-treatment-of-shock">Initial Treatment of Shock</h4>
-<section id="initiate-treatment-for-circulatory-shock." class="level5">
-<h5 class="anchored" data-anchor-id="initiate-treatment-for-circulatory-shock.">Initiate treatment for circulatory shock.</h5>
+<section id="initial-treatment-of-shock" class="level4" data-number="2.2.4.5">
+<h4 data-number="2.2.4.5" class="anchored" data-anchor-id="initial-treatment-of-shock"><span class="header-section-number">2.2.4.5</span> Initial Treatment of Shock</h4>
+<section id="initiate-treatment-for-circulatory-shock." class="level5" data-number="2.2.4.5.1">
+<h5 data-number="2.2.4.5.1" class="anchored" data-anchor-id="initiate-treatment-for-circulatory-shock."><span class="header-section-number">2.2.4.5.1</span> Initiate treatment for circulatory shock.</h5>
 <p>Find venous access and invasive monitoring if needed</p>
 </section>
-<section id="volume-resuscitation" class="level5">
-<h5 class="anchored" data-anchor-id="volume-resuscitation">Volume Resuscitation</h5>
+<section id="volume-resuscitation" class="level5" data-number="2.2.4.5.2">
+<h5 data-number="2.2.4.5.2" class="anchored" data-anchor-id="volume-resuscitation"><span class="header-section-number">2.2.4.5.2</span> Volume Resuscitation</h5>
 <p>The physiologic goal of volume resuscitation is to move the patient to the <strong>nonpreload-dependent portion of the Starling curve</strong>. Most patients with any of the four shock types will benefit from an increase in intra-vascular volume. suspected septic shock, a minimum of 30 mL/kg is recommended by the Surviving Sepsis Campaign. While the need for volume resuscitation is most apparent for patients with distributive or hypovolemic shock, even patients with cardiogenic shock may benefit from cautious volume replacement. In these patients, there should be a careful assessment of volume status prior to volume administration.</p>
 <p>Volume resuscitation will begin with <strong>crystalloid</strong>. In patients with hypovolemic shock due to ongoing hemorrhage, volume replacement with packed red blood cells is warranted. In cases of massive transfusion, platelets and fresh frozen plasma should be provided to offset the dilution of these components during volume replacement. Because hemoglobin is a key determinant of CaCO2, <strong>red cell administration may be a part of volume replacement even without hemorrhage in order to optimize oxygen delivery if hemoglobin content is &lt;7 g/dL.</strong></p>
 <p>Assessment of intravascular volume status (and the adequacy of volume resuscitation) begins with the physical examination. The <strong>passive leg raise (PLR) test can predict responsiveness to additional intravenous fluid (IVF) by providing the patient with an endogenous volume bolus.</strong> While the patient is resting in a semirecumbent position at a 45° angle, the bed is placed in Trendelenburg position such that the patient’s head becomes horizontal and the legs are extended at a 45° angle. There is then an immediate (within 1 min) assessment of changes in CO (or pulse pressure variation as a surrogate). It is important to emphasize that one does not merely look for changes in blood pressure; if the shock patient is mechanically ventilated there is the option of looking at changes in <strong>SV variation (or pulse pressure variation)</strong> during the respiratory cycle to assess volume responsiveness. A &gt;12% SV variation suggests a volume-responsive state. This measurement requires that the patient be in a volume cycle mode of ventilation, without breath-to-breath variations in intrathoracic pressure and without arrhythmias.</p>
 <p>There is also increased use of echocardiography to assist in determination of intravascular fluid status, with a variety of static and dynamic variables The most commonly used parameters to assess adequacy of volume resuscitation are inferior vena cava (IVC) diameter and IVC collapse. Alternatively, serial assessments of LV function can be performed while volume is being administered. Placement of a pulmonary artery catheter (PAC) is another tool for assessment of volume status. This more invasive measure involves placement of the PAC into the central venous circulation and through the right heart. Ports in the PAC (Swan-Ganz catheter) allow for direct measurement of CVP, pulmonary artery (PA), and PCWPs. The PCWP is used as a surrogate for LA pressure.</p>
 </section>
-<section id="vasopresor-and-inotropic-support" class="level5">
-<h5 class="anchored" data-anchor-id="vasopresor-and-inotropic-support">Vasopresor and Inotropic Support</h5>
+<section id="vasopresor-and-inotropic-support" class="level5" data-number="2.2.4.5.3">
+<h5 data-number="2.2.4.5.3" class="anchored" data-anchor-id="vasopresor-and-inotropic-support"><span class="header-section-number">2.2.4.5.3</span> Vasopresor and Inotropic Support</h5>
 <p>If hypotension and inadequate tissue perfusion persist, then vasopressor and inotropic support should be initiated. <strong>The use of vasopressors and inotropes must be tailored to the primary physiologic disturbance.</strong></p>
 <p>In distributive shock, the aim is to increase the SVR. <strong>Norepinephrine is the first-choice vasopressor</strong>, with potent α1 and β1 adrenergic effects. The α1 causes vasoconstriction while β1 has positive inotropic and chronotropic effects. At high doses, epinephrine has a similar profile (at lower doses the β effects predominate) but is associated with tachyarrhythmia, myocardial ischemia, decreased splanchnic blood flow, pulmonary hypertension, and acidosis. In distributive shock, vasopressin deficiency may be present. Vasopressin acts on the vasopressin receptor to reverse vasodilation and redistribute flow to the splanchnic circulation. <strong>Dopamine does not have a role as a first-line agent in distributive shock.</strong></p>
 <p>For patients with <strong>cardiogenic shock, dobutamine is the first-line agent</strong>; it is a synthetic catecholamine with primarily β-mediated effects and minimal α adrenergic effects. The β1 effect is manifest in increased inotropy and the β2 effect leads to vasodilation with decreased afterload; it can be used with norepinephrine in patients with mixed distributive and cardiogenic shock.</p>
 </section>
-<section id="oxygenation-and-ventilation-support" class="level5">
-<h5 class="anchored" data-anchor-id="oxygenation-and-ventilation-support">Oxygenation and Ventilation Support</h5>
+<section id="oxygenation-and-ventilation-support" class="level5" data-number="2.2.4.5.4">
+<h5 data-number="2.2.4.5.4" class="anchored" data-anchor-id="oxygenation-and-ventilation-support"><span class="header-section-number">2.2.4.5.4</span> Oxygenation and Ventilation Support</h5>
 <p>Supplemental oxygen should be initiated and titrated to maintain SpO2 of 92–95%. patients may require intuvation and MV for two reason:</p>
 <ol type="1">
 <li><p>primary pulmonary process or related to LV dysfunction and elevations of PCWP. For patients with all types of shock, there can be development of ARDS and subsequent V/Q mismatch and shunt.</p></li>
@@ -2068,12 +2305,12 @@ Figure&nbsp;2.3: ARDS Algorithm
 </ol>
 <p>It is important to provide ventilation with lung-protective strategies focused on low tidal volume ventilation and optimization of positive end-expiratory pressure to minimize ventilator-induced lung injury.</p>
 </section>
-<section id="antibiotics" class="level5">
-<h5 class="anchored" data-anchor-id="antibiotics">Antibiotics</h5>
+<section id="antibiotics" class="level5" data-number="2.2.4.5.5">
+<h5 data-number="2.2.4.5.5" class="anchored" data-anchor-id="antibiotics"><span class="header-section-number">2.2.4.5.5</span> Antibiotics</h5>
 <p>For patients presenting with undifferentiated shock, if the diagnosis of septic shock is being entertained, then broad-spectrum antibiotics should be administered after obtaining appropriate cultures. While it is ideal to initiate antibiotics after appropriate cultures, the inability to obtain cultures should not delay the start of treatment</p>
 </section>
-<section id="other-specific-treatment-for-specific-etiology" class="level5">
-<h5 class="anchored" data-anchor-id="other-specific-treatment-for-specific-etiology">Other specific treatment for specific etiology</h5>
+<section id="other-specific-treatment-for-specific-etiology" class="level5" data-number="2.2.4.5.6">
+<h5 data-number="2.2.4.5.6" class="anchored" data-anchor-id="other-specific-treatment-for-specific-etiology"><span class="header-section-number">2.2.4.5.6</span> Other specific treatment for specific etiology</h5>
 <p>The initial evaluation (history, physical examination, and diagnostic testing) may have identified an etiology of shock that requires urgent lifesaving intervention in addition to the initial treatment steps out- lined above.</p>
 </section>
 </section>
@@ -2098,21 +2335,22 @@ Figure&nbsp;2.3: ARDS Algorithm
 </section>
 <section id="circulation" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="circulation"><span class="header-section-number">2.3.2</span> Circulation</h3>
-<section id="oxygen-delivery" class="level4">
-<h4 class="anchored" data-anchor-id="oxygen-delivery">Oxygen Delivery</h4>
+<section id="oxygen-delivery" class="level4" data-number="2.3.2.1">
+<h4 data-number="2.3.2.1" class="anchored" data-anchor-id="oxygen-delivery"><span class="header-section-number">2.3.2.1</span> Oxygen Delivery</h4>
 <p>Oxygen delivery (DO<sub>2</sub> or QO<sub>2</sub>) is a function of cardiac output and the content of O<sub>2</sub> in the arterial blood (CaO<sub>2</sub>). CaO<sub>2</sub> is determined by HB concenctration, arterial HB saturation, and dissolved O<sub>2</sub> disolved in plasma (not bound to HB). Equation provided at <a href="#eq-delivery-oxygen" class="quarto-xref">Equation&nbsp;<span>2.1</span></a>. Nearly all oxygen delivered to the tissue is bound to HB. Disolved O2 are negligible.</p>
 <p>Arterial oxygen content (CaO<sub>2</sub>) normally around 21.16 mL/dL, while the mixed venous blood (VO<sub>2</sub>) is 15.76 mL/dL, thus normal tissue extraction is around 25%. Reduced VO<sub>2</sub> may results from inadequate CO, reduced HB or reduced SaO<sub>2</sub>. Abnormally high VO<sub>2</sub> may be caused by fever, agitation, shivering and thyrotoxicosis.</p>
 <p><span id="eq-delivery-oxygen"><span class="math display">\[
-QO~2~ = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB% Saturation} + 0.0031 \times PaO2)
+QO_2 = \text{Cardiac Output} \text{ (dL/min)} \times (1.39 \times \text{HB concentration} \times \text{HB\% Saturation} + 0.0031 \times PaO_2)
 \tag{2.1}\]</span></span></p>
 <p><span class="math display">\[
-QO~2~ = 50 \text{ dL/min} \times (1.39 \times 15 \text{g/dL} \times 100\% + 0.0031 \times 100)
-\]</span> <span class="math display">\[
-QO~2~ = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \text{ mL O2 per min}
+QO_2 = 50 \text{ dL/min} \times (1.39 \times 15 \text{g/dL} \times 100\% + 0.0031 \times 100)
+\]</span></p>
+<p><span class="math display">\[
+QO_2 = 50 \text{ dL/min} \times 21.6 \text{mL O2 per dL blood or CaO2} = 1058 \text{ mL O2 per min}
 \]</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-harrison_2022" class="csl-entry" role="listitem">
 Loscalzo, J, A Fauci, D Kasper, S Hauser, D Longo, and J Jameson. 2022. <em>Harrison’s <span>Principles</span> of <span>Internal</span> <span>Medicine</span>, 21e</em>. 21st ed. McGraw Hill. <a href="https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&amp;sectionid=259856983">https://accesspharmacy.mhmedical.com/content.aspx?bookid=3095&amp;sectionid=259856983</a>.
 </div>
@@ -2120,46 +2358,80 @@ Loscalzo, J, A Fauci, D Kasper, S Hauser, D Longo, and J Jameson. 2022. <em>Harr
 </section>
 </section>
 </section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Sepsis-3 Guidelines, JAMA (2016).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
     }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -2167,184 +2439,184 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
       return codeEl.innerText;
     }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -2352,185 +2624,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./internal_medicine.html" class="pagination-link" aria-label="Internal Medicine">
